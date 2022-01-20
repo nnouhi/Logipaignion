@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\The_Elementalists.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{C896F432-95E2-45B1-8A15-16647AE1DF33}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\The_Elementalists.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\The_ElementalistsEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{9280B52E-7BD3-43EB-8643-C1541290E9DB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\The_Elementalists">
+      <UniqueIdentifier>{F48F27D6-C89D-4FF3-8B14-C6916F0FA7E8}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\The_Elementalists\The_Elementalists.Build.cs">
+      <Filter>Source\The_Elementalists</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\The_Elementalists\The_Elementalists.cpp">
+      <Filter>Source\The_Elementalists</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\The_Elementalists\The_Elementalists.h">
+      <Filter>Source\The_Elementalists</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\The_Elementalists\The_ElementalistsGameModeBase.cpp">
+      <Filter>Source\The_Elementalists</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\The_Elementalists\The_ElementalistsGameModeBase.h">
+      <Filter>Source\The_Elementalists</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
