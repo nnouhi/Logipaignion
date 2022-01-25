@@ -58,10 +58,18 @@ protected:
 
 public:	
 
-	
-
+	UFUNCTION(BlueprintPure)
+		float GetHealthPercentage() const;
 
 private:
+
+	//// NN SpringArm Component
+	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	//class USpringArmComponent* SpringArmComp;
+
+	///*NN USceneCaptureComponent to act like Minimap */
+	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	//class USceneCaptureComponent2D* Minimap;
 
 	/*NN First person camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
@@ -78,5 +86,7 @@ private:
 	/*NN Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	float BaseLookUpRate;
+
+	class UHealthComponent* HealthComponent;
 
 };

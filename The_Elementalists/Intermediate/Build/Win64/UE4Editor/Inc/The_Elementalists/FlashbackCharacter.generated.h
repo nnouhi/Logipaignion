@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define THE_ELEMENTALISTS_FlashbackCharacter_generated_h
 
 #define The_Elementalists_Source_The_Elementalists_Public_FlashbackCharacter_h_12_SPARSE_DATA
-#define The_Elementalists_Source_The_Elementalists_Public_FlashbackCharacter_h_12_RPC_WRAPPERS
-#define The_Elementalists_Source_The_Elementalists_Public_FlashbackCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define The_Elementalists_Source_The_Elementalists_Public_FlashbackCharacter_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetHealthPercentage);
+
+
+#define The_Elementalists_Source_The_Elementalists_Public_FlashbackCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetHealthPercentage);
+
+
 #define The_Elementalists_Source_The_Elementalists_Public_FlashbackCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFlashbackCharacter(); \

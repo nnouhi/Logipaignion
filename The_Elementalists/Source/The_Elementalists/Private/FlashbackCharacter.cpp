@@ -3,8 +3,11 @@
 
 #include "FlashbackCharacter.h"
 #include "Camera/CameraComponent.h"
+#include "GameFramework/SpringArmComponent.h"
+#include "Components/SceneCaptureComponent2D.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "HealthComponent.h"
 
 
 // Sets default values
@@ -25,6 +28,14 @@ AFlashbackCharacter::AFlashbackCharacter():
 	FirstPersonCameraComponent->SetRelativeLocation(FVector(-39.56f, 1.75f, 64.f));
 	FirstPersonCameraComponent->bUsePawnControlRotation = true;	/*NN rotate camera relative to controller rotation */
 
+	//// NN Create SpringArmComponent
+	//SpringArmComp = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArmComponent"));
+	//SpringArmComp->SetupAttachment(GetCapsuleComponent());
+
+	//// NN Create USceneCaptureComponent
+	//Minimap = CreateDefaultSubobject<USceneCaptureComponent2D>(TEXT("Minimap"));
+	//Minimap->SetupAttachment(SpringArmComp);
+
 	/*NN Create a mesh component that will be maybe used */
 	Mesh1P = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CharacterMesh1P"));
 	Mesh1P->SetOnlyOwnerSee(true);
@@ -34,8 +45,14 @@ AFlashbackCharacter::AFlashbackCharacter():
 	Mesh1P->SetRelativeRotation(FRotator(1.9f, -19.19f, 5.2f));
 	Mesh1P->SetRelativeLocation(FVector(-0.5f, -4.4f, -155.7f));
 
-	/*NN enabling crouching for Character */
+	/*NN Modify character's movement component */
 	GetCharacterMovement()->GetNavAgentPropertiesRef().bCanCrouch = true; //set to true to enable crouching(false by default)
+	GetCharacterMovement()->MaxWalkSpeed = 300.f;
+
+	// CN Create health component
+	HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("Health Component"));
+	AddOwnedComponent(HealthComponent);
+
 }
 
 // Called when the game starts or when spawned
@@ -85,12 +102,12 @@ void AFlashbackCharacter::LookUpAtRate(float Rate)
 
 void AFlashbackCharacter::BeginSprint()
 {
-	GetCharacterMovement()->MaxWalkSpeed = 1000.f;
+	GetCharacterMovement()->MaxWalkSpeed = 500.f;
 }
 
 void AFlashbackCharacter::EndSprint()
 {
-	GetCharacterMovement()->MaxWalkSpeed = 600.f;
+	GetCharacterMovement()->MaxWalkSpeed = 300.f;
 }
 
 void AFlashbackCharacter::BeginCrouch()
@@ -103,12 +120,22 @@ void AFlashbackCharacter::EndCrouch()
 	UnCrouch(); //NN in-built character method
 }
 
+float AFlashbackCharacter::GetHealthPercentage() const
+{
+	if (HealthComponent)
+	{
+		return HealthComponent->Health / HealthComponent->MaxHealth;
+	}
+	return 0.f;
+}
+
 // Called every frame
 void AFlashbackCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
+
+
 
 // Called to bind functionality to input
 void AFlashbackCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -128,6 +155,5 @@ void AFlashbackCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &AFlashbackCharacter::EndSprint);
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &AFlashbackCharacter::BeginCrouch);
 	PlayerInputComponent->BindAction("Crouch", IE_Released, this, &AFlashbackCharacter::EndCrouch);
-
 }
 

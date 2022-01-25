@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\The_Elementalists.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{2590635E-3BFD-48A6-BBA7-65CB9BAAF625}</UniqueIdentifier>
+      <UniqueIdentifier>{616AAB99-E89D-4AC3-8B3E-4BBDEDC29875}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists.Target.cs">
       <Filter>Source</Filter>
@@ -13,7 +13,7 @@
     </None>
     <None Include="..\..\LuosEightElements.png" />
     <Filter Include="Config">
-      <UniqueIdentifier>{0754EB76-4F01-418F-BA62-A013231852B4}</UniqueIdentifier>
+      <UniqueIdentifier>{7AFE8AEB-C1A6-45E0-8BEC-618378C2AD76}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,8 +24,11 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Source\The_Elementalists">
-      <UniqueIdentifier>{4ADABCC1-F033-4A12-80A4-ABDA76A66DDB}</UniqueIdentifier>
+      <UniqueIdentifier>{B24EA278-5053-4228-85B1-E385F32A2C06}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists\The_Elementalists.Build.cs">
       <Filter>Source\The_Elementalists</Filter>
@@ -43,15 +46,57 @@
       <Filter>Source\The_Elementalists</Filter>
     </ClInclude>
     <Filter Include="Source\The_Elementalists\Private">
-      <UniqueIdentifier>{2426D2A0-28E4-43D4-AE14-39C81A235156}</UniqueIdentifier>
+      <UniqueIdentifier>{48CD2BF1-9E7F-413B-BBC2-D702644DB9B5}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\The_Elementalists\Private\Endpoint.cpp">
+      <Filter>Source\The_Elementalists\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\The_Elementalists\Private\Fire.cpp">
+      <Filter>Source\The_Elementalists\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\The_Elementalists\Private\FireWall.cpp">
+      <Filter>Source\The_Elementalists\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\FlashbackCharacter.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\The_Elementalists\Private\Flashback_PlayerController.cpp">
+      <Filter>Source\The_Elementalists\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\The_Elementalists\Private\Flash_Back.cpp">
+      <Filter>Source\The_Elementalists\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\The_Elementalists\Private\HealthComponent.cpp">
+      <Filter>Source\The_Elementalists\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\The_Elementalists\Private\Minimap.cpp">
+      <Filter>Source\The_Elementalists\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\The_Elementalists\Public">
-      <UniqueIdentifier>{24614E08-A5FA-4B72-A6BF-1B4582D87A36}</UniqueIdentifier>
+      <UniqueIdentifier>{51C7AF6C-B287-438B-9D81-EF87972AFC1A}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\The_Elementalists\Public\Endpoint.h">
+      <Filter>Source\The_Elementalists\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\The_Elementalists\Public\Fire.h">
+      <Filter>Source\The_Elementalists\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\The_Elementalists\Public\FireWall.h">
+      <Filter>Source\The_Elementalists\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\FlashbackCharacter.h">
+      <Filter>Source\The_Elementalists\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\The_Elementalists\Public\Flashback_PlayerController.h">
+      <Filter>Source\The_Elementalists\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\The_Elementalists\Public\Flash_Back.h">
+      <Filter>Source\The_Elementalists\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\The_Elementalists\Public\HealthComponent.h">
+      <Filter>Source\The_Elementalists\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\The_Elementalists\Public\Minimap.h">
       <Filter>Source\The_Elementalists\Public</Filter>
     </ClInclude>
   </ItemGroup>
