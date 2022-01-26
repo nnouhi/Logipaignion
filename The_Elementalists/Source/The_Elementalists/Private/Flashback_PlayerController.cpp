@@ -13,7 +13,8 @@ void AFlashback_PlayerController::BeginPlay()
 	ObjectiveWidget = CreateWidget(this, ObjectiveHUDClass);
 	MinimapWidget = CreateWidget(this, MinimapHUDClass);
 	HealthbarWidget = CreateWidget(this, HealthbarClass);
-	
+	MapWidget = CreateWidget(this, MapHUDClass);
+
 	if (HealthbarWidget)
 	{
 		HealthbarWidget->AddToViewport();
@@ -28,7 +29,7 @@ void AFlashback_PlayerController::BeginPlay()
 	{
 		MinimapWidget->AddToViewport();
 	}
-
+	
 }
 
 
@@ -44,5 +45,22 @@ FString AFlashback_PlayerController::GetObjectiveMessage()
 	}
 
 	return "Oopsie";
+}
+
+void AFlashback_PlayerController::DisplayMap()
+{
+
+	if (MapWidget)
+	{
+		MapWidget->AddToViewport();
+	}
+}
+
+void AFlashback_PlayerController::RemoveMap()
+{
+	if (MapWidget)
+	{
+		MapWidget->RemoveFromViewport();
+	}
 }
 

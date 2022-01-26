@@ -89,4 +89,10 @@ private:
 
 	class UHealthComponent* HealthComponent;
 
+	// NN invokes player controller DisplayMap method
+	void CallDisplayMap();
+	
+	// NN invokes player controller RemoveMap method
+	void CallRemoveMap();
+
 };

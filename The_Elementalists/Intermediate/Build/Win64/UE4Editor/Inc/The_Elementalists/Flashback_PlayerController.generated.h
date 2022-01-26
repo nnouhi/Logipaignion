@@ -73,6 +73,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__ObjectiveWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, ObjectiveWidget); } \
 	FORCEINLINE static uint32 __PPO__MinimapHUDClass() { return STRUCT_OFFSET(AFlashback_PlayerController, MinimapHUDClass); } \
 	FORCEINLINE static uint32 __PPO__MinimapWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, MinimapWidget); } \
+	FORCEINLINE static uint32 __PPO__MapHUDClass() { return STRUCT_OFFSET(AFlashback_PlayerController, MapHUDClass); } \
+	FORCEINLINE static uint32 __PPO__MapWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, MapWidget); } \
 	FORCEINLINE static uint32 __PPO__HealthbarClass() { return STRUCT_OFFSET(AFlashback_PlayerController, HealthbarClass); } \
 	FORCEINLINE static uint32 __PPO__HealthbarWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, HealthbarWidget); }
 

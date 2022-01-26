@@ -33,6 +33,13 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
 	class UUserWidget* MinimapWidget;
 
+	// NN Big Minimap widget displayed on screen
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
+	TSubclassOf<UUserWidget> MapHUDClass;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
+	class UUserWidget* MapWidget;
+
 	// NN BlueprintCallable method that will obtained the appropriate text to show on screen
 	UFUNCTION(BluePrintCallable)
 	FString GetObjectiveMessage();
@@ -42,5 +49,12 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
 	UUserWidget* HealthbarWidget;
-	
+
+public:
+
+	// NN when invoke displays map on viewport
+	void DisplayMap();
+
+	// NN when invoke removes map from viewport
+	void RemoveMap();
 };

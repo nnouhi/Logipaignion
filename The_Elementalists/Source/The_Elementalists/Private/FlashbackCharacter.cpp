@@ -7,7 +7,9 @@
 #include "Components/SceneCaptureComponent2D.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Kismet/GameplayStatics.h"
 #include "HealthComponent.h"
+#include "Flashback_PlayerController.h"
 
 
 // Sets default values
@@ -129,6 +131,26 @@ float AFlashbackCharacter::GetHealthPercentage() const
 	return 0.f;
 }
 
+void AFlashbackCharacter::CallDisplayMap()
+{
+	AFlashback_PlayerController* PlayerControllerRef = Cast<AFlashback_PlayerController>(UGameplayStatics::GetPlayerController(GetWorld(), 0));
+
+	if (PlayerControllerRef)
+	{
+		PlayerControllerRef->DisplayMap();
+	}
+}
+
+void AFlashbackCharacter::CallRemoveMap()
+{
+	AFlashback_PlayerController* PlayerControllerRef = Cast<AFlashback_PlayerController>(UGameplayStatics::GetPlayerController(GetWorld(), 0));
+
+	if (PlayerControllerRef)
+	{
+		PlayerControllerRef->RemoveMap();
+	}
+}
+
 // Called every frame
 void AFlashbackCharacter::Tick(float DeltaTime)
 {
@@ -155,5 +177,7 @@ void AFlashbackCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &AFlashbackCharacter::EndSprint);
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &AFlashbackCharacter::BeginCrouch);
 	PlayerInputComponent->BindAction("Crouch", IE_Released, this, &AFlashbackCharacter::EndCrouch);
+	PlayerInputComponent->BindAction("DisplayMap", IE_Pressed, this, &AFlashbackCharacter::CallDisplayMap);
+	PlayerInputComponent->BindAction("DisplayMap", IE_Released, this, &AFlashbackCharacter::CallRemoveMap);
 }
 
