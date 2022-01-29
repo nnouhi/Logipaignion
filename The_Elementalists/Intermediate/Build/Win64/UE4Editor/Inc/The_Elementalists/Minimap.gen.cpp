@@ -18,8 +18,6 @@ void EmptyLinkFunctionForGeneratedCodeMinimap() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_The_Elementalists();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_USceneCaptureComponent2D_NoRegister();
 // End Cross Module References
 	void AMinimap::StaticRegisterNativesAMinimap()
 	{
@@ -38,14 +36,6 @@ void EmptyLinkFunctionForGeneratedCodeMinimap() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Root_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Root;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SpringArmComp_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SpringArmComp;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Minimap_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Minimap;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -71,32 +61,8 @@ void EmptyLinkFunctionForGeneratedCodeMinimap() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMinimap_Statics::NewProp_Root = { "Root", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMinimap, Root), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMinimap_Statics::NewProp_Root_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMinimap_Statics::NewProp_Root_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMinimap_Statics::NewProp_SpringArmComp_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
-		{ "Category", "Minimap" },
-		{ "Comment", "// NN SpringArm attach to root\n" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/Minimap.h" },
-		{ "ToolTip", "NN SpringArm attach to root" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMinimap_Statics::NewProp_SpringArmComp = { "SpringArmComp", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMinimap, SpringArmComp), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMinimap_Statics::NewProp_SpringArmComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMinimap_Statics::NewProp_SpringArmComp_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMinimap_Statics::NewProp_Minimap_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
-		{ "Category", "Minimap" },
-		{ "Comment", "// NN USceneCaptureComponent to act like Minimap attach to spring arm\n" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/Minimap.h" },
-		{ "ToolTip", "NN USceneCaptureComponent to act like Minimap attach to spring arm" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMinimap_Statics::NewProp_Minimap = { "Minimap", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMinimap, Minimap), Z_Construct_UClass_USceneCaptureComponent2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMinimap_Statics::NewProp_Minimap_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMinimap_Statics::NewProp_Minimap_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMinimap_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinimap_Statics::NewProp_Root,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinimap_Statics::NewProp_SpringArmComp,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinimap_Statics::NewProp_Minimap,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMinimap_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMinimap>::IsAbstract,
@@ -125,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeMinimap() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMinimap, 1045091905);
+	IMPLEMENT_CLASS(AMinimap, 2710395006);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AMinimap>()
 	{
 		return AMinimap::StaticClass();

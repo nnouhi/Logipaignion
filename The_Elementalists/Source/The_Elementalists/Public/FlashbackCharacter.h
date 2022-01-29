@@ -59,7 +59,7 @@ protected:
 public:	
 
 	UFUNCTION(BlueprintPure)
-		float GetHealthPercentage() const;
+	float GetHealthPercentage() const;
 
 private:
 

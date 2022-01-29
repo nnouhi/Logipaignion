@@ -59,9 +59,7 @@ public: \
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Minimap_h_12_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__Root() { return STRUCT_OFFSET(AMinimap, Root); } \
-	FORCEINLINE static uint32 __PPO__SpringArmComp() { return STRUCT_OFFSET(AMinimap, SpringArmComp); } \
-	FORCEINLINE static uint32 __PPO__Minimap() { return STRUCT_OFFSET(AMinimap, Minimap); }
+	FORCEINLINE static uint32 __PPO__Root() { return STRUCT_OFFSET(AMinimap, Root); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Minimap_h_9_PROLOG

@@ -29,11 +29,7 @@ private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Minimap, meta = (AllowPrivateAccess = "true"))
 	USceneComponent* Root;
 
-	// NN SpringArm attach to root
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Minimap, meta = (AllowPrivateAccess = "true"))
-	class USpringArmComponent* SpringArmComp;
-
-	// NN USceneCaptureComponent to act like Minimap attach to spring arm
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Minimap, meta = (AllowPrivateAccess = "true"))
-	class USceneCaptureComponent2D* Minimap;
+	//// NN USceneCaptureComponent to act like Minimap attach to spring arm
+	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Minimap, meta = (AllowPrivateAccess = "true"))
+	//class USceneCaptureComponent2D* Minimap;
 };

@@ -2,8 +2,8 @@
 
 
 #include "Minimap.h"
-#include "GameFramework/SpringArmComponent.h"
 #include "Components/SceneCaptureComponent2D.h"
+
 
 // Sets default values
 AMinimap::AMinimap()
@@ -15,13 +15,9 @@ AMinimap::AMinimap()
 	Root = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
 	Root->SetupAttachment(RootComponent);
 
-	// NN Set up spring arm
-	SpringArmComp = CreateDefaultSubobject<USpringArmComponent>(TEXT("Spring Arm"));
-	SpringArmComp->SetupAttachment(Root);
-	
-	// NN Set up scene capture
-	Minimap = CreateDefaultSubobject<USceneCaptureComponent2D>(TEXT("Capture Minimap"));
-	Minimap->SetupAttachment(SpringArmComp);
+	//// NN Set up scene capture
+	//Minimap = CreateDefaultSubobject<USceneCaptureComponent2D>(TEXT("Capture Minimap"));
+	//Minimap->SetupAttachment(Root);
 }
 
 // Called when the game starts or when spawned

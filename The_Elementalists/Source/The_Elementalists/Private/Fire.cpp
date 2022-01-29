@@ -68,7 +68,6 @@ void AFire::Tick(float DeltaTime)
         }
         if (RandomizedExplosion)
         {
-            UE_LOG(LogTemp, Warning, TEXT("Play sound test"));
             /*UGameplayStatics::PlaySound2D(this, RandomizedExplosion);*/
             UGameplayStatics::PlaySoundAtLocation(GetWorld(), RandomizedExplosion, GetActorLocation());
         }
