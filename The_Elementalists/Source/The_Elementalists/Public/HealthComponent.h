@@ -7,33 +7,33 @@
 #include "HealthComponent.generated.h"
 
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class THE_ELEMENTALISTS_API UHealthComponent : public UActorComponent
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
 public:
     // Sets default values for this component's properties
     UHealthComponent();
 
     UPROPERTY(EditAnywhere)
-    float MaxHealth = 100.f;
+        float MaxHealth = 100.f;
     float Health = 0.f;
 
 protected:
     // Called when the game starts
     virtual void BeginPlay() override;
 
-private:
+    bool bIsDead = false;
 
     UFUNCTION()
-        void DamageTaken(AActor* DamagedActor, float Damage, const UDamageType* DamageType, class AController* Instigator, AActor* DamageCauser);
+        virtual void DamageTaken(AActor* DamagedActor, float Damage, const UDamageType* DamageType, class AController* Instigator, AActor* DamageCauser);
 
-    // class AToonTanksGameMode* ToonTanksGameMode;
 
 public:
     // Called every frame
     virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-		
+    // CN Get players health percentage
+    float GetHealthPercentage() const;
 };

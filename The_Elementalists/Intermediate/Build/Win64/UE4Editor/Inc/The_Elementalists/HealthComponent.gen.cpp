@@ -87,7 +87,7 @@ void EmptyLinkFunctionForGeneratedCodeHealthComponent() {}
 		{ "ModuleRelativePath", "Public/HealthComponent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UHealthComponent_DamageTaken_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UHealthComponent, nullptr, "DamageTaken", nullptr, nullptr, sizeof(HealthComponent_eventDamageTaken_Parms), Z_Construct_UFunction_UHealthComponent_DamageTaken_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UHealthComponent_DamageTaken_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UHealthComponent_DamageTaken_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UHealthComponent_DamageTaken_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UHealthComponent_DamageTaken_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UHealthComponent, nullptr, "DamageTaken", nullptr, nullptr, sizeof(HealthComponent_eventDamageTaken_Parms), Z_Construct_UFunction_UHealthComponent_DamageTaken_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UHealthComponent_DamageTaken_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UHealthComponent_DamageTaken_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UHealthComponent_DamageTaken_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UHealthComponent_DamageTaken()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -121,7 +121,7 @@ void EmptyLinkFunctionForGeneratedCodeHealthComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_The_Elementalists,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UHealthComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UHealthComponent_DamageTaken, "DamageTaken" }, // 539038278
+		{ &Z_Construct_UFunction_UHealthComponent_DamageTaken, "DamageTaken" }, // 2370496319
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UHealthComponent_Statics::Class_MetaDataParams[] = {
@@ -168,7 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeHealthComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UHealthComponent, 163175556);
+	IMPLEMENT_CLASS(UHealthComponent, 4023227610);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<UHealthComponent>()
 	{
 		return UHealthComponent::StaticClass();

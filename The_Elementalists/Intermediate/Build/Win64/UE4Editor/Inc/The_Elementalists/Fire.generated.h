@@ -60,13 +60,17 @@ public: \
 
 #define The_Elementalists_Source_The_Elementalists_Public_Fire_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Root() { return STRUCT_OFFSET(AFire, Root); } \
+	FORCEINLINE static uint32 __PPO__CollisionMesh() { return STRUCT_OFFSET(AFire, CollisionMesh); } \
 	FORCEINLINE static uint32 __PPO__FireParticles() { return STRUCT_OFFSET(AFire, FireParticles); } \
 	FORCEINLINE static uint32 __PPO__ExplosionParticles() { return STRUCT_OFFSET(AFire, ExplosionParticles); } \
+	FORCEINLINE static uint32 __PPO__DeathParticles() { return STRUCT_OFFSET(AFire, DeathParticles); } \
 	FORCEINLINE static uint32 __PPO__HitCameraShakeClass() { return STRUCT_OFFSET(AFire, HitCameraShakeClass); } \
 	FORCEINLINE static uint32 __PPO__ExplosionDistance() { return STRUCT_OFFSET(AFire, ExplosionDistance); } \
 	FORCEINLINE static uint32 __PPO__DamageDistance() { return STRUCT_OFFSET(AFire, DamageDistance); } \
 	FORCEINLINE static uint32 __PPO__DamagePerSecond() { return STRUCT_OFFSET(AFire, DamagePerSecond); } \
 	FORCEINLINE static uint32 __PPO__ExplosionChance() { return STRUCT_OFFSET(AFire, ExplosionChance); } \
+	FORCEINLINE static uint32 __PPO__BaseScale() { return STRUCT_OFFSET(AFire, BaseScale); } \
+	FORCEINLINE static uint32 __PPO__HealthComponent() { return STRUCT_OFFSET(AFire, HealthComponent); } \
 	FORCEINLINE static uint32 __PPO__RandomizedExplosion() { return STRUCT_OFFSET(AFire, RandomizedExplosion); }
 
 

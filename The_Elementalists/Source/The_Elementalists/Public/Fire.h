@@ -20,7 +20,7 @@ protected:
     virtual void BeginPlay() override;
 
     // CN Character reference
-    class AFlashbackCharacter* FlashbackCharacter;
+    class ACharacter* PlayerCharacter;
 
     bool bHasExploded = false;
 
@@ -28,11 +28,17 @@ protected:
     UPROPERTY(VisibleAnywhere)
     USceneComponent* Root;
 
+    UPROPERTY(EditAnywhere)
+    UStaticMeshComponent* CollisionMesh;
+
     UPROPERTY(VisibleAnywhere)
     class UParticleSystemComponent* FireParticles;
 
     UPROPERTY(EditAnywhere)
     class UParticleSystem* ExplosionParticles;
+
+    UPROPERTY(EditAnywhere)
+    UParticleSystem* DeathParticles;
 
     UPROPERTY(EditAnywhere)
     TSubclassOf<class UCameraShakeBase> HitCameraShakeClass;
@@ -50,13 +56,25 @@ protected:
     int32 ExplosionChance = 3;
 
     UPROPERTY(EditAnywhere)
-    class USoundBase* RandomizedExplosion;
+    float BaseScale = 2.f;
 
 public:
     // Called every frame
     virtual void Tick(float DeltaTime) override;
 
 private:
+    // CN Deal damage to player
+    void DealDamage(float DeltaTime);
+    // CN Explodes
+    void Explode();
 
+    // CN The health of the fire
+    UPROPERTY(EditAnywhere)
+    class UHealthComponent* HealthComponent;
 
+  
+    UPROPERTY(EditAnywhere)
+    class USoundBase* RandomizedExplosion;
+    
+    float Scale;
 };

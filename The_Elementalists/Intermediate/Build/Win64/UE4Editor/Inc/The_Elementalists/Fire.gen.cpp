@@ -18,10 +18,12 @@ void EmptyLinkFunctionForGeneratedCodeFire() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_The_Elementalists();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UParticleSystemComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraShakeBase_NoRegister();
+	THE_ELEMENTALISTS_API UClass* Z_Construct_UClass_UHealthComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 // End Cross Module References
 	void AFire::StaticRegisterNativesAFire()
@@ -42,6 +44,10 @@ void EmptyLinkFunctionForGeneratedCodeFire() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Root;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CollisionMesh_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CollisionMesh;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FireParticles_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FireParticles;
@@ -49,6 +55,10 @@ void EmptyLinkFunctionForGeneratedCodeFire() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ExplosionParticles_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ExplosionParticles;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DeathParticles_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DeathParticles;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HitCameraShakeClass_MetaData[];
 #endif
@@ -69,6 +79,14 @@ void EmptyLinkFunctionForGeneratedCodeFire() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ExplosionChance_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ExplosionChance;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseScale_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseScale;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HealthComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HealthComponent;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RandomizedExplosion_MetaData[];
 #endif
@@ -98,6 +116,14 @@ void EmptyLinkFunctionForGeneratedCodeFire() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFire_Statics::NewProp_Root = { "Root", nullptr, (EPropertyFlags)0x00200800000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFire, Root), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFire_Statics::NewProp_Root_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFire_Statics::NewProp_Root_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFire_Statics::NewProp_CollisionMesh_MetaData[] = {
+		{ "Category", "Fire" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Fire.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFire_Statics::NewProp_CollisionMesh = { "CollisionMesh", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFire, CollisionMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFire_Statics::NewProp_CollisionMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFire_Statics::NewProp_CollisionMesh_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFire_Statics::NewProp_FireParticles_MetaData[] = {
 		{ "Category", "Fire" },
 		{ "EditInline", "true" },
@@ -112,6 +138,13 @@ void EmptyLinkFunctionForGeneratedCodeFire() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFire_Statics::NewProp_ExplosionParticles = { "ExplosionParticles", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFire, ExplosionParticles), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFire_Statics::NewProp_ExplosionParticles_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFire_Statics::NewProp_ExplosionParticles_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFire_Statics::NewProp_DeathParticles_MetaData[] = {
+		{ "Category", "Fire" },
+		{ "ModuleRelativePath", "Public/Fire.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFire_Statics::NewProp_DeathParticles = { "DeathParticles", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFire, DeathParticles), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFire_Statics::NewProp_DeathParticles_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFire_Statics::NewProp_DeathParticles_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFire_Statics::NewProp_HitCameraShakeClass_MetaData[] = {
 		{ "Category", "Fire" },
@@ -148,21 +181,42 @@ void EmptyLinkFunctionForGeneratedCodeFire() {}
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFire_Statics::NewProp_ExplosionChance = { "ExplosionChance", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFire, ExplosionChance), METADATA_PARAMS(Z_Construct_UClass_AFire_Statics::NewProp_ExplosionChance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFire_Statics::NewProp_ExplosionChance_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFire_Statics::NewProp_BaseScale_MetaData[] = {
+		{ "Category", "Fire" },
+		{ "ModuleRelativePath", "Public/Fire.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFire_Statics::NewProp_BaseScale = { "BaseScale", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFire, BaseScale), METADATA_PARAMS(Z_Construct_UClass_AFire_Statics::NewProp_BaseScale_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFire_Statics::NewProp_BaseScale_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFire_Statics::NewProp_HealthComponent_MetaData[] = {
+		{ "Category", "Fire" },
+		{ "Comment", "// CN The health of the fire\n" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Fire.h" },
+		{ "ToolTip", "CN The health of the fire" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFire_Statics::NewProp_HealthComponent = { "HealthComponent", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFire, HealthComponent), Z_Construct_UClass_UHealthComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFire_Statics::NewProp_HealthComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFire_Statics::NewProp_HealthComponent_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFire_Statics::NewProp_RandomizedExplosion_MetaData[] = {
 		{ "Category", "Fire" },
 		{ "ModuleRelativePath", "Public/Fire.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFire_Statics::NewProp_RandomizedExplosion = { "RandomizedExplosion", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFire, RandomizedExplosion), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFire_Statics::NewProp_RandomizedExplosion_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFire_Statics::NewProp_RandomizedExplosion_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFire_Statics::NewProp_RandomizedExplosion = { "RandomizedExplosion", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFire, RandomizedExplosion), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFire_Statics::NewProp_RandomizedExplosion_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFire_Statics::NewProp_RandomizedExplosion_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFire_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_Root,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_CollisionMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_FireParticles,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_ExplosionParticles,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_DeathParticles,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_HitCameraShakeClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_ExplosionDistance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_DamageDistance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_DamagePerSecond,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_ExplosionChance,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_BaseScale,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_HealthComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_RandomizedExplosion,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFire_Statics::StaticCppClassTypeInfo = {
@@ -192,7 +246,7 @@ void EmptyLinkFunctionForGeneratedCodeFire() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFire, 2281946840);
+	IMPLEMENT_CLASS(AFire, 551629046);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AFire>()
 	{
 		return AFire::StaticClass();
