@@ -25,13 +25,13 @@ protected:
     bool bHasExploded = false;
 
     // CN Root
-    UPROPERTY(VisibleAnywhere)
+    UPROPERTY(EditAnywhere)
     USceneComponent* Root;
 
     UPROPERTY(EditAnywhere)
     UStaticMeshComponent* CollisionMesh;
 
-    UPROPERTY(VisibleAnywhere)
+    UPROPERTY(EditAnywhere)
     class UParticleSystemComponent* FireParticles;
 
     UPROPERTY(EditAnywhere)

@@ -2,17 +2,17 @@
   Parsing headers for The_ElementalistsEditor
     Running UnrealHeaderTool "D:\rt\Logipaignion\The_Elementalists\The_Elementalists.uproject" "D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\The_ElementalistsEditor\Development\The_ElementalistsEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\hbnm\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
   LogInit: Display: Loading text-based GConfig....
-  Reflection code generated for The_ElementalistsEditor in 3.519674 seconds
+  Reflection code generated for The_ElementalistsEditor in 3.9927444 seconds
   Building The_ElementalistsEditor...
   Using Visual Studio 2019 14.31.30818 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.31.30818) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 6 actions with 8 processes...
     [1/6] The_Elementalists.init.gen.cpp
     [2/6] Fire.gen.cpp
     [3/6] Fire.cpp
-    [4/6] UE4Editor-The_Elementalists-0086.lib
-       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0086.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0086.exp
-    [5/6] UE4Editor-The_Elementalists-0086.dll
-       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0086.suppressed.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0086.suppressed.exp
+    [4/6] UE4Editor-The_Elementalists.lib
+       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists.exp
+    [5/6] UE4Editor-The_Elementalists.dll
+       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists.suppressed.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists.suppressed.exp
     [6/6] The_ElementalistsEditor.target
-  Total time in Parallel executor: 2.14 seconds
-  Total execution time: 6.62 seconds
+  Total time in Parallel executor: 71.04 seconds
+  Total execution time: 75.93 seconds
