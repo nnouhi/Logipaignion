@@ -112,6 +112,14 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HealthbarWidget_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HealthbarWidget;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GameOverClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_GameOverClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GameOverWidget_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_GameOverWidget;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -205,6 +213,23 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_HealthbarWidget = { "HealthbarWidget", nullptr, (EPropertyFlags)0x004000000008001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFlashback_PlayerController, HealthbarWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_HealthbarWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_HealthbarWidget_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_GameOverClass_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Widgets" },
+		{ "ModuleRelativePath", "Public/Flashback_PlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_GameOverClass = { "GameOverClass", nullptr, (EPropertyFlags)0x0044000000000015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFlashback_PlayerController, GameOverClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_GameOverClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_GameOverClass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_GameOverWidget_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Widgets" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Flashback_PlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_GameOverWidget = { "GameOverWidget", nullptr, (EPropertyFlags)0x004000000008001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFlashback_PlayerController, GameOverWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_GameOverWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_GameOverWidget_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFlashback_PlayerController_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_ObjectiveHUDClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_ObjectiveWidget,
@@ -214,6 +239,8 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_MapWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_HealthbarClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_HealthbarWidget,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_GameOverClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_GameOverWidget,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFlashback_PlayerController_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFlashback_PlayerController>::IsAbstract,
@@ -242,7 +269,7 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFlashback_PlayerController, 1575357720);
+	IMPLEMENT_CLASS(AFlashback_PlayerController, 2316478564);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AFlashback_PlayerController>()
 	{
 		return AFlashback_PlayerController::StaticClass();

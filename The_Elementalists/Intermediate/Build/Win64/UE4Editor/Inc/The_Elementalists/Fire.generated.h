@@ -71,7 +71,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__ExplosionChance() { return STRUCT_OFFSET(AFire, ExplosionChance); } \
 	FORCEINLINE static uint32 __PPO__BaseScale() { return STRUCT_OFFSET(AFire, BaseScale); } \
 	FORCEINLINE static uint32 __PPO__HealthComponent() { return STRUCT_OFFSET(AFire, HealthComponent); } \
-	FORCEINLINE static uint32 __PPO__RandomizedExplosion() { return STRUCT_OFFSET(AFire, RandomizedExplosion); }
+	FORCEINLINE static uint32 __PPO__RandomizedExplosion() { return STRUCT_OFFSET(AFire, RandomizedExplosion); } \
+	FORCEINLINE static uint32 __PPO__RandomizedFireHit() { return STRUCT_OFFSET(AFire, RandomizedFireHit); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Fire_h_9_PROLOG

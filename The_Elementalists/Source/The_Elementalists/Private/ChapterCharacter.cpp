@@ -47,6 +47,8 @@ void AChapterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
     PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &APawn::AddControllerPitchInput);
     PlayerInputComponent->BindAxis(TEXT("MoveRight"), this, &AChapterCharacter::MoveRight);
     PlayerInputComponent->BindAxis(TEXT("LookRight"), this, &APawn::AddControllerYawInput);
+
+
     PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
     PlayerInputComponent->BindAction(TEXT("Shoot"), EInputEvent::IE_Pressed, this, &AChapterCharacter::Shoot);
     PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &AChapterCharacter::BeginSprint);

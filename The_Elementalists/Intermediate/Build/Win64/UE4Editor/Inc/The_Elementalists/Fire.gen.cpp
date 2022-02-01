@@ -91,6 +91,10 @@ void EmptyLinkFunctionForGeneratedCodeFire() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RandomizedExplosion_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_RandomizedExplosion;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RandomizedFireHit_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_RandomizedFireHit;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -204,6 +208,13 @@ void EmptyLinkFunctionForGeneratedCodeFire() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFire_Statics::NewProp_RandomizedExplosion = { "RandomizedExplosion", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFire, RandomizedExplosion), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFire_Statics::NewProp_RandomizedExplosion_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFire_Statics::NewProp_RandomizedExplosion_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFire_Statics::NewProp_RandomizedFireHit_MetaData[] = {
+		{ "Category", "Fire" },
+		{ "ModuleRelativePath", "Public/Fire.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFire_Statics::NewProp_RandomizedFireHit = { "RandomizedFireHit", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFire, RandomizedFireHit), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFire_Statics::NewProp_RandomizedFireHit_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFire_Statics::NewProp_RandomizedFireHit_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFire_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_Root,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_CollisionMesh,
@@ -218,6 +229,7 @@ void EmptyLinkFunctionForGeneratedCodeFire() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_BaseScale,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_HealthComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_RandomizedExplosion,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFire_Statics::NewProp_RandomizedFireHit,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFire_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFire>::IsAbstract,
@@ -246,7 +258,7 @@ void EmptyLinkFunctionForGeneratedCodeFire() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFire, 733104093);
+	IMPLEMENT_CLASS(AFire, 485342735);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AFire>()
 	{
 		return AFire::StaticClass();

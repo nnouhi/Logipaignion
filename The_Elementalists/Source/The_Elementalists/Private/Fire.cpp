@@ -34,6 +34,14 @@ AFire::AFire()
     AddOwnedComponent(HealthComponent);
 }
 
+void AFire::PlayHitSound()
+{
+    if (RandomizedFireHit)
+    {
+        UGameplayStatics::PlaySoundAtLocation(GetWorld(), RandomizedFireHit, GetActorLocation());
+    }
+}
+
 // Called when the game starts or when spawned
 void AFire::BeginPlay()
 {

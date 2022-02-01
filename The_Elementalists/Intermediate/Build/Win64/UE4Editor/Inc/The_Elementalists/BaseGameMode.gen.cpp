@@ -1,0 +1,166 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/GeneratedCppIncludes.h"
+#include "The_Elementalists/Public/BaseGameMode.h"
+#ifdef _MSC_VER
+#pragma warning (push)
+#pragma warning (disable : 4883)
+#endif
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
+// Cross Module References
+	THE_ELEMENTALISTS_API UClass* Z_Construct_UClass_ABaseGameMode_NoRegister();
+	THE_ELEMENTALISTS_API UClass* Z_Construct_UClass_ABaseGameMode();
+	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
+	UPackage* Z_Construct_UPackage__Script_The_Elementalists();
+// End Cross Module References
+	DEFINE_FUNCTION(ABaseGameMode::execProgressNextChapter)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ProgressNextChapter();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ABaseGameMode::execGetObjectiveMessage)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=P_THIS->GetObjectiveMessage();
+		P_NATIVE_END;
+	}
+	void ABaseGameMode::StaticRegisterNativesABaseGameMode()
+	{
+		UClass* Class = ABaseGameMode::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "GetObjectiveMessage", &ABaseGameMode::execGetObjectiveMessage },
+			{ "ProgressNextChapter", &ABaseGameMode::execProgressNextChapter },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage_Statics
+	{
+		struct BaseGameMode_eventGetObjectiveMessage_Parms
+		{
+			FString ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(BaseGameMode_eventGetObjectiveMessage_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/BaseGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseGameMode, nullptr, "GetObjectiveMessage", nullptr, nullptr, sizeof(BaseGameMode_eventGetObjectiveMessage_Parms), Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseGameMode_ProgressNextChapter_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseGameMode_ProgressNextChapter_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/BaseGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseGameMode_ProgressNextChapter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseGameMode, nullptr, "ProgressNextChapter", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseGameMode_ProgressNextChapter_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseGameMode_ProgressNextChapter_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseGameMode_ProgressNextChapter()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseGameMode_ProgressNextChapter_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_ABaseGameMode_NoRegister()
+	{
+		return ABaseGameMode::StaticClass();
+	}
+	struct Z_Construct_UClass_ABaseGameMode_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_ABaseGameMode_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_AGameModeBase,
+		(UObject* (*)())Z_Construct_UPackage__Script_The_Elementalists,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseGameMode_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage, "GetObjectiveMessage" }, // 1833381145
+		{ &Z_Construct_UFunction_ABaseGameMode_ProgressNextChapter, "ProgressNextChapter" }, // 2962940943
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseGameMode_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n * \n */" },
+		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering Utilities|Transformation" },
+		{ "IncludePath", "BaseGameMode.h" },
+		{ "ModuleRelativePath", "Public/BaseGameMode.h" },
+		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_ABaseGameMode_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<ABaseGameMode>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_ABaseGameMode_Statics::ClassParams = {
+		&ABaseGameMode::StaticClass,
+		"Game",
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x009002ACu,
+		METADATA_PARAMS(Z_Construct_UClass_ABaseGameMode_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ABaseGameMode_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_ABaseGameMode()
+	{
+		static UClass* OuterClass = nullptr;
+		if (!OuterClass)
+		{
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_ABaseGameMode_Statics::ClassParams);
+		}
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(ABaseGameMode, 3607947975);
+	template<> THE_ELEMENTALISTS_API UClass* StaticClass<ABaseGameMode>()
+	{
+		return ABaseGameMode::StaticClass();
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ABaseGameMode(Z_Construct_UClass_ABaseGameMode, &ABaseGameMode::StaticClass, TEXT("/Script/The_Elementalists"), TEXT("ABaseGameMode"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ABaseGameMode);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+#ifdef _MSC_VER
+#pragma warning (pop)
+#endif

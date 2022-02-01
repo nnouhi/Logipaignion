@@ -31,11 +31,11 @@ public:
 
     // CN To check if player is dead
     UFUNCTION(BlueprintPure)
-        bool IsDead() const;
+    bool IsDead() const;
 
     // CN Get players health percentage
     UFUNCTION(BlueprintPure)
-        float GetHealthPercentage() const;
+    float GetHealthPercentage() const;
 
 private:
     // CN Move forwards/backwards
@@ -51,9 +51,11 @@ private:
     class UHealthComponent* HealthComponent;
     // CN The projectile spawn point
     UPROPERTY(EditAnywhere)
-        USceneComponent* ProjectileSpawnPoint;
+    USceneComponent* ProjectileSpawnPoint;
     // CN The type of projectile
     UPROPERTY(EditAnywhere)
-        TSubclassOf<class AProjectile> ProjectileClass;
+    TSubclassOf<class AProjectile> ProjectileClass;
+
+    
 
 };

@@ -3,6 +3,8 @@
 
 #include "Flash_Back.h"
 #include "Kismet/GameplayStatics.h"
+#include "Flashback_PlayerController.h"
+#include "FlashbackCharacter.h"
 
 AFlash_Back::AFlash_Back()
 {
@@ -11,48 +13,29 @@ AFlash_Back::AFlash_Back()
 
 void AFlash_Back::BeginPlay()
 {
-	// NN Find out in which chapter player is
-	FString ChapterName = GetChapterName();
-
-	// NN Populate ObjetiveMessage according to which chapter player is 
-	SetObjectiveMessage(ChapterName);
+    Super::BeginPlay();
 }
 
-FString AFlash_Back::GetChapterName()
+FString AFlash_Back::GetObjectiveMessage()
 {
-	FString LevelName = GetWorld()->GetMapName();
-	// NN Remove the UEDPIE prefix
-	LevelName.RemoveFromStart(GetWorld()->StreamingLevelsPrefix);
-	return LevelName;
-}
-
-void AFlash_Back::SetObjectiveMessage(const FString& ChapterName)
-{
-	// NN According to flashback chapter display its objective
-	if (ChapterName.Equals("Chapter_1_Flashback"))
-	{
-		ObjectiveMessage = TEXT("Avoid the raging flames and escape to the nearby village!");
-	}
-	/*else if (ChapterName.Equals("%"))
-	{
-		
-	}
-	else if (ChapterName.Equals("%"))
-	{
-		
-	}*/
+	return TEXT("Avoid the raging flames and escape to the Nearby village");
 }
 
 void AFlash_Back::ProgressNextChapter()
 {
-	FString ChapterName = GetChapterName();
+	/*UGameplayStatics::OpenLevel(GetWorld(), TEXT("testLevel2"));*/
+	UE_LOG(LogTemp, Warning, TEXT("Player progresses to next level"));
+}
 
-	if (ChapterName.Equals("Chapter_1_Flashback"))
-	{
-		// NN Progress to lobby 
-		/*UGameplayStatics::OpenLevel(GetWorld(), TEXT("Lobby"));*/
-
-		UE_LOG(LogTemp, Warning, TEXT("Players moves to lobby."));
-	}
-
+void AFlash_Back::ActorDied(AActor* DeadActor)
+{
+    // CN MUST CHANGE TO GENERAL CHARACTER
+    if (Cast<AFlashbackCharacter>(DeadActor))
+    {
+        AFlashback_PlayerController* FlashbackCharacterController = Cast<AFlashback_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
+        if (FlashbackCharacterController)
+        {
+            FlashbackCharacterController->GameOver();
+        }
+    }
 }

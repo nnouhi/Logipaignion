@@ -4,13 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "BaseGameMode.h"
 #include "Flash_Back.generated.h"
-
 /**
  * 
  */
 UCLASS()
-class THE_ELEMENTALISTS_API AFlash_Back : public AGameModeBase
+class THE_ELEMENTALISTS_API AFlash_Back : public ABaseGameMode
 {
 	GENERATED_BODY()
 
@@ -18,28 +18,20 @@ public:
 
 	AFlash_Back();
 	
-	// NN Getter for ObjectiveMessage
-	FORCEINLINE FString GetObjectiveMessage() const { return ObjectiveMessage; }
-
 	// NN Method that handles which chapter the player should go to
-	void ProgressNextChapter();
+	void ProgressNextChapter() override;
+
+	void ActorDied(AActor* DeadActor) override;
+
+	// NN Setter for ObjectiveMessage
+	FString GetObjectiveMessage() override;
 
 protected:
 
 	virtual void BeginPlay() override;
 
-	// NN Getter for active chapter
-	FString GetChapterName();
 
-	// NN Setter for ObjectiveMessage
-	void SetObjectiveMessage(const FString& ChapterName);
 
 	
-
-private:
-
-	// NN Appropriate objective message to be displayed on screen
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Widget, meta = (AllowPrivateAccess = "true"))
-	FString ObjectiveMessage;
 	
 };

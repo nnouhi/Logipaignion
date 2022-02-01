@@ -50,6 +50,12 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
 	UUserWidget* HealthbarWidget;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
+	TSubclassOf<class UUserWidget> GameOverClass;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
+	UUserWidget* GameOverWidget;
+
 public:
 
 	// NN when invoke displays map on viewport
@@ -57,4 +63,6 @@ public:
 
 	// NN when invoke removes map from viewport
 	void RemoveMap();
+
+	void GameOver();
 };
