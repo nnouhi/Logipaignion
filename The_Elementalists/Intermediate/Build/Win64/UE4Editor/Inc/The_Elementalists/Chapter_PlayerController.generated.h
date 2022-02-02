@@ -62,7 +62,13 @@ public: \
 
 #define The_Elementalists_Source_The_Elementalists_Public_Chapter_PlayerController_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CrosshairHUDClass() { return STRUCT_OFFSET(AChapter_PlayerController, CrosshairHUDClass); } \
-	FORCEINLINE static uint32 __PPO__CrosshairWidget() { return STRUCT_OFFSET(AChapter_PlayerController, CrosshairWidget); }
+	FORCEINLINE static uint32 __PPO__CrosshairWidget() { return STRUCT_OFFSET(AChapter_PlayerController, CrosshairWidget); } \
+	FORCEINLINE static uint32 __PPO__GameOverClass() { return STRUCT_OFFSET(AChapter_PlayerController, GameOverClass); } \
+	FORCEINLINE static uint32 __PPO__GameOverWidget() { return STRUCT_OFFSET(AChapter_PlayerController, GameOverWidget); } \
+	FORCEINLINE static uint32 __PPO__StartTimerClass() { return STRUCT_OFFSET(AChapter_PlayerController, StartTimerClass); } \
+	FORCEINLINE static uint32 __PPO__StartTimerWidget() { return STRUCT_OFFSET(AChapter_PlayerController, StartTimerWidget); } \
+	FORCEINLINE static uint32 __PPO__LevelTimerClass() { return STRUCT_OFFSET(AChapter_PlayerController, LevelTimerClass); } \
+	FORCEINLINE static uint32 __PPO__LevelTimerWidget() { return STRUCT_OFFSET(AChapter_PlayerController, LevelTimerWidget); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Chapter_PlayerController_h_12_PROLOG

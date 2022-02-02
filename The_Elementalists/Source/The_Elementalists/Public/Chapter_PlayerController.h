@@ -14,6 +14,21 @@ class THE_ELEMENTALISTS_API AChapter_PlayerController : public APlayerController
 {
 	GENERATED_BODY()
 
+public:
+	// CN Displays game over menu screen to player
+	void GameOver();
+	// CN Displays You Died screen and then calls GameOver()
+	void GameOverDeath();
+	// CN Displays Times Up screen and then calls GameOver()
+	void GameOverTime();
+	
+	// CN Displays the countdown timer until level starts
+	void StartTimer();
+	// CN Displays HUD and level timer
+	void StartLevel();
+	// CN Enables/Disables input
+	void SetPlayerEnabledState(bool bEnabled);
+
 protected:
 	virtual void BeginPlay() override;
 
@@ -26,4 +41,22 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
 	class UUserWidget* CrosshairWidget;
 	
+	// CN Game Over menu screen
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class UUserWidget> GameOverClass;
+	UPROPERTY()
+	UUserWidget* GameOverWidget;
+
+	// CN Countdown timer start screen
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class UUserWidget> StartTimerClass;
+	UPROPERTY()
+	UUserWidget* StartTimerWidget;
+
+	// CN Level timer and objective display
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class UUserWidget> LevelTimerClass;
+	UPROPERTY()
+	UUserWidget* LevelTimerWidget;	
+
 };

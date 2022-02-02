@@ -19,7 +19,19 @@ public:
 
     UFUNCTION(BlueprintCallable)
     virtual void ProgressNextChapter();
+		
+	UFUNCTION(BlueprintCallable)
+	virtual FString GetChapterName();
 
     virtual void ActorDied(AActor* DeadActor);
 	
+	UFUNCTION(BlueprintCallable)
+    virtual void SetDifficulty(int32 NewDifficulty);
+	
+	UFUNCTION(BlueprintCallable)
+    virtual int32 GetDifficulty();
+	
+private:
+	// CN Difficulty {1: Easy, 2: Normal, 3:Hard}
+	static int32 Difficulty;
 };

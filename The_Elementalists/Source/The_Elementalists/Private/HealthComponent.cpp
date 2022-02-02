@@ -2,6 +2,7 @@
 
 #include "HealthComponent.h"
 
+#include "BaseGameMode.h"
 #include "GameFramework/Actor.h"
 #include "Kismet/GameplayStatics.h"
 //#include "LogipaignionTestingGameModeBase.h"
@@ -41,16 +42,14 @@ void UHealthComponent::DamageTaken(AActor* DamagedActor, float Damage, const UDa
     }
 
     Health -= Damage;
-    if (Health <= 0.f /* && ToonTanksGameMode */ )
+    if (Health <= 0.f)
     {
-        //// CN MUST CHANGE
-        //ALogipaignionTestingGameModeBase* GameModeRef = Cast<ALogipaignionTestingGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
-        //if (GameModeRef)
-        //{
-        //    bIsDead = true;
-        //    GameModeRef->ActorDied(DamagedActor);
-        //}
-        //UE_LOG(LogTemp, Warning, TEXT("Actor died."));
+        ABaseGameMode* GameModeRef = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+        if (GameModeRef)
+        {
+            bIsDead = true;
+            GameModeRef->ActorDied(DamagedActor);
+        }
     }
 }
 
