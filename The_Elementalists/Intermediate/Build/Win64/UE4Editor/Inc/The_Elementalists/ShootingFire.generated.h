@@ -62,7 +62,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__ProjectileSpawnPoint() { return STRUCT_OFFSET(AShootingFire, ProjectileSpawnPoint); } \
 	FORCEINLINE static uint32 __PPO__ProjectileClass() { return STRUCT_OFFSET(AShootingFire, ProjectileClass); } \
 	FORCEINLINE static uint32 __PPO__ShootingRange() { return STRUCT_OFFSET(AShootingFire, ShootingRange); } \
-	FORCEINLINE static uint32 __PPO__ShootingRate() { return STRUCT_OFFSET(AShootingFire, ShootingRate); }
+	FORCEINLINE static uint32 __PPO__ShootingRate() { return STRUCT_OFFSET(AShootingFire, ShootingRate); } \
+	FORCEINLINE static uint32 __PPO__LaunchAngle() { return STRUCT_OFFSET(AShootingFire, LaunchAngle); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_ShootingFire_h_10_PROLOG

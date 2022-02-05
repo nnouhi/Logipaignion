@@ -69,8 +69,12 @@ public: \
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_ChapterCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__SpringArmComp() { return STRUCT_OFFSET(AChapterCharacter, SpringArmComp); } \
+	FORCEINLINE static uint32 __PPO__ThirdPersonCamera() { return STRUCT_OFFSET(AChapterCharacter, ThirdPersonCamera); } \
 	FORCEINLINE static uint32 __PPO__ProjectileSpawnPoint() { return STRUCT_OFFSET(AChapterCharacter, ProjectileSpawnPoint); } \
-	FORCEINLINE static uint32 __PPO__ProjectileClass() { return STRUCT_OFFSET(AChapterCharacter, ProjectileClass); }
+	FORCEINLINE static uint32 __PPO__ProjectileClass() { return STRUCT_OFFSET(AChapterCharacter, ProjectileClass); } \
+	FORCEINLINE static uint32 __PPO__LineTraceDistance() { return STRUCT_OFFSET(AChapterCharacter, LineTraceDistance); } \
+	FORCEINLINE static uint32 __PPO__AutomaticFireRate() { return STRUCT_OFFSET(AChapterCharacter, AutomaticFireRate); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_ChapterCharacter_h_9_PROLOG

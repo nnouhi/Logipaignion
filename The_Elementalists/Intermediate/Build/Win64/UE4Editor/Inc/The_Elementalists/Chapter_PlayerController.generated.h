@@ -63,12 +63,18 @@ public: \
 #define The_Elementalists_Source_The_Elementalists_Public_Chapter_PlayerController_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CrosshairHUDClass() { return STRUCT_OFFSET(AChapter_PlayerController, CrosshairHUDClass); } \
 	FORCEINLINE static uint32 __PPO__CrosshairWidget() { return STRUCT_OFFSET(AChapter_PlayerController, CrosshairWidget); } \
+	FORCEINLINE static uint32 __PPO__GameOverDeathClass() { return STRUCT_OFFSET(AChapter_PlayerController, GameOverDeathClass); } \
+	FORCEINLINE static uint32 __PPO__GameOverDeathWidget() { return STRUCT_OFFSET(AChapter_PlayerController, GameOverDeathWidget); } \
+	FORCEINLINE static uint32 __PPO__GameOverTimeClass() { return STRUCT_OFFSET(AChapter_PlayerController, GameOverTimeClass); } \
+	FORCEINLINE static uint32 __PPO__GameOverTimeWidget() { return STRUCT_OFFSET(AChapter_PlayerController, GameOverTimeWidget); } \
 	FORCEINLINE static uint32 __PPO__GameOverClass() { return STRUCT_OFFSET(AChapter_PlayerController, GameOverClass); } \
 	FORCEINLINE static uint32 __PPO__GameOverWidget() { return STRUCT_OFFSET(AChapter_PlayerController, GameOverWidget); } \
 	FORCEINLINE static uint32 __PPO__StartTimerClass() { return STRUCT_OFFSET(AChapter_PlayerController, StartTimerClass); } \
 	FORCEINLINE static uint32 __PPO__StartTimerWidget() { return STRUCT_OFFSET(AChapter_PlayerController, StartTimerWidget); } \
 	FORCEINLINE static uint32 __PPO__LevelTimerClass() { return STRUCT_OFFSET(AChapter_PlayerController, LevelTimerClass); } \
-	FORCEINLINE static uint32 __PPO__LevelTimerWidget() { return STRUCT_OFFSET(AChapter_PlayerController, LevelTimerWidget); }
+	FORCEINLINE static uint32 __PPO__LevelTimerWidget() { return STRUCT_OFFSET(AChapter_PlayerController, LevelTimerWidget); } \
+	FORCEINLINE static uint32 __PPO__InfoHUDClass() { return STRUCT_OFFSET(AChapter_PlayerController, InfoHUDClass); } \
+	FORCEINLINE static uint32 __PPO__InfoWidget() { return STRUCT_OFFSET(AChapter_PlayerController, InfoWidget); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Chapter_PlayerController_h_12_PROLOG

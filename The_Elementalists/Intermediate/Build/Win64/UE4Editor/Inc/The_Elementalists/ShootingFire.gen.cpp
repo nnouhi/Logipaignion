@@ -50,6 +50,10 @@ void EmptyLinkFunctionForGeneratedCodeShootingFire() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ShootingRate_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ShootingRate;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LaunchAngle_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_LaunchAngle;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -93,11 +97,19 @@ void EmptyLinkFunctionForGeneratedCodeShootingFire() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AShootingFire_Statics::NewProp_ShootingRate = { "ShootingRate", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AShootingFire, ShootingRate), METADATA_PARAMS(Z_Construct_UClass_AShootingFire_Statics::NewProp_ShootingRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AShootingFire_Statics::NewProp_ShootingRate_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AShootingFire_Statics::NewProp_LaunchAngle_MetaData[] = {
+		{ "Category", "ShootingFire" },
+		{ "ModuleRelativePath", "Public/ShootingFire.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AShootingFire_Statics::NewProp_LaunchAngle = { "LaunchAngle", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AShootingFire, LaunchAngle), METADATA_PARAMS(Z_Construct_UClass_AShootingFire_Statics::NewProp_LaunchAngle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AShootingFire_Statics::NewProp_LaunchAngle_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AShootingFire_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingFire_Statics::NewProp_ProjectileSpawnPoint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingFire_Statics::NewProp_ProjectileClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingFire_Statics::NewProp_ShootingRange,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingFire_Statics::NewProp_ShootingRate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingFire_Statics::NewProp_LaunchAngle,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AShootingFire_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AShootingFire>::IsAbstract,
@@ -126,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeShootingFire() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AShootingFire, 3392004973);
+	IMPLEMENT_CLASS(AShootingFire, 1805977000);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AShootingFire>()
 	{
 		return AShootingFire::StaticClass();

@@ -10,7 +10,17 @@ void AChapter_PlayerController::BeginPlay()
 
 	CrosshairWidget = CreateWidget(this, CrosshairHUDClass);
 	GameOverWidget = CreateWidget(this, GameOverClass);
+	GameOverDeathWidget = CreateWidget(this, GameOverDeathClass);
+	GameOverTimeWidget = CreateWidget(this, GameOverTimeClass);
 	LevelTimerWidget = CreateWidget(this, LevelTimerClass);
+	InfoWidget = CreateWidget(this, InfoHUDClass);
+
+	// NOTE: Add to viewport the widget here for testing
+	if (InfoWidget)
+	{
+		InfoWidget->AddToViewport();
+		HideInfoWidget(); // At first hide the widget
+	}
 }
 
 void AChapter_PlayerController::GameOver()
@@ -28,14 +38,26 @@ void AChapter_PlayerController::GameOverTime()
 {
 	// Show Times Up widget
 	UE_LOG(LogTemp, Warning, TEXT("Time's up!"));
-	GameOver();
+	
+	if (GameOverTimeWidget)
+	{
+		GameOverTimeWidget->AddToViewport();
+	}
+	
+	/*GameOver();*/
 }
 
 void AChapter_PlayerController::GameOverDeath()
 {
 	// Show You Died widget
 	UE_LOG(LogTemp, Warning, TEXT("You Died!"));
-	GameOver();
+	
+	if (GameOverDeathWidget)
+	{
+		GameOverDeathWidget->AddToViewport();
+	}
+	
+	/*GameOver();*/
 }
 	
 void AChapter_PlayerController::StartTimer()
@@ -76,4 +98,15 @@ void AChapter_PlayerController::SetPlayerEnabledState(bool bEnabled) {
 	else {
 		GetPawn()->DisableInput(this);
 	}
+}
+
+void AChapter_PlayerController::HideInfoWidget()
+{
+	// Image's name is set in SwingDoor/WBP_Info as "InteractImage"
+	InfoWidget->GetWidgetFromName("InteractImage")->SetVisibility(ESlateVisibility::Hidden);
+}
+
+void AChapter_PlayerController::DisplayInfoWidget()
+{
+	InfoWidget->GetWidgetFromName("InteractImage")->SetVisibility(ESlateVisibility::Visible);
 }

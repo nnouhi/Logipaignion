@@ -42,4 +42,7 @@ private:
 
     UPROPERTY(EditDefaultsOnly)
     float ShootingRate = 2.f;
+
+    UPROPERTY(EditAnywhere)
+    float LaunchAngle = 30.f;
 };

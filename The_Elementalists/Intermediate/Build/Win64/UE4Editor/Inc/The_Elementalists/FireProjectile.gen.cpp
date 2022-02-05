@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFireProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFireProjectile, 483793577);
+	IMPLEMENT_CLASS(AFireProjectile, 3860099738);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AFireProjectile>()
 	{
 		return AFireProjectile::StaticClass();

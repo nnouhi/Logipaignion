@@ -15,36 +15,37 @@ public:
     // Sets default values for this actor's properties
     AProjectile();
 
+    UPROPERTY(EditAnywhere)
+    class UProjectileMovementComponent* ProjectileMovementComponent;
+
 protected:
     // Called when the game starts or when spawned
     virtual void BeginPlay() override;
 
     UPROPERTY(EditAnywhere)
-        UStaticMeshComponent* ProjectileMesh;
+    UStaticMeshComponent* ProjectileMesh;
 
     UPROPERTY(EditAnywhere)
-        class UProjectileMovementComponent* ProjectileMovementComponent;
+    class UParticleSystemComponent* Particles;
 
     UPROPERTY(EditAnywhere)
-        class UParticleSystemComponent* Particles;
-
-    UPROPERTY(EditAnywhere)
-        float Damage = 10.f;
+    float Damage = 10.f;
 
     UFUNCTION()
-        virtual void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+    virtual void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 
     UPROPERTY(EditAnywhere)
-        class UParticleSystem* HitParticles;
+    class UParticleSystem* HitParticles;
 
     UPROPERTY(EditAnywhere)
-        USoundBase* LaunchSound;
+    USoundBase* LaunchSound;
 
     UPROPERTY(EditAnywhere)
-        USoundBase* HitSound;
+    USoundBase* HitSound;
 
 public:
     // Called every frame
     virtual void Tick(float DeltaTime) override;
 
+   
 };
