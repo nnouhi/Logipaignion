@@ -138,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeShootingFire() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AShootingFire, 1805977000);
+	IMPLEMENT_CLASS(AShootingFire, 2745624285);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AShootingFire>()
 	{
 		return AShootingFire::StaticClass();

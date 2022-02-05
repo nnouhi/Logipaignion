@@ -69,6 +69,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__GameOverTimeWidget() { return STRUCT_OFFSET(AChapter_PlayerController, GameOverTimeWidget); } \
 	FORCEINLINE static uint32 __PPO__GameOverClass() { return STRUCT_OFFSET(AChapter_PlayerController, GameOverClass); } \
 	FORCEINLINE static uint32 __PPO__GameOverWidget() { return STRUCT_OFFSET(AChapter_PlayerController, GameOverWidget); } \
+	FORCEINLINE static uint32 __PPO__LevelClearClass() { return STRUCT_OFFSET(AChapter_PlayerController, LevelClearClass); } \
+	FORCEINLINE static uint32 __PPO__LevelClearWidget() { return STRUCT_OFFSET(AChapter_PlayerController, LevelClearWidget); } \
 	FORCEINLINE static uint32 __PPO__StartTimerClass() { return STRUCT_OFFSET(AChapter_PlayerController, StartTimerClass); } \
 	FORCEINLINE static uint32 __PPO__StartTimerWidget() { return STRUCT_OFFSET(AChapter_PlayerController, StartTimerWidget); } \
 	FORCEINLINE static uint32 __PPO__LevelTimerClass() { return STRUCT_OFFSET(AChapter_PlayerController, LevelTimerClass); } \

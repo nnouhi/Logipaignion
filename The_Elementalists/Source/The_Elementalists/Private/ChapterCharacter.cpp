@@ -72,7 +72,11 @@ void AChapterCharacter::Tick(float DeltaTime)
     {
         PlayerControllerRef->HideInfoWidget();
     }
+
+	// CN Heal gradually if medkit picked up
+	CheckAndHeal(DeltaTime);
 }
+
 // Called to bind functionality to input
 void AChapterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
@@ -227,3 +231,30 @@ void AChapterCharacter::Shoot()
     }
 }
 
+void AChapterCharacter::Heal(float Amount)
+{
+	if (HealthComponent)
+	{
+		// CN Check for and play heal sound
+		
+		// CN Setup healing to take place in Tick()
+		HealthToReach = FMath::Min(HealthComponent->Health + Amount, HealthComponent->MaxHealth);
+		bIsHealing = true;
+	}
+}
+
+void AChapterCharacter::CheckAndHeal(float DeltaTime)
+{
+	// CN Heal gradually
+	if (bIsHealing)
+	{
+		if (HealthComponent && HealthComponent->Health < HealthToReach)
+		{
+			HealthComponent->Health += DeltaTime * HealingPerSecond;
+		}
+		else 
+		{
+			bIsHealing = false;
+		}
+	}
+}

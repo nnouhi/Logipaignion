@@ -66,6 +66,14 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_GameOverWidget;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LevelClearClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_LevelClearClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LevelClearWidget_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_LevelClearWidget;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_StartTimerClass_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_StartTimerClass;
@@ -173,6 +181,22 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_GameOverWidget = { "GameOverWidget", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapter_PlayerController, GameOverWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_GameOverWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_GameOverWidget_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_LevelClearClass_MetaData[] = {
+		{ "Category", "Chapter_PlayerController" },
+		{ "Comment", "// CN Level clear screen\n" },
+		{ "ModuleRelativePath", "Public/Chapter_PlayerController.h" },
+		{ "ToolTip", "CN Level clear screen" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_LevelClearClass = { "LevelClearClass", nullptr, (EPropertyFlags)0x0044000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapter_PlayerController, LevelClearClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_LevelClearClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_LevelClearClass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_LevelClearWidget_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Chapter_PlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_LevelClearWidget = { "LevelClearWidget", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapter_PlayerController, LevelClearWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_LevelClearWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_LevelClearWidget_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_StartTimerClass_MetaData[] = {
 		{ "Category", "Chapter_PlayerController" },
 		{ "Comment", "// CN Countdown timer start screen\n" },
@@ -229,6 +253,8 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_GameOverTimeWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_GameOverClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_GameOverWidget,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_LevelClearClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_LevelClearWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_StartTimerClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_StartTimerWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_LevelTimerClass,
@@ -263,7 +289,7 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AChapter_PlayerController, 4140524642);
+	IMPLEMENT_CLASS(AChapter_PlayerController, 1429124209);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AChapter_PlayerController>()
 	{
 		return AChapter_PlayerController::StaticClass();

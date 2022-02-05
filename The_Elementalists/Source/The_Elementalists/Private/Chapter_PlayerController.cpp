@@ -12,6 +12,7 @@ void AChapter_PlayerController::BeginPlay()
 	GameOverWidget = CreateWidget(this, GameOverClass);
 	GameOverDeathWidget = CreateWidget(this, GameOverDeathClass);
 	GameOverTimeWidget = CreateWidget(this, GameOverTimeClass);
+	LevelClearWidget = CreateWidget(this, LevelClearClass);
 	LevelTimerWidget = CreateWidget(this, LevelTimerClass);
 	InfoWidget = CreateWidget(this, InfoHUDClass);
 
@@ -58,6 +59,14 @@ void AChapter_PlayerController::GameOverDeath()
 	}
 	
 	/*GameOver();*/
+}
+
+void AChapter_PlayerController::LevelClear()
+{
+	if (LevelClearWidget)
+	{
+		LevelClearWidget->AddToViewport();
+	}
 }
 	
 void AChapter_PlayerController::StartTimer()

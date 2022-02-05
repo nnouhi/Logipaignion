@@ -125,3 +125,12 @@ void AFire::Explode()
     }
     bHasExploded = true;
 }
+
+void AFire::ScaleHealth(float Amount)
+{
+	if (HealthComponent)
+	{
+		HealthComponent->MaxHealth *= Amount;
+		HealthComponent->Health = HealthComponent->MaxHealth;
+	}
+}

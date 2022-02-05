@@ -11,7 +11,7 @@
 #include "GameFramework/Actor.h"
 
 #include "GameFramework/ProjectileMovementComponent.h"
-#include "Projectile.h"
+#include "FireProjectile.h"
 
 // Sets default values
 AShootingFire::AShootingFire()
@@ -25,7 +25,7 @@ void AShootingFire::BeginPlay()
 {
     Super::BeginPlay();
     
-    
+	PointsAwarded = 150;
 
     GetWorldTimerManager().SetTimer(
         ShootingRateTimerHandle,
@@ -77,10 +77,9 @@ void AShootingFire::Shoot() {
             const float V = (Sx / cos(Theta)) * FMath::Sqrt((Gravity * 1) / (2 * (Sx * tan(Theta) - Sz)));
             FVector VelocityOutput = FVector(V * cos(Theta), 0, V * sin(Theta));
 
-            AProjectile* Proj = GetWorld()->SpawnActor<AProjectile>(ProjectileClass, ProjectilePosition, FRotator(0, newrot.Yaw, 0));
-                
+            AFireProjectile* Proj = GetWorld()->SpawnActor<AFireProjectile>(ProjectileClass, ProjectilePosition, FRotator(0, newrot.Yaw, 0));
+            Proj->ScaleDamage(ProjectileDamageScaleAmount);    
             Proj->ProjectileMovementComponent->SetVelocityInLocalSpace(VelocityOutput);
-
             Proj->SetOwner(this); 
         }
     }

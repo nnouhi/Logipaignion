@@ -30,4 +30,6 @@ public:
     // Called every frame
     virtual void Tick(float DeltaTime) override;
 
+	FORCEINLINE void ScaleDamage(float Amount) { Damage *= Amount; };
+
 };

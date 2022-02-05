@@ -17,12 +17,18 @@ FString ABaseGameMode::GetChapterName()
 
 void ABaseGameMode::ProgressNextChapter()
 {
+	return;
+}
 
+void ABaseGameMode::LevelComplete()
+{
+	ProgressNextChapter();
+	return;
 }
 
 void ABaseGameMode::ActorDied(AActor* DeadActor)
 {
-
+	return;
 }
 
 void ABaseGameMode::SetDifficulty(int32 NewDifficulty)
@@ -33,4 +39,9 @@ void ABaseGameMode::SetDifficulty(int32 NewDifficulty)
 int32 ABaseGameMode::GetDifficulty()
 {
 	return Difficulty;
+}
+
+int32 ABaseGameMode::GetScore()
+{
+	return 0;
 }

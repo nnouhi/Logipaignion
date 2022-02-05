@@ -19,6 +19,8 @@ public:
 
 	// NN Method that handles which chapter the player should go to
 	void ProgressNextChapter() override;
+	
+	void LevelComplete() override;
 
 	void ActorDied(AActor* DeadActor) override;
 
@@ -27,6 +29,9 @@ public:
 	
 	// CN Get level name
 	FString GetChapterName() override;
+	
+	// CN Get level score
+	int32 GetScore() override;
 
 protected:
 	virtual void BeginPlay() override;
@@ -34,6 +39,9 @@ protected:
 private:
 	// CN Gets the total number of fires in the level
 	int32 GetTotalFireCount();
+	
+	// CN Sets up fire stats based on difficulty
+	void SetupFires();
 	
 	// CN Handles level start
 	void HandleGameStart();
@@ -44,6 +52,15 @@ private:
 	// CN Keeps track of how many fires remain
 	int32 TotalFires;
 	int32 RemainingFires;
+	
+	// CN Keeps track of player score
+	int32 Score = 0;
+	
+	// CN Timer handle for level time
+	FTimerHandle LevelStartTimerHandle;
+	
+	// CN Calculates the final score based on remaining time
+	void CalculateFinalScore();
 
 	// CN Reference to player controller
 	class AChapter_PlayerController* ChapterCharacterController;

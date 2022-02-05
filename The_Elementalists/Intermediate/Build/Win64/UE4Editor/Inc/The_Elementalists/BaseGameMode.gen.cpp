@@ -18,6 +18,13 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
 	UPackage* Z_Construct_UPackage__Script_The_Elementalists();
 // End Cross Module References
+	DEFINE_FUNCTION(ABaseGameMode::execGetScore)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(int32*)Z_Param__Result=P_THIS->GetScore();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ABaseGameMode::execGetDifficulty)
 	{
 		P_FINISH;
@@ -38,6 +45,13 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		P_FINISH;
 		P_NATIVE_BEGIN;
 		*(FString*)Z_Param__Result=P_THIS->GetChapterName();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ABaseGameMode::execLevelComplete)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->LevelComplete();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(ABaseGameMode::execProgressNextChapter)
@@ -61,6 +75,8 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 			{ "GetChapterName", &ABaseGameMode::execGetChapterName },
 			{ "GetDifficulty", &ABaseGameMode::execGetDifficulty },
 			{ "GetObjectiveMessage", &ABaseGameMode::execGetObjectiveMessage },
+			{ "GetScore", &ABaseGameMode::execGetScore },
+			{ "LevelComplete", &ABaseGameMode::execLevelComplete },
 			{ "ProgressNextChapter", &ABaseGameMode::execProgressNextChapter },
 			{ "SetDifficulty", &ABaseGameMode::execSetDifficulty },
 		};
@@ -162,6 +178,60 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ABaseGameMode_GetScore_Statics
+	{
+		struct BaseGameMode_eventGetScore_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ABaseGameMode_GetScore_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(BaseGameMode_eventGetScore_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseGameMode_GetScore_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseGameMode_GetScore_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseGameMode_GetScore_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/BaseGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseGameMode_GetScore_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseGameMode, nullptr, "GetScore", nullptr, nullptr, sizeof(BaseGameMode_eventGetScore_Parms), Z_Construct_UFunction_ABaseGameMode_GetScore_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseGameMode_GetScore_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseGameMode_GetScore_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseGameMode_GetScore_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseGameMode_GetScore()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseGameMode_GetScore_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseGameMode_LevelComplete_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseGameMode_LevelComplete_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/BaseGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseGameMode_LevelComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseGameMode, nullptr, "LevelComplete", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseGameMode_LevelComplete_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseGameMode_LevelComplete_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseGameMode_LevelComplete()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseGameMode_LevelComplete_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ABaseGameMode_ProgressNextChapter_Statics
 	{
 #if WITH_METADATA
@@ -238,6 +308,8 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		{ &Z_Construct_UFunction_ABaseGameMode_GetChapterName, "GetChapterName" }, // 3860960173
 		{ &Z_Construct_UFunction_ABaseGameMode_GetDifficulty, "GetDifficulty" }, // 3301473594
 		{ &Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage, "GetObjectiveMessage" }, // 1833381145
+		{ &Z_Construct_UFunction_ABaseGameMode_GetScore, "GetScore" }, // 3161157956
+		{ &Z_Construct_UFunction_ABaseGameMode_LevelComplete, "LevelComplete" }, // 2531483530
 		{ &Z_Construct_UFunction_ABaseGameMode_ProgressNextChapter, "ProgressNextChapter" }, // 2962940943
 		{ &Z_Construct_UFunction_ABaseGameMode_SetDifficulty, "SetDifficulty" }, // 3505769322
 	};
@@ -277,7 +349,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseGameMode, 3173094877);
+	IMPLEMENT_CLASS(ABaseGameMode, 1639191042);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<ABaseGameMode>()
 	{
 		return ABaseGameMode::StaticClass();

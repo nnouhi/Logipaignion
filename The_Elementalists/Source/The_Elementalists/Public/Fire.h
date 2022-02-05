@@ -59,10 +59,20 @@ protected:
 
     UPROPERTY(EditAnywhere)
     float BaseScale = 2.f;
+	
+	// CN Points awarded when putting out the fire
+	UPROPERTY(EditAnywhere)
+    int32 PointsAwarded = 50;
 
 public:
     // Called every frame
     virtual void Tick(float DeltaTime) override;
+	
+	void ScaleHealth(float Amount);
+	
+	FORCEINLINE void ScaleDamagePerSecond(float Amount) { DamagePerSecond *= Amount; };
+	
+	FORCEINLINE int32 GetPointsAwarded() { return PointsAwarded; };
 
 private:
     // CN Deal damage to player

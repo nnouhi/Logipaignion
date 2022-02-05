@@ -7,6 +7,7 @@
 #include "Chapter_PlayerController.h"
 #include "ChapterCharacter.h"
 #include "Kismet/GameplayStatics.h"
+#include "ShootingFire.h"
 
 AChapter1Level1GameMode::AChapter1Level1GameMode()
 {
@@ -40,6 +41,15 @@ void AChapter1Level1GameMode::ProgressNextChapter()
 	UGameplayStatics::OpenLevel(GetWorld(), TEXT("Chapter_1_Level2"));
 }
 
+void AChapter1Level1GameMode::LevelComplete()
+{
+	if (ChapterCharacterController)
+	{
+		ChapterCharacterController->LevelClear();
+	}
+}
+
+
 void AChapter1Level1GameMode::ActorDied(AActor* DeadActor)
 {
 	if (Cast<AChapterCharacter>(DeadActor)) 
@@ -53,18 +63,23 @@ void AChapter1Level1GameMode::ActorDied(AActor* DeadActor)
 	else if (Cast<AFire>(DeadActor))
 	{
 		RemainingFires--;
+		
+		// CN Update score
+		Score += (Cast<AFire>(DeadActor))->GetPointsAwarded();
 	
 		UE_LOG(LogTemp, Warning, TEXT("Fire put out! %i fires remaining!"), RemainingFires);
 	
 		if (RemainingFires <= 0) // CN Level complete!
 		{
-			ProgressNextChapter();
+			LevelComplete();
 		}
 	}
 }
 
 void AChapter1Level1GameMode::HandleGameStart() 
 {
+	SetupFires();
+	
 	TotalFires = GetTotalFireCount();
 	RemainingFires = TotalFires;
 	
@@ -101,7 +116,6 @@ void AChapter1Level1GameMode::StartLevel()
 		ChapterCharacterController->StartLevel();
 		
 		// CN Setup and start main level countdown
-		FTimerHandle LevelStartTimerHandle;
 		FTimerDelegate LevelStartTimerDelegate = FTimerDelegate::CreateUObject(
 			ChapterCharacterController, 
 			&AChapter_PlayerController::GameOverTime // CN Player ran out of time
@@ -122,4 +136,35 @@ int32 AChapter1Level1GameMode::GetTotalFireCount()
 	TArray<AActor*> Fires;
 	UGameplayStatics::GetAllActorsOfClass(this, AFire::StaticClass(), Fires);
 	return Fires.Num();
+}
+
+void AChapter1Level1GameMode::SetupFires() {
+	TArray<AActor*> Fires;
+	UGameplayStatics::GetAllActorsOfClass(this, AFire::StaticClass(), Fires);
+	
+	for (AActor* Current : Fires)
+	{
+		AFire* CurrentFire = Cast<AFire>(Current);
+		if (CurrentFire)
+		{
+			CurrentFire->ScaleHealth(GetDifficulty());
+			CurrentFire->ScaleDamagePerSecond(GetDifficulty());
+			
+			AShootingFire* CurrentShootingFire = Cast<AShootingFire>(CurrentFire);
+			if (CurrentShootingFire)
+			{
+				CurrentShootingFire->ScaleProjectileDamage(GetDifficulty());
+			}
+		}
+	}
+}
+
+int32 AChapter1Level1GameMode::GetScore()
+{
+	return Score * GetDifficulty();
+}
+
+void AChapter1Level1GameMode::CalculateFinalScore()
+{
+	//GetWorldTimerManager().GetTimerRemaining(this, &AChapter1Level1GameMode::LevelComplete);
 }

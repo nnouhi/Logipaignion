@@ -149,6 +149,10 @@ void EmptyLinkFunctionForGeneratedCodeChapterCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ThirdPersonCamera;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HealingPerSecond_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_HealingPerSecond;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileSpawnPoint_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ProjectileSpawnPoint;
@@ -219,6 +223,15 @@ void EmptyLinkFunctionForGeneratedCodeChapterCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChapterCharacter_Statics::NewProp_ThirdPersonCamera = { "ThirdPersonCamera", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapterCharacter, ThirdPersonCamera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AChapterCharacter_Statics::NewProp_ThirdPersonCamera_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapterCharacter_Statics::NewProp_ThirdPersonCamera_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapterCharacter_Statics::NewProp_HealingPerSecond_MetaData[] = {
+		{ "Category", "ChapterCharacter" },
+		{ "Comment", "// CN Regen rate\n" },
+		{ "ModuleRelativePath", "Public/ChapterCharacter.h" },
+		{ "ToolTip", "CN Regen rate" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AChapterCharacter_Statics::NewProp_HealingPerSecond = { "HealingPerSecond", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapterCharacter, HealingPerSecond), METADATA_PARAMS(Z_Construct_UClass_AChapterCharacter_Statics::NewProp_HealingPerSecond_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapterCharacter_Statics::NewProp_HealingPerSecond_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapterCharacter_Statics::NewProp_ProjectileSpawnPoint_MetaData[] = {
 		{ "Category", "ChapterCharacter" },
 		{ "Comment", "// CN The projectile spawn point\n" },
@@ -259,6 +272,7 @@ void EmptyLinkFunctionForGeneratedCodeChapterCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_InfoWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_SpringArmComp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_ThirdPersonCamera,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_HealingPerSecond,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_ProjectileSpawnPoint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_ProjectileClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_LineTraceDistance,
@@ -291,7 +305,7 @@ void EmptyLinkFunctionForGeneratedCodeChapterCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AChapterCharacter, 544821059);
+	IMPLEMENT_CLASS(AChapterCharacter, 3614617499);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AChapterCharacter>()
 	{
 		return AChapterCharacter::StaticClass();

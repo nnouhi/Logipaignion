@@ -24,6 +24,9 @@ public:
 	// CN Displays Times Up screen and then calls GameOver()
 	void GameOverTime();
 	
+	// CN Displays Level clear screen
+	void LevelClear();
+	
 	// CN Displays the countdown timer until level starts
 	void StartTimer();
 
@@ -68,6 +71,12 @@ private:
 	TSubclassOf<class UUserWidget> GameOverClass;
 	UPROPERTY()
 	UUserWidget* GameOverWidget;
+	
+	// CN Level clear screen
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class UUserWidget> LevelClearClass;
+	UPROPERTY()
+	UUserWidget* LevelClearWidget;
 
 	// CN Countdown timer start screen
 	UPROPERTY(EditAnywhere)

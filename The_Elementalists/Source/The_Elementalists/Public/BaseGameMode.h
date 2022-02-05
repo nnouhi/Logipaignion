@@ -21,6 +21,9 @@ public:
     virtual void ProgressNextChapter();
 		
 	UFUNCTION(BlueprintCallable)
+    virtual void LevelComplete();
+		
+	UFUNCTION(BlueprintCallable)
 	virtual FString GetChapterName();
 
     virtual void ActorDied(AActor* DeadActor);
@@ -30,6 +33,9 @@ public:
 	
 	UFUNCTION(BlueprintCallable)
     virtual int32 GetDifficulty();
+	
+	UFUNCTION(BlueprintCallable)
+    virtual int32 GetScore();
 	
 private:
 	// CN Difficulty {1: Easy, 2: Normal, 3:Hard}

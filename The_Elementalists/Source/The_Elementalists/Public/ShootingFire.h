@@ -18,6 +18,9 @@ public:
 
     // Called every frame
     virtual void Tick(float DeltaTime) override;
+	
+	// CN Scales projectile damage (used for difficulty)
+	FORCEINLINE void ScaleProjectileDamage(float Amount) { ProjectileDamageScaleAmount = Amount; };
 
 protected:
 
@@ -37,7 +40,10 @@ private:
 
     UPROPERTY(EditAnywhere)
     float ShootingRange = 400.f;
-
+	
+	// CN Used to scale projectile damage
+	float ProjectileDamageScaleAmount = 1.f;
+	
     FTimerHandle ShootingRateTimerHandle;
 
     UPROPERTY(EditDefaultsOnly)

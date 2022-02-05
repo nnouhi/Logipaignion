@@ -29,6 +29,9 @@ public:
     // CN Shoot
     void Shoot();
 
+	// CN Heal
+	void Heal(float Amount);
+
     // CN To check if player is dead
     UFUNCTION(BlueprintPure)
     bool IsDead() const;
@@ -74,6 +77,14 @@ private:
     UPROPERTY(EditAnywhere)
     class UCameraComponent* ThirdPersonCamera;
     
+	// CN Regen rate
+	UPROPERTY(EditAnywhere)
+	float HealingPerSecond = 50.f;
+	float HealthToReach = 100.f;
+	bool bIsHealing = false;
+	// CN Checks if healing and heals player
+	void CheckAndHeal(float DeltaTime);
+	
     // CN The players health component
     class UHealthComponent* HealthComponent;
 
