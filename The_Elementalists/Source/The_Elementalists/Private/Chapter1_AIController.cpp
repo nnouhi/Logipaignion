@@ -10,25 +10,26 @@ void AChapter1_AIController::BeginPlay()
 {
 	Super::BeginPlay();
 
-	AActor* TempActor = nullptr;
+	AActor* TempDoor= nullptr;
 	PlayerPawn = UGameplayStatics::GetPlayerPawn(this, 0);
 	AIPawn = GetPawn();
 
+	// NN Populate Waypoints & SwingDoors arrays 
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ATargetPoint::StaticClass(), Waypoints);
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ASwingDoor::StaticClass(), SwingDoors);
-
+	UGameplayStatics::GetAllActorsOfClassWithTag(GetWorld(), ATargetPoint::StaticClass(), TEXT("EscapeTag"), EscapeWaypoints);
 
 	for (AActor* SwingDoor : SwingDoors)
 	{
 		float dist = FVector::Dist(AIPawn->GetActorLocation(), SwingDoor->GetActorLocation());
-		if ( dist < SmallestDistance)
+		if ( dist < SmallestDistanceFromDoor)
 		{
-			SmallestDistance = dist;
-			TempActor = SwingDoor;
+			SmallestDistanceFromDoor = dist;
+			TempDoor = SwingDoor;
 		}
 	}
 
-	ClosestDoor = Cast<ASwingDoor>(TempActor);
+	ClosestDoor = Cast<ASwingDoor>(TempDoor);
 
 }
 
@@ -38,17 +39,84 @@ void AChapter1_AIController::Tick(float DeltaTime)
 
 	if (ClosestDoor && ClosestDoor->bReadyState == false && bGetOut == false)
 	{
-		MoveToActor(GetRandomWaypoint());
+		/*MoveToActor(FindClosestWaypoint());*/
+		GetWorldTimerManager().SetTimer(
+			MoveTimerHandle,
+			this,
+			&AChapter1_AIController::FindClosestWaypoint,
+			FMath::RandRange(0.f, 0.5f),// NN Add random delay to move the AI
+			false // loop
+		);
+		/*FindClosestWaypoint();*/
 		bGetOut = !bGetOut;
 	}
 }
 
-void AChapter1_AIController::OnMoveCompleted(FAIRequestID RequestID, const FPathFollowingResult& Result)
+
+void AChapter1_AIController::FindClosestWaypoint()
 {
-	AIPawn->Destroy();
+	
+	int32 WaypointIndex = 0;
+
+	for (AActor* Waypoint : Waypoints)
+	{
+		// NN Waypoint is on the left of player
+		if (AIPawn->GetActorLocation().Y >= Waypoint->GetActorLocation().Y) //works
+		{
+			// NN Waypoint is the closest to the AI out of all the waypoints
+			if (Waypoint->GetActorLocation().Y > SmallestDistanceFromWaypoint)
+			{
+				SmallestDistanceFromWaypoint = Waypoint->GetActorLocation().Y; //set smallest distance to waypoints Y
+				TempWaypoint = Waypoint; // new closest waypoint
+				SmallestDistanceIndex = WaypointIndex; // get its index to remove later
+			}
+		}
+		WaypointIndex++;
+	}
+
+	// NN Typesafe
+	if (TempWaypoint)
+	{
+		if (TempWaypoint->ActorHasTag("EscapeTag")) bMoveToEscapeWaypoint = true; // Destroy AI 
+		SetFocus(TempWaypoint);
+		MoveToActor(TempWaypoint);
+		return;
+	}
+	
+	//UE_LOG(LogTemp, Warning, TEXT("%s"), *TempWaypoint->GetName());
+
 }
 
-AActor* AChapter1_AIController::GetRandomWaypoint()
+void AChapter1_AIController::OnMoveCompleted(FAIRequestID RequestID, const FPathFollowingResult& Result)
 {
-	return Waypoints[FMath::RandRange(0, Waypoints.Num() - 1)];
+	// NN Destroy
+	if (bMoveToEscapeWaypoint)
+	{
+		ChooseRandomEscapeWaypoint();
+	}
+	else if (bDestroy)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Destroyed"));
+		AIPawn->Destroy();
+	}
+	else
+	{
+		SmallestDistanceFromWaypoint = -100000.f; // reset attribute to to temp value 
+		Waypoints.RemoveAt(SmallestDistanceIndex); // remove the navigated waypoint from the array
+		Waypoints.Shrink(); // free memory
+		/*TempWaypoint->Destroy();*/
+		TempWaypoint = nullptr; // reset TempWaypoint
+		FindClosestWaypoint(); // move to next waypoint
+	}
+	
+}
+
+void AChapter1_AIController::ChooseRandomEscapeWaypoint()
+{
+	// NOTE: Not final version maybe will change later
+	int RandomIndex = FMath::RandRange(0, EscapeWaypoints.Num() - 1);
+	bDestroy = true;
+	bMoveToEscapeWaypoint = false;
+	SetFocus(EscapeWaypoints[RandomIndex]);
+	MoveTo(EscapeWaypoints[RandomIndex]);
 }

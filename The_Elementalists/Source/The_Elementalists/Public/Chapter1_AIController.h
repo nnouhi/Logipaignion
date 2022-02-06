@@ -22,6 +22,8 @@ protected:
 
 	void OnMoveCompleted(FAIRequestID RequestID, const FPathFollowingResult& Result) override;
 
+	void ChooseRandomEscapeWaypoint();
+
 	// NN Player reference
 	APawn* PlayerPawn;
 
@@ -33,16 +35,37 @@ protected:
 
 	// NN Store all waypoints of level inside the array
 	TArray<AActor*> Waypoints;
+
+	// NN Store all escape waypoints of level inside the array
+	TArray<AActor*> EscapeWaypoints;
 	
 	// NN Store all SwingDoors of level inside the array
 	TArray<AActor*> SwingDoors;
 
-	float SmallestDistance = 10000.f;
+	// NN Stores the distance of the closest door of the AI 
+	float SmallestDistanceFromDoor = 10000.f; // temp value
+
+	// NN Stores the distance of the closest waypoint of the AI
+	float SmallestDistanceFromWaypoint = -100000.f; // temp value
+
+	// NN Index of the closest waypoint to the AI 
+	int32 SmallestDistanceIndex = 0;
+
+	// NN Should we delete the AI?
+	bool bDestroy = false;
+
+	// NN Should AI move to escape waypoint?
+	bool bMoveToEscapeWaypoint = false;
+
+	// NN Closest waypoint
+	AActor* TempWaypoint = nullptr;
+
+	FTimerHandle MoveTimerHandle;
 
 
 public:
 
-	AActor* GetRandomWaypoint();
+	void FindClosestWaypoint();
 
 private:
 	

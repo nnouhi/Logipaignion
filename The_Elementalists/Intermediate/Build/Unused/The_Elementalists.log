@@ -2,11 +2,11 @@
   Building The_ElementalistsEditor...
   Using Visual Studio 2019 14.31.30818 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.31.30818) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 4 actions with 8 processes...
-    [1/4] ShootingFire.cpp
-    [2/4] UE4Editor-The_Elementalists-0036.lib
-       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0036.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0036.exp
-    [3/4] UE4Editor-The_Elementalists-0036.dll
-       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0036.suppressed.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0036.suppressed.exp
+    [1/4] Chapter1_AIController.cpp
+    [2/4] UE4Editor-The_Elementalists-0061.lib
+       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0061.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0061.exp
+    [3/4] UE4Editor-The_Elementalists-0061.dll
+       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0061.suppressed.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0061.suppressed.exp
     [4/4] The_ElementalistsEditor.target
-  Total time in Parallel executor: 2.73 seconds
-  Total execution time: 3.89 seconds
+  Total time in Parallel executor: 480.73 seconds
+  Total execution time: 482.34 seconds

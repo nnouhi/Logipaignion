@@ -1,0 +1,11 @@
+D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\Definitions.The_Elementalists.h
+D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter1Level3GameMode.h
+D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter1GameMode.h
+D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\BaseGameMode.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\BaseGameMode.generated.h
+D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter1GameMode.generated.h
+D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter1Level3GameMode.generated.h

@@ -52,6 +52,7 @@ void AChapter1Level1GameMode::LevelComplete()
 
 void AChapter1Level1GameMode::ActorDied(AActor* DeadActor)
 {
+	// NN If dead actor is player character...
 	if (Cast<AChapterCharacter>(DeadActor)) 
 	{
 		if(ChapterCharacterController)
@@ -60,6 +61,7 @@ void AChapter1Level1GameMode::ActorDied(AActor* DeadActor)
 			ChapterCharacterController->GameOverDeath();
 		}
 	}
+	// NN If dead actor is a fire...
 	else if (Cast<AFire>(DeadActor))
 	{
 		RemainingFires--;
