@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\The_Elementalists.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{10403918-A5CC-41B9-AEC4-45A17CC1929E}</UniqueIdentifier>
+      <UniqueIdentifier>{E2FEEE04-8C8A-4678-9AC7-38C9F5848EDE}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists.Target.cs">
       <Filter>Source</Filter>
@@ -11,10 +11,12 @@
     <None Include="..\..\Source\The_ElementalistsEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.ignore" />
     <None Include="..\..\LuosEightElements.png" />
     <None Include="..\..\Scanned3DPeoplePack.png" />
+    <None Include="..\..\The_Elementalists.code-workspace" />
     <Filter Include="Config">
-      <UniqueIdentifier>{8CBC6113-C840-4D4D-8D8A-360F1E971A59}</UniqueIdentifier>
+      <UniqueIdentifier>{E61D2D2F-9447-4B9A-B947-F6D7582E1136}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -29,7 +31,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\The_Elementalists">
-      <UniqueIdentifier>{89D9B235-5A64-43D6-BB6E-32F7ECBFAD6D}</UniqueIdentifier>
+      <UniqueIdentifier>{E87093D9-A0CC-4EE3-956C-305DAAC2F3B2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists\The_Elementalists.Build.cs">
       <Filter>Source\The_Elementalists</Filter>
@@ -47,7 +49,7 @@
       <Filter>Source\The_Elementalists</Filter>
     </ClInclude>
     <Filter Include="Source\The_Elementalists\Private">
-      <UniqueIdentifier>{0C5DDFA7-A366-4C8C-8862-54A16AE619B6}</UniqueIdentifier>
+      <UniqueIdentifier>{0A5A9D7D-98D9-491B-8871-03966FDCE2AB}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\AICharacter.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
@@ -131,7 +133,7 @@
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
     <Filter Include="Source\The_Elementalists\Public">
-      <UniqueIdentifier>{D0A8491F-B517-437F-ACD7-06E256B41008}</UniqueIdentifier>
+      <UniqueIdentifier>{8A61A1F7-1FE1-4CC0-BFA5-E343AB7E49D1}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\AICharacter.h">
       <Filter>Source\The_Elementalists\Public</Filter>

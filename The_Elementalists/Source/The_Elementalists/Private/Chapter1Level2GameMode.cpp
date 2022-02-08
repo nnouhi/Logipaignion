@@ -105,11 +105,6 @@ void AChapter1Level2GameMode::StartLevel()
 	}
 }
 
-void AChapter1Level2GameMode::CalculateFinalScore()
-{
-	/*GetWorldTimerManager().GetTimerRemaining(this, &AChapter1Level2GameMode::LevelComplete);*/
-}
-
 void AChapter1Level2GameMode::ProgressNextChapter()
 {
 	// Play loading screen
@@ -118,6 +113,9 @@ void AChapter1Level2GameMode::ProgressNextChapter()
 
 void AChapter1Level2GameMode::LevelComplete()
 {
+	GetWorldTimerManager().PauseTimer(LevelStartTimerHandle);
+	CalculateFinalScore();
+
 	// Display Level Clear screen
 	if (ChapterCharacterController)
 	{
@@ -169,4 +167,10 @@ FString AChapter1Level2GameMode::GetChapterName()
 int32 AChapter1Level2GameMode::GetScore()
 {
 	return Score * GetDifficulty();
+}
+
+void AChapter1Level2GameMode::CalculateFinalScore()
+{
+	float TimeRemaining = GetWorldTimerManager().GetTimerRemaining(LevelStartTimerHandle);
+	Score += ((int32)TimeRemaining) * 10 * GetDifficulty();
 }

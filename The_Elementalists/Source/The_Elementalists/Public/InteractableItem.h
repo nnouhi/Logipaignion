@@ -23,4 +23,20 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	void Interact();
+
+private:
+	class AChapterCharacter* CharRef;
+
+	UPROPERTY(EditAnywhere)
+	float ReachDistance = 400.f;
+
+	UPROPERTY(EditAnywhere)
+	UStaticMeshComponent* ItemMesh;
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class UUserWidget> InfoClass;
+	UPROPERTY()
+	class UUserWidget* InfoWidget;
+
 };

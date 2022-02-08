@@ -43,6 +43,9 @@ public:
     UPROPERTY(EditAnywhere)
     class ASwingDoor* CurrentDoor;
 
+    UPROPERTY(EditAnywhere)
+    class AInteractableItem* CurrentItem;
+
     bool bPerformLineTrace = false;
    
     UPROPERTY(EditAnywhere)

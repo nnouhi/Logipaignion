@@ -2,6 +2,8 @@
 
 
 #include "Chapter1_AIController.h"
+
+#include "BaseGameMode.h"
 #include "Engine/TargetPoint.h"
 #include "SwingDoor.h"
 #include "Kismet/GameplayStatics.h"
@@ -47,6 +49,14 @@ void AChapter1_AIController::Tick(float DeltaTime)
 			FMath::RandRange(0.f, 0.5f),// NN Add random delay to move the AI
 			false // loop
 		);
+
+		// CN Call ActorDied to update objective
+		ABaseGameMode* GameMode = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(this));
+		if (GameMode)
+		{
+			GameMode->ActorDied(this);
+		}
+
 		/*FindClosestWaypoint();*/
 		bGetOut = !bGetOut;
 	}

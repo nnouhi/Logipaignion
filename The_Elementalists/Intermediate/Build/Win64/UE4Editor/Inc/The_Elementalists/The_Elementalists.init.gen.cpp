@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeThe_Elementalists_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x15BE778A,
+				0xFCF33626,
 				0x58807FB3,
 				METADATA_PARAMS(nullptr, 0)
 			};

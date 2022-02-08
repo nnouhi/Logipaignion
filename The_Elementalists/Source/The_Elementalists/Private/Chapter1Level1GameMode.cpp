@@ -43,6 +43,9 @@ void AChapter1Level1GameMode::ProgressNextChapter()
 
 void AChapter1Level1GameMode::LevelComplete()
 {
+	GetWorldTimerManager().PauseTimer(LevelStartTimerHandle);
+	CalculateFinalScore();
+
 	if (ChapterCharacterController)
 	{
 		ChapterCharacterController->LevelClear();
@@ -168,5 +171,6 @@ int32 AChapter1Level1GameMode::GetScore()
 
 void AChapter1Level1GameMode::CalculateFinalScore()
 {
-	//GetWorldTimerManager().GetTimerRemaining(this, &AChapter1Level1GameMode::LevelComplete);
+	float TimeRemaining = GetWorldTimerManager().GetTimerRemaining(LevelStartTimerHandle);
+	Score += ((int32) TimeRemaining) * 10 * GetDifficulty();
 }

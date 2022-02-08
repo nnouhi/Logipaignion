@@ -2,6 +2,8 @@
 
 
 #include "ChapterCharacter.h"
+
+#include "BaseGameMode.h"
 #include "Camera/CameraComponent.h"
 #include "Chapter_PlayerController.h"
 #include "GameFramework/SpringArmComponent.h"
@@ -12,6 +14,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "HealthComponent.h"
+#include "InteractableItem.h"
 #include "Projectile.h"
 
 // Sets default values
@@ -46,6 +49,7 @@ AChapterCharacter::AChapterCharacter()
     AddOwnedComponent(HealthComponent);
 
     CurrentDoor = NULL;
+    CurrentItem = NULL;
 }
 
 // Called when the game starts or when spawned
@@ -146,12 +150,21 @@ void AChapterCharacter::PerformLineTrace()
                     PlayerControllerRef->DisplayInfoWidget();
                 }
             }
+            // CN Check if actor is interactable item
+            else if (hit.GetActor()->GetClass()->IsChildOf(AInteractableItem::StaticClass()))
+            {
+                CurrentItem = Cast<AInteractableItem>(hit.GetActor());
+                if (CurrentItem) {
+                    PlayerControllerRef->DisplayInfoWidget();
+                }
+            }
         }
     }
     else
     {
         PlayerControllerRef->HideInfoWidget();
         CurrentDoor = NULL;
+        CurrentItem = NULL;
         bPerformLineTrace = false;
     }
 }
@@ -161,6 +174,11 @@ void AChapterCharacter::OnAction()
     if (CurrentDoor)
     {
         CurrentDoor->OpenDoor();
+    }
+    else if (CurrentItem)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("Interacted"));
+        CurrentItem->Interact();
     }
 }
 
