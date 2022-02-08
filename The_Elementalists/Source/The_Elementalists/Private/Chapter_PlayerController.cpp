@@ -15,6 +15,7 @@ void AChapter_PlayerController::BeginPlay()
 	LevelClearWidget = CreateWidget(this, LevelClearClass);
 	LevelTimerWidget = CreateWidget(this, LevelTimerClass);
 	InfoWidget = CreateWidget(this, InfoHUDClass);
+	HealthbarWidget = CreateWidget(this, HealthbarHUDClass);
 
 	// NOTE: Add to viewport the widget here for testing
 	if (InfoWidget)
@@ -89,6 +90,12 @@ void AChapter_PlayerController::StartLevel()
 	}
 	
 	// NOTE: Also add health widget, probably in the same widget with crosshair
+	// NN ADDED
+	if (HealthbarWidget) 
+	{
+		HealthbarWidget->AddToViewport();
+	}
+
 	if (CrosshairWidget)
 	{
 		CrosshairWidget->AddToViewport();

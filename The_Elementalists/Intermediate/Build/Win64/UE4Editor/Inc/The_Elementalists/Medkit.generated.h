@@ -73,7 +73,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__Box() { return STRUCT_OFFSET(AMedkit, Box); } \
 	FORCEINLINE static uint32 __PPO__Root() { return STRUCT_OFFSET(AMedkit, Root); } \
 	FORCEINLINE static uint32 __PPO__MedkitMesh() { return STRUCT_OFFSET(AMedkit, MedkitMesh); } \
-	FORCEINLINE static uint32 __PPO__Health() { return STRUCT_OFFSET(AMedkit, Health); }
+	FORCEINLINE static uint32 __PPO__Health() { return STRUCT_OFFSET(AMedkit, Health); } \
+	FORCEINLINE static uint32 __PPO__YawValue() { return STRUCT_OFFSET(AMedkit, YawValue); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Medkit_h_9_PROLOG

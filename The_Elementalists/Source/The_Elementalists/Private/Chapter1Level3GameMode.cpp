@@ -64,7 +64,8 @@ void AChapter1Level3GameMode::SetupFires()
 
 void AChapter1Level3GameMode::HandleGameStart()
 {
-	LevelTime = 300.f;
+	// commented out for testing
+	/*LevelTime = 300.f;*/
 
 	SetupFires();
 
@@ -128,7 +129,7 @@ void AChapter1Level3GameMode::ProgressNextChapter()
 
 void AChapter1Level3GameMode::LevelComplete()
 {
-	GetWorldTimerManager().PauseTimer(LevelStartTimerHandle);
+	
 	CalculateFinalScore();
 
 	// Display Level Clear screen
@@ -175,6 +176,7 @@ void AChapter1Level3GameMode::ActorDied(AActor* DeadActor)
 		bInvestigationMode = true;
 		// Play sound
 		// Should also stop timer
+		
 		// Maybe spawn cigarette?
 	}
 }
@@ -183,6 +185,7 @@ FString AChapter1Level3GameMode::GetObjectiveMessage()
 {
 	if (bInvestigationMode)
 	{
+		GetWorldTimerManager().PauseTimer(LevelStartTimerHandle);
 		return TEXT("Investigate - Find the cause of the fire.");
 	}
 	// else

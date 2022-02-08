@@ -65,7 +65,7 @@ private:
 	// CN Keeps track of player score
 	int32 Score = 0;
 
-	bool bInvestigationMode = true;
+	bool bInvestigationMode = false;
 
 	// CN Timer handle for level time
 	FTimerHandle LevelStartTimerHandle;

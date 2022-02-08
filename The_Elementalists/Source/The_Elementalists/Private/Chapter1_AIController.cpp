@@ -2,7 +2,8 @@
 
 
 #include "Chapter1_AIController.h"
-
+#include "Engine/SkeletalMesh.h"
+#include "GameFramework/Character.h"
 #include "BaseGameMode.h"
 #include "Engine/TargetPoint.h"
 #include "SwingDoor.h"
@@ -11,10 +12,11 @@
 void AChapter1_AIController::BeginPlay()
 {
 	Super::BeginPlay();
-
+	
 	AActor* TempDoor= nullptr;
 	PlayerPawn = UGameplayStatics::GetPlayerPawn(this, 0);
 	AIPawn = GetPawn();
+
 
 	// NN Populate Waypoints & SwingDoors arrays 
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ATargetPoint::StaticClass(), Waypoints);
@@ -124,6 +126,8 @@ void AChapter1_AIController::OnMoveCompleted(FAIRequestID RequestID, const FPath
 void AChapter1_AIController::ChooseRandomEscapeWaypoint()
 {
 	// NOTE: Not final version maybe will change later
+	// NN AI Ignores collisions when navigating to escape waypoints
+	/*GetCharacter()->GetMesh()->SetCollisionProfileName(TEXT("NoCollision")); */
 	int RandomIndex = FMath::RandRange(0, EscapeWaypoints.Num() - 1);
 	bDestroy = true;
 	bMoveToEscapeWaypoint = false;

@@ -95,4 +95,10 @@ private:
 	TSubclassOf<class UUserWidget> InfoHUDClass;
 	UPROPERTY()
 	UUserWidget* InfoWidget;
+
+	// NN Healthbar widget to display current player health
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class UUserWidget> HealthbarHUDClass;
+	UPROPERTY()
+	UUserWidget* HealthbarWidget;
 };

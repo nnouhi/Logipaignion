@@ -10,7 +10,7 @@
 AMedkit::AMedkit()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = false;
+	PrimaryActorTick.bCanEverTick = true;
 
 	// CN Set up components
 	Root = CreateDefaultSubobject<USceneComponent>(TEXT("Root Scene"));
@@ -37,6 +37,10 @@ void AMedkit::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	// NN Rotate medkit 1 unit per frame
+	FQuat MedkitRotation = FQuat(FRotator(0.f, YawValue, 0.f));
+
+	AddActorLocalRotation(MedkitRotation);
 }
 
 void AMedkit::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)

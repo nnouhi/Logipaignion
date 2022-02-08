@@ -50,6 +50,7 @@ AChapterCharacter::AChapterCharacter()
 
     CurrentDoor = NULL;
     CurrentItem = NULL;
+    
 }
 
 // Called when the game starts or when spawned
@@ -58,7 +59,7 @@ void AChapterCharacter::BeginPlay()
     Super::BeginPlay();
 
     PlayerControllerRef = Cast<AChapter_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
- 
+
 }
 
 // Called every frame

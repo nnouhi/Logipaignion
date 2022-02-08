@@ -76,7 +76,9 @@ public: \
 	FORCEINLINE static uint32 __PPO__LevelTimerClass() { return STRUCT_OFFSET(AChapter_PlayerController, LevelTimerClass); } \
 	FORCEINLINE static uint32 __PPO__LevelTimerWidget() { return STRUCT_OFFSET(AChapter_PlayerController, LevelTimerWidget); } \
 	FORCEINLINE static uint32 __PPO__InfoHUDClass() { return STRUCT_OFFSET(AChapter_PlayerController, InfoHUDClass); } \
-	FORCEINLINE static uint32 __PPO__InfoWidget() { return STRUCT_OFFSET(AChapter_PlayerController, InfoWidget); }
+	FORCEINLINE static uint32 __PPO__InfoWidget() { return STRUCT_OFFSET(AChapter_PlayerController, InfoWidget); } \
+	FORCEINLINE static uint32 __PPO__HealthbarHUDClass() { return STRUCT_OFFSET(AChapter_PlayerController, HealthbarHUDClass); } \
+	FORCEINLINE static uint32 __PPO__HealthbarWidget() { return STRUCT_OFFSET(AChapter_PlayerController, HealthbarWidget); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Chapter_PlayerController_h_12_PROLOG
