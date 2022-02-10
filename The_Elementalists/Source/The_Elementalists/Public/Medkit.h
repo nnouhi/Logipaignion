@@ -47,4 +47,6 @@ private:
 	// NN How many units per frame to rotate pitch
 	UPROPERTY(EditAnywhere)
 	float YawValue = 1.f;
+
+	float Angle = 0.f;
 };

@@ -39,8 +39,17 @@ void AMedkit::Tick(float DeltaTime)
 
 	// NN Rotate medkit 1 unit per frame
 	FQuat MedkitRotation = FQuat(FRotator(0.f, YawValue, 0.f));
-
 	AddActorLocalRotation(MedkitRotation);
+
+	// CN Move up and down as a sin wave
+	FVector Location = FVector::ZeroVector;
+	Location.Z += FMath::Sin(Angle) * 0.5f;
+	Angle += DeltaTime;
+	if (Angle > 180)
+	{
+		Angle = 0.f;
+	}
+	AddActorLocalOffset(Location, true);
 }
 
 void AMedkit::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)

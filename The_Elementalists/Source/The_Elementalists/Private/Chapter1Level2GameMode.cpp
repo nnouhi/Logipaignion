@@ -54,6 +54,9 @@ void AChapter1Level2GameMode::SetupFires()
 
 void AChapter1Level2GameMode::HandleGameStart()
 {
+	// CN Change level time based on difficulty
+	LevelTime += (GetDifficulty() - 1) * 60;
+
 	SetupFires();
 
 	TotalFires = GetTotalFireCount();
@@ -115,6 +118,7 @@ void AChapter1Level2GameMode::LevelComplete()
 {
 	GetWorldTimerManager().PauseTimer(LevelStartTimerHandle);
 	CalculateFinalScore();
+	AddToTotalScore(GetScore());
 
 	// Display Level Clear screen
 	if (ChapterCharacterController)

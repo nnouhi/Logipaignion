@@ -36,8 +36,16 @@ public:
 	
 	UFUNCTION(BlueprintCallable)
     virtual int32 GetScore();
+
+	UFUNCTION(BlueprintCallable)
+	int32 GetTotalScore();
+
+	void AddToTotalScore(int Score);
 	
 private:
 	// CN Difficulty {1: Easy, 2: Normal, 3:Hard}
 	static int32 Difficulty;
+
+	// CN Total playthrough score
+	static int32 TotalScore;
 };

@@ -8,6 +8,7 @@
 #include "Chapter1_AIController.h"
 #include "ChapterCharacter.h"
 #include "Fire.h"
+#include "InteractableItem.h"
 #include "ShootingFire.h"
 
 
@@ -62,10 +63,25 @@ void AChapter1Level3GameMode::SetupFires()
 	}
 }
 
+void AChapter1Level3GameMode::ShowCigarette(bool bShow)
+{
+	TArray<AActor*> CigaretteArray;
+	UGameplayStatics::GetAllActorsOfClass(this, AInteractableItem::StaticClass(), CigaretteArray); \
+	
+	AInteractableItem* Cigarette = Cast<AInteractableItem>(CigaretteArray.Top());
+	if (Cigarette)
+	{
+		Cigarette->SetActorHiddenInGame(!bShow);
+	}
+}
+
 void AChapter1Level3GameMode::HandleGameStart()
 {
-	// commented out for testing
-	/*LevelTime = 300.f;*/
+	// CN Change level time based on difficulty
+	LevelTime += (GetDifficulty() - 1) * 60;
+
+	// CN Hide cigarette
+	ShowCigarette(false);
 
 	SetupFires();
 
@@ -131,6 +147,7 @@ void AChapter1Level3GameMode::LevelComplete()
 {
 	
 	CalculateFinalScore();
+	AddToTotalScore(GetScore());
 
 	// Display Level Clear screen
 	if (ChapterCharacterController)
@@ -175,9 +192,8 @@ void AChapter1Level3GameMode::ActorDied(AActor* DeadActor)
 	{
 		bInvestigationMode = true;
 		// Play sound
-		// Should also stop timer
-		
-		// Maybe spawn cigarette?
+		GetWorldTimerManager().PauseTimer(LevelStartTimerHandle);
+		ShowCigarette(true);
 	}
 }
 
@@ -185,7 +201,6 @@ FString AChapter1Level3GameMode::GetObjectiveMessage()
 {
 	if (bInvestigationMode)
 	{
-		GetWorldTimerManager().PauseTimer(LevelStartTimerHandle);
 		return TEXT("Investigate - Find the cause of the fire.");
 	}
 	// else

@@ -4,6 +4,7 @@
 #include "BaseGameMode.h"
 
 int32 ABaseGameMode::Difficulty = 1;
+int32 ABaseGameMode::TotalScore = 0;
 
 FString ABaseGameMode::GetObjectiveMessage()
 {
@@ -44,4 +45,14 @@ int32 ABaseGameMode::GetDifficulty()
 int32 ABaseGameMode::GetScore()
 {
 	return 0;
+}
+
+int32 ABaseGameMode::GetTotalScore()
+{
+	return TotalScore;
+}
+
+void ABaseGameMode::AddToTotalScore(int32 Score)
+{
+	TotalScore += Score;
 }

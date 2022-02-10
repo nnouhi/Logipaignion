@@ -8,7 +8,6 @@
 #include "Chapter_PlayerController.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "SwingDoor.h"
-#include "DrawDebugHelpers.h"
 #include "Blueprint/UserWidget.h" 
 #include "Engine/SkeletalMeshSocket.h"
 #include "Kismet/GameplayStatics.h"
@@ -16,6 +15,7 @@
 #include "HealthComponent.h"
 #include "InteractableItem.h"
 #include "Projectile.h"
+//#include "DrawDebugHelpers.h"
 
 // Sets default values
 AChapterCharacter::AChapterCharacter()
@@ -132,7 +132,7 @@ void AChapterCharacter::PerformLineTrace()
     FVector ForwardVector = ThirdPersonCamera->GetForwardVector();
     FVector End = (ForwardVector * LineTraceDistance) + Start;
 
-    DrawDebugLine(GetWorld(), Start, End, FColor::Blue,1); //debug
+    // DrawDebugLine(GetWorld(), Start, End, FColor::Blue,1); //debug
 
     if (GetWorld()->LineTraceSingleByChannel(hit, Start, End, ECC_Visibility))
     {

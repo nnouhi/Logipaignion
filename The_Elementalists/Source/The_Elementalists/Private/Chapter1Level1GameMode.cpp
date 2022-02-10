@@ -45,6 +45,7 @@ void AChapter1Level1GameMode::LevelComplete()
 {
 	GetWorldTimerManager().PauseTimer(LevelStartTimerHandle);
 	CalculateFinalScore();
+	AddToTotalScore(GetScore());
 
 	if (ChapterCharacterController)
 	{
@@ -83,6 +84,9 @@ void AChapter1Level1GameMode::ActorDied(AActor* DeadActor)
 
 void AChapter1Level1GameMode::HandleGameStart() 
 {
+	// CN Change level time based on difficulty
+	LevelTime += (GetDifficulty() - 1) * 60;
+
 	SetupFires();
 	
 	TotalFires = GetTotalFireCount();

@@ -18,6 +18,13 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
 	UPackage* Z_Construct_UPackage__Script_The_Elementalists();
 // End Cross Module References
+	DEFINE_FUNCTION(ABaseGameMode::execGetTotalScore)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(int32*)Z_Param__Result=P_THIS->GetTotalScore();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ABaseGameMode::execGetScore)
 	{
 		P_FINISH;
@@ -76,6 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 			{ "GetDifficulty", &ABaseGameMode::execGetDifficulty },
 			{ "GetObjectiveMessage", &ABaseGameMode::execGetObjectiveMessage },
 			{ "GetScore", &ABaseGameMode::execGetScore },
+			{ "GetTotalScore", &ABaseGameMode::execGetTotalScore },
 			{ "LevelComplete", &ABaseGameMode::execLevelComplete },
 			{ "ProgressNextChapter", &ABaseGameMode::execProgressNextChapter },
 			{ "SetDifficulty", &ABaseGameMode::execSetDifficulty },
@@ -210,6 +218,38 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ABaseGameMode_GetTotalScore_Statics
+	{
+		struct BaseGameMode_eventGetTotalScore_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ABaseGameMode_GetTotalScore_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(BaseGameMode_eventGetTotalScore_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseGameMode_GetTotalScore_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseGameMode_GetTotalScore_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseGameMode_GetTotalScore_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/BaseGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseGameMode_GetTotalScore_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseGameMode, nullptr, "GetTotalScore", nullptr, nullptr, sizeof(BaseGameMode_eventGetTotalScore_Parms), Z_Construct_UFunction_ABaseGameMode_GetTotalScore_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseGameMode_GetTotalScore_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseGameMode_GetTotalScore_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseGameMode_GetTotalScore_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseGameMode_GetTotalScore()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseGameMode_GetTotalScore_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ABaseGameMode_LevelComplete_Statics
 	{
 #if WITH_METADATA
@@ -309,6 +349,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		{ &Z_Construct_UFunction_ABaseGameMode_GetDifficulty, "GetDifficulty" }, // 3301473594
 		{ &Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage, "GetObjectiveMessage" }, // 1833381145
 		{ &Z_Construct_UFunction_ABaseGameMode_GetScore, "GetScore" }, // 3161157956
+		{ &Z_Construct_UFunction_ABaseGameMode_GetTotalScore, "GetTotalScore" }, // 2241828639
 		{ &Z_Construct_UFunction_ABaseGameMode_LevelComplete, "LevelComplete" }, // 2531483530
 		{ &Z_Construct_UFunction_ABaseGameMode_ProgressNextChapter, "ProgressNextChapter" }, // 2962940943
 		{ &Z_Construct_UFunction_ABaseGameMode_SetDifficulty, "SetDifficulty" }, // 3505769322
@@ -349,7 +390,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseGameMode, 1639191042);
+	IMPLEMENT_CLASS(ABaseGameMode, 1180138898);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<ABaseGameMode>()
 	{
 		return ABaseGameMode::StaticClass();
