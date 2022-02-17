@@ -14,6 +14,7 @@ void AFlashback_PlayerController::BeginPlay()
 	MinimapWidget = CreateWidget(this, MinimapHUDClass);
 	HealthbarWidget = CreateWidget(this, HealthbarClass);
 	MapWidget = CreateWidget(this, MapHUDClass);
+	GameOverWidget = CreateWidget(this, GameOverClass);
 
 	if (HealthbarWidget)
 	{
@@ -29,6 +30,7 @@ void AFlashback_PlayerController::BeginPlay()
 	{
 		MinimapWidget->AddToViewport();
 	}
+
 	
 }
 
@@ -64,3 +66,12 @@ void AFlashback_PlayerController::RemoveMap()
 	}
 }
 
+void AFlashback_PlayerController::GameOver()
+{
+	if (GameOverWidget)
+	{
+		GameOverWidget->AddToViewport();
+		bShowMouseCursor = true;
+		SetPause(true);
+	}
+}

@@ -21,7 +21,7 @@ private: \
 	static void StaticRegisterNativesAFlash_Back(); \
 	friend struct Z_Construct_UClass_AFlash_Back_Statics; \
 public: \
-	DECLARE_CLASS(AFlash_Back, AGameModeBase, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/The_Elementalists"), NO_API) \
+	DECLARE_CLASS(AFlash_Back, ABaseGameMode, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/The_Elementalists"), NO_API) \
 	DECLARE_SERIALIZER(AFlash_Back)
 
 
@@ -30,7 +30,7 @@ private: \
 	static void StaticRegisterNativesAFlash_Back(); \
 	friend struct Z_Construct_UClass_AFlash_Back_Statics; \
 public: \
-	DECLARE_CLASS(AFlash_Back, AGameModeBase, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/The_Elementalists"), NO_API) \
+	DECLARE_CLASS(AFlash_Back, ABaseGameMode, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/The_Elementalists"), NO_API) \
 	DECLARE_SERIALIZER(AFlash_Back)
 
 
@@ -58,10 +58,7 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFlash_Back)
 
 
-#define The_Elementalists_Source_The_Elementalists_Public_Flash_Back_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__ObjectiveMessage() { return STRUCT_OFFSET(AFlash_Back, ObjectiveMessage); }
-
-
+#define The_Elementalists_Source_The_Elementalists_Public_Flash_Back_h_15_PRIVATE_PROPERTY_OFFSET
 #define The_Elementalists_Source_The_Elementalists_Public_Flash_Back_h_12_PROLOG
 #define The_Elementalists_Source_The_Elementalists_Public_Flash_Back_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

@@ -46,14 +46,13 @@ void AEndpoint::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Othe
 	AFlashbackCharacter* HitActor = Cast<AFlashbackCharacter>(OtherActor);
 	AFlash_Back* FlashBackGameModeRef = Cast<AFlash_Back>(UGameplayStatics::GetGameMode(GetWorld()));
 
-	/*if (HitActor)
+	if (HitActor)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Hit player"));
-	}*/
-
-	if (FlashBackGameModeRef)
-	{
-		FlashBackGameModeRef->ProgressNextChapter();
+		if (FlashBackGameModeRef)
+		{
+			FlashBackGameModeRef->ProgressNextChapter();
+		}
 	}
+	
 }
 

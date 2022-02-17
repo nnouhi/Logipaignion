@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "The_ElementalistsEditor Editor Win64 Development (The_Elementalists)",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        },
+        {
+            "name": "Win32",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_Default.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

@@ -8,6 +8,7 @@
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Particles/ParticleSystemComponent.h"
+#include "Fire.h"
 
 // Sets default values
 AProjectile::AProjectile()
@@ -45,7 +46,7 @@ void AProjectile::BeginPlay()
 void AProjectile::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
-
+   
 }
 void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit) {
 
@@ -62,15 +63,30 @@ void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimi
     // CN Apply damage and show effects
     if (OtherActor && OtherActor != this && OtherActor != MyOwner)
     {
+        // NN play sound if water projectile hits fire (change later)
+        if (OtherActor->IsA(AFire::StaticClass()))
+        {
+            AFire* FireRef = Cast<AFire>(OtherActor);
+            if (FireRef)
+            {
+                FireRef->PlayHitSound();
+            }
+        }
+        else
+        {
+            if (HitSound)
+            {
+                UGameplayStatics::PlaySoundAtLocation(this, HitSound, GetActorLocation());
+                
+            }
+        }
+
         UGameplayStatics::ApplyDamage(OtherActor, Damage, MyOwnerInstigator, this, DamageTypeClass);
         if (HitParticles)
         {
             UGameplayStatics::SpawnEmitterAtLocation(this, HitParticles, GetActorLocation(), GetActorRotation());
         }
-        if (HitSound)
-        {
-            UGameplayStatics::PlaySoundAtLocation(this, HitSound, GetActorLocation());
-        }
+       
     }
 
     Destroy();

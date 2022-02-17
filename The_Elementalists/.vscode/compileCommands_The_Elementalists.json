@@ -1,0 +1,297 @@
+[
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\AICharacter.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\BaseGameMode.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\Chapter_PlayerController.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\Chapter1_AIController.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\Chapter1Flashback_AIController.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\Chapter1GameMode.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\Chapter1Level1GameMode.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\Chapter1Level2GameMode.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\Chapter1Level3GameMode.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\ChapterCharacter.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\Endpoint.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\Fire.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\FireProjectile.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\FireWall.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\Flash_Back.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\Flashback_PlayerController.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\FlashbackCharacter.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\HealthComponent.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\InForest_AIController.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\InteractableItem.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\MainMenuGameMode.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\Medkit.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\Menu_PlayerController.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\Minimap.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\Projectile.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\ShootingFire.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Private\\\\SwingDoor.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\AICharacter.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\BaseGameMode.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\Chapter_PlayerController.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\Chapter1_AIController.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\Chapter1Flashback_AIController.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\Chapter1GameMode.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\Chapter1Level1GameMode.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\Chapter1Level2GameMode.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\Chapter1Level3GameMode.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\ChapterCharacter.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\Endpoint.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\Fire.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\FireProjectile.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\FireWall.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\Flash_Back.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\Flashback_PlayerController.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\FlashbackCharacter.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\HealthComponent.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\InForest_AIController.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\InteractableItem.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\MainMenuGameMode.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\Medkit.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\Menu_PlayerController.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\Minimap.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\Projectile.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\ShootingFire.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\Public\\\\SwingDoor.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\The_Elementalists.Build.cs",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\The_Elementalists.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\The_Elementalists.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\The_ElementalistsGameModeBase.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\wwwcn\\\\OneDrive\\\\Desktop\\\\GDC\\\\Logipaignion\\\\The_Elementalists\\\\Source\\\\The_Elementalists\\\\The_ElementalistsGameModeBase.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\.vscode\\compileCommands_The_Elementalists\\The_Elementalists.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	}
+]

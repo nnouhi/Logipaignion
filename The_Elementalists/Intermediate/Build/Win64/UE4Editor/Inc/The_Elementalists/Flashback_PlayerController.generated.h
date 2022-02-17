@@ -76,7 +76,9 @@ public: \
 	FORCEINLINE static uint32 __PPO__MapHUDClass() { return STRUCT_OFFSET(AFlashback_PlayerController, MapHUDClass); } \
 	FORCEINLINE static uint32 __PPO__MapWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, MapWidget); } \
 	FORCEINLINE static uint32 __PPO__HealthbarClass() { return STRUCT_OFFSET(AFlashback_PlayerController, HealthbarClass); } \
-	FORCEINLINE static uint32 __PPO__HealthbarWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, HealthbarWidget); }
+	FORCEINLINE static uint32 __PPO__HealthbarWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, HealthbarWidget); } \
+	FORCEINLINE static uint32 __PPO__GameOverClass() { return STRUCT_OFFSET(AFlashback_PlayerController, GameOverClass); } \
+	FORCEINLINE static uint32 __PPO__GameOverWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, GameOverWidget); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Flashback_PlayerController_h_12_PROLOG

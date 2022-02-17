@@ -34,6 +34,14 @@ AFire::AFire()
     AddOwnedComponent(HealthComponent);
 }
 
+void AFire::PlayHitSound()
+{
+    if (RandomizedFireHit)
+    {
+        UGameplayStatics::PlaySoundAtLocation(GetWorld(), RandomizedFireHit, GetActorLocation());
+    }
+}
+
 // Called when the game starts or when spawned
 void AFire::BeginPlay()
 {
@@ -116,4 +124,13 @@ void AFire::Explode()
         UGameplayStatics::PlaySoundAtLocation(GetWorld(), RandomizedExplosion,GetActorLocation());
     }
     bHasExploded = true;
+}
+
+void AFire::ScaleHealth(float Amount)
+{
+	if (HealthComponent)
+	{
+		HealthComponent->MaxHealth *= Amount;
+		HealthComponent->Health = HealthComponent->MaxHealth;
+	}
 }
