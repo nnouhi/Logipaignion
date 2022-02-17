@@ -34,14 +34,6 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CrosshairHUDClass_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_CrosshairHUDClass;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CrosshairWidget_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CrosshairWidget;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GameOverDeathClass_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_GameOverDeathClass;
@@ -98,13 +90,13 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_InfoWidget;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HealthbarHUDClass_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HUDClass_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_HealthbarHUDClass;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_HUDClass;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HealthbarWidget_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HUDWidget_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HealthbarWidget;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HUDWidget;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -121,25 +113,6 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 		{ "ModuleRelativePath", "Public/Chapter_PlayerController.h" },
 	};
 #endif
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_CrosshairHUDClass_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
-		{ "Category", "Widgets" },
-		{ "Comment", "// NN Objective widget displayed on screen\n" },
-		{ "ModuleRelativePath", "Public/Chapter_PlayerController.h" },
-		{ "ToolTip", "NN Objective widget displayed on screen" },
-	};
-#endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_CrosshairHUDClass = { "CrosshairHUDClass", nullptr, (EPropertyFlags)0x0044000000000015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapter_PlayerController, CrosshairHUDClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_CrosshairHUDClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_CrosshairHUDClass_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_CrosshairWidget_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
-		{ "Category", "Widgets" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/Chapter_PlayerController.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_CrosshairWidget = { "CrosshairWidget", nullptr, (EPropertyFlags)0x004000000008001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapter_PlayerController, CrosshairWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_CrosshairWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_CrosshairWidget_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_GameOverDeathClass_MetaData[] = {
 		{ "Category", "Chapter_PlayerController" },
@@ -253,24 +226,22 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_InfoWidget = { "InfoWidget", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapter_PlayerController, InfoWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_InfoWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_InfoWidget_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HealthbarHUDClass_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HUDClass_MetaData[] = {
 		{ "Category", "Chapter_PlayerController" },
-		{ "Comment", "// NN Healthbar widget to display current player health\n" },
+		{ "Comment", "// NN Widget that display the player HUD (Crosshair, Healthbar, Minimap)\n" },
 		{ "ModuleRelativePath", "Public/Chapter_PlayerController.h" },
-		{ "ToolTip", "NN Healthbar widget to display current player health" },
+		{ "ToolTip", "NN Widget that display the player HUD (Crosshair, Healthbar, Minimap)" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HealthbarHUDClass = { "HealthbarHUDClass", nullptr, (EPropertyFlags)0x0044000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapter_PlayerController, HealthbarHUDClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HealthbarHUDClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HealthbarHUDClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HUDClass = { "HUDClass", nullptr, (EPropertyFlags)0x0044000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapter_PlayerController, HUDClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HUDClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HUDClass_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HealthbarWidget_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HUDWidget_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Chapter_PlayerController.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HealthbarWidget = { "HealthbarWidget", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapter_PlayerController, HealthbarWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HealthbarWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HealthbarWidget_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HUDWidget = { "HUDWidget", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapter_PlayerController, HUDWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HUDWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HUDWidget_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AChapter_PlayerController_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_CrosshairHUDClass,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_CrosshairWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_GameOverDeathClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_GameOverDeathWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_GameOverTimeClass,
@@ -285,8 +256,8 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_LevelTimerWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_InfoHUDClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_InfoWidget,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HealthbarHUDClass,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HealthbarWidget,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HUDClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HUDWidget,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AChapter_PlayerController_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AChapter_PlayerController>::IsAbstract,
@@ -315,7 +286,7 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AChapter_PlayerController, 3676792561);
+	IMPLEMENT_CLASS(AChapter_PlayerController, 2770390780);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AChapter_PlayerController>()
 	{
 		return AChapter_PlayerController::StaticClass();

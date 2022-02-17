@@ -8,14 +8,15 @@ void AChapter_PlayerController::BeginPlay()
 {
 	Super::BeginPlay();
 
-	CrosshairWidget = CreateWidget(this, CrosshairHUDClass);
 	GameOverWidget = CreateWidget(this, GameOverClass);
 	GameOverDeathWidget = CreateWidget(this, GameOverDeathClass);
 	GameOverTimeWidget = CreateWidget(this, GameOverTimeClass);
 	LevelClearWidget = CreateWidget(this, LevelClearClass);
 	LevelTimerWidget = CreateWidget(this, LevelTimerClass);
 	InfoWidget = CreateWidget(this, InfoHUDClass);
-	HealthbarWidget = CreateWidget(this, HealthbarHUDClass);
+	HUDWidget = CreateWidget(this, HUDClass);
+	
+
 
 	// NOTE: Add to viewport the widget here for testing
 	if (InfoWidget)
@@ -23,6 +24,7 @@ void AChapter_PlayerController::BeginPlay()
 		InfoWidget->AddToViewport();
 		HideInfoWidget(); // At first hide the widget
 	}
+
 }
 
 void AChapter_PlayerController::GameOver()
@@ -89,21 +91,14 @@ void AChapter_PlayerController::StartLevel()
 		StartTimerWidget->RemoveFromViewport();
 	}
 	
-	// NOTE: Also add health widget, probably in the same widget with crosshair
-	// NN ADDED
-	if (HealthbarWidget) 
-	{
-		HealthbarWidget->AddToViewport();
-	}
-
-	if (CrosshairWidget)
-	{
-		CrosshairWidget->AddToViewport();
-	}
-
 	if (LevelTimerWidget)
 	{
 		LevelTimerWidget->AddToViewport();
+	}
+
+	if (HUDWidget)
+	{
+		HUDWidget->AddToViewport();
 	}
 }
 

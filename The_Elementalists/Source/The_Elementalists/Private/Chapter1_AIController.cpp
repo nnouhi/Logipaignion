@@ -35,6 +35,8 @@ void AChapter1_AIController::BeginPlay()
 
 	ClosestDoor = Cast<ASwingDoor>(TempDoor);
 
+	
+
 }
 
 void AChapter1_AIController::Tick(float DeltaTime)

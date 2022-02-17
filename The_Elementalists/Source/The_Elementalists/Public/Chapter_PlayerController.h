@@ -47,12 +47,6 @@ protected:
 
 private:
 
-	// NN Objective widget displayed on screen
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
-	TSubclassOf<UUserWidget> CrosshairHUDClass;
-
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
-	class UUserWidget* CrosshairWidget;
 
 	// CN Game Over death menu screen
 	UPROPERTY(EditAnywhere)
@@ -96,9 +90,9 @@ private:
 	UPROPERTY()
 	UUserWidget* InfoWidget;
 
-	// NN Healthbar widget to display current player health
+	// NN Widget that display the player HUD (Crosshair, Healthbar, Minimap)
 	UPROPERTY(EditAnywhere)
-	TSubclassOf<class UUserWidget> HealthbarHUDClass;
+	TSubclassOf<UUserWidget> HUDClass;
 	UPROPERTY()
-	UUserWidget* HealthbarWidget;
+	UUserWidget* HUDWidget;
 };
