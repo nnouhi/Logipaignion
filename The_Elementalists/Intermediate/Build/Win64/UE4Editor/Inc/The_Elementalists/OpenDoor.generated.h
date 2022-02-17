@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define THE_ELEMENTALISTS_OpenDoor_generated_h
 
-#define The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_SPARSE_DATA
-#define The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_RPC_WRAPPERS
-#define The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_RPC_WRAPPERS_NO_PURE_DECLS
-#define The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_INCLASS_NO_PURE_DECLS \
+#define The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_SPARSE_DATA
+#define The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_RPC_WRAPPERS
+#define The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOpenDoor(); \
 	friend struct Z_Construct_UClass_UOpenDoor_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(UOpenDoor)
 
 
-#define The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_INCLASS \
+#define The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesUOpenDoor(); \
 	friend struct Z_Construct_UClass_UOpenDoor_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(UOpenDoor)
 
 
-#define The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_STANDARD_CONSTRUCTORS \
+#define The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOpenDoor(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOpenDoor) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_ENHANCED_CONSTRUCTORS \
+#define The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UOpenDoor(UOpenDoor&&); \
@@ -58,7 +58,7 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UOpenDoor)
 
 
-#define The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_PRIVATE_PROPERTY_OFFSET \
+#define The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__OpenAngle() { return STRUCT_OFFSET(UOpenDoor, OpenAngle); } \
 	FORCEINLINE static uint32 __PPO__PressurePlate() { return STRUCT_OFFSET(UOpenDoor, PressurePlate); } \
 	FORCEINLINE static uint32 __PPO__ActorThatOpens() { return STRUCT_OFFSET(UOpenDoor, ActorThatOpens); } \
@@ -67,27 +67,27 @@ public: \
 	FORCEINLINE static uint32 __PPO__DoorCloseSpeed() { return STRUCT_OFFSET(UOpenDoor, DoorCloseSpeed); }
 
 
-#define The_Elementalists_Source_The_Elementalists_OpenDoor_h_11_PROLOG
-#define The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_GENERATED_BODY_LEGACY \
+#define The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_11_PROLOG
+#define The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_PRIVATE_PROPERTY_OFFSET \
-	The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_SPARSE_DATA \
-	The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_RPC_WRAPPERS \
-	The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_INCLASS \
-	The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_STANDARD_CONSTRUCTORS \
+	The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_PRIVATE_PROPERTY_OFFSET \
+	The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_SPARSE_DATA \
+	The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_RPC_WRAPPERS \
+	The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_INCLASS \
+	The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_GENERATED_BODY \
+#define The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_PRIVATE_PROPERTY_OFFSET \
-	The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_SPARSE_DATA \
-	The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_INCLASS_NO_PURE_DECLS \
-	The_Elementalists_Source_The_Elementalists_OpenDoor_h_14_ENHANCED_CONSTRUCTORS \
+	The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_PRIVATE_PROPERTY_OFFSET \
+	The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_SPARSE_DATA \
+	The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_INCLASS_NO_PURE_DECLS \
+	The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -95,7 +95,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> THE_ELEMENTALISTS_API UClass* StaticClass<class UOpenDoor>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID The_Elementalists_Source_The_Elementalists_OpenDoor_h
+#define CURRENT_FILE_ID The_Elementalists_Source_The_Elementalists_Public_OpenDoor_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

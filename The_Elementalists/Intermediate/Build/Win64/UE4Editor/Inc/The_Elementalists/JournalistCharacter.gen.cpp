@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "The_Elementalists/JournalistCharacter.h"
+#include "The_Elementalists/Public/JournalistCharacter.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -61,7 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeJournalistCharacter() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AJournalistCharacter_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "JournalistCharacter.h" },
-		{ "ModuleRelativePath", "JournalistCharacter.h" },
+		{ "ModuleRelativePath", "Public/JournalistCharacter.h" },
 	};
 #endif
 #if WITH_METADATA
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeJournalistCharacter() {}
 		{ "Category", "Camera" },
 		{ "Comment", "/*NN First person camera */" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "JournalistCharacter.h" },
+		{ "ModuleRelativePath", "Public/JournalistCharacter.h" },
 		{ "ToolTip", "NN First person camera" },
 	};
 #endif
@@ -81,7 +81,7 @@ void EmptyLinkFunctionForGeneratedCodeJournalistCharacter() {}
 		{ "Category", "Mesh" },
 		{ "Comment", "/** Pawn mesh: 1st person view (arms; seen only by self) */" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "JournalistCharacter.h" },
+		{ "ModuleRelativePath", "Public/JournalistCharacter.h" },
 		{ "ToolTip", "Pawn mesh: 1st person view (arms; seen only by self)" },
 	};
 #endif
@@ -91,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeJournalistCharacter() {}
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Camera" },
 		{ "Comment", "/*NN Base turn rate, in deg/sec. Other scaling may affect final turn rate. */" },
-		{ "ModuleRelativePath", "JournalistCharacter.h" },
+		{ "ModuleRelativePath", "Public/JournalistCharacter.h" },
 		{ "ToolTip", "NN Base turn rate, in deg/sec. Other scaling may affect final turn rate." },
 	};
 #endif
@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeJournalistCharacter() {}
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Camera" },
 		{ "Comment", "/*NN Base look up/down rate, in deg/sec. Other scaling may affect final rate. */" },
-		{ "ModuleRelativePath", "JournalistCharacter.h" },
+		{ "ModuleRelativePath", "Public/JournalistCharacter.h" },
 		{ "ToolTip", "NN Base look up/down rate, in deg/sec. Other scaling may affect final rate." },
 	};
 #endif
@@ -139,7 +139,7 @@ void EmptyLinkFunctionForGeneratedCodeJournalistCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AJournalistCharacter, 378741566);
+	IMPLEMENT_CLASS(AJournalistCharacter, 2312478242);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AJournalistCharacter>()
 	{
 		return AJournalistCharacter::StaticClass();

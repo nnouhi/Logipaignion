@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "The_Elementalists/The_ElementalistsGameModeBase.h"
+#include "The_Elementalists/Public/The_ElementalistsGameModeBase.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -43,7 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeThe_ElementalistsGameModeBase() {}
 		{ "Comment", "/**\n * \n */" },
 		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "The_ElementalistsGameModeBase.h" },
-		{ "ModuleRelativePath", "The_ElementalistsGameModeBase.h" },
+		{ "ModuleRelativePath", "Public/The_ElementalistsGameModeBase.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeThe_ElementalistsGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AThe_ElementalistsGameModeBase, 4166995010);
+	IMPLEMENT_CLASS(AThe_ElementalistsGameModeBase, 979230455);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AThe_ElementalistsGameModeBase>()
 	{
 		return AThe_ElementalistsGameModeBase::StaticClass();
