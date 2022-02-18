@@ -1,0 +1,317 @@
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\Definitions.The_Elementalists.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/AICharacter.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\AICharacter.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\AICharacter.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/CapsuleComponent.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CapsuleComponent.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/BaseGameMode.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\BaseGameMode.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\BaseGameMode.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter_PlayerController.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter_PlayerController.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter_PlayerController.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/Widget.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/Visual.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Visual.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\UMG\Public\Slate/WidgetTransform.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetTransform.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\UMG\Public\Blueprint/WidgetNavigation.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\SlateCore\Public\Types/NavigationMetaData.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetNavigation.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Widget.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/NamedSlotInterface.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\NamedSlotInterface.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Slate\Public\Widgets/Layout/Anchors.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Slate\Anchors.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\UMG\Public\Animation/WidgetAnimation.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\MovieSceneSequence.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\MovieSceneSignedObject.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSignedObject.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\MovieSceneTrack.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\Compilation/MovieSceneSegmentCompiler.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/InlineValue.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneSegment.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Core\Public\UObject/SequencerObjectVersion.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\MovieSceneFrameMigration.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\MovieSceneFwd.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\MovieSceneSequenceID.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequenceID.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneFrameMigration.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSegment.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationField.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationKey.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneTrackIdentifier.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Core\Public\UObject/EditorObjectVersion.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneTrackIdentifier.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationKey.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationTree.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\EntitySystem/MovieSceneEntityIDs.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\EntitySystem/MovieSceneEntitySystemTypes.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationField.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\MovieSceneSection.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\KeyParams.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\MovieScene.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\MovieSceneSpawnable.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSpawnable.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\MovieSceneBinding.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneBinding.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\MovieScenePossessable.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieScenePossessable.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\MovieSceneObjectBindingID.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneObjectBindingID.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\MovieSceneTimeController.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieScene.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\Evaluation/Blending/MovieSceneBlendType.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneBlendType.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneCompletionMode.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneCompletionMode.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\Generators/MovieSceneEasingFunction.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEasingFunction.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationCustomVersion.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\EntitySystem/MovieSceneEntityBuilder.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\EntitySystem/MovieSceneEntityManager.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/StrongObjectPtr.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieScenePlayback.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneSequenceTransform.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Core\Public\Algo/AllOf.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\Evaluation\MovieSceneTimeTransform.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneTimeTransform.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\Evaluation\MovieSceneTimeWarping.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneTimeWarping.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequenceTransform.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\EntitySystem/MovieSceneEntityFactoryTypes.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\EntitySystem/MovieSceneComponentTypeHandler.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\EntitySystem/MovieSceneComponentTypeInfo.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\EntitySystem/MovieSceneComponentDebug.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Core\Public\Algo/AnyOf.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Core\Public\Algo/NoneOf.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Core\Public\Algo/Common.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\EntitySystem/MovieSceneComponentRegistry.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\EntitySystem/MovieSceneEntityFactory.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\EntitySystem/MovieSceneEntitySystemDirectedGraph.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/GeneratedTypeName.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSection.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\MovieScene\Public\MovieSceneTrackEvaluationField.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneTrackEvaluationField.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneTrack.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequence.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\UMG\Public\Animation/WidgetAnimationBinding.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetAnimationBinding.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetAnimation.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\UMG\Public\Blueprint/WidgetBlueprintGeneratedClass.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\UMG\Public\Binding/DynamicPropertyPath.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\PropertyPath\Public\PropertyPathHelpers.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\PropertyPath\Public\PropertyTypeCompatibility.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\PropertyPath\PropertyPathHelpers.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\DynamicPropertyPath.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintGeneratedClass.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter1_AIController.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter1_AIController.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\AIModule\Classes\AIController.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavFilters/NavigationQueryFilter.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavAreas/NavArea.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\AI/Navigation/NavAreaBase.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavAreaBase.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavArea.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavigationQueryFilter.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\AIModule\Classes\AITypes.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavigationSystemTypes.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\AI/NavigationSystemConfig.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationSystemConfig.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AITypes.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\GameplayTasks\Classes\GameplayTaskOwnerInterface.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\GameplayTasks\Public\GameplayTaskTypes.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTasks\GameplayTaskOwnerInterface.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\GameplayTasks\Classes\GameplayTask.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/WeakInterfacePtr.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTasks\GameplayTask.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\AIModule\Classes\Navigation/PathFollowingComponent.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavigationData.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\AI/Navigation/NavigationDataInterface.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationDataInterface.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavigationData.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\AIModule\Classes\AIResourceInterface.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIResourceInterface.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/NavMovementComponent.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\AI/Navigation/PathFollowingAgentInterface.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PathFollowingAgentInterface.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavMovementComponent.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\PathFollowingComponent.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\AIModule\Classes\Perception/AIPerceptionListenerInterface.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIPerceptionListenerInterface.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\AIModule\Classes\GenericTeamAgentInterface.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\GenericTeamAgentInterface.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Public\VisualLogger/VisualLoggerDebugSnapshotInterface.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\VisualLoggerDebugSnapshotInterface.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIController.generated.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter1_AIController.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/TargetPoint.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TargetPoint.generated.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\SwingDoor.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\SwingDoor.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter1Flashback_AIController.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter1Flashback_AIController.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter1Flashback_AIController.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter1GameMode.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter1GameMode.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter1GameMode.generated.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Flashback_PlayerController.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Flashback_PlayerController.generated.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\FlashbackCharacter.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\FlashbackCharacter.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter1Level1GameMode.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter1Level1GameMode.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter1Level1GameMode.generated.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Fire.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Fire.generated.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\ChapterCharacter.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\ChapterCharacter.generated.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\ShootingFire.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\ShootingFire.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter1Level2GameMode.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter1Level2GameMode.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter1Level2GameMode.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/ChapterCharacter.cpp
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/SpringArmComponent.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpringArmComponent.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/SkeletalMeshSocket.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SkeletalMeshSocket.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementComponent.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\AI/Navigation/NavigationAvoidanceTypes.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationAvoidanceTypes.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Public\AI/RVOAvoidanceInterface.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RVOAvoidanceInterface.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/PawnMovementComponent.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PawnMovementComponent.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Interfaces/NetworkPredictionInterface.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NetworkPredictionInterface.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementComponent.generated.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\HealthComponent.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\HealthComponent.generated.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\InteractableItem.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\InteractableItem.generated.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Projectile.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Projectile.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Endpoint.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Endpoint.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Endpoint.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Particles/ParticleSystemComponent.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Particles/ParticleSystem.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Particles/ParticlePerfStats.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleSystem.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Particles/Emitter.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Emitter.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleSystemComponent.generated.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Flash_Back.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Flash_Back.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Fire.cpp
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/FireProjectile.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\FireProjectile.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\FireProjectile.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ProjectileMovementComponent.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/FireWall.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\FireWall.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\FireWall.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Flash_Back.cpp
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Flashback_PlayerController.cpp
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/FlashbackCharacter.cpp
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/SceneCaptureComponent2D.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/SceneCaptureComponent.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SceneCaptureComponent.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SceneCaptureComponent2D.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/HealthComponent.cpp
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/InForest_AIController.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\InForest_AIController.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\InForest_AIController.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/InteractableItem.cpp
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/JournalistCharacter.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\JournalistCharacter.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\JournalistCharacter.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/MainMenuGameMode.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\MainMenuGameMode.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\MainMenuGameMode.generated.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Menu_PlayerController.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Menu_PlayerController.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Medkit.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Medkit.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Medkit.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Menu_PlayerController.cpp
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Minimap.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Minimap.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Minimap.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Projectile.cpp
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/RandomLocationAIController.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\RandomLocationAIController.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\RandomLocationAIController.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavigationSystem.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavigationOctree.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavigationOctreeController.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavigationDirtyAreasController.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Core\Public\Math/MovingWindowAverageFast.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Editor\UnrealEd\Public\UnrealEdMisc.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Editor\UnrealEd\Public\Editor.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Editor\UnrealEd\Classes\Editor/EditorEngine.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Editor\UnrealEd\Classes\Editor/Transactor.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Core\Public\Serialization/ArchiveSerializedPropertyChain.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\Transactor.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Editor\UnrealEd\Classes\Settings/LevelEditorViewportSettings.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Editor\UnrealEd\Public\Viewports.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Editor\UnrealEd\Classes\Editor/UnrealEdTypes.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\UnrealEdTypes.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\LevelEditorViewportSettings.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Developer\TargetPlatform\Public\Interfaces/ITargetPlatform.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Developer\TargetPlatform\Public\Interfaces/ITargetDevice.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Developer\TargetPlatform\Public\Interfaces/TargetDeviceId.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Developer\TargetPlatform\Public\Interfaces/ITargetPlatformManagerModule.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Editor\UnrealEd\Public\PlayInEditorDataTypes.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\PlayInEditorDataTypes.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Editor\EditorSubsystem\Public\EditorSubsystem.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\EditorSubsystem\EditorSubsystem.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\EditorEngine.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Editor\UnrealEd\Public\Subsystems/ImportSubsystem.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\ImportSubsystem.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavigationSystem.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/ShootingFire.cpp
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetMathLibrary.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetMathLibrary.generated.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\KismetMathLibrary.inl
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/SwingDoor.cpp
+D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/TimelineComponent.h
+D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TimelineComponent.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/The_Elementalists.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\The_Elementalists.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/The_ElementalistsGameModeBase.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\The_ElementalistsGameModeBase.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\The_ElementalistsGameModeBase.generated.h

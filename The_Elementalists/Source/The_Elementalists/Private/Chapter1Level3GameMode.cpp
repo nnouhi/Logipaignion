@@ -140,7 +140,7 @@ void AChapter1Level3GameMode::StartLevel()
 void AChapter1Level3GameMode::ProgressNextChapter()
 {
 	// Play loading screen
-	UGameplayStatics::OpenLevel(GetWorld(), TEXT("Main_Menu")); // change to lobby
+	UGameplayStatics::OpenLevel(GetWorld(), TEXT("Lobby")); // change to lobby
 }
 
 void AChapter1Level3GameMode::LevelComplete()
