@@ -40,4 +40,7 @@ private:
 	// NN Particle Component
 	UPROPERTY(VisibleAnywhere)
 	class UParticleSystemComponent* EndpointParticle;
+
+	// CN Check if level clear
+	bool bLevelClear = false;
 };

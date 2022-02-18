@@ -58,11 +58,7 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AChapter1GameMode)
 
 
-#define The_Elementalists_Source_The_Elementalists_Public_Chapter1GameMode_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__StartDelay() { return STRUCT_OFFSET(AChapter1GameMode, StartDelay); } \
-	FORCEINLINE static uint32 __PPO__LevelTime() { return STRUCT_OFFSET(AChapter1GameMode, LevelTime); }
-
-
+#define The_Elementalists_Source_The_Elementalists_Public_Chapter1GameMode_h_15_PRIVATE_PROPERTY_OFFSET
 #define The_Elementalists_Source_The_Elementalists_Public_Chapter1GameMode_h_12_PROLOG
 #define The_Elementalists_Source_The_Elementalists_Public_Chapter1GameMode_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

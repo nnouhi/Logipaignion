@@ -337,6 +337,15 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_StartDelay_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_StartDelay;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LevelTime_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_LevelTime;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -363,6 +372,30 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseGameMode_Statics::NewProp_StartDelay_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "BaseGameMode" },
+		{ "Comment", "// CN Start timer\n" },
+		{ "ModuleRelativePath", "Public/BaseGameMode.h" },
+		{ "ToolTip", "CN Start timer" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseGameMode_Statics::NewProp_StartDelay = { "StartDelay", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseGameMode, StartDelay), METADATA_PARAMS(Z_Construct_UClass_ABaseGameMode_Statics::NewProp_StartDelay_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABaseGameMode_Statics::NewProp_StartDelay_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseGameMode_Statics::NewProp_LevelTime_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "BaseGameMode" },
+		{ "Comment", "// CN Level timer\n" },
+		{ "ModuleRelativePath", "Public/BaseGameMode.h" },
+		{ "ToolTip", "CN Level timer" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseGameMode_Statics::NewProp_LevelTime = { "LevelTime", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseGameMode, LevelTime), METADATA_PARAMS(Z_Construct_UClass_ABaseGameMode_Statics::NewProp_LevelTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABaseGameMode_Statics::NewProp_LevelTime_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseGameMode_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseGameMode_Statics::NewProp_StartDelay,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseGameMode_Statics::NewProp_LevelTime,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABaseGameMode_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABaseGameMode>::IsAbstract,
 	};
@@ -372,11 +405,11 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		FuncInfo,
-		nullptr,
+		Z_Construct_UClass_ABaseGameMode_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		UE_ARRAY_COUNT(FuncInfo),
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_ABaseGameMode_Statics::PropPointers),
 		0,
 		0x009002ACu,
 		METADATA_PARAMS(Z_Construct_UClass_ABaseGameMode_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ABaseGameMode_Statics::Class_MetaDataParams))
@@ -390,7 +423,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseGameMode, 1180138898);
+	IMPLEMENT_CLASS(ABaseGameMode, 4201068028);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<ABaseGameMode>()
 	{
 		return ABaseGameMode::StaticClass();

@@ -48,9 +48,10 @@ void AEndpoint::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Othe
 
 	if (HitActor)
 	{
-		if (FlashBackGameModeRef)
+		if (FlashBackGameModeRef && !bLevelClear)
 		{
-			FlashBackGameModeRef->ProgressNextChapter();
+			FlashBackGameModeRef->LevelComplete();
+			bLevelClear = true;
 		}
 	}
 	

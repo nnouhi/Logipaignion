@@ -28,12 +28,5 @@ public:
 protected:
 
 	virtual void BeginPlay() override;
-	
-	// CN Start timer
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	float StartDelay = 5.f;
-	
-	// CN Level timer
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	float LevelTime = 120.f;
+
 };

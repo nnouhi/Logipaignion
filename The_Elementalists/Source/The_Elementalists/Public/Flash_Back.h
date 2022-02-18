@@ -26,12 +26,22 @@ public:
 	// NN Setter for ObjectiveMessage
 	FString GetObjectiveMessage() override;
 
+	// CN Get level name
+	FString GetChapterName() override;
+
+	// CN Get level score
+	int32 GetScore() override;
+
+	// CN On level completion
+	void LevelComplete() override;
+
+	// CN Sets up fire stats based on difficulty
+	void SetupFires();
+
+	// CN Handles level start
+	void HandleGameStart();
+
 protected:
 
 	virtual void BeginPlay() override;
-
-
-
-	
-	
 };

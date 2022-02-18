@@ -40,7 +40,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	int32 GetTotalScore();
 
-	void AddToTotalScore(int Score);
+	void AddToTotalScore(int32 Score);
 	
 private:
 	// CN Difficulty {1: Easy, 2: Normal, 3:Hard}
@@ -48,4 +48,14 @@ private:
 
 	// CN Total playthrough score
 	static int32 TotalScore;
+
+protected:
+	// CN Start timer
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	float StartDelay = 5.f;
+
+	// CN Level timer
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	float LevelTime = 120.f;
+
 };

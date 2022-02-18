@@ -14,16 +14,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define THE_ELEMENTALISTS_Flashback_PlayerController_generated_h
 
 #define The_Elementalists_Source_The_Elementalists_Public_Flashback_PlayerController_h_15_SPARSE_DATA
-#define The_Elementalists_Source_The_Elementalists_Public_Flashback_PlayerController_h_15_RPC_WRAPPERS \
- \
-	DECLARE_FUNCTION(execGetObjectiveMessage);
-
-
-#define The_Elementalists_Source_The_Elementalists_Public_Flashback_PlayerController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
- \
-	DECLARE_FUNCTION(execGetObjectiveMessage);
-
-
+#define The_Elementalists_Source_The_Elementalists_Public_Flashback_PlayerController_h_15_RPC_WRAPPERS
+#define The_Elementalists_Source_The_Elementalists_Public_Flashback_PlayerController_h_15_RPC_WRAPPERS_NO_PURE_DECLS
 #define The_Elementalists_Source_The_Elementalists_Public_Flashback_PlayerController_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFlashback_PlayerController(); \
@@ -78,7 +70,11 @@ public: \
 	FORCEINLINE static uint32 __PPO__HealthbarClass() { return STRUCT_OFFSET(AFlashback_PlayerController, HealthbarClass); } \
 	FORCEINLINE static uint32 __PPO__HealthbarWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, HealthbarWidget); } \
 	FORCEINLINE static uint32 __PPO__GameOverClass() { return STRUCT_OFFSET(AFlashback_PlayerController, GameOverClass); } \
-	FORCEINLINE static uint32 __PPO__GameOverWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, GameOverWidget); }
+	FORCEINLINE static uint32 __PPO__GameOverWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, GameOverWidget); } \
+	FORCEINLINE static uint32 __PPO__StartTimerClass() { return STRUCT_OFFSET(AFlashback_PlayerController, StartTimerClass); } \
+	FORCEINLINE static uint32 __PPO__StartTimerWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, StartTimerWidget); } \
+	FORCEINLINE static uint32 __PPO__LevelClearClass() { return STRUCT_OFFSET(AFlashback_PlayerController, LevelClearClass); } \
+	FORCEINLINE static uint32 __PPO__LevelClearWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, LevelClearWidget); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Flashback_PlayerController_h_12_PROLOG

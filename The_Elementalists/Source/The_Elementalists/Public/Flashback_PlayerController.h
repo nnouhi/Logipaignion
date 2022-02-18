@@ -40,10 +40,6 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
 	class UUserWidget* MapWidget;
 
-	// NN BlueprintCallable method that will obtained the appropriate text to show on screen
-	UFUNCTION(BluePrintCallable)
-	FString GetObjectiveMessage();
-
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
 	TSubclassOf<class UUserWidget> HealthbarClass;
 
@@ -56,6 +52,18 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
 	UUserWidget* GameOverWidget;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
+	TSubclassOf<UUserWidget> StartTimerClass;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
+	class UUserWidget* StartTimerWidget;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
+	TSubclassOf<UUserWidget> LevelClearClass;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
+	class UUserWidget* LevelClearWidget;
+
 public:
 
 	// NN when invoke displays map on viewport
@@ -65,4 +73,16 @@ public:
 	void RemoveMap();
 
 	void GameOver();
+
+	// CN Displays Level clear screen
+	void LevelClear();
+
+	// CN Displays the countdown timer until level starts
+	void StartTimer();
+
+	// CN Displays HUD and level timer
+	void StartLevel();
+
+	// CN Enables/Disables input
+	void SetPlayerEnabledState(bool bEnabled);
 };
