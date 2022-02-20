@@ -201,7 +201,7 @@ FString AChapter1Level3GameMode::GetObjectiveMessage()
 {
 	if (bInvestigationMode)
 	{
-		return TEXT("Investigate - Find the cause of the fire.");
+		return TEXT("Investigate - Find the cause of the fire. \n Press 'F' to use your scanner.") ;
 	}
 	// else
 	return TEXT("Put down all the fires (")

@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "The_Elementalists",
-			"Path": "C:\\Users\\Dima\\OneDrive\\Documents\\GitHub\\Logipaignion\\The_Elementalists\\Source\\The_Elementalists.Target.cs",
+			"Path": "D:\\rt\\Logipaignion\\The_Elementalists\\Source\\The_Elementalists.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "The_ElementalistsEditor",
-			"Path": "C:\\Users\\Dima\\OneDrive\\Documents\\GitHub\\Logipaignion\\The_Elementalists\\Source\\The_ElementalistsEditor.Target.cs",
+			"Path": "D:\\rt\\Logipaignion\\The_Elementalists\\Source\\The_ElementalistsEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

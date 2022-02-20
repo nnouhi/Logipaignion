@@ -10,7 +10,6 @@
 			"Chapter1GameMode.cpp.obj",
 			"Chapter1Level1GameMode.cpp.obj",
 			"Chapter1Level2GameMode.cpp.obj",
-			"Chapter1Level3GameMode.cpp.obj",
 			"ChapterCharacter.cpp.obj",
 			"Endpoint.cpp.obj",
 			"Fire.cpp.obj",
@@ -33,7 +32,8 @@
 			"SpawnPlayer.cpp.obj",
 			"SwingDoor.cpp.obj",
 			"The_Elementalists.cpp.obj",
-			"The_ElementalistsGameModeBase.cpp.obj"
+			"The_ElementalistsGameModeBase.cpp.obj",
+			"Chapter1Level3GameMode.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",
@@ -55,6 +55,7 @@
 			"FlashbackCharacter.gen.cpp.obj",
 			"HealthComponent.gen.cpp.obj",
 			"InForest_AIController.gen.cpp.obj",
+			"InteractableItem.gen.cpp.obj",
 			"JournalistCharacter.gen.cpp.obj",
 			"MainMenuGameMode.gen.cpp.obj",
 			"Medkit.gen.cpp.obj",
@@ -65,9 +66,8 @@
 			"ShootingFire.gen.cpp.obj",
 			"SpawnPlayer.gen.cpp.obj",
 			"SwingDoor.gen.cpp.obj",
-			"The_ElementalistsGameModeBase.gen.cpp.obj",
-			"InteractableItem.gen.cpp.obj",
-			"The_Elementalists.init.gen.cpp.obj"
+			"The_Elementalists.init.gen.cpp.obj",
+			"The_ElementalistsGameModeBase.gen.cpp.obj"
 		]
 	}
 }
