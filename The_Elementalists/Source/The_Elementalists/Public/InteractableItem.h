@@ -25,14 +25,15 @@ public:
 
 	void Interact();
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	UStaticMeshComponent* ItemMesh;
+
 private:
 	class AChapterCharacter* CharRef;
 
 	UPROPERTY(EditAnywhere)
 	float ReachDistance = 400.f;
 
-	UPROPERTY(EditAnywhere)
-	UStaticMeshComponent* ItemMesh;
 
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<class UUserWidget> InfoClass;

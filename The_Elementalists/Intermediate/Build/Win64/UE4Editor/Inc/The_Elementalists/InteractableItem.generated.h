@@ -60,7 +60,6 @@ public: \
 
 #define The_Elementalists_Source_The_Elementalists_Public_InteractableItem_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__ReachDistance() { return STRUCT_OFFSET(AInteractableItem, ReachDistance); } \
-	FORCEINLINE static uint32 __PPO__ItemMesh() { return STRUCT_OFFSET(AInteractableItem, ItemMesh); } \
 	FORCEINLINE static uint32 __PPO__InfoClass() { return STRUCT_OFFSET(AInteractableItem, InfoClass); } \
 	FORCEINLINE static uint32 __PPO__InfoWidget() { return STRUCT_OFFSET(AInteractableItem, InfoWidget); }
 

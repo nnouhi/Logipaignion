@@ -198,6 +198,11 @@ C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermedi
 C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter1Level2GameMode.cpp
 C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter1Level2GameMode.h
 C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter1Level2GameMode.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter1Level3GameMode.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter1Level3GameMode.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter1Level3GameMode.generated.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\InteractableItem.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\InteractableItem.generated.h
 C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/ChapterCharacter.cpp
 D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
@@ -217,8 +222,6 @@ D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementComponent.generated.h
 C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\HealthComponent.h
 C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\HealthComponent.generated.h
-C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\InteractableItem.h
-C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\InteractableItem.generated.h
 C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Projectile.h
 C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Projectile.generated.h
 C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Endpoint.cpp
@@ -307,6 +310,9 @@ C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/Th
 D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetMathLibrary.h
 D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetMathLibrary.generated.h
 D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\KismetMathLibrary.inl
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/SpawnPlayer.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\SpawnPlayer.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\SpawnPlayer.generated.h
 C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/SwingDoor.cpp
 D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/TimelineComponent.h
 D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TimelineComponent.generated.h

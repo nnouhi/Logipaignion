@@ -109,9 +109,6 @@ C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermedi
 C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/InForest_AIController.gen.cpp
 C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists/Public/InForest_AIController.h
 C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\InForest_AIController.generated.h
-C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/InteractableItem.gen.cpp
-C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists/Public/InteractableItem.h
-C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\InteractableItem.generated.h
 C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/JournalistCharacter.gen.cpp
 C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists/Public/JournalistCharacter.h
 C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\JournalistCharacter.generated.h
@@ -134,6 +131,9 @@ C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermedi
 C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/ShootingFire.gen.cpp
 C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists/Public/ShootingFire.h
 C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\ShootingFire.generated.h
+C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/SpawnPlayer.gen.cpp
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists/Public/SpawnPlayer.h
+C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\SpawnPlayer.generated.h
 C:/Users/Dima/OneDrive/Documents/GitHub/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/SwingDoor.gen.cpp
 C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists/Public/SwingDoor.h
 C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\SwingDoor.generated.h
