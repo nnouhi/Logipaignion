@@ -10,6 +10,7 @@
 			"Chapter1GameMode.cpp.obj",
 			"Chapter1Level1GameMode.cpp.obj",
 			"Chapter1Level2GameMode.cpp.obj",
+			"Chapter1Level3GameMode.cpp.obj",
 			"ChapterCharacter.cpp.obj",
 			"Endpoint.cpp.obj",
 			"Fire.cpp.obj",
@@ -17,7 +18,6 @@
 			"FireWall.cpp.obj",
 			"Flash_Back.cpp.obj",
 			"Flashback_PlayerController.cpp.obj",
-			"FlashbackCharacter.cpp.obj",
 			"HealthComponent.cpp.obj",
 			"InForest_AIController.cpp.obj",
 			"InteractableItem.cpp.obj",
@@ -33,7 +33,8 @@
 			"SwingDoor.cpp.obj",
 			"The_Elementalists.cpp.obj",
 			"The_ElementalistsGameModeBase.cpp.obj",
-			"Chapter1Level3GameMode.cpp.obj"
+			"Boat.cpp.obj",
+			"FlashbackCharacter.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",
@@ -52,7 +53,6 @@
 			"FireWall.gen.cpp.obj",
 			"Flash_Back.gen.cpp.obj",
 			"Flashback_PlayerController.gen.cpp.obj",
-			"FlashbackCharacter.gen.cpp.obj",
 			"HealthComponent.gen.cpp.obj",
 			"InForest_AIController.gen.cpp.obj",
 			"InteractableItem.gen.cpp.obj",
@@ -66,8 +66,10 @@
 			"ShootingFire.gen.cpp.obj",
 			"SpawnPlayer.gen.cpp.obj",
 			"SwingDoor.gen.cpp.obj",
-			"The_Elementalists.init.gen.cpp.obj",
-			"The_ElementalistsGameModeBase.gen.cpp.obj"
+			"The_ElementalistsGameModeBase.gen.cpp.obj",
+			"Boat.gen.cpp.obj",
+			"FlashbackCharacter.gen.cpp.obj",
+			"The_Elementalists.init.gen.cpp.obj"
 		]
 	}
 }

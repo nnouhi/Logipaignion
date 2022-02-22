@@ -198,6 +198,11 @@ D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter1Level2GameMode.cpp
 D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter1Level2GameMode.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter1Level2GameMode.generated.h
+D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter1Level3GameMode.cpp
+D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter1Level3GameMode.h
+D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter1Level3GameMode.generated.h
+D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\InteractableItem.h
+D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\InteractableItem.generated.h
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/ChapterCharacter.cpp
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
@@ -217,8 +222,6 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementComponent.generated.h
 D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\HealthComponent.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\HealthComponent.generated.h
-D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\InteractableItem.h
-D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\InteractableItem.generated.h
 D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Projectile.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Projectile.generated.h
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Endpoint.cpp
@@ -246,11 +249,6 @@ D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\FireWall.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\FireWall.generated.h
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Flash_Back.cpp
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Flashback_PlayerController.cpp
-D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/FlashbackCharacter.cpp
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/SceneCaptureComponent2D.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/SceneCaptureComponent.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SceneCaptureComponent.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SceneCaptureComponent2D.generated.h
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/HealthComponent.cpp
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/InForest_AIController.cpp
 D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\InForest_AIController.h
@@ -259,6 +257,10 @@ D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Interactab
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/JournalistCharacter.cpp
 D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\JournalistCharacter.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\JournalistCharacter.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/SceneCaptureComponent2D.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/SceneCaptureComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SceneCaptureComponent.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SceneCaptureComponent2D.generated.h
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/MainMenuGameMode.cpp
 D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\MainMenuGameMode.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\MainMenuGameMode.generated.h

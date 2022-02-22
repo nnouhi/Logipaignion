@@ -1,14 +1,14 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\rt\Logipaignion).
-  Waiting for 'git status' command to complete
   Building The_ElementalistsEditor...
   Using Visual Studio 2019 14.31.30818 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.31.30818) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive unity build] Excluded from The_Elementalists unity file: Chapter1Level3GameMode.cpp
+  [Adaptive unity build] Excluded from The_Elementalists unity file: Boat.cpp, FlashbackCharacter.cpp
+  [Adaptive unity build] Excluded from The_Elementalists.gen unity file: Boat.gen.cpp, FlashbackCharacter.gen.cpp, The_Elementalists.init.gen.cpp
   Building 4 actions with 8 processes...
-    [1/4] Chapter1Level3GameMode.cpp
-    [2/4] UE4Editor-The_Elementalists-0002.lib
-       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0002.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0002.exp
-    [3/4] UE4Editor-The_Elementalists-0002.dll
-       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0002.suppressed.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0002.suppressed.exp
+    [1/4] Boat.cpp
+    [2/4] UE4Editor-The_Elementalists-0018.lib
+       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0018.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0018.exp
+    [3/4] UE4Editor-The_Elementalists-0018.dll
+       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0018.suppressed.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0018.suppressed.exp
     [4/4] The_ElementalistsEditor.target
-  Total time in Parallel executor: 6.59 seconds
-  Total execution time: 8.33 seconds
+  Total time in Parallel executor: 1.81 seconds
+  Total execution time: 2.98 seconds
