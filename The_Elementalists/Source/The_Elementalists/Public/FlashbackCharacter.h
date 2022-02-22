@@ -21,6 +21,9 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	FORCEINLINE class UCameraComponent* GetCameraComponent() const { return FirstPersonCameraComponent; };
+
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -49,12 +52,17 @@ protected:
 	/*NN Changes MaxWalkSpeed variable back to 600.f (default)*/
 	void EndSprint();
 
-
 	/*NN Request for Character to Crouch*/
 	void BeginCrouch();
 
 	/*NN Request for Character to EndCrouch*/
 	void EndCrouch();
+
+	UPROPERTY(EditAnywhere)
+	float SprintSpeed = 500.f;
+
+	UPROPERTY(EditAnywhere)
+	float WalkSpeed = 300.f;
 
 public:	
 
@@ -75,9 +83,9 @@ private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FirstPersonCameraComponent;
 
-	/** Pawn mesh: 1st person view (arms; seen only by self) */
-	UPROPERTY(VisibleDefaultsOnly, Category = Mesh, meta = (AllowPrivateAccess = "true"))
-	class USkeletalMeshComponent* Mesh1P;
+	///** Pawn mesh: 1st person view (arms; seen only by self) */
+	//UPROPERTY(VisibleDefaultsOnly, Category = Mesh, meta = (AllowPrivateAccess = "true"))
+	//class USkeletalMeshComponent* Mesh1P;
 
 	/*NN Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))

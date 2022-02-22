@@ -39,17 +39,17 @@ AFlashbackCharacter::AFlashbackCharacter():
 	//Minimap->SetupAttachment(SpringArmComp);
 
 	/*NN Create a mesh component that will be maybe used */
-	Mesh1P = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CharacterMesh1P"));
+	/*Mesh1P = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CharacterMesh1P"));
 	Mesh1P->SetOnlyOwnerSee(true);
 	Mesh1P->SetupAttachment(FirstPersonCameraComponent);
 	Mesh1P->bCastDynamicShadow = false;
 	Mesh1P->CastShadow = false;
 	Mesh1P->SetRelativeRotation(FRotator(1.9f, -19.19f, 5.2f));
-	Mesh1P->SetRelativeLocation(FVector(-0.5f, -4.4f, -155.7f));
+	Mesh1P->SetRelativeLocation(FVector(-0.5f, -4.4f, -155.7f));*/
 
 	/*NN Modify character's movement component */
 	GetCharacterMovement()->GetNavAgentPropertiesRef().bCanCrouch = true; //set to true to enable crouching(false by default)
-	GetCharacterMovement()->MaxWalkSpeed = 300.f;
+	/*GetCharacterMovement()->MaxWalkSpeed = 300.f;*/
 
 	// CN Create health component
 	HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("Health Component"));
@@ -104,12 +104,12 @@ void AFlashbackCharacter::LookUpAtRate(float Rate)
 
 void AFlashbackCharacter::BeginSprint()
 {
-	GetCharacterMovement()->MaxWalkSpeed = 500.f;
+	GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
 }
 
 void AFlashbackCharacter::EndSprint()
 {
-	GetCharacterMovement()->MaxWalkSpeed = 300.f;
+	GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
 }
 
 void AFlashbackCharacter::BeginCrouch()
