@@ -21,7 +21,7 @@ void AFlash_Back::BeginPlay()
 
 FString AFlash_Back::GetObjectiveMessage()
 {
-	return TEXT("Avoid the raging flames and escape to the Nearby village!");
+	return TEXT("Avoid the raging flames and escape to the nearby village!");
 }
 
 FString AFlash_Back::GetChapterName()

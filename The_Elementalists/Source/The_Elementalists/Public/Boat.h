@@ -20,12 +20,23 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	// CN Disable sprinting
+	FORCEINLINE void BeginSprint() override {};
+	FORCEINLINE void EndSprint() override {};
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	// NN Make boat slow down
+	void SlowDown(float Percentage/*, float Time*/);
+
+	// NN Reset speed
+	void SpeedUp();
+
 
 private:
 	UPROPERTY(EditAnywhere)
@@ -36,10 +47,4 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	class UCameraComponent* FPSCamera;
-
-	// NN Make boat slow down
-	void SlowDown(float Percentage/*, float Time*/);
-
-	// NN Reset speed
-	void SpeedUp();
 };

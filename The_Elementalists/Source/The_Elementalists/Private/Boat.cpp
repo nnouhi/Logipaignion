@@ -72,12 +72,6 @@ void ABoat::SlowDown(float Percentage/*, float Time*/)
         &ABoat::SpeedUp
     );
 
-   /* GetWorldTimerManager().SetTimer(
-        SlowedDownTimerHandle,
-        SlowedDownTimerDelegate,
-        Time,
-        false
-    );*/
 }
 
 void ABoat::SpeedUp()

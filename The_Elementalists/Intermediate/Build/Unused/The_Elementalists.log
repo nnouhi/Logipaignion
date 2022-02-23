@@ -1,14 +1,16 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\rt\Logipaignion).
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion).
+  Invalidating makefile for The_ElementalistsEditor (working set of source files changed)
   Building The_ElementalistsEditor...
-  Using Visual Studio 2019 14.31.30818 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.31.30818) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive unity build] Excluded from The_Elementalists unity file: Boat.cpp, FlashbackCharacter.cpp
-  [Adaptive unity build] Excluded from The_Elementalists.gen unity file: Boat.gen.cpp, FlashbackCharacter.gen.cpp, The_Elementalists.init.gen.cpp
-  Building 4 actions with 8 processes...
-    [1/4] Boat.cpp
-    [2/4] UE4Editor-The_Elementalists-0018.lib
-       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0018.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0018.exp
-    [3/4] UE4Editor-The_Elementalists-0018.dll
-       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0018.suppressed.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0018.suppressed.exp
-    [4/4] The_ElementalistsEditor.target
-  Total time in Parallel executor: 1.81 seconds
-  Total execution time: 2.98 seconds
+  Using Visual Studio 2022 14.30.30709 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  [Adaptive unity build] Excluded from The_Elementalists unity file: Boat.cpp, Endpoint.cpp, Flash_Back.cpp, Flash_Back3.cpp, FloatComponent.cpp, OilSpill.cpp, OilSpillBlocked.cpp, OilSpillSlow.cpp
+  [Adaptive unity build] Excluded from The_Elementalists.gen unity file: Flash_Back3.gen.cpp, FloatComponent.gen.cpp, OilSpill.gen.cpp, OilSpillBlocked.gen.cpp, OilSpillSlow.gen.cpp, The_Elementalists.init.gen.cpp
+  Building 5 actions with 16 processes...
+    [1/5] Endpoint.cpp
+    [2/5] Module.The_Elementalists.cpp
+    [3/5] UE4Editor-The_Elementalists-0022.lib
+       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0022.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0022.exp
+    [4/5] UE4Editor-The_Elementalists-0022.dll
+       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0022.suppressed.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0022.suppressed.exp
+    [5/5] The_ElementalistsEditor.target
+  Total time in Parallel executor: 6.39 seconds
+  Total execution time: 8.61 seconds

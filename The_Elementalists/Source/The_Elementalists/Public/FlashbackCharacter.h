@@ -47,10 +47,10 @@ protected:
 	void LookUpAtRate(float Rate);
 
 	/*NN Changes MaxWalkSpeed variable to 1000.f*/
-	void BeginSprint();
+	virtual void BeginSprint();
 
 	/*NN Changes MaxWalkSpeed variable back to 600.f (default)*/
-	void EndSprint();
+	virtual void EndSprint();
 
 	/*NN Request for Character to Crouch*/
 	void BeginCrouch();
