@@ -114,7 +114,9 @@ void AFlashback3_AIController::MoveToClosestWaypoint(AActor* Waypoint)
 void AFlashback3_AIController::MoveToShore()
 {
 	bInvokeMoveToShore = false;
-	MoveTo(ShoreWaypoints[FMath::RandRange(0,ShoreWaypoints.Num()-1)]);
+	int32 choice = FMath::RandRange(0, ShoreWaypoints.Num() - 1);
+	UE_LOG(LogTemp, Warning, TEXT("%s"), *ShoreWaypoints[choice]->GetName());
+	MoveTo(ShoreWaypoints[choice]);
 
 }
 

@@ -4,6 +4,7 @@
 		"Module.The_Elementalists.cpp.obj": [
 			"AICharacter.cpp.obj",
 			"BaseGameMode.cpp.obj",
+			"Boat.cpp.obj",
 			"Chapter_PlayerController.cpp.obj",
 			"Chapter1_AIController.cpp.obj",
 			"Chapter1Flashback_AIController.cpp.obj",
@@ -12,6 +13,7 @@
 			"Chapter1Level2GameMode.cpp.obj",
 			"Chapter1Level3GameMode.cpp.obj",
 			"ChapterCharacter.cpp.obj",
+			"Endpoint.cpp.obj",
 			"Fire.cpp.obj",
 			"FireProjectile.cpp.obj",
 			"FireWall.cpp.obj",
@@ -38,13 +40,12 @@
 			"SwingDoor.cpp.obj",
 			"The_Elementalists.cpp.obj",
 			"The_ElementalistsGameModeBase.cpp.obj",
-			"Boat.cpp.obj",
-			"Endpoint.cpp.obj",
 			"Flashback3_AIController.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",
 			"BaseGameMode.gen.cpp.obj",
+			"Boat.gen.cpp.obj",
 			"Chapter_PlayerController.gen.cpp.obj",
 			"Chapter1_AIController.gen.cpp.obj",
 			"Chapter1Flashback_AIController.gen.cpp.obj",
@@ -60,6 +61,7 @@
 			"Flash_Back.gen.cpp.obj",
 			"Flash_Back3.gen.cpp.obj",
 			"Flashback_PlayerController.gen.cpp.obj",
+			"Flashback3_AIController.gen.cpp.obj",
 			"FlashbackCharacter.gen.cpp.obj",
 			"FloatComponent.gen.cpp.obj",
 			"HealthComponent.gen.cpp.obj",
@@ -78,10 +80,8 @@
 			"ShootingFire.gen.cpp.obj",
 			"SpawnPlayer.gen.cpp.obj",
 			"SwingDoor.gen.cpp.obj",
-			"The_ElementalistsGameModeBase.gen.cpp.obj",
-			"Boat.gen.cpp.obj",
-			"Flashback3_AIController.gen.cpp.obj",
-			"The_Elementalists.init.gen.cpp.obj"
+			"The_Elementalists.init.gen.cpp.obj",
+			"The_ElementalistsGameModeBase.gen.cpp.obj"
 		]
 	}
 }
