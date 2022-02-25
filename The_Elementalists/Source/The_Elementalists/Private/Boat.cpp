@@ -5,6 +5,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "Components/SceneCaptureComponent2D.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
 // Sets default values
@@ -19,6 +20,21 @@ ABoat::ABoat()
 
     BoatMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Boat Mesh"));
     BoatMesh->SetupAttachment(RootComponent);
+
+    MinimapArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("MinimapArm"));
+    MinimapArm->SetupAttachment(BoatMesh);
+
+    Minimap = CreateDefaultSubobject<USceneCaptureComponent2D>(TEXT("Minimap"));
+    Minimap->SetupAttachment(MinimapArm);
+
+    SittingMesh1 = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("SittingMesh1"));
+    SittingMesh1->SetupAttachment(RootComponent);
+
+    SittingMesh2 = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("SittingMesh2"));
+    SittingMesh2->SetupAttachment(RootComponent);
+
+    SittingMesh3 = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("SittingMesh3"));
+    SittingMesh3->SetupAttachment(RootComponent);
 
     SpringArmComponent = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
     SpringArmComponent->SetupAttachment(BoatMesh);

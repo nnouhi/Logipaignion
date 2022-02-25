@@ -61,7 +61,12 @@ public: \
 #define The_Elementalists_Source_The_Elementalists_Public_Boat_h_13_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__BoatMesh() { return STRUCT_OFFSET(ABoat, BoatMesh); } \
 	FORCEINLINE static uint32 __PPO__SpringArmComponent() { return STRUCT_OFFSET(ABoat, SpringArmComponent); } \
-	FORCEINLINE static uint32 __PPO__FPSCamera() { return STRUCT_OFFSET(ABoat, FPSCamera); }
+	FORCEINLINE static uint32 __PPO__FPSCamera() { return STRUCT_OFFSET(ABoat, FPSCamera); } \
+	FORCEINLINE static uint32 __PPO__SittingMesh1() { return STRUCT_OFFSET(ABoat, SittingMesh1); } \
+	FORCEINLINE static uint32 __PPO__SittingMesh2() { return STRUCT_OFFSET(ABoat, SittingMesh2); } \
+	FORCEINLINE static uint32 __PPO__SittingMesh3() { return STRUCT_OFFSET(ABoat, SittingMesh3); } \
+	FORCEINLINE static uint32 __PPO__MinimapArm() { return STRUCT_OFFSET(ABoat, MinimapArm); } \
+	FORCEINLINE static uint32 __PPO__Minimap() { return STRUCT_OFFSET(ABoat, Minimap); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Boat_h_10_PROLOG

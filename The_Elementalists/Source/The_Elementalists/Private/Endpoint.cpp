@@ -4,6 +4,7 @@
 #include "Endpoint.h"
 #include "Components/BoxComponent.h"
 #include "FlashbackCharacter.h"
+#include "Flashback3_AIController.h"
 #include "Kismet/GameplayStatics.h"
 #include "Particles/ParticleSystemComponent.h"
 #include "BaseGameMode.h"
@@ -44,9 +45,10 @@ void AEndpoint::Tick(float DeltaTime)
 void AEndpoint::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	AFlashbackCharacter* HitActor = Cast<AFlashbackCharacter>(OtherActor);
+	AFlashback3_AIController* AIController = Cast<AFlashback3_AIController>(HitActor->GetController());
 	ABaseGameMode* FlashBackGameModeRef = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
 
-	if (HitActor)
+	if (HitActor && AIController == NULL) // NN Ignore flashback 3 ai (hardcoded for now must change later)
 	{
 		if (FlashBackGameModeRef && !bLevelClear)
 		{

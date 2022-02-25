@@ -37,9 +37,14 @@ public:
 	// NN Reset speed
 	void SpeedUp();
 
+	FORCEINLINE class USpringArmComponent* GetMapArm() const { return MinimapArm; };
+	FORCEINLINE class USceneCaptureComponent2D* GetSceneCapture() const { return Minimap; };
+
 
 private:
-	UPROPERTY(EditAnywhere)
+
+	// NN Components
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* BoatMesh;
 	
 	UPROPERTY(EditAnywhere)
@@ -47,4 +52,19 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	class UCameraComponent* FPSCamera;
+
+	UPROPERTY(EditAnywhere)
+	UStaticMeshComponent* SittingMesh1;
+
+	UPROPERTY(EditAnywhere)
+	UStaticMeshComponent* SittingMesh2;
+
+	UPROPERTY(EditAnywhere)
+	UStaticMeshComponent* SittingMesh3;
+
+	UPROPERTY(EditAnywhere)
+	USpringArmComponent* MinimapArm;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	class USceneCaptureComponent2D* Minimap;
 };

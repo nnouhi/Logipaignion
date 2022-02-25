@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeBoat() {}
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USceneCaptureComponent2D_NoRegister();
 // End Cross Module References
 	void ABoat::StaticRegisterNativesABoat()
 	{
@@ -46,6 +47,26 @@ void EmptyLinkFunctionForGeneratedCodeBoat() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FPSCamera_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FPSCamera;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SittingMesh1_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SittingMesh1;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SittingMesh2_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SittingMesh2;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SittingMesh3_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SittingMesh3;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MinimapArm_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MinimapArm;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Minimap_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Minimap;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -63,12 +84,15 @@ void EmptyLinkFunctionForGeneratedCodeBoat() {}
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABoat_Statics::NewProp_BoatMesh_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Boat" },
+		{ "Comment", "// NN Components\n" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Boat.h" },
+		{ "ToolTip", "NN Components" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABoat_Statics::NewProp_BoatMesh = { "BoatMesh", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABoat, BoatMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABoat_Statics::NewProp_BoatMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABoat_Statics::NewProp_BoatMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABoat_Statics::NewProp_BoatMesh = { "BoatMesh", nullptr, (EPropertyFlags)0x004000000008001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABoat, BoatMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABoat_Statics::NewProp_BoatMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABoat_Statics::NewProp_BoatMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABoat_Statics::NewProp_SpringArmComponent_MetaData[] = {
 		{ "Category", "Boat" },
@@ -85,10 +109,56 @@ void EmptyLinkFunctionForGeneratedCodeBoat() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABoat_Statics::NewProp_FPSCamera = { "FPSCamera", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABoat, FPSCamera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABoat_Statics::NewProp_FPSCamera_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABoat_Statics::NewProp_FPSCamera_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABoat_Statics::NewProp_SittingMesh1_MetaData[] = {
+		{ "Category", "Boat" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Boat.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABoat_Statics::NewProp_SittingMesh1 = { "SittingMesh1", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABoat, SittingMesh1), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABoat_Statics::NewProp_SittingMesh1_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABoat_Statics::NewProp_SittingMesh1_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABoat_Statics::NewProp_SittingMesh2_MetaData[] = {
+		{ "Category", "Boat" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Boat.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABoat_Statics::NewProp_SittingMesh2 = { "SittingMesh2", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABoat, SittingMesh2), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABoat_Statics::NewProp_SittingMesh2_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABoat_Statics::NewProp_SittingMesh2_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABoat_Statics::NewProp_SittingMesh3_MetaData[] = {
+		{ "Category", "Boat" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Boat.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABoat_Statics::NewProp_SittingMesh3 = { "SittingMesh3", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABoat, SittingMesh3), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABoat_Statics::NewProp_SittingMesh3_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABoat_Statics::NewProp_SittingMesh3_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABoat_Statics::NewProp_MinimapArm_MetaData[] = {
+		{ "Category", "Boat" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Boat.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABoat_Statics::NewProp_MinimapArm = { "MinimapArm", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABoat, MinimapArm), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABoat_Statics::NewProp_MinimapArm_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABoat_Statics::NewProp_MinimapArm_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABoat_Statics::NewProp_Minimap_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Boat" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Boat.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABoat_Statics::NewProp_Minimap = { "Minimap", nullptr, (EPropertyFlags)0x004000000008001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABoat, Minimap), Z_Construct_UClass_USceneCaptureComponent2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABoat_Statics::NewProp_Minimap_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABoat_Statics::NewProp_Minimap_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABoat_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoat_Statics::NewProp_BoatMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoat_Statics::NewProp_SpringArmComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoat_Statics::NewProp_FPSCamera,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoat_Statics::NewProp_SittingMesh1,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoat_Statics::NewProp_SittingMesh2,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoat_Statics::NewProp_SittingMesh3,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoat_Statics::NewProp_MinimapArm,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoat_Statics::NewProp_Minimap,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABoat_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABoat>::IsAbstract,
@@ -117,7 +187,7 @@ void EmptyLinkFunctionForGeneratedCodeBoat() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABoat, 3970069231);
+	IMPLEMENT_CLASS(ABoat, 750192825);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<ABoat>()
 	{
 		return ABoat::StaticClass();
