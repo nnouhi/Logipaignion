@@ -12,7 +12,6 @@
 			"Chapter1Level1GameMode.cpp.obj",
 			"Chapter1Level2GameMode.cpp.obj",
 			"Chapter1Level3GameMode.cpp.obj",
-			"ChapterCharacter.cpp.obj",
 			"Endpoint.cpp.obj",
 			"Fire.cpp.obj",
 			"FireProjectile.cpp.obj",
@@ -32,7 +31,6 @@
 			"Menu_PlayerController.cpp.obj",
 			"Minimap.cpp.obj",
 			"OilSpill.cpp.obj",
-			"OilSpillBlocked.cpp.obj",
 			"OilSpillSlow.cpp.obj",
 			"Projectile.cpp.obj",
 			"RandomLocationAIController.cpp.obj",
@@ -40,7 +38,12 @@
 			"SpawnPlayer.cpp.obj",
 			"SwingDoor.cpp.obj",
 			"The_Elementalists.cpp.obj",
-			"The_ElementalistsGameModeBase.cpp.obj"
+			"The_ElementalistsGameModeBase.cpp.obj",
+			"ChapterCharacter.cpp.obj",
+			"IceCube.cpp.obj",
+			"IceCubePlaceHolder.cpp.obj",
+			"IceProjectile.cpp.obj",
+			"OilSpillBlocked.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",
@@ -80,8 +83,11 @@
 			"ShootingFire.gen.cpp.obj",
 			"SpawnPlayer.gen.cpp.obj",
 			"SwingDoor.gen.cpp.obj",
-			"The_Elementalists.init.gen.cpp.obj",
-			"The_ElementalistsGameModeBase.gen.cpp.obj"
+			"The_ElementalistsGameModeBase.gen.cpp.obj",
+			"IceCube.gen.cpp.obj",
+			"IceCubePlaceHolder.gen.cpp.obj",
+			"IceProjectile.gen.cpp.obj",
+			"The_Elementalists.init.gen.cpp.obj"
 		]
 	}
 }

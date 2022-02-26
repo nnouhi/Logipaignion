@@ -67,7 +67,7 @@ void AChapterCharacter::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
 
-
+   // UE_LOG(LogTemp, Warning, TEXT("%f"), GetHealthPercentage());
 
     /*UE_LOG(LogTemp, Warning, TEXT("%d"), bPerformLineTrace);*/
    /* UE_LOG(LogTemp, Warning, TEXT("Location X: %f, Y: %f, Z: %f"), GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z);*/
