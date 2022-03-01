@@ -1,14 +1,14 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion).
+﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\rt\Logipaignion).
   Building The_ElementalistsEditor...
-  Using Visual Studio 2022 14.30.30709 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive unity build] Excluded from The_Elementalists unity file: ChapterCharacter.cpp, IceCube.cpp, IceCubePlaceHolder.cpp, IceProjectile.cpp, OilSpillBlocked.cpp
-  [Adaptive unity build] Excluded from The_Elementalists.gen unity file: IceCube.gen.cpp, IceCubePlaceHolder.gen.cpp, IceProjectile.gen.cpp, The_Elementalists.init.gen.cpp
-  Building 4 actions with 16 processes...
-    [1/4] OilSpillBlocked.cpp
-    [2/4] UE4Editor-The_Elementalists-0019.lib
-       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0019.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0019.exp
-    [3/4] UE4Editor-The_Elementalists-0019.dll
-       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0019.suppressed.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0019.suppressed.exp
+  Using Visual Studio 2019 14.31.30818 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.31.30818) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  [Adaptive unity build] Excluded from The_Elementalists unity file: Chapter_PlayerController.cpp, Chapter3Level1GameMode.cpp, ChapterCharacter.cpp, Endpoint.cpp, FloorCollider.cpp, IceCollider.cpp, IceProjectile.cpp
+  [Adaptive unity build] Excluded from The_Elementalists.gen unity file: Chapter_PlayerController.gen.cpp, Chapter3Level1GameMode.gen.cpp, ChapterCharacter.gen.cpp, FloorCollider.gen.cpp, IceCollider.gen.cpp, The_Elementalists.init.gen.cpp
+  Building 4 actions with 8 processes...
+    [1/4] ChapterCharacter.cpp
+    [2/4] UE4Editor-The_Elementalists-0045.lib
+       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0045.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0045.exp
+    [3/4] UE4Editor-The_Elementalists-0045.dll
+       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0045.suppressed.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0045.suppressed.exp
     [4/4] The_ElementalistsEditor.target
-  Total time in Parallel executor: 1.49 seconds
-  Total execution time: 2.23 seconds
+  Total time in Parallel executor: 4.38 seconds
+  Total execution time: 5.81 seconds
