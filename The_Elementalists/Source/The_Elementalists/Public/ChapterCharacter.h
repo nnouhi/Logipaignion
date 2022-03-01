@@ -129,4 +129,15 @@ private:
     /* NN Sets bShouldFire to true and checks if player still holds the fire button(bFireButtonPressed),
      * if so call StartFireTimer() again */
     void AutoFireReset();
+
+    // NN invokes player controller DisplayMap method
+    void CallDisplayMap();
+
+    // NN invokes player controller RemoveMap method
+    void CallRemoveMap();
+
+    // NN Kill actor when overlapped
+    UFUNCTION()
+    void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, 
+         int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 };

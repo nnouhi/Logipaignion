@@ -15,7 +15,8 @@ void AChapter_PlayerController::BeginPlay()
 	LevelTimerWidget = CreateWidget(this, LevelTimerClass);
 	InfoWidget = CreateWidget(this, InfoHUDClass);
 	HUDWidget = CreateWidget(this, HUDClass);
-	
+	MapWidget = CreateWidget(this, MapHUDClass);
+
 
 
 	// NOTE: Add to viewport the widget here for testing
@@ -120,4 +121,20 @@ void AChapter_PlayerController::HideInfoWidget()
 void AChapter_PlayerController::DisplayInfoWidget()
 {
 	InfoWidget->GetWidgetFromName("InteractImage")->SetVisibility(ESlateVisibility::Visible);
+}
+
+void AChapter_PlayerController::DisplayMap()
+{
+	if (MapWidget)
+	{
+		MapWidget->AddToViewport();
+	}
+}
+
+void AChapter_PlayerController::RemoveMap()
+{
+	if (MapWidget)
+	{
+		MapWidget->RemoveFromViewport();
+	}
 }

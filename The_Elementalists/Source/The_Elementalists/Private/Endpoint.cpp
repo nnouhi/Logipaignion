@@ -4,6 +4,7 @@
 #include "Endpoint.h"
 #include "Components/BoxComponent.h"
 #include "FlashbackCharacter.h"
+#include "ChapterCharacter.h"
 #include "Flashback3_AIController.h"
 #include "Kismet/GameplayStatics.h"
 #include "Particles/ParticleSystemComponent.h"
@@ -44,11 +45,24 @@ void AEndpoint::Tick(float DeltaTime)
 
 void AEndpoint::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	AFlashbackCharacter* HitActor = Cast<AFlashbackCharacter>(OtherActor);
-	AFlashback3_AIController* AIController = Cast<AFlashback3_AIController>(HitActor->GetController());
+	// NN NOTE: Name is misleading  
 	ABaseGameMode* FlashBackGameModeRef = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
 
-	if (HitActor && AIController == NULL) // NN Ignore flashback 3 ai (hardcoded for now must change later)
+	if (OtherActor->IsA(AFlashbackCharacter::StaticClass()))
+	{
+		AFlashbackCharacter* HitActor = Cast<AFlashbackCharacter>(OtherActor);
+		AFlashback3_AIController* AIController = Cast<AFlashback3_AIController>(HitActor->GetController());
+
+		if (HitActor && AIController == NULL) // NN Ignore flashback 3 ai (hardcoded for now must change later)
+		{
+			if (FlashBackGameModeRef && !bLevelClear)
+			{
+				FlashBackGameModeRef->LevelComplete();
+				bLevelClear = true;
+			}
+		}
+	}
+	else
 	{
 		if (FlashBackGameModeRef && !bLevelClear)
 		{
@@ -56,6 +70,7 @@ void AEndpoint::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Othe
 			bLevelClear = true;
 		}
 	}
+	
 	
 }
 

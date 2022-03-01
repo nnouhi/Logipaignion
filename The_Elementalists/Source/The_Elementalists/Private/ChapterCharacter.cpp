@@ -2,7 +2,7 @@
 
 
 #include "ChapterCharacter.h"
-
+#include "Components/CapsuleComponent.h"
 #include "BaseGameMode.h"
 #include "Camera/CameraComponent.h"
 #include "Chapter_PlayerController.h"
@@ -15,6 +15,7 @@
 #include "HealthComponent.h"
 #include "InteractableItem.h"
 #include "Projectile.h"
+#include "FloorCollider.h"
 //#include "DrawDebugHelpers.h"
 
 // Sets default values
@@ -57,6 +58,8 @@ AChapterCharacter::AChapterCharacter()
 void AChapterCharacter::BeginPlay()
 {
     Super::BeginPlay();
+    
+    GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &AChapterCharacter::OnOverlapBegin);
 
     PlayerControllerRef = Cast<AChapter_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 
@@ -102,6 +105,8 @@ void AChapterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
     PlayerInputComponent->BindAction(TEXT("Action"), EInputEvent::IE_Pressed, this, &AChapterCharacter::OnAction);
     PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &AChapterCharacter::BeginSprint);
     PlayerInputComponent->BindAction("Sprint", IE_Released, this, &AChapterCharacter::EndSprint);
+    PlayerInputComponent->BindAction("DisplayMap", IE_Pressed, this, &AChapterCharacter::CallDisplayMap);
+    PlayerInputComponent->BindAction("DisplayMap", IE_Released, this, &AChapterCharacter::CallRemoveMap);
 }
 
 void AChapterCharacter::MoveForward(float AxisValue)
@@ -216,6 +221,37 @@ void AChapterCharacter::AutoFireReset()
     if (bFireButtonPressed)
     {
         StartFireTimer();
+    }
+}
+
+void AChapterCharacter::CallDisplayMap()
+{
+  
+    if (PlayerControllerRef)
+    {
+        PlayerControllerRef->DisplayMap();
+    }
+}
+
+void AChapterCharacter::CallRemoveMap()
+{
+
+    if (PlayerControllerRef)
+    {
+        PlayerControllerRef->RemoveMap();
+    }
+}
+
+void AChapterCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+ 
+   //  NN Used only in chapter 3 for now; when the player collides with the floor he drowns (killed)
+    if (OtherActor->GetComponentByClass(UFloorCollider::StaticClass()))
+    {
+        AController* MyOwnerInstigator = GetInstigatorController();
+        UClass* DamageTypeClass = UDamageType::StaticClass();
+        UGameplayStatics::ApplyDamage(this, 100.f, MyOwnerInstigator, this, DamageTypeClass);
+
     }
 }
 

@@ -2,7 +2,7 @@
 
 
 #include "IceProjectile.h"
-
+#include "IceCollider.h"
 #include "GameFramework/DamageType.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
@@ -40,27 +40,29 @@ void AIceProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPr
 	AController* MyOwnerInstigator = MyOwner->GetInstigatorController();
 	UClass* DamageTypeClass = UDamageType::StaticClass();
 
-	// CN Apply damage and spawn ice cube
-	if (OtherActor && OtherActor != this && OtherActor != MyOwner)
-	{
-
-		UGameplayStatics::ApplyDamage(OtherActor, Damage, MyOwnerInstigator, this, DamageTypeClass);
-		if (HitParticles)
+	
+		// CN Apply damage and spawn ice cube
+		if (OtherActor && OtherActor != this && OtherActor != MyOwner)
 		{
-			UGameplayStatics::SpawnEmitterAtLocation(this, HitParticles, GetActorLocation(), GetActorRotation());
+			UGameplayStatics::ApplyDamage(OtherActor, Damage, MyOwnerInstigator, this, DamageTypeClass);
+			if (HitParticles)
+			{
+				UGameplayStatics::SpawnEmitterAtLocation(this, HitParticles, GetActorLocation(), GetActorRotation());
+			}
+			if (HitSound)
+			{
+				UGameplayStatics::PlaySoundAtLocation(this, HitSound, GetActorLocation());
+			}
+			if (OtherActor->GetComponentByClass(UIceCollider::StaticClass()))
+			{
+				if (IceCubeClass)
+				{
+					FVector SpawnLocation = GetActorLocation();
+					SpawnLocation.Z = (OtherActor->GetActorLocation()).Z + 0.01f;
+					GetWorld()->SpawnActor<AIceCube>(IceCubeClass, SpawnLocation, FRotator(0.f, 0.f, 0.f));
+				}
+			}
 		}
-		if (HitSound)
-		{
-			UGameplayStatics::PlaySoundAtLocation(this, HitSound, GetActorLocation());
-		}
-		if (IceCubeClass)
-		{
-			FVector SpawnLocation = GetActorLocation();
-			SpawnLocation.Z = (OtherActor->GetActorLocation()).Z + 0.01f;
-			GetWorld()->SpawnActor<AIceCube>(IceCubeClass, SpawnLocation, FRotator(0.f, 0.f, 0.f));
-		}
-
-	}
 
 	Destroy();
 }

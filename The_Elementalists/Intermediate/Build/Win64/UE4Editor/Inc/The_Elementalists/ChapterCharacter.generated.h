@@ -8,6 +8,9 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FHitResult;
 #ifdef THE_ELEMENTALISTS_ChapterCharacter_generated_h
 #error "ChapterCharacter.generated.h already included, missing '#pragma once' in ChapterCharacter.h"
 #endif
@@ -16,12 +19,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define The_Elementalists_Source_The_Elementalists_Public_ChapterCharacter_h_12_SPARSE_DATA
 #define The_Elementalists_Source_The_Elementalists_Public_ChapterCharacter_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execOnOverlapBegin); \
 	DECLARE_FUNCTION(execGetHealthPercentage); \
 	DECLARE_FUNCTION(execIsDead);
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_ChapterCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execOnOverlapBegin); \
 	DECLARE_FUNCTION(execGetHealthPercentage); \
 	DECLARE_FUNCTION(execIsDead);
 
