@@ -121,12 +121,20 @@ void AChapterCharacter::MoveRight(float AxisValue)
 
 void AChapterCharacter::BeginSprint()
 {
-    GetCharacterMovement()->MaxWalkSpeed = 1000.f;
+   /* GetCharacterMovement()->MaxWalkSpeed = 1000.f;*/
+    if (bCanSprint)
+    {
+        GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
+    }
 }
 
 void AChapterCharacter::EndSprint()
 {
-    GetCharacterMovement()->MaxWalkSpeed = 600.f;
+    /*GetCharacterMovement()->MaxWalkSpeed = 600.f;*/
+    if (bCanSprint)
+    {
+        GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
+    }
 }
 
 void AChapterCharacter::PerformLineTrace()
@@ -315,4 +323,58 @@ void AChapterCharacter::CheckAndHeal(float DeltaTime)
 			bIsHealing = false;
 		}
 	}
+}
+
+void AChapterCharacter::SlowDown(float Percentage, float Time)
+{
+
+    // CN Get the materials
+    if (Materials.Num() <= 0)
+    {
+        Materials = GetMesh()->GetMaterials();
+    }
+    // CN Set material to oil
+    if (Oil)
+    {
+        for (int32 i = 0; i < Materials.Num(); i++)
+        {
+            GetMesh()->SetMaterial(i, Oil);
+        }
+    }
+
+    if (bCanSprint)
+    {
+        GetCharacterMovement()->MaxWalkSpeed = WalkSpeed * Percentage;
+        SetCanSprint(false);
+    }
+
+    // CN Reset timer if hit again
+    if (GetWorldTimerManager().IsTimerActive(SlowedDownTimerHandle))
+    {
+        GetWorldTimerManager().ClearTimer(SlowedDownTimerHandle);
+    }
+
+    FTimerDelegate SlowedDownTimerDelegate = FTimerDelegate::CreateUObject(
+        this,
+        &AChapterCharacter::SpeedUp
+    );
+
+    GetWorldTimerManager().SetTimer(
+        SlowedDownTimerHandle,
+        SlowedDownTimerDelegate,
+        Time,
+        false
+    );
+}
+
+void AChapterCharacter::SpeedUp()
+{
+    // CN Restore Materials
+    for (int32 i = 0; i < Materials.Num(); i++)
+    {
+        GetMesh()->SetMaterial(i, Materials[i]);
+    }
+
+    GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
+    SetCanSprint(true);
 }

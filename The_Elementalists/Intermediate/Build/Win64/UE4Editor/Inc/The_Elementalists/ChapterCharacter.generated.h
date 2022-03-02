@@ -80,7 +80,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__ProjectileSpawnPoint() { return STRUCT_OFFSET(AChapterCharacter, ProjectileSpawnPoint); } \
 	FORCEINLINE static uint32 __PPO__ProjectileClass() { return STRUCT_OFFSET(AChapterCharacter, ProjectileClass); } \
 	FORCEINLINE static uint32 __PPO__LineTraceDistance() { return STRUCT_OFFSET(AChapterCharacter, LineTraceDistance); } \
-	FORCEINLINE static uint32 __PPO__AutomaticFireRate() { return STRUCT_OFFSET(AChapterCharacter, AutomaticFireRate); }
+	FORCEINLINE static uint32 __PPO__AutomaticFireRate() { return STRUCT_OFFSET(AChapterCharacter, AutomaticFireRate); } \
+	FORCEINLINE static uint32 __PPO__Oil() { return STRUCT_OFFSET(AChapterCharacter, Oil); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_ChapterCharacter_h_9_PROLOG

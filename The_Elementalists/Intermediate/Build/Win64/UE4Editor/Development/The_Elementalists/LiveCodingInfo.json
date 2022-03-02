@@ -5,6 +5,7 @@
 			"AICharacter.cpp.obj",
 			"BaseGameMode.cpp.obj",
 			"Boat.cpp.obj",
+			"BoatAIController.cpp.obj",
 			"Chapter_PlayerController.cpp.obj",
 			"Chapter1_AIController.cpp.obj",
 			"Chapter1Flashback_AIController.cpp.obj",
@@ -12,7 +13,7 @@
 			"Chapter1Level1GameMode.cpp.obj",
 			"Chapter1Level2GameMode.cpp.obj",
 			"Chapter1Level3GameMode.cpp.obj",
-			"ChapterCharacter.cpp.obj",
+			"Chapter3Level1GameMode.cpp.obj",
 			"Endpoint.cpp.obj",
 			"Fire.cpp.obj",
 			"FireProjectile.cpp.obj",
@@ -28,7 +29,6 @@
 			"IceCollider.cpp.obj",
 			"IceCube.cpp.obj",
 			"IceCubePlaceHolder.cpp.obj",
-			"IceProjectile.cpp.obj",
 			"InForest_AIController.cpp.obj",
 			"InteractableItem.cpp.obj",
 			"JournalistCharacter.cpp.obj",
@@ -37,6 +37,7 @@
 			"Menu_PlayerController.cpp.obj",
 			"Minimap.cpp.obj",
 			"OilSpill.cpp.obj",
+			"OilSpillBlocked.cpp.obj",
 			"OilSpillSlow.cpp.obj",
 			"Projectile.cpp.obj",
 			"RandomLocationAIController.cpp.obj",
@@ -45,14 +46,16 @@
 			"SwingDoor.cpp.obj",
 			"The_Elementalists.cpp.obj",
 			"The_ElementalistsGameModeBase.cpp.obj",
-			"BoatAIController.cpp.obj",
-			"Chapter3Level1GameMode.cpp.obj",
-			"OilSpillBlocked.cpp.obj"
+			"ChapterCharacter.cpp.obj",
+			"IceProjectile.cpp.obj",
+			"OilProjectileSlow.cpp.obj",
+			"OilSpillShooting.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",
 			"BaseGameMode.gen.cpp.obj",
 			"Boat.gen.cpp.obj",
+			"BoatAIController.gen.cpp.obj",
 			"Chapter_PlayerController.gen.cpp.obj",
 			"Chapter1_AIController.gen.cpp.obj",
 			"Chapter1Flashback_AIController.gen.cpp.obj",
@@ -94,7 +97,8 @@
 			"SpawnPlayer.gen.cpp.obj",
 			"SwingDoor.gen.cpp.obj",
 			"The_ElementalistsGameModeBase.gen.cpp.obj",
-			"BoatAIController.gen.cpp.obj",
+			"OilProjectileSlow.gen.cpp.obj",
+			"OilSpillShooting.gen.cpp.obj",
 			"The_Elementalists.init.gen.cpp.obj"
 		]
 	}

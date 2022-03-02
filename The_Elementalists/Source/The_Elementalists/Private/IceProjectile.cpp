@@ -8,6 +8,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "IceCube.h"
 #include "Particles/ParticleSystemComponent.h"
+#include "OilSpillShooting.h"
 
 // Sets default values
 AIceProjectile::AIceProjectile()
@@ -61,6 +62,10 @@ void AIceProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPr
 					SpawnLocation.Z = (OtherActor->GetActorLocation()).Z + 0.01f;
 					GetWorld()->SpawnActor<AIceCube>(IceCubeClass, SpawnLocation, FRotator(0.f, 0.f, 0.f));
 				}
+			}
+			if (Cast<AOilSpillShooting>(OtherActor))
+			{
+				Cast<AOilSpillShooting>(OtherActor)->Freeze();
 			}
 		}
 

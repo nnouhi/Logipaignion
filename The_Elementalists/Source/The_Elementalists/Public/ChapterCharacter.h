@@ -53,6 +53,12 @@ public:
 
     class AChapter_PlayerController* PlayerControllerRef;
 
+    // Slow player down
+    void SlowDown(float Percentage, float Time);
+
+    // Set speed back to normal
+    void SpeedUp();
+
 private:
     // CN Move forwards/backwards
     void MoveForward(float AxisValue);
@@ -109,12 +115,22 @@ private:
     // NN True when player can fire, false when waiting for timer
     bool bShouldFire = true;
 
+    // CN Slowed down, walk and sprint speeds
+    float WalkSpeed = 600.f;
+    float SprintSpeed = 1000.f;
+
+    // CN Can sprint or not
+    bool bCanSprint = true;
+
     // NN Rate of automatic fun fire
     UPROPERTY(EditAnywhere)
     float AutomaticFireRate = 0.3f;
 
     // NN Sets timer between shots
     FTimerHandle AutoFireTimer;
+
+    // NN Slow character timer handle
+    FTimerHandle SlowedDownTimerHandle;
 
     // NN Sets bFireButtonPressed to true and calls StartFireTimer()
     void FireButtonPressed();
@@ -140,4 +156,12 @@ private:
     UFUNCTION()
     void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, 
          int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+    // CN Enable/Disable sprinting
+    FORCEINLINE void SetCanSprint(bool bNewValue) { bCanSprint = bNewValue; };
+
+    UPROPERTY(EditAnywhere)
+    UMaterial* Oil;
+
+    TArray<UMaterialInterface*> Materials;
 };

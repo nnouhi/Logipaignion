@@ -1,15 +1,23 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion).
-  Waiting for 'git status' command to complete
+﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\rt\Logipaignion).
+  Parsing headers for The_ElementalistsEditor
+    Running UnrealHeaderTool "D:\rt\Logipaignion\The_Elementalists\The_Elementalists.uproject" "D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\The_ElementalistsEditor\Development\The_ElementalistsEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\hbnm\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  LogInit: Display: Loading text-based GConfig....
+  Reflection code generated for The_ElementalistsEditor in 11.0013958 seconds
   Building The_ElementalistsEditor...
-  Using Visual Studio 2022 14.30.30709 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive unity build] Excluded from The_Elementalists unity file: BoatAIController.cpp, Chapter3Level1GameMode.cpp, OilSpillBlocked.cpp
-  [Adaptive unity build] Excluded from The_Elementalists.gen unity file: BoatAIController.gen.cpp, The_Elementalists.init.gen.cpp
-  Building 4 actions with 16 processes...
-    [1/4] BoatAIController.cpp
-    [2/4] UE4Editor-The_Elementalists-0042.lib
-       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0042.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0042.exp
-    [3/4] UE4Editor-The_Elementalists-0042.dll
-       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0042.suppressed.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0042.suppressed.exp
-    [4/4] The_ElementalistsEditor.target
-  Total time in Parallel executor: 5.57 seconds
-  Total execution time: 8.26 seconds
+  Using Visual Studio 2019 14.31.30818 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.31.30818) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  [Adaptive unity build] Excluded from The_Elementalists unity file: ChapterCharacter.cpp, IceProjectile.cpp, OilProjectileSlow.cpp, OilSpillShooting.cpp
+  [Adaptive unity build] Excluded from The_Elementalists.gen unity file: OilProjectileSlow.gen.cpp, OilSpillShooting.gen.cpp, The_Elementalists.init.gen.cpp
+  Building 9 actions with 8 processes...
+    [1/9] Module.The_Elementalists.gen.cpp
+    [2/9] The_Elementalists.init.gen.cpp
+    [3/9] OilProjectileSlow.cpp
+    [4/9] OilSpillShooting.cpp
+    [5/9] ChapterCharacter.cpp
+    [6/9] Module.The_Elementalists.cpp
+    [7/9] UE4Editor-The_Elementalists-0004.lib
+       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0004.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0004.exp
+    [8/9] UE4Editor-The_Elementalists-0004.dll
+       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0004.suppressed.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0004.suppressed.exp
+    [9/9] The_ElementalistsEditor.target
+  Total time in Parallel executor: 537.89 seconds
+  Total execution time: 551.40 seconds

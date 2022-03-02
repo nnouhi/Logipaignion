@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\The_Elementalists.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{AF552C62-B448-41E1-983B-457E7F8B6A05}</UniqueIdentifier>
+      <UniqueIdentifier>{5DB57C1D-3756-4990-976E-CBF867C861A3}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists.Target.cs">
       <Filter>Source</Filter>
@@ -16,7 +16,7 @@
     <None Include="..\..\Scanned3DPeoplePack.png" />
     <None Include="..\..\The_Elementalists.code-workspace" />
     <Filter Include="Config">
-      <UniqueIdentifier>{5CE1A907-8380-40CE-8B0C-6859333C0B19}</UniqueIdentifier>
+      <UniqueIdentifier>{3D61E017-F26E-432C-8EA0-62589491C3C1}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -31,7 +31,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\The_Elementalists">
-      <UniqueIdentifier>{6BA8C7EC-7E1F-4CAA-99DE-A26C868011C7}</UniqueIdentifier>
+      <UniqueIdentifier>{386A6263-F1B7-47FD-B11E-7196DDC62A2C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists\The_Elementalists.Build.cs">
       <Filter>Source\The_Elementalists</Filter>
@@ -49,7 +49,7 @@
       <Filter>Source\The_Elementalists</Filter>
     </ClInclude>
     <Filter Include="Source\The_Elementalists\Private">
-      <UniqueIdentifier>{AF2BE0BD-E565-4C5F-ABFA-C526C922314D}</UniqueIdentifier>
+      <UniqueIdentifier>{C5F55AE6-E227-451F-92FB-F4177B1C4F2C}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\AICharacter.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
@@ -159,10 +159,16 @@
     <ClCompile Include="..\..\Source\The_Elementalists\Private\Minimap.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\The_Elementalists\Private\OilProjectileSlow.cpp">
+      <Filter>Source\The_Elementalists\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\OilSpill.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\OilSpillBlocked.cpp">
+      <Filter>Source\The_Elementalists\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\The_Elementalists\Private\OilSpillShooting.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\OilSpillSlow.cpp">
@@ -184,7 +190,7 @@
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
     <Filter Include="Source\The_Elementalists\Public">
-      <UniqueIdentifier>{F47053C9-B362-4906-8B3D-A8CB90152789}</UniqueIdentifier>
+      <UniqueIdentifier>{30CAEB56-1D7E-4743-BD3C-0D3E4636298F}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\AICharacter.h">
       <Filter>Source\The_Elementalists\Public</Filter>
@@ -294,10 +300,16 @@
     <ClInclude Include="..\..\Source\The_Elementalists\Public\Minimap.h">
       <Filter>Source\The_Elementalists\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\The_Elementalists\Public\OilProjectileSlow.h">
+      <Filter>Source\The_Elementalists\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\OilSpill.h">
       <Filter>Source\The_Elementalists\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\OilSpillBlocked.h">
+      <Filter>Source\The_Elementalists\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\The_Elementalists\Public\OilSpillShooting.h">
       <Filter>Source\The_Elementalists\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\OilSpillSlow.h">
