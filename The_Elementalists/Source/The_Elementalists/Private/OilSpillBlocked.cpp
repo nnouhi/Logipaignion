@@ -28,7 +28,7 @@ void AOilSpillBlocked::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (IsBlocked()) return;
+	// if (IsBlocked()) return;
 	// UE_LOG(LogTemp, Warning, TEXT("%i"), PlaceHolders);
 
 	// CN Grow
