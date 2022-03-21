@@ -62,7 +62,7 @@ void AEndpoint::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Othe
 			}
 		}
 	}
-	else
+	else if (OtherActor->IsA(AChapterCharacter::StaticClass()))
 	{
 		if (FlashBackGameModeRef && !bLevelClear)
 		{

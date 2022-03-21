@@ -21,8 +21,17 @@ AOilSpillShooting::AOilSpillShooting()
 
 void AOilSpillShooting::Freeze()
 {
-    // NN NOTE: Once Chapter3Level2 game mode is created uncomment line
-    /*Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->ActorDied(this);*/
+    if (bIsFrozen)
+    {
+        return;
+    }
+    bIsFrozen = true;
+
+    ABaseGameMode* GameMode = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(this));
+    if (GameMode)
+    {
+        GameMode->ActorDied(this);
+    }
     
     if (FreezeMaterial)
     {

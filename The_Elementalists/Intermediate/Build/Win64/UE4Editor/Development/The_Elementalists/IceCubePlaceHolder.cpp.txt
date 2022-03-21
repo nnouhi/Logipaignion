@@ -20,3 +20,9 @@ C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_El
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\OilSpill.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpill.generated.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpillBlocked.generated.h
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\BaseGameMode.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\BaseGameMode.generated.h

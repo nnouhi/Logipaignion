@@ -7,6 +7,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "IceCube.h"
 #include "OilSpillBlocked.h"
+#include "BaseGameMode.h"
 
 // Sets default values
 AIceCubePlaceHolder::AIceCubePlaceHolder()
@@ -61,7 +62,11 @@ void AIceCubePlaceHolder::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AA
 				TargetOilSpill->DecrementPlaceHolders();
 				if (TargetOilSpill->IsBlocked())
 				{
-					// BaseGameMode->ActorDied(TargetOilSpill)
+					ABaseGameMode* GameMode = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(this));
+					if (GameMode)
+					{
+						GameMode->ActorDied(TargetOilSpill);
+					}
 					Destroy();
 					return;
 				}

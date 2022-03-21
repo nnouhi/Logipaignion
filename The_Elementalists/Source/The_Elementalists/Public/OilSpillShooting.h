@@ -34,6 +34,9 @@ private:
 
     bool InShootingRange() const;
 
+    // CN To check if is frozen
+    bool bIsFrozen = false;
+
     // CN Player pawn reference
     ACharacter* PlayerCharacter;
 
