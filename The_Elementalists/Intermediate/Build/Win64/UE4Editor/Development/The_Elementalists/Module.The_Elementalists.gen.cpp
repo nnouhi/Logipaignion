@@ -11,6 +11,7 @@
 #include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/Chapter1Level2GameMode.gen.cpp"
 #include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/Chapter1Level3GameMode.gen.cpp"
 #include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/Chapter3Level1GameMode.gen.cpp"
+#include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/Chapter3Level2GameMode.gen.cpp"
 #include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/ChapterCharacter.gen.cpp"
 #include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/Endpoint.gen.cpp"
 #include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/Fire.gen.cpp"
@@ -45,4 +46,5 @@
 #include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/ShootingFire.gen.cpp"
 #include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/SpawnPlayer.gen.cpp"
 #include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/SwingDoor.gen.cpp"
+#include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/The_Elementalists.init.gen.cpp"
 #include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/The_ElementalistsGameModeBase.gen.cpp"

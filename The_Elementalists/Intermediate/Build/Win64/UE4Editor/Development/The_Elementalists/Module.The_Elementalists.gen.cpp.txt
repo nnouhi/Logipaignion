@@ -88,6 +88,9 @@ C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/Chapter3Level1GameMode.gen.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists/Public/Chapter3Level1GameMode.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter3Level1GameMode.generated.h
+C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/Chapter3Level2GameMode.gen.cpp
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists/Public/Chapter3Level2GameMode.h
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter3Level2GameMode.generated.h
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/ChapterCharacter.gen.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists/Public/ChapterCharacter.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\ChapterCharacter.generated.h
@@ -188,6 +191,7 @@ C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/SwingDoor.gen.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists/Public/SwingDoor.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\SwingDoor.generated.h
+C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/The_Elementalists.init.gen.cpp
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/The_ElementalistsGameModeBase.gen.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists/The_ElementalistsGameModeBase.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\The_ElementalistsGameModeBase.generated.h

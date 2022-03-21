@@ -1,21 +1,13 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion).
-  Parsing headers for The_ElementalistsEditor
-    Running UnrealHeaderTool "C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\The_Elementalists.uproject" "C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\The_ElementalistsEditor\Development\The_ElementalistsEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\wwwcn\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  LogInit: Display: Loading text-based GConfig....
-  Reflection code generated for The_ElementalistsEditor in 3.2886742 seconds
+  Invalidating makefile for The_ElementalistsEditor (working set of source files changed)
   Building The_ElementalistsEditor...
   Using Visual Studio 2022 14.30.30709 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive unity build] Excluded from The_Elementalists unity file: Chapter3Level2GameMode.cpp, Endpoint.cpp, IceCubePlaceHolder.cpp, OilSpillShooting.cpp
-  [Adaptive unity build] Excluded from The_Elementalists.gen unity file: Chapter3Level2GameMode.gen.cpp, The_Elementalists.init.gen.cpp
-  Building 7 actions with 16 processes...
-    [1/7] Chapter3Level2GameMode.cpp
-    [2/7] OilSpillShooting.cpp
-    [3/7] Module.The_Elementalists.gen.cpp
-    [4/7] Module.The_Elementalists.cpp
-    [5/7] UE4Editor-The_Elementalists-0021.lib
-       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0021.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0021.exp
-    [6/7] UE4Editor-The_Elementalists-0021.dll
-       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0021.suppressed.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0021.suppressed.exp
-    [7/7] The_ElementalistsEditor.target
-  Total time in Parallel executor: 6.43 seconds
-  Total execution time: 10.53 seconds
+  Building 4 actions with 16 processes...
+    [1/4] Module.The_Elementalists.cpp
+    [2/4] UE4Editor-The_Elementalists-0025.lib
+       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0025.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0025.exp
+    [3/4] UE4Editor-The_Elementalists-0025.dll
+       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0025.suppressed.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0025.suppressed.exp
+    [4/4] The_ElementalistsEditor.target
+  Total time in Parallel executor: 6.85 seconds
+  Total execution time: 8.69 seconds
