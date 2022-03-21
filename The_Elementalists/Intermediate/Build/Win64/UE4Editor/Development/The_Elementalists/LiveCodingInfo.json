@@ -14,6 +14,7 @@
 			"Chapter1Level2GameMode.cpp.obj",
 			"Chapter1Level3GameMode.cpp.obj",
 			"Chapter3Level1GameMode.cpp.obj",
+			"ChapterCharacter.cpp.obj",
 			"Endpoint.cpp.obj",
 			"Fire.cpp.obj",
 			"FireProjectile.cpp.obj",
@@ -24,11 +25,11 @@
 			"Flashback3_AIController.cpp.obj",
 			"FlashbackCharacter.cpp.obj",
 			"FloatComponent.cpp.obj",
-			"FloorCollider.cpp.obj",
 			"HealthComponent.cpp.obj",
 			"IceCollider.cpp.obj",
 			"IceCube.cpp.obj",
 			"IceCubePlaceHolder.cpp.obj",
+			"IceProjectile.cpp.obj",
 			"InForest_AIController.cpp.obj",
 			"InteractableItem.cpp.obj",
 			"JournalistCharacter.cpp.obj",
@@ -36,8 +37,10 @@
 			"Medkit.cpp.obj",
 			"Menu_PlayerController.cpp.obj",
 			"Minimap.cpp.obj",
+			"OilProjectileSlow.cpp.obj",
 			"OilSpill.cpp.obj",
 			"OilSpillBlocked.cpp.obj",
+			"OilSpillShooting.cpp.obj",
 			"OilSpillSlow.cpp.obj",
 			"Projectile.cpp.obj",
 			"RandomLocationAIController.cpp.obj",
@@ -46,10 +49,9 @@
 			"SwingDoor.cpp.obj",
 			"The_Elementalists.cpp.obj",
 			"The_ElementalistsGameModeBase.cpp.obj",
-			"ChapterCharacter.cpp.obj",
-			"IceProjectile.cpp.obj",
-			"OilProjectileSlow.cpp.obj",
-			"OilSpillShooting.cpp.obj"
+			"Chapter3Level3_AIController.cpp.obj",
+			"FloorCollider.cpp.obj",
+			"TriggerCollisionProfileName.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",
@@ -88,8 +90,10 @@
 			"Medkit.gen.cpp.obj",
 			"Menu_PlayerController.gen.cpp.obj",
 			"Minimap.gen.cpp.obj",
+			"OilProjectileSlow.gen.cpp.obj",
 			"OilSpill.gen.cpp.obj",
 			"OilSpillBlocked.gen.cpp.obj",
+			"OilSpillShooting.gen.cpp.obj",
 			"OilSpillSlow.gen.cpp.obj",
 			"Projectile.gen.cpp.obj",
 			"RandomLocationAIController.gen.cpp.obj",
@@ -97,9 +101,9 @@
 			"SpawnPlayer.gen.cpp.obj",
 			"SwingDoor.gen.cpp.obj",
 			"The_ElementalistsGameModeBase.gen.cpp.obj",
-			"OilProjectileSlow.gen.cpp.obj",
-			"OilSpillShooting.gen.cpp.obj",
-			"The_Elementalists.init.gen.cpp.obj"
+			"Chapter3Level3_AIController.gen.cpp.obj",
+			"The_Elementalists.init.gen.cpp.obj",
+			"TriggerCollisionProfileName.gen.cpp.obj"
 		]
 	}
 }

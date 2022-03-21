@@ -3,6 +3,7 @@
 
 #include "FloorCollider.h"
 
+
 // Sets default values for this component's properties
 UFloorCollider::UFloorCollider()
 {
@@ -20,6 +21,7 @@ void UFloorCollider::BeginPlay()
 	Super::BeginPlay();
 
 	// ...
+	
 	
 }
 

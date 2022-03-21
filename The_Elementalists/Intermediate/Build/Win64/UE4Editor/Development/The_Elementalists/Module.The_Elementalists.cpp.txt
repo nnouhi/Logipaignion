@@ -234,6 +234,15 @@ D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter3Level1GameMode.cpp
 D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter3Level1GameMode.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter3Level1GameMode.generated.h
+D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/ChapterCharacter.cpp
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/SkeletalMeshSocket.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SkeletalMeshSocket.generated.h
+D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\HealthComponent.h
+D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\HealthComponent.generated.h
+D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Projectile.h
+D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Projectile.generated.h
+D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\FloorCollider.h
+D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\FloorCollider.generated.h
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Endpoint.cpp
 D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Endpoint.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Endpoint.generated.h
@@ -249,12 +258,8 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Particl
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Emitter.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleSystemComponent.generated.h
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Fire.cpp
-D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\HealthComponent.h
-D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\HealthComponent.generated.h
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/FireProjectile.cpp
 D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\FireProjectile.h
-D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Projectile.h
-D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Projectile.generated.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\FireProjectile.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ProjectileMovementComponent.generated.h
@@ -273,9 +278,6 @@ D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/FlashbackC
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/FloatComponent.cpp
 D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\FloatComponent.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\FloatComponent.generated.h
-D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/FloorCollider.cpp
-D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\FloorCollider.h
-D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\FloorCollider.generated.h
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/HealthComponent.cpp
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/IceCollider.cpp
 D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\IceCollider.h
@@ -288,6 +290,11 @@ D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\OilSpillBlo
 D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\OilSpill.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpill.generated.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpillBlocked.generated.h
+D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/IceProjectile.cpp
+D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\IceProjectile.h
+D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\IceProjectile.generated.h
+D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\OilSpillShooting.h
+D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpillShooting.generated.h
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/InForest_AIController.cpp
 D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\InForest_AIController.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\InForest_AIController.generated.h
@@ -307,8 +314,15 @@ D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Menu_Playe
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Minimap.cpp
 D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Minimap.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Minimap.generated.h
+D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/OilProjectileSlow.cpp
+D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\OilProjectileSlow.h
+D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilProjectileSlow.generated.h
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/OilSpill.cpp
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/OilSpillBlocked.cpp
+D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/OilSpillShooting.cpp
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetMathLibrary.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetMathLibrary.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\KismetMathLibrary.inl
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/OilSpillSlow.cpp
 D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\OilSpillSlow.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpillSlow.generated.h
@@ -347,9 +361,6 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Editor\UnrealEd\Public\Subsyst
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\ImportSubsystem.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavigationSystem.generated.h
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/ShootingFire.cpp
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetMathLibrary.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetMathLibrary.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\KismetMathLibrary.inl
 D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/SpawnPlayer.cpp
 D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\SpawnPlayer.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\SpawnPlayer.generated.h
