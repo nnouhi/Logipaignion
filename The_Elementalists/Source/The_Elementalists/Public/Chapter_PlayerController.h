@@ -42,6 +42,12 @@ public:
 	// NN When player is not near the door make widget invisible
 	void DisplayInfoWidget();
 
+	// NN When invoked displays map
+	void DisplayMap();
+
+	// NN When invoked removes map
+	void RemoveMap();
+
 protected:
 	virtual void BeginPlay() override;
 
@@ -95,4 +101,11 @@ private:
 	TSubclassOf<UUserWidget> HUDClass;
 	UPROPERTY()
 	UUserWidget* HUDWidget;
+
+	// NN Map widget displayed on screen
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<UUserWidget> MapHUDClass;
+
+	UPROPERTY()
+	class UUserWidget* MapWidget;
 };
