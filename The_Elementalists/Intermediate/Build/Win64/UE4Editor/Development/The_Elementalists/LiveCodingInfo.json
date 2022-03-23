@@ -14,7 +14,6 @@
 			"Chapter1Level2GameMode.cpp.obj",
 			"Chapter1Level3GameMode.cpp.obj",
 			"Chapter3Level1GameMode.cpp.obj",
-			"Chapter3Level2GameMode.cpp.obj",
 			"ChapterCharacter.cpp.obj",
 			"Endpoint.cpp.obj",
 			"Fire.cpp.obj",
@@ -49,8 +48,10 @@
 			"ShootingFire.cpp.obj",
 			"SpawnPlayer.cpp.obj",
 			"SwingDoor.cpp.obj",
+			"TriggerCollisionProfileName.cpp.obj",
 			"The_Elementalists.cpp.obj",
-			"The_ElementalistsGameModeBase.cpp.obj"
+			"The_ElementalistsGameModeBase.cpp.obj",
+			"Chapter3Level3_AIController.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",
@@ -65,7 +66,7 @@
 			"Chapter1Level2GameMode.gen.cpp.obj",
 			"Chapter1Level3GameMode.gen.cpp.obj",
 			"Chapter3Level1GameMode.gen.cpp.obj",
-			"Chapter3Level2GameMode.gen.cpp.obj",
+			"Chapter3Level3_AIController.gen.cpp.obj",
 			"ChapterCharacter.gen.cpp.obj",
 			"Endpoint.gen.cpp.obj",
 			"Fire.gen.cpp.obj",
@@ -101,7 +102,8 @@
 			"SpawnPlayer.gen.cpp.obj",
 			"SwingDoor.gen.cpp.obj",
 			"The_Elementalists.init.gen.cpp.obj",
-			"The_ElementalistsGameModeBase.gen.cpp.obj"
+			"The_ElementalistsGameModeBase.gen.cpp.obj",
+			"TriggerCollisionProfileName.gen.cpp.obj"
 		]
 	}
 }
