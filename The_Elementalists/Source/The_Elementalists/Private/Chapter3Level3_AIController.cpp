@@ -42,7 +42,7 @@ void AChapter3Level3_AIController::CheckPlaceHolders()
 	// NN All place holders were filled/destroyed (path is created)
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AIceCubePlaceHolder::StaticClass(), IceCubePlaceHolderArr);
 
-	UE_LOG(LogTemp, Warning, TEXT("%i"),IceCubePlaceHolderArr.Num());
+	/*UE_LOG(LogTemp, Warning, TEXT("%i"),IceCubePlaceHolderArr.Num());*/
 
 	if (IceCubePlaceHolderArr.Num() == 0 && !bIsPathSet)
 	{
@@ -61,12 +61,7 @@ void AChapter3Level3_AIController::CheckPlaceHolders()
 				ActorCompReference->ChangeCollisionProfileName();
 				if (i == PathCubeArr.Num() - 1)
 				{
-					GetWorldTimerManager().SetTimer(
-						GoHandle,
-						this,
-						&AChapter3Level3_AIController::Go,
-						GoDelay,
-						true);
+					Go();
 				}
 			}
 		}
@@ -76,5 +71,6 @@ void AChapter3Level3_AIController::CheckPlaceHolders()
 
 void AChapter3Level3_AIController::Go()
 {
+	UE_LOG(LogTemp, Warning, TEXT("Go invoked2"))
 	MoveTo(EscapeWaypointsArr[0]);
 }
