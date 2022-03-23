@@ -18,7 +18,7 @@ void AChapter3Level3_AIController::BeginPlay()
 
 	// NN Get all ice cubes & Path cube
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AIceCubePlaceHolder::StaticClass(), IceCubePlaceHolderArr);
-	UGameplayStatics::GetAllActorsOfClassWithTag(GetWorld(), ATargetPoint::StaticClass(),TEXT("4"), EscapeWaypointsArr);
+	UGameplayStatics::GetAllActorsOfClassWithTag(GetWorld(), ATargetPoint::StaticClass(),TEXT("8"), EscapeWaypointsArr);
 	UGameplayStatics::GetAllActorsWithTag(GetWorld(), TEXT("Path"), PathCubeArr);
 
 	// NN Check every ... of seconds how many placeholders remain
@@ -44,19 +44,37 @@ void AChapter3Level3_AIController::CheckPlaceHolders()
 
 	UE_LOG(LogTemp, Warning, TEXT("%i"),IceCubePlaceHolderArr.Num());
 
-	if (IceCubePlaceHolderArr.Num() == 0)
+	if (IceCubePlaceHolderArr.Num() == 0 && !bIsPathSet)
 	{
-		ActorComp = PathCubeArr[0]->GetComponentByClass(UTriggerCollisionProfileName::StaticClass());
-		ActorCompReference = Cast<UTriggerCollisionProfileName>(ActorComp);
+		// CN set path so actions are not repeated
+		bIsPathSet = true;
 
-		if (ActorComp)
+		for (int32 i = 0; i < PathCubeArr.Num(); i++)
 		{
-			UE_LOG(LogTemp, Warning, TEXT("Move"));
+			ActorComp = PathCubeArr[i]->GetComponentByClass(UTriggerCollisionProfileName::StaticClass());
+			ActorCompReference = Cast<UTriggerCollisionProfileName>(ActorComp);
 
-			ActorCompReference->ChangeCollisionProfileName();
-			MoveTo(EscapeWaypointsArr[0]);
-			return;
+			if (ActorComp)
+			{
+				UE_LOG(LogTemp, Warning, TEXT("Move"));
+
+				ActorCompReference->ChangeCollisionProfileName();
+				if (i == PathCubeArr.Num() - 1)
+				{
+					GetWorldTimerManager().SetTimer(
+						GoHandle,
+						this,
+						&AChapter3Level3_AIController::Go,
+						GoDelay,
+						true);
+				}
+			}
 		}
 	}
 	return;
+}
+
+void AChapter3Level3_AIController::Go()
+{
+	MoveTo(EscapeWaypointsArr[0]);
 }

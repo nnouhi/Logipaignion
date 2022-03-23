@@ -30,10 +30,19 @@ private:
 	TArray<AActor*> PathCubeArr;
 
 	FTimerHandle CheckPlaceHoldersHandle;
+	FTimerHandle GoHandle;
+
+	// CN checks if path is set
+	bool bIsPathSet = false;
 
 	// NN How frequent to check for placeholers number
 	UPROPERTY(EditAnywhere)
 	float CheckPlaceHoldersInRate = 5.f;
+
+	UPROPERTY(EditAnywhere)
+	float GoDelay = 0.f;
+
+	void Go();
 	
 	void CheckPlaceHolders();
 

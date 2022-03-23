@@ -61,7 +61,8 @@ public: \
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Chapter3Level3_AIController_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__CheckPlaceHoldersInRate() { return STRUCT_OFFSET(AChapter3Level3_AIController, CheckPlaceHoldersInRate); }
+	FORCEINLINE static uint32 __PPO__CheckPlaceHoldersInRate() { return STRUCT_OFFSET(AChapter3Level3_AIController, CheckPlaceHoldersInRate); } \
+	FORCEINLINE static uint32 __PPO__GoDelay() { return STRUCT_OFFSET(AChapter3Level3_AIController, GoDelay); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Chapter3Level3_AIController_h_12_PROLOG

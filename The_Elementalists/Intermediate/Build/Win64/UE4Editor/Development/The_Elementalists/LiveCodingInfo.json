@@ -25,6 +25,7 @@
 			"Flashback3_AIController.cpp.obj",
 			"FlashbackCharacter.cpp.obj",
 			"FloatComponent.cpp.obj",
+			"FloorCollider.cpp.obj",
 			"HealthComponent.cpp.obj",
 			"IceCollider.cpp.obj",
 			"IceCube.cpp.obj",
@@ -47,11 +48,10 @@
 			"ShootingFire.cpp.obj",
 			"SpawnPlayer.cpp.obj",
 			"SwingDoor.cpp.obj",
+			"TriggerCollisionProfileName.cpp.obj",
 			"The_Elementalists.cpp.obj",
 			"The_ElementalistsGameModeBase.cpp.obj",
-			"Chapter3Level3_AIController.cpp.obj",
-			"FloorCollider.cpp.obj",
-			"TriggerCollisionProfileName.cpp.obj"
+			"Chapter3Level3_AIController.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",
@@ -101,9 +101,9 @@
 			"SpawnPlayer.gen.cpp.obj",
 			"SwingDoor.gen.cpp.obj",
 			"The_ElementalistsGameModeBase.gen.cpp.obj",
+			"TriggerCollisionProfileName.gen.cpp.obj",
 			"Chapter3Level3_AIController.gen.cpp.obj",
-			"The_Elementalists.init.gen.cpp.obj",
-			"TriggerCollisionProfileName.gen.cpp.obj"
+			"The_Elementalists.init.gen.cpp.obj"
 		]
 	}
 }
