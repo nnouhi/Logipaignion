@@ -3,6 +3,8 @@
 
 #include "AICharacter.h"
 #include "Components/CapsuleComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"
+
 
 // Sets default values
 AAICharacter::AAICharacter()
@@ -43,5 +45,53 @@ void AAICharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+}
+
+void AAICharacter::SlowDown(float Percentage, float Time)
+{
+    // CN Get the materials
+    if (Materials.Num() <= 0)
+    {
+        Materials = GetMesh()->GetMaterials();
+    }
+    // CN Set material to oil
+    if (Oil)
+    {
+        for (int32 i = 0; i < Materials.Num(); i++)
+        {
+            GetMesh()->SetMaterial(i, Oil);
+        }
+    }
+
+    GetCharacterMovement()->MaxWalkSpeed = WalkSpeed * Percentage;
+
+    // CN Reset timer if hit again
+    if (GetWorldTimerManager().IsTimerActive(SlowedDownTimerHandle))
+    {
+        GetWorldTimerManager().ClearTimer(SlowedDownTimerHandle);
+    }
+
+    FTimerDelegate SlowedDownTimerDelegate = FTimerDelegate::CreateUObject(
+        this,
+        &AAICharacter::SpeedUp
+    );
+
+    GetWorldTimerManager().SetTimer(
+        SlowedDownTimerHandle,
+        SlowedDownTimerDelegate,
+        Time,
+        false
+    );
+}
+
+void AAICharacter::SpeedUp()
+{
+    // CN Restore Materials
+    for (int32 i = 0; i < Materials.Num(); i++)
+    {
+        GetMesh()->SetMaterial(i, Materials[i]);
+    }
+
+    GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
 }
 

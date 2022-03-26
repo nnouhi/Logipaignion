@@ -44,7 +44,20 @@ void AOilSpillShooting::BeginPlay()
 {
     Super::BeginPlay();
 
-    PlayerCharacter = Cast<ACharacter>(UGameplayStatics::GetPlayerPawn(this, 0));
+    // NN Obtain map name
+    MapName = GetWorld()->GetMapName();
+    MapName.RemoveFromStart(GetWorld()->StreamingLevelsPrefix);
+
+    if (MapName == "Chapter_3_Level3")
+    {
+        UGameplayStatics::GetAllActorsOfClass(GetWorld(), ACharacter::StaticClass(), Characters);
+    }
+    else
+    {
+        PlayerCharacter = Cast<ACharacter>(UGameplayStatics::GetPlayerPawn(this, 0));
+    }
+
+
 
     GetWorldTimerManager().SetTimer(
         ShootingRateTimerHandle,
@@ -94,7 +107,22 @@ void AOilSpillShooting::Shoot() {
     }
 }
 
-bool AOilSpillShooting::InShootingRange() const
+bool AOilSpillShooting::InShootingRange() 
 {
+    if (MapName == "Chapter_3_Level3")
+    {
+        ClosestDist = 1000000.f;
+
+        for (int i = 0; i < Characters.Num(); i++)
+        {
+            if (FVector::Dist(GetActorLocation(), Characters[i]->GetActorLocation()) < ClosestDist)
+            {
+                ClosestDist = FVector::Dist(GetActorLocation(), Characters[i]->GetActorLocation());
+                PlayerCharacter = Cast<ACharacter>(Characters[i]);
+            }
+        }
+    }
     return (FVector::Dist(GetActorLocation(), PlayerCharacter->GetActorLocation())) < ShootingRange;
 }
+
+

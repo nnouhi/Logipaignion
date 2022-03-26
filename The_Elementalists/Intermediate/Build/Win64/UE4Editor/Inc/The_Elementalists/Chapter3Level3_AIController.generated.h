@@ -60,11 +60,7 @@ public: \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AChapter3Level3_AIController)
 
 
-#define The_Elementalists_Source_The_Elementalists_Public_Chapter3Level3_AIController_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__CheckPlaceHoldersInRate() { return STRUCT_OFFSET(AChapter3Level3_AIController, CheckPlaceHoldersInRate); } \
-	FORCEINLINE static uint32 __PPO__GoDelay() { return STRUCT_OFFSET(AChapter3Level3_AIController, GoDelay); }
-
-
+#define The_Elementalists_Source_The_Elementalists_Public_Chapter3Level3_AIController_h_15_PRIVATE_PROPERTY_OFFSET
 #define The_Elementalists_Source_The_Elementalists_Public_Chapter3Level3_AIController_h_12_PROLOG
 #define The_Elementalists_Source_The_Elementalists_Public_Chapter3Level3_AIController_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

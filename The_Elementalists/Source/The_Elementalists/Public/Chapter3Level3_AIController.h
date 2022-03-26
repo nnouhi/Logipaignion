@@ -15,38 +15,24 @@ class THE_ELEMENTALISTS_API AChapter3Level3_AIController : public AAIController
     GENERATED_BODY()
 
 public:
+    void MoveToBoat(AActor* Waypoint);
+    
 
 protected:
     virtual void BeginPlay() override;
 
     virtual void Tick(float DeltaTime) override;
 
+    void OnMoveCompleted(FAIRequestID RequestID, const FPathFollowingResult& Result) override;
+
 private:
 
     APawn* AIPawn;
+    class ABaseGameMode* GameMode;
+    
 
-    TArray<AActor*> IceCubePlaceHolderArr;
-    TArray<AActor*> EscapeWaypointsArr;
-    TArray<AActor*> PathCubeArr;
+    /*int32 EscapedAI = 0;*/
 
-    FTimerHandle CheckPlaceHoldersHandle;
-    FTimerHandle GoHandle;
 
-    // CN checks if path is set
-    bool bIsPathSet = false;
-
-    // NN How frequent to check for placeholers number
-    UPROPERTY(EditAnywhere)
-    float CheckPlaceHoldersInRate = 5.f;
-
-    UPROPERTY(EditAnywhere)
-    float GoDelay = 0.f;
-
-    void Go();
-
-    void CheckPlaceHolders();
-
-    class UActorComponent* ActorComp;
-
-    class UTriggerCollisionProfileName* ActorCompReference;
+   
 };

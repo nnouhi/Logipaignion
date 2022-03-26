@@ -19,11 +19,13 @@ class AController;
 #define The_Elementalists_Source_The_Elementalists_Public_HealthComponent_h_13_SPARSE_DATA
 #define The_Elementalists_Source_The_Elementalists_Public_HealthComponent_h_13_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetHealthPercentage); \
 	DECLARE_FUNCTION(execDamageTaken);
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_HealthComponent_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetHealthPercentage); \
 	DECLARE_FUNCTION(execDamageTaken);
 
 

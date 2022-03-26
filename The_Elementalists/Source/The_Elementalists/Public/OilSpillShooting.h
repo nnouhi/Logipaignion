@@ -32,7 +32,7 @@ protected:
 
 private:
 
-    bool InShootingRange() const;
+    bool InShootingRange();
 
     // CN To check if is frozen
     bool bIsFrozen = false;
@@ -62,4 +62,11 @@ private:
 
     UPROPERTY(EditDefaultsOnly)
     UMaterialInstance* FreezeMaterial;
+
+    FString MapName;
+
+    TArray<AActor*> Characters;
+
+    float ClosestDist = 1000000.f;
+
 };

@@ -40,8 +40,6 @@ void UTriggerCollisionProfileName::BeginPlay()
         {
             UE_LOG(LogTemp, Warning, TEXT("SET"));
             Mesh->SetCollisionProfileName(TEXT("NoCollision"));
-            Mesh->SetCollisionProfileName(TEXT("BlockAll"));
-            Mesh->SetCollisionProfileName(TEXT("BlockAll"));
         }
     }
 }

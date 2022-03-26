@@ -21,6 +21,13 @@ void EmptyLinkFunctionForGeneratedCodeHealthComponent() {}
 	ENGINE_API UClass* Z_Construct_UClass_UDamageType_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AController_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(UHealthComponent::execGetHealthPercentage)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(float*)Z_Param__Result=P_THIS->GetHealthPercentage();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UHealthComponent::execDamageTaken)
 	{
 		P_GET_OBJECT(AActor,Z_Param_DamagedActor);
@@ -38,6 +45,7 @@ void EmptyLinkFunctionForGeneratedCodeHealthComponent() {}
 		UClass* Class = UHealthComponent::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "DamageTaken", &UHealthComponent::execDamageTaken },
+			{ "GetHealthPercentage", &UHealthComponent::execGetHealthPercentage },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -97,6 +105,40 @@ void EmptyLinkFunctionForGeneratedCodeHealthComponent() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UHealthComponent_GetHealthPercentage_Statics
+	{
+		struct HealthComponent_eventGetHealthPercentage_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UHealthComponent_GetHealthPercentage_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(HealthComponent_eventGetHealthPercentage_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UHealthComponent_GetHealthPercentage_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UHealthComponent_GetHealthPercentage_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UHealthComponent_GetHealthPercentage_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// CN Get players health percentage\n" },
+		{ "ModuleRelativePath", "Public/HealthComponent.h" },
+		{ "ToolTip", "CN Get players health percentage" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UHealthComponent_GetHealthPercentage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UHealthComponent, nullptr, "GetHealthPercentage", nullptr, nullptr, sizeof(HealthComponent_eventGetHealthPercentage_Parms), Z_Construct_UFunction_UHealthComponent_GetHealthPercentage_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UHealthComponent_GetHealthPercentage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UHealthComponent_GetHealthPercentage_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UHealthComponent_GetHealthPercentage_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UHealthComponent_GetHealthPercentage()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UHealthComponent_GetHealthPercentage_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UHealthComponent_NoRegister()
 	{
 		return UHealthComponent::StaticClass();
@@ -122,6 +164,7 @@ void EmptyLinkFunctionForGeneratedCodeHealthComponent() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UHealthComponent_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UHealthComponent_DamageTaken, "DamageTaken" }, // 2370496319
+		{ &Z_Construct_UFunction_UHealthComponent_GetHealthPercentage, "GetHealthPercentage" }, // 2180345393
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UHealthComponent_Statics::Class_MetaDataParams[] = {
@@ -168,7 +211,7 @@ void EmptyLinkFunctionForGeneratedCodeHealthComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UHealthComponent, 4023227610);
+	IMPLEMENT_CLASS(UHealthComponent, 3697360500);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<UHealthComponent>()
 	{
 		return UHealthComponent::StaticClass();

@@ -3,6 +3,7 @@
 
 #include "OilProjectileSlow.h"
 #include "ChapterCharacter.h"
+#include "AICharacter.h"
 #include "GameFramework/DamageType.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
@@ -43,7 +44,8 @@ void AOilProjectileSlow::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor,
     // CN Apply slowness && damage
     if (OtherActor && OtherActor != this && OtherActor != MyOwner)
     {
-
+ 
+        
         UGameplayStatics::ApplyDamage(OtherActor, Damage, MyOwnerInstigator, this, DamageTypeClass);
         if (HitParticles)
         {
@@ -55,10 +57,16 @@ void AOilProjectileSlow::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor,
         }
 
         // CN Slow down player
-        AChapterCharacter* Player = Cast<AChapterCharacter>(OtherActor);
-        if (Player)
+        if (Cast<AChapterCharacter>(OtherActor))
         {
+            AChapterCharacter* Player = Cast<AChapterCharacter>(OtherActor);
             Player->SlowDown(Slowness, SlowTime);
+        }
+        else if (Cast<AAICharacter>(OtherActor))
+        {
+            AAICharacter* Player = Cast<AAICharacter>(OtherActor);
+            Player->SlowDown(Slowness, SlowTime);
+
         }
     }
 

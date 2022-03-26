@@ -35,5 +35,6 @@ public:
     virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
     // CN Get players health percentage
+    UFUNCTION(BlueprintCallable)
     float GetHealthPercentage() const;
 };

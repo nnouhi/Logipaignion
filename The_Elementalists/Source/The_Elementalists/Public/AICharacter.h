@@ -26,6 +26,22 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	// Slow AI down
+	void SlowDown(float Percentage, float Time);
+
+	// Set speed back to normal
+	void SpeedUp();
+
+	UPROPERTY(EditAnywhere)
+	UMaterial* Oil;
+
+	TArray<UMaterialInterface*> Materials;
+
+	FTimerHandle SlowedDownTimerHandle;
+
+	UPROPERTY(EditAnywhere)
+	float WalkSpeed = 200.f;
+
 private:
 
 	// NN SkeletalMesh to add to every npc 

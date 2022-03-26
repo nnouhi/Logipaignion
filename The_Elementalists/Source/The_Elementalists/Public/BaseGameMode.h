@@ -26,6 +26,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	virtual FString GetChapterName();
 
+	UFUNCTION(BlueprintCallable)
     virtual void ActorDied(AActor* DeadActor);
 	
 	UFUNCTION(BlueprintCallable)

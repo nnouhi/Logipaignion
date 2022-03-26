@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 #ifdef THE_ELEMENTALISTS_BaseGameMode_generated_h
 #error "BaseGameMode.generated.h already included, missing '#pragma once' in BaseGameMode.h"
 #endif
@@ -20,6 +21,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execGetScore); \
 	DECLARE_FUNCTION(execGetDifficulty); \
 	DECLARE_FUNCTION(execSetDifficulty); \
+	DECLARE_FUNCTION(execActorDied); \
 	DECLARE_FUNCTION(execGetChapterName); \
 	DECLARE_FUNCTION(execLevelComplete); \
 	DECLARE_FUNCTION(execProgressNextChapter); \
@@ -32,6 +34,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execGetScore); \
 	DECLARE_FUNCTION(execGetDifficulty); \
 	DECLARE_FUNCTION(execSetDifficulty); \
+	DECLARE_FUNCTION(execActorDied); \
 	DECLARE_FUNCTION(execGetChapterName); \
 	DECLARE_FUNCTION(execLevelComplete); \
 	DECLARE_FUNCTION(execProgressNextChapter); \
