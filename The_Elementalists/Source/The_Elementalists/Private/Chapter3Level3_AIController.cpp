@@ -30,6 +30,15 @@ void AChapter3Level3_AIController::MoveToBoat(AActor* Waypoint)
 	MoveTo(Waypoint);
 }
 
+void AChapter3Level3_AIController::JumpToBoat(FVector BoatLocation, int32 Offset)
+{
+	Offset -= 2;
+	BoatLocation.X += Offset * 100;
+	BoatLocation.Y += Offset * 50;
+	BoatLocation.Z += 200;
+	GetPawn()->TeleportTo(BoatLocation, FRotator::ZeroRotator, true, true);
+}
+
 void AChapter3Level3_AIController::OnMoveCompleted(FAIRequestID RequestID, const FPathFollowingResult& Result)
 {
 	/*EscapedAI++;*/

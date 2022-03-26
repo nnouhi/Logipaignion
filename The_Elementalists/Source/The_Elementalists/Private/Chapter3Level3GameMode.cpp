@@ -26,12 +26,22 @@ void AChapter3Level3GameMode::BeginPlay()
 	PrimaryActorTick.bCanEverTick = true;
 
 	// NN Get all ice cubes & Path cube
-	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AIceCubePlaceHolder::StaticClass(), IceCubePlaceHolderArr);
 	UGameplayStatics::GetAllActorsOfClassWithTag(GetWorld(), ATargetPoint::StaticClass(), TEXT("8"), EscapeWaypointsArr);
 	UGameplayStatics::GetAllActorsWithTag(GetWorld(), TEXT("Path"), PathCubeArr);
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AAICharacter::StaticClass(), AICharacters);
 	UGameplayStatics::GetAllActorsWithTag(GetWorld(), TEXT("Spawned"), SpawnedOilSpills);
-	
+	TArray<AActor*> OilSpillsBlocked;
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AOilSpillBlocked::StaticClass(), OilSpillsBlocked);
+	TotalOilSpills = OilSpillsBlocked.Num();
+	RemainingOilSpills = TotalOilSpills;
+
+	SetIceCubePlaceHolders();
+	// Hide Oil spill placeholders
+	for (AActor* PlaceHolder : IceCubePlaceHolderArrOilSpill)
+	{
+		PlaceHolder->SetActorHiddenInGame(true);
+	}
+
 	AICount = AICharacters.Num();
 	EscapedAI = AICount;
 	TotalIcePlaceholders = IceCubePlaceHolderArr.Num();
@@ -56,10 +66,37 @@ void AChapter3Level3GameMode::BeginPlay()
 	HandleGameStart();
 }
 
+void AChapter3Level3GameMode::SetIceCubePlaceHolders()
+{
+	IceCubePlaceHolderArr.Empty();
+	IceCubePlaceHolderArr.Shrink();
 
+	IceCubePlaceHolderArrOilSpill.Empty();
+	IceCubePlaceHolderArrOilSpill.Shrink();
+
+	// Setup ice cube place holders
+	TArray<AActor*> IceCubePlaceHolderArrTotal;
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AIceCubePlaceHolder::StaticClass(), IceCubePlaceHolderArrTotal);
+	for (int32 i = 0; i < IceCubePlaceHolderArrTotal.Num(); i++)
+	{
+		if (IceCubePlaceHolderArrTotal[i]->Tags[0] == "Oil")
+		{
+			IceCubePlaceHolderArrOilSpill.Add(IceCubePlaceHolderArrTotal[i]);
+		}
+		else
+		{
+			IceCubePlaceHolderArr.Add(IceCubePlaceHolderArrTotal[i]);
+		}
+	}
+}
 
 FString AChapter3Level3GameMode::GetObjectiveMessage()
 {
+	if (bInvestigationMode)
+	{
+		return TEXT("Investigate - Find the cause of the oil spill. \n Press 'F' to use your scanner.");
+	}
+
 	if (!bIsPathSet)
 	{
 		return TEXT("Create a path to reach the sailors(")
@@ -70,13 +107,23 @@ FString AChapter3Level3GameMode::GetObjectiveMessage()
 			+ TEXT("/") + FString::FromInt(TotalOilSpillsShooting) + TEXT(")");
 	}
 
-	return TEXT("Help the sailors to reach your boat safely. (")
-		+ FString::FromInt(AICount - EscapedAI) // FINISH TOMORROW 
-		+ TEXT("/") + FString::FromInt(AICount)
+	if (!bAISafe)
+	{
+		return TEXT("Help the sailors to reach your boat safely. (")
+			+ FString::FromInt(AICount - EscapedAI)
+			+ TEXT("/") + FString::FromInt(AICount)
+			+ TEXT(")\nSide Objective: Freeze as many shooting oil spills as possible. (")
+			+ FString::FromInt(TotalOilSpillsShooting - RemainingOilSpillsShooting)
+			+ TEXT("/") + FString::FromInt(TotalOilSpillsShooting) + TEXT(")");
+	}
+
+	// else
+	return TEXT("Block the oil spill. (")
+		+ FString::FromInt(TotalOilSpills - RemainingOilSpills)
+		+ TEXT("/") + FString::FromInt(TotalOilSpills)
 		+ TEXT(")\nSide Objective: Freeze as many shooting oil spills as possible. (")
 		+ FString::FromInt(TotalOilSpillsShooting - RemainingOilSpillsShooting)
 		+ TEXT("/") + FString::FromInt(TotalOilSpillsShooting) + TEXT(")");
-	
 }
 
 FString AChapter3Level3GameMode::GetChapterName()
@@ -118,10 +165,6 @@ void AChapter3Level3GameMode::ActorDied(AActor* DeadActor)
 	{
 		RemainingOilSpillsShooting--;
 	}
-	else if (Cast<AOilSpillBlocked>(DeadActor))
-	{
-		RemainingOilSpills--;
-	}
 	else if (Cast<AAICharacter>(DeadActor))
 	{
 		
@@ -129,13 +172,44 @@ void AChapter3Level3GameMode::ActorDied(AActor* DeadActor)
 		if (Cast<UHealthComponent>(Components[0])->GetHealthPercentage() > 0.f)
 		{
 			EscapedAI--;
+
+			TArray<AActor*> BoatLocation;
+
+			// Waypoint with tag 1 has boat location
+			UGameplayStatics::GetAllActorsOfClassWithTag(GetWorld(), ATargetPoint::StaticClass(), TEXT("1"), BoatLocation);
+			if (BoatLocation.Num() > 0)
+			{
+				Cast<AChapter3Level3_AIController>(((Cast<AAICharacter>(DeadActor))->GetController()))->JumpToBoat(BoatLocation[0]->GetActorLocation(), AICount - EscapedAI);
+			}
+
+			// All AI reached boat
+			if (EscapedAI == 0)
+			{
+				bAISafe = true;
+				SetIceCubePlaceHolders();
+				// Show Oil spill placeholders
+				for (AActor* PlaceHolder : IceCubePlaceHolderArrOilSpill)
+				{
+					PlaceHolder->SetActorHiddenInGame(false);
+				}
+			}
 			return;
 		}
 		// NN friendly ai died :(
-		DeadActor->Destroy();
+		// GameOver;
+		// DeadActor->Destroy();
 		AICount--;
 	}
+	else if (Cast<AOilSpillBlocked>(DeadActor))
+	{
+		RemainingOilSpills--;
+
+		bInvestigationMode = true;
+
+		// Show ship crack
+	}
 }
+
 
 void AChapter3Level3GameMode::HandleGameStart()
 {
@@ -261,7 +335,7 @@ void AChapter3Level3GameMode::Go()
 void AChapter3Level3GameMode::CheckPlaceHolders()
 {
 	// NN All place holders were filled/destroyed (path is created)
-	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AIceCubePlaceHolder::StaticClass(), IceCubePlaceHolderArr);
+	SetIceCubePlaceHolders();
 
 	/*UE_LOG(LogTemp, Warning, TEXT("%i"),IceCubePlaceHolderArr.Num());*/
 

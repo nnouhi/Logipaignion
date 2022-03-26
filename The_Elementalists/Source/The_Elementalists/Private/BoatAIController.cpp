@@ -67,7 +67,10 @@ void ABoatAIController::SetPlaceHolders()
 	// Hide all place holders
 	for (AActor* PlaceHolder : PlaceHolders)
 	{
-		PlaceHolder->SetActorHiddenInGame(true);
+		if (PlaceHolder->Tags[0] != "Oil")
+		{
+			PlaceHolder->SetActorHiddenInGame(true);
+		}
 	}
 }
 

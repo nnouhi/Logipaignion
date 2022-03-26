@@ -17,6 +17,7 @@ class THE_ELEMENTALISTS_API AChapter3Level3_AIController : public AAIController
 public:
     void MoveToBoat(AActor* Waypoint);
     
+    void JumpToBoat(FVector BoatLocation, int32 Offset);
 
 protected:
     virtual void BeginPlay() override;

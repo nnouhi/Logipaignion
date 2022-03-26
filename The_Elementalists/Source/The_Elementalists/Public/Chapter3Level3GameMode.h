@@ -44,6 +44,11 @@ private:
 	int32 TotalOilSpillsShooting = 0;
 	int32 RemainingOilSpillsShooting = 0;
 
+	bool bInvestigationMode = false;
+
+	// CN Set the ice cube place holder arrays
+	void SetIceCubePlaceHolders();
+
 	// CN Setup oil spills
 	void SetUpOilSpills();
 
@@ -69,6 +74,7 @@ private:
 
 	//----
 	TArray<AActor*> IceCubePlaceHolderArr;
+	TArray<AActor*> IceCubePlaceHolderArrOilSpill;
 	TArray<AActor*> EscapeWaypointsArr;
 	TArray<AActor*> PathCubeArr;
 	TArray<class UActorComponent*> Components;
@@ -80,6 +86,8 @@ private:
 
 	// CN checks if path is set
 	bool bIsPathSet = false;
+	// CN checks if AI have reached the boat
+	bool bAISafe = false;
 
 	// NN How frequent to check for placeholers number
 	UPROPERTY(EditAnywhere)
