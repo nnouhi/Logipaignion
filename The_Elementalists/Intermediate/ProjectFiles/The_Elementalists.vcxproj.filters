@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\The_Elementalists.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{6F976B4F-1D94-412C-BFE6-632E9DD9BFA1}</UniqueIdentifier>
+      <UniqueIdentifier>{291277E1-3D5A-4977-9230-761F8704A981}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists.Target.cs">
       <Filter>Source</Filter>
@@ -16,7 +16,7 @@
     <None Include="..\..\Scanned3DPeoplePack.png" />
     <None Include="..\..\The_Elementalists.code-workspace" />
     <Filter Include="Config">
-      <UniqueIdentifier>{3FFB54BA-AA6B-4D6A-8684-FB1B8316685B}</UniqueIdentifier>
+      <UniqueIdentifier>{B1C931A4-88FA-444D-93D2-209F5FC882B4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -31,7 +31,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\The_Elementalists">
-      <UniqueIdentifier>{16566104-7C25-4729-BCF2-3668E22B5627}</UniqueIdentifier>
+      <UniqueIdentifier>{223ACF69-2F9C-4B08-B282-809E493F2730}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists\The_Elementalists.Build.cs">
       <Filter>Source\The_Elementalists</Filter>
@@ -49,7 +49,7 @@
       <Filter>Source\The_Elementalists</Filter>
     </ClInclude>
     <Filter Include="Source\The_Elementalists\Private">
-      <UniqueIdentifier>{F35359B9-DD37-45D5-83ED-0E0FF26F3803}</UniqueIdentifier>
+      <UniqueIdentifier>{66B1CC89-096C-4E07-A2E3-03AF612C3664}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\AICharacter.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
@@ -198,11 +198,14 @@
     <ClCompile Include="..\..\Source\The_Elementalists\Private\SwingDoor.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\The_Elementalists\Private\ToxicGas.cpp">
+      <Filter>Source\The_Elementalists\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\TriggerCollisionProfileName.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
     <Filter Include="Source\The_Elementalists\Public">
-      <UniqueIdentifier>{D55DA833-ECD5-42F6-80F4-B3DD43654118}</UniqueIdentifier>
+      <UniqueIdentifier>{374A66F3-B584-473B-A887-011DBDBFF02B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\AICharacter.h">
       <Filter>Source\The_Elementalists\Public</Filter>
@@ -349,6 +352,9 @@
       <Filter>Source\The_Elementalists\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\SwingDoor.h">
+      <Filter>Source\The_Elementalists\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\The_Elementalists\Public\ToxicGas.h">
       <Filter>Source\The_Elementalists\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\TriggerCollisionProfileName.h">
