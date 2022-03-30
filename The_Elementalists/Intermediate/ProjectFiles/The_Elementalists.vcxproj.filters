@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\The_Elementalists.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{291277E1-3D5A-4977-9230-761F8704A981}</UniqueIdentifier>
+      <UniqueIdentifier>{4F95BD42-5A25-4BC1-916F-47F09711C4CC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists.Target.cs">
       <Filter>Source</Filter>
@@ -16,7 +16,7 @@
     <None Include="..\..\Scanned3DPeoplePack.png" />
     <None Include="..\..\The_Elementalists.code-workspace" />
     <Filter Include="Config">
-      <UniqueIdentifier>{B1C931A4-88FA-444D-93D2-209F5FC882B4}</UniqueIdentifier>
+      <UniqueIdentifier>{52DFF435-437D-467E-A90D-3E780E734815}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -31,7 +31,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\The_Elementalists">
-      <UniqueIdentifier>{223ACF69-2F9C-4B08-B282-809E493F2730}</UniqueIdentifier>
+      <UniqueIdentifier>{6FBE0C09-BD78-4FB3-AA09-749CDD6D2052}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists\The_Elementalists.Build.cs">
       <Filter>Source\The_Elementalists</Filter>
@@ -49,7 +49,7 @@
       <Filter>Source\The_Elementalists</Filter>
     </ClInclude>
     <Filter Include="Source\The_Elementalists\Private">
-      <UniqueIdentifier>{66B1CC89-096C-4E07-A2E3-03AF612C3664}</UniqueIdentifier>
+      <UniqueIdentifier>{3B39BEA2-8F1A-4853-8F72-BA0F46C431E4}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\AICharacter.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
@@ -111,6 +111,9 @@
     <ClCompile Include="..\..\Source\The_Elementalists\Private\FireWall.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\The_Elementalists\Private\Flashback2Character.cpp">
+      <Filter>Source\The_Elementalists\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\Flashback3_AIController.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
@@ -130,6 +133,9 @@
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\FloorCollider.cpp">
+      <Filter>Source\The_Elementalists\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\The_Elementalists\Private\GasMask.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\HealthComponent.cpp">
@@ -205,7 +211,7 @@
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
     <Filter Include="Source\The_Elementalists\Public">
-      <UniqueIdentifier>{374A66F3-B584-473B-A887-011DBDBFF02B}</UniqueIdentifier>
+      <UniqueIdentifier>{1647B0E6-5DC0-4562-8697-C6BA6A37C020}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\AICharacter.h">
       <Filter>Source\The_Elementalists\Public</Filter>
@@ -267,6 +273,9 @@
     <ClInclude Include="..\..\Source\The_Elementalists\Public\FireWall.h">
       <Filter>Source\The_Elementalists\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\The_Elementalists\Public\Flashback2Character.h">
+      <Filter>Source\The_Elementalists\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\Flashback3_AIController.h">
       <Filter>Source\The_Elementalists\Public</Filter>
     </ClInclude>
@@ -286,6 +295,9 @@
       <Filter>Source\The_Elementalists\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\FloorCollider.h">
+      <Filter>Source\The_Elementalists\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\The_Elementalists\Public\GasMask.h">
       <Filter>Source\The_Elementalists\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\HealthComponent.h">

@@ -19,6 +19,8 @@ protected:
 
 private:
 	
+	void DisplayMainHUD();
+
 	// NN Objective widget displayed on screen
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
 	TSubclassOf<UUserWidget> ObjectiveHUDClass;
@@ -64,6 +66,23 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
 	class UUserWidget* LevelClearWidget;
 
+	// FOR press e to interact
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class UUserWidget> InfoHUDClass;
+	UPROPERTY()
+		UUserWidget* InfoWidget;
+
+	// CN For gas mask
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class UUserWidget> GasMaskClass;
+	UPROPERTY()
+		UUserWidget* GasMaskWidget;
+
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class UUserWidget> BlurClass;
+	UPROPERTY()
+		UUserWidget* BlurWidget;
+
 public:
 
 	// NN when invoke displays map on viewport
@@ -85,4 +104,14 @@ public:
 
 	// CN Enables/Disables input
 	void SetPlayerEnabledState(bool bEnabled);
+
+	// CN For press e to interact
+	void HideInfoWidget();
+	void DisplayInfoWidget();
+
+	void WearMask();
+
+	void Blur();
+
+	void UnBlur();
 };

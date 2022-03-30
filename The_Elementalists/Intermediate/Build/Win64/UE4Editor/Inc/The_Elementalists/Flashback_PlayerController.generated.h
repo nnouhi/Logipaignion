@@ -74,7 +74,13 @@ public: \
 	FORCEINLINE static uint32 __PPO__StartTimerClass() { return STRUCT_OFFSET(AFlashback_PlayerController, StartTimerClass); } \
 	FORCEINLINE static uint32 __PPO__StartTimerWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, StartTimerWidget); } \
 	FORCEINLINE static uint32 __PPO__LevelClearClass() { return STRUCT_OFFSET(AFlashback_PlayerController, LevelClearClass); } \
-	FORCEINLINE static uint32 __PPO__LevelClearWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, LevelClearWidget); }
+	FORCEINLINE static uint32 __PPO__LevelClearWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, LevelClearWidget); } \
+	FORCEINLINE static uint32 __PPO__InfoHUDClass() { return STRUCT_OFFSET(AFlashback_PlayerController, InfoHUDClass); } \
+	FORCEINLINE static uint32 __PPO__InfoWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, InfoWidget); } \
+	FORCEINLINE static uint32 __PPO__GasMaskClass() { return STRUCT_OFFSET(AFlashback_PlayerController, GasMaskClass); } \
+	FORCEINLINE static uint32 __PPO__GasMaskWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, GasMaskWidget); } \
+	FORCEINLINE static uint32 __PPO__BlurClass() { return STRUCT_OFFSET(AFlashback_PlayerController, BlurClass); } \
+	FORCEINLINE static uint32 __PPO__BlurWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, BlurWidget); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Flashback_PlayerController_h_12_PROLOG

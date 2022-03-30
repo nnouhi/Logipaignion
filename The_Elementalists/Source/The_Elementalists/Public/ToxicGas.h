@@ -19,6 +19,9 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class UCameraShakeBase> NauseaCameraShakeClass;
+
 	// CN Character reference
 	class ACharacter* PlayerCharacter;
 
@@ -62,7 +65,7 @@ public:
 
 private:
 	// CN Deal damage to player
-	void DealDamage(float DeltaTime);
+	void DealDamage(float DeltaTime, float DPS);
 
 	// CN The health of the fire
 	UPROPERTY(EditAnywhere)

@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\rt\\Logipaignion\\The_Elementalists\\Source\\The_Elementalists\\The_Elementalists.Build.cs",
-		"D:\\rt\\Logipaignion\\The_Elementalists\\Source\\The_Elementalists.Target.cs",
-		"D:\\rt\\Logipaignion\\The_Elementalists\\Source\\The_ElementalistsEditor.Target.cs"
+		"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\Source\\The_Elementalists\\The_Elementalists.Build.cs",
+		"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\Source\\The_Elementalists.Target.cs",
+		"C:\\Users\\wwwcn\\OneDrive\\Desktop\\GDC\\Logipaignion\\The_Elementalists\\Source\\The_ElementalistsEditor.Target.cs"
 	],
-	"EngineVersion": "4.27.1"
+	"EngineVersion": "4.27.2"
 }

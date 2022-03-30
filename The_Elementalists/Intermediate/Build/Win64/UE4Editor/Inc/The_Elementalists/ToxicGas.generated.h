@@ -59,6 +59,7 @@ public: \
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_ToxicGas_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__NauseaCameraShakeClass() { return STRUCT_OFFSET(AToxicGas, NauseaCameraShakeClass); } \
 	FORCEINLINE static uint32 __PPO__Root() { return STRUCT_OFFSET(AToxicGas, Root); } \
 	FORCEINLINE static uint32 __PPO__CollisionMesh() { return STRUCT_OFFSET(AToxicGas, CollisionMesh); } \
 	FORCEINLINE static uint32 __PPO__GasParticles1() { return STRUCT_OFFSET(AToxicGas, GasParticles1); } \

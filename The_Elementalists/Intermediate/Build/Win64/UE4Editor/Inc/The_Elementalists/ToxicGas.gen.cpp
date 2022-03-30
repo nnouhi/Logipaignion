@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeToxicGas() {}
 	THE_ELEMENTALISTS_API UClass* Z_Construct_UClass_AToxicGas();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_The_Elementalists();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UCameraShakeBase_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UParticleSystemComponent_NoRegister();
@@ -36,6 +38,10 @@ void EmptyLinkFunctionForGeneratedCodeToxicGas() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_NauseaCameraShakeClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_NauseaCameraShakeClass;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Root_MetaData[];
 #endif
@@ -94,6 +100,13 @@ void EmptyLinkFunctionForGeneratedCodeToxicGas() {}
 		{ "ModuleRelativePath", "Public/ToxicGas.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AToxicGas_Statics::NewProp_NauseaCameraShakeClass_MetaData[] = {
+		{ "Category", "ToxicGas" },
+		{ "ModuleRelativePath", "Public/ToxicGas.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AToxicGas_Statics::NewProp_NauseaCameraShakeClass = { "NauseaCameraShakeClass", nullptr, (EPropertyFlags)0x0024080000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AToxicGas, NauseaCameraShakeClass), Z_Construct_UClass_UCameraShakeBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AToxicGas_Statics::NewProp_NauseaCameraShakeClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AToxicGas_Statics::NewProp_NauseaCameraShakeClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AToxicGas_Statics::NewProp_Root_MetaData[] = {
 		{ "Category", "ToxicGas" },
@@ -183,6 +196,7 @@ void EmptyLinkFunctionForGeneratedCodeToxicGas() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AToxicGas_Statics::NewProp_HealthComponent = { "HealthComponent", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AToxicGas, HealthComponent), Z_Construct_UClass_UHealthComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AToxicGas_Statics::NewProp_HealthComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AToxicGas_Statics::NewProp_HealthComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AToxicGas_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_NauseaCameraShakeClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_Root,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_CollisionMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles1,
@@ -222,7 +236,7 @@ void EmptyLinkFunctionForGeneratedCodeToxicGas() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AToxicGas, 4212232884);
+	IMPLEMENT_CLASS(AToxicGas, 576601405);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AToxicGas>()
 	{
 		return AToxicGas::StaticClass();

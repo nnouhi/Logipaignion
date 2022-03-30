@@ -2,11 +2,13 @@
 
 #include "ToxicGas.h"
 
+#include "Flashback2Character.h"
 #include "GameFramework/DamageType.h"
 #include "GameFramework/Character.h"
 #include "HealthComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Particles/ParticleSystemComponent.h"
+
 
 // Sets default values
 AToxicGas::AToxicGas()
@@ -84,18 +86,44 @@ void AToxicGas::Tick(float DeltaTime)
 		// CN Deal damage to player if in range
 		if (Distance < DamageDistance)
 		{
-			DealDamage(DeltaTime);
+			AFlashback2Character* FlashbackCharacter = Cast<AFlashback2Character>(PlayerCharacter);
+			if (FlashbackCharacter && FlashbackCharacter->IsWearingMask())
+			{
+				DealDamage(DeltaTime, DamagePerSecond / 10.f);
+			}
+			else
+			{
+				DealDamage(DeltaTime, DamagePerSecond);
+
+				if (NauseaCameraShakeClass)
+				{
+					GetWorld()->GetFirstPlayerController()->ClientStartCameraShake(NauseaCameraShakeClass);
+				}
+				if (!FlashbackCharacter->IsCoughing())
+				{
+					FlashbackCharacter->Cough();
+				}
+				FlashbackCharacter->Blur();
+			}
+		}
+		else
+		{
+			AFlashback2Character* FlashbackCharacter = Cast<AFlashback2Character>(PlayerCharacter);
+			if (FlashbackCharacter)
+			{
+				FlashbackCharacter->UnBlur();
+			}
 		}
 	}
 }
 
-void AToxicGas::DealDamage(float DeltaTime)
+void AToxicGas::DealDamage(float DeltaTime, float DPS)
 {
 	// Apply Damage
 	AController* MyOwnerInstigator = GetInstigatorController();
 	UClass* DamageTypeClass = UDamageType::StaticClass();
 
-	UGameplayStatics::ApplyDamage(PlayerCharacter, DamagePerSecond * DeltaTime, MyOwnerInstigator, this, DamageTypeClass);
+	UGameplayStatics::ApplyDamage(PlayerCharacter, DPS * DeltaTime, MyOwnerInstigator, this, DamageTypeClass);
 }
 
 void AToxicGas::SetHealth(float Health)
