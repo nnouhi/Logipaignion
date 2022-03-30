@@ -51,10 +51,10 @@
 			"ShootingFire.cpp.obj",
 			"SpawnPlayer.cpp.obj",
 			"SwingDoor.cpp.obj",
+			"ToxicGas.cpp.obj",
 			"TriggerCollisionProfileName.cpp.obj",
 			"The_Elementalists.cpp.obj",
-			"The_ElementalistsGameModeBase.cpp.obj",
-			"ToxicGas.cpp.obj"
+			"The_ElementalistsGameModeBase.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",
@@ -106,10 +106,10 @@
 			"ShootingFire.gen.cpp.obj",
 			"SpawnPlayer.gen.cpp.obj",
 			"SwingDoor.gen.cpp.obj",
-			"The_ElementalistsGameModeBase.gen.cpp.obj",
-			"TriggerCollisionProfileName.gen.cpp.obj",
 			"The_Elementalists.init.gen.cpp.obj",
-			"ToxicGas.gen.cpp.obj"
+			"The_ElementalistsGameModeBase.gen.cpp.obj",
+			"ToxicGas.gen.cpp.obj",
+			"TriggerCollisionProfileName.gen.cpp.obj"
 		]
 	}
 }
