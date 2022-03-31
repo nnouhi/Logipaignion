@@ -60,7 +60,6 @@ void AFlash_Back::LevelComplete()
     }
 }
 
-
 void AFlash_Back::HandleGameStart()
 {
 	SetupFires();

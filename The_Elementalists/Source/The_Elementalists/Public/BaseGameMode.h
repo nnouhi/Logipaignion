@@ -42,6 +42,8 @@ public:
 	int32 GetTotalScore();
 
 	void AddToTotalScore(int32 Score);
+
+	virtual void MaskObtained() { return; }
 	
 private:
 	// CN Difficulty {1: Easy, 2: Normal, 3:Hard}

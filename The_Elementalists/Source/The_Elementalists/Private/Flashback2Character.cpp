@@ -2,7 +2,7 @@
 
 
 #include "Flashback2Character.h"
-
+#include "BaseGameMode.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Components/SceneCaptureComponent2D.h"
@@ -63,7 +63,7 @@ AFlashback2Character::AFlashback2Character() :
 void AFlashback2Character::BeginPlay()
 {
 	Super::BeginPlay();
-
+	GameMode = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
 	PlayerControllerRef = Cast<AFlashback_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 }
 
@@ -157,6 +157,8 @@ void AFlashback2Character::OnAction()
 		if (PlayerControllerRef)
 		{
 			PlayerControllerRef->WearMask();
+			// NN Change obj message
+			GameMode->MaskObtained();
 			bIsWearingMask = true;
 		}
 		GasMask->Destroy();

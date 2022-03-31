@@ -17,14 +17,13 @@
 			"Chapter3Level2GameMode.cpp.obj",
 			"Chapter3Level3_AIController.cpp.obj",
 			"Chapter3Level3GameMode.cpp.obj",
+			"ChapterCharacter.cpp.obj",
 			"Endpoint.cpp.obj",
 			"Fire.cpp.obj",
 			"FireProjectile.cpp.obj",
 			"FireWall.cpp.obj",
-			"Flash_Back.cpp.obj",
 			"Flash_Back3.cpp.obj",
 			"Flashback_PlayerController.cpp.obj",
-			"Flashback2Character.cpp.obj",
 			"Flashback3_AIController.cpp.obj",
 			"FlashbackCharacter.cpp.obj",
 			"FloatComponent.cpp.obj",
@@ -52,12 +51,14 @@
 			"ShootingFire.cpp.obj",
 			"SpawnPlayer.cpp.obj",
 			"SwingDoor.cpp.obj",
+			"ToxicGas.cpp.obj",
 			"TriggerCollisionProfileName.cpp.obj",
+			"WindProjectile.cpp.obj",
 			"The_Elementalists.cpp.obj",
 			"The_ElementalistsGameModeBase.cpp.obj",
-			"ChapterCharacter.cpp.obj",
-			"ToxicGas.cpp.obj",
-			"WindProjectile.cpp.obj"
+			"Flash_Back.cpp.obj",
+			"Flash_Back2.cpp.obj",
+			"Flashback2Character.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",
@@ -114,8 +115,9 @@
 			"The_ElementalistsGameModeBase.gen.cpp.obj",
 			"ToxicGas.gen.cpp.obj",
 			"TriggerCollisionProfileName.gen.cpp.obj",
-			"The_Elementalists.init.gen.cpp.obj",
-			"WindProjectile.gen.cpp.obj"
+			"WindProjectile.gen.cpp.obj",
+			"Flash_Back2.gen.cpp.obj",
+			"The_Elementalists.init.gen.cpp.obj"
 		]
 	}
 }

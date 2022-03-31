@@ -101,9 +101,11 @@ private:
 	FTimerHandle CoughingTimerHandle;
 
 	UPROPERTY(EditAnywhere)
-		float CoughingTime = 3.f;
+	float CoughingTime = 3.f;
 
 	void StopCoughing();
+
+	class ABaseGameMode* GameMode;
 
 	// CN For line trace with mask
 	class AGasMask* GasMask = NULL;
