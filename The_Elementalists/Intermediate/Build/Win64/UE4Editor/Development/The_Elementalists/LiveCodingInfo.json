@@ -24,10 +24,13 @@
 			"FireWall.cpp.obj",
 			"Flash_Back.cpp.obj",
 			"Flash_Back3.cpp.obj",
+			"Flashback_PlayerController.cpp.obj",
+			"Flashback2Character.cpp.obj",
 			"Flashback3_AIController.cpp.obj",
 			"FlashbackCharacter.cpp.obj",
 			"FloatComponent.cpp.obj",
 			"FloorCollider.cpp.obj",
+			"GasMask.cpp.obj",
 			"HealthComponent.cpp.obj",
 			"IceCollider.cpp.obj",
 			"IceCube.cpp.obj",
@@ -50,13 +53,10 @@
 			"ShootingFire.cpp.obj",
 			"SpawnPlayer.cpp.obj",
 			"SwingDoor.cpp.obj",
+			"ToxicGas.cpp.obj",
 			"TriggerCollisionProfileName.cpp.obj",
 			"The_Elementalists.cpp.obj",
-			"The_ElementalistsGameModeBase.cpp.obj",
-			"Flashback_PlayerController.cpp.obj",
-			"Flashback2Character.cpp.obj",
-			"GasMask.cpp.obj",
-			"ToxicGas.cpp.obj"
+			"The_ElementalistsGameModeBase.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",
@@ -81,10 +81,13 @@
 			"FireWall.gen.cpp.obj",
 			"Flash_Back.gen.cpp.obj",
 			"Flash_Back3.gen.cpp.obj",
+			"Flashback_PlayerController.gen.cpp.obj",
+			"Flashback2Character.gen.cpp.obj",
 			"Flashback3_AIController.gen.cpp.obj",
 			"FlashbackCharacter.gen.cpp.obj",
 			"FloatComponent.gen.cpp.obj",
 			"FloorCollider.gen.cpp.obj",
+			"GasMask.gen.cpp.obj",
 			"HealthComponent.gen.cpp.obj",
 			"IceCollider.gen.cpp.obj",
 			"IceCube.gen.cpp.obj",
@@ -107,13 +110,10 @@
 			"ShootingFire.gen.cpp.obj",
 			"SpawnPlayer.gen.cpp.obj",
 			"SwingDoor.gen.cpp.obj",
-			"The_ElementalistsGameModeBase.gen.cpp.obj",
-			"TriggerCollisionProfileName.gen.cpp.obj",
-			"Flashback_PlayerController.gen.cpp.obj",
-			"Flashback2Character.gen.cpp.obj",
-			"GasMask.gen.cpp.obj",
 			"The_Elementalists.init.gen.cpp.obj",
-			"ToxicGas.gen.cpp.obj"
+			"The_ElementalistsGameModeBase.gen.cpp.obj",
+			"ToxicGas.gen.cpp.obj",
+			"TriggerCollisionProfileName.gen.cpp.obj"
 		]
 	}
 }

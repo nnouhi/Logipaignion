@@ -87,23 +87,26 @@ void AToxicGas::Tick(float DeltaTime)
 		if (Distance < DamageDistance)
 		{
 			AFlashback2Character* FlashbackCharacter = Cast<AFlashback2Character>(PlayerCharacter);
-			if (FlashbackCharacter && FlashbackCharacter->IsWearingMask())
+			if (FlashbackCharacter)
 			{
-				DealDamage(DeltaTime, DamagePerSecond / 10.f);
-			}
-			else
-			{
-				DealDamage(DeltaTime, DamagePerSecond);
+				if (FlashbackCharacter->IsWearingMask())
+				{
+					DealDamage(DeltaTime, DamagePerSecond / 10.f);
+				}
+				else
+				{
+					DealDamage(DeltaTime, DamagePerSecond);
 
-				if (NauseaCameraShakeClass)
-				{
-					GetWorld()->GetFirstPlayerController()->ClientStartCameraShake(NauseaCameraShakeClass);
+					if (NauseaCameraShakeClass)
+					{
+						GetWorld()->GetFirstPlayerController()->ClientStartCameraShake(NauseaCameraShakeClass);
+					}
+					if (!FlashbackCharacter->IsCoughing())
+					{
+						FlashbackCharacter->Cough();
+					}
+					FlashbackCharacter->Blur();
 				}
-				if (!FlashbackCharacter->IsCoughing())
-				{
-					FlashbackCharacter->Cough();
-				}
-				FlashbackCharacter->Blur();
 			}
 		}
 		else
