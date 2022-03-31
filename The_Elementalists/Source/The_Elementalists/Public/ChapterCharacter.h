@@ -19,6 +19,10 @@ protected:
     // Called when the game starts or when spawned
     virtual void BeginPlay() override;
 
+    // CN Gas particles on head
+    UPROPERTY(EditAnywhere)
+    class UParticleSystemComponent* GasParticles;
+
 public:
     // Called every frame
     virtual void Tick(float DeltaTime) override;
@@ -28,6 +32,10 @@ public:
 
     // CN Shoot
     void Shoot();
+
+    // CN For gas level
+    void AddGasParticles(float Time);
+    void RemoveGasParticles();
 
 	// CN Heal
 	void Heal(float Amount);
@@ -131,6 +139,13 @@ private:
 
     // NN Slow character timer handle
     FTimerHandle SlowedDownTimerHandle;
+
+    // CN Timer handle gas
+    FTimerHandle GasTimerHandle;
+
+    // CN For gas level
+    bool bTakeDPS = false;
+    float DamagePerSecond = 4.f;
 
     // NN Sets bFireButtonPressed to true and calls StartFireTimer()
     void FireButtonPressed();

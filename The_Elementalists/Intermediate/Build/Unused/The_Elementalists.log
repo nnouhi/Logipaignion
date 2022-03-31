@@ -1,14 +1,14 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\rt\Logipaignion).
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion).
   Building The_ElementalistsEditor...
-  Using Visual Studio 2019 14.31.30818 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.31.30818) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive unity build] Excluded from The_Elementalists unity file: Flash_Back.cpp, Flash_Back2.cpp, Flashback2Character.cpp
-  [Adaptive unity build] Excluded from The_Elementalists.gen unity file: Flash_Back2.gen.cpp, The_Elementalists.init.gen.cpp
-  Building 4 actions with 8 processes...
-    [1/4] Flash_Back2.cpp
-    [2/4] UE4Editor-The_Elementalists-0006.lib
-       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0006.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0006.exp
-    [3/4] UE4Editor-The_Elementalists-0006.dll
-       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0006.suppressed.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0006.suppressed.exp
+  Using Visual Studio 2022 14.31.31105 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  [Adaptive unity build] Excluded from The_Elementalists unity file: ChapterCharacter.cpp, Endpoint.cpp, GasProjectile.cpp, ShootingToxicGas.cpp
+  [Adaptive unity build] Excluded from The_Elementalists.gen unity file: ChapterCharacter.gen.cpp, GasProjectile.gen.cpp, ShootingToxicGas.gen.cpp, The_Elementalists.init.gen.cpp
+  Building 4 actions with 16 processes...
+    [1/4] ShootingToxicGas.cpp
+    [2/4] UE4Editor-The_Elementalists-0008.lib
+       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0008.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0008.exp
+    [3/4] UE4Editor-The_Elementalists-0008.dll
+       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0008.suppressed.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0008.suppressed.exp
     [4/4] The_ElementalistsEditor.target
-  Total time in Parallel executor: 2.13 seconds
-  Total execution time: 3.30 seconds
+  Total time in Parallel executor: 1.72 seconds
+  Total execution time: 2.45 seconds

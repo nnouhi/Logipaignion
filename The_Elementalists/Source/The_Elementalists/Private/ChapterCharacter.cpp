@@ -16,6 +16,7 @@
 #include "InteractableItem.h"
 #include "Projectile.h"
 #include "FloorCollider.h"
+#include "Particles/ParticleSystemComponent.h"
 //#include "DrawDebugHelpers.h"
 
 // Sets default values
@@ -45,6 +46,10 @@ AChapterCharacter::AChapterCharacter()
     ProjectileSpawnPoint->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("Muzzle_01"));
     ProjectileSpawnPoint->SetRelativeLocation(FVector(50.f, 0.f, 0.f));
 
+    // CN Add gas particles on head
+    GasParticles = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("Particles"));
+    GasParticles->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("head"));
+
     // CN Create health component
     HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("Health Component"));
     AddOwnedComponent(HealthComponent);
@@ -63,17 +68,14 @@ void AChapterCharacter::BeginPlay()
 
     PlayerControllerRef = Cast<AChapter_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 
+    RemoveGasParticles();
+
 }
 
 // Called every frame
 void AChapterCharacter::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
-
-   // UE_LOG(LogTemp, Warning, TEXT("%f"), GetHealthPercentage());
-
-    /*UE_LOG(LogTemp, Warning, TEXT("%d"), bPerformLineTrace);*/
-   /* UE_LOG(LogTemp, Warning, TEXT("Location X: %f, Y: %f, Z: %f"), GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z);*/
 
     if (bPerformLineTrace)
     {
@@ -89,6 +91,12 @@ void AChapterCharacter::Tick(float DeltaTime)
 
 	// CN Heal gradually if medkit picked up
 	CheckAndHeal(DeltaTime);
+
+    // CN Apply DPS
+    if (bTakeDPS)
+    {
+        HealthComponent->Health -= DeltaTime * DamagePerSecond;
+    }
 }
 
 // Called to bind functionality to input
@@ -380,4 +388,39 @@ void AChapterCharacter::SpeedUp()
 
     GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
     SetCanSprint(true);
+}
+
+void AChapterCharacter::AddGasParticles(float Time)
+{
+    // CN Show particles
+    if (GasParticles)
+    {
+        GasParticles->SetVisibility(true, true);
+    }
+
+    bTakeDPS = true;
+
+    // CN Reset timer if hit again
+    if (GetWorldTimerManager().IsTimerActive(GasTimerHandle))
+    {
+        GetWorldTimerManager().ClearTimer(GasTimerHandle);
+    }
+
+    GetWorldTimerManager().SetTimer(
+        GasTimerHandle,
+        this,
+        &AChapterCharacter::RemoveGasParticles,
+        Time,
+        false
+    );
+}
+
+void AChapterCharacter::RemoveGasParticles()
+{
+    bTakeDPS = false;
+
+    if (GasParticles)
+    {
+        GasParticles->SetVisibility(false, true);
+    }
 }

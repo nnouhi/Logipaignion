@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeChapterCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
+	ENGINE_API UClass* Z_Construct_UClass_UParticleSystemComponent_NoRegister();
 	THE_ELEMENTALISTS_API UClass* Z_Construct_UClass_ASwingDoor_NoRegister();
 	THE_ELEMENTALISTS_API UClass* Z_Construct_UClass_AInteractableItem_NoRegister();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
@@ -235,6 +236,10 @@ void EmptyLinkFunctionForGeneratedCodeChapterCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GasParticles_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_GasParticles;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentDoor_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CurrentDoor;
@@ -298,6 +303,16 @@ void EmptyLinkFunctionForGeneratedCodeChapterCharacter() {}
 		{ "ModuleRelativePath", "Public/ChapterCharacter.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapterCharacter_Statics::NewProp_GasParticles_MetaData[] = {
+		{ "Category", "ChapterCharacter" },
+		{ "Comment", "// CN Gas particles on head\n" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/ChapterCharacter.h" },
+		{ "ToolTip", "CN Gas particles on head" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChapterCharacter_Statics::NewProp_GasParticles = { "GasParticles", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapterCharacter, GasParticles), Z_Construct_UClass_UParticleSystemComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AChapterCharacter_Statics::NewProp_GasParticles_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapterCharacter_Statics::NewProp_GasParticles_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapterCharacter_Statics::NewProp_CurrentDoor_MetaData[] = {
 		{ "Category", "ChapterCharacter" },
@@ -393,6 +408,7 @@ void EmptyLinkFunctionForGeneratedCodeChapterCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChapterCharacter_Statics::NewProp_Oil = { "Oil", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapterCharacter, Oil), Z_Construct_UClass_UMaterial_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AChapterCharacter_Statics::NewProp_Oil_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapterCharacter_Statics::NewProp_Oil_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AChapterCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_GasParticles,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_CurrentDoor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_CurrentItem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_InfoWidget,
@@ -432,7 +448,7 @@ void EmptyLinkFunctionForGeneratedCodeChapterCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AChapterCharacter, 4088329100);
+	IMPLEMENT_CLASS(AChapterCharacter, 2982205081);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AChapterCharacter>()
 	{
 		return AChapterCharacter::StaticClass();
