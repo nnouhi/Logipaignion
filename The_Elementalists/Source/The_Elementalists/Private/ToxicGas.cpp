@@ -2,6 +2,7 @@
 
 #include "ToxicGas.h"
 
+#include "ChapterCharacter.h"
 #include "Flashback2Character.h"
 #include "GameFramework/DamageType.h"
 #include "GameFramework/Character.h"
@@ -106,6 +107,18 @@ void AToxicGas::Tick(float DeltaTime)
 						FlashbackCharacter->Cough();
 					}
 					FlashbackCharacter->Blur();
+				}
+			}
+			else
+			{
+				AChapterCharacter* ChapterCharacter = Cast<AChapterCharacter>(PlayerCharacter);
+				if (ChapterCharacter)
+				{
+					DealDamage(DeltaTime, DamagePerSecond);
+				}
+				if (NauseaCameraShakeClass)
+				{
+					GetWorld()->GetFirstPlayerController()->ClientStartCameraShake(NauseaCameraShakeClass);
 				}
 			}
 		}

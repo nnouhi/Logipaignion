@@ -81,7 +81,10 @@ void AChapterCharacter::Tick(float DeltaTime)
     }
     else
     {
-        PlayerControllerRef->HideInfoWidget();
+        if (PlayerControllerRef)
+        {
+            PlayerControllerRef->HideInfoWidget();
+        }
     }
 
 	// CN Heal gradually if medkit picked up
