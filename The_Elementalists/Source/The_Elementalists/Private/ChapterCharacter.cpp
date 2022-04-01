@@ -17,6 +17,7 @@
 #include "Projectile.h"
 #include "FloorCollider.h"
 #include "Particles/ParticleSystemComponent.h"
+#include "GasMaskBox.h"
 //#include "DrawDebugHelpers.h"
 
 // Sets default values
@@ -56,6 +57,7 @@ AChapterCharacter::AChapterCharacter()
 
     CurrentDoor = NULL;
     CurrentItem = NULL;
+    GasMaskBox = NULL;
     
 }
 
@@ -183,6 +185,14 @@ void AChapterCharacter::PerformLineTrace()
                     PlayerControllerRef->DisplayInfoWidget();
                 }
             }
+            // CN Check if actor is gas mask box
+            else if (hit.GetActor()->GetClass()->IsChildOf(AGasMaskBox::StaticClass()))
+            {
+                GasMaskBox = Cast<AGasMaskBox>(hit.GetActor());
+                if (GasMaskBox) {
+                    PlayerControllerRef->DisplayInfoWidget();
+                }
+            }
         }
     }
     else
@@ -190,6 +200,7 @@ void AChapterCharacter::PerformLineTrace()
         PlayerControllerRef->HideInfoWidget();
         CurrentDoor = NULL;
         CurrentItem = NULL;
+        GasMaskBox = NULL;
         bPerformLineTrace = false;
     }
 }
@@ -202,8 +213,12 @@ void AChapterCharacter::OnAction()
     }
     else if (CurrentItem)
     {
-        UE_LOG(LogTemp, Warning, TEXT("Interacted"));
+        // UE_LOG(LogTemp, Warning, TEXT("Interacted"));
         CurrentItem->Interact();
+    }
+    else if (GasMaskBox)
+    {
+        GasMaskBox->Interact();
     }
 }
 

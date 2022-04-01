@@ -3,7 +3,6 @@
 
 #include "GasMask.h"
 
-#include "Blueprint/UserWidget.h"
 #include "Flashback2Character.h"
 #include "Kismet/GameplayStatics.h"
 

@@ -24,11 +24,6 @@ protected:
 	UPROPERTY(EditAnywhere)
 		float ReachDistance = 400.f;
 
-	UPROPERTY(EditAnywhere)
-		TSubclassOf<class UUserWidget> InfoClass;
-	UPROPERTY()
-		class UUserWidget* InfoWidget;
-
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

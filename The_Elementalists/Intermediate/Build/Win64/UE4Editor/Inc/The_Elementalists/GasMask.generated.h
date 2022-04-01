@@ -59,9 +59,7 @@ public: \
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_GasMask_h_12_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__ReachDistance() { return STRUCT_OFFSET(AGasMask, ReachDistance); } \
-	FORCEINLINE static uint32 __PPO__InfoClass() { return STRUCT_OFFSET(AGasMask, InfoClass); } \
-	FORCEINLINE static uint32 __PPO__InfoWidget() { return STRUCT_OFFSET(AGasMask, InfoWidget); }
+	FORCEINLINE static uint32 __PPO__ReachDistance() { return STRUCT_OFFSET(AGasMask, ReachDistance); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_GasMask_h_9_PROLOG

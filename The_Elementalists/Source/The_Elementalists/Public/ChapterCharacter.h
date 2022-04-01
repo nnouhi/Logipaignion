@@ -54,6 +54,8 @@ public:
     UPROPERTY(EditAnywhere)
     class AInteractableItem* CurrentItem;
 
+    class AGasMaskBox* GasMaskBox;
+
     bool bPerformLineTrace = false;
    
     UPROPERTY(EditAnywhere)

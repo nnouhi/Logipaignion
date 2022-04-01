@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\The_Elementalists.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{93DAB80F-7E18-46AE-A782-F769385A1C2C}</UniqueIdentifier>
+      <UniqueIdentifier>{EF6935AC-5B2D-4E77-ADAE-B593FE7DFF25}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists.Target.cs">
       <Filter>Source</Filter>
@@ -16,7 +16,7 @@
     <None Include="..\..\Scanned3DPeoplePack.png" />
     <None Include="..\..\The_Elementalists.code-workspace" />
     <Filter Include="Config">
-      <UniqueIdentifier>{0B9CF77A-BC4F-4AB9-B8F8-148A01192982}</UniqueIdentifier>
+      <UniqueIdentifier>{23B416C0-AF9A-4C79-AF67-9B4D323C7AF2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -31,7 +31,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\The_Elementalists">
-      <UniqueIdentifier>{7E40932A-0ACE-4118-BFF6-3DCF589C8A23}</UniqueIdentifier>
+      <UniqueIdentifier>{8BE1570C-E534-4F66-9605-992A1FD10A94}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists\The_Elementalists.Build.cs">
       <Filter>Source\The_Elementalists</Filter>
@@ -49,7 +49,7 @@
       <Filter>Source\The_Elementalists</Filter>
     </ClInclude>
     <Filter Include="Source\The_Elementalists\Private">
-      <UniqueIdentifier>{B1EB28B0-574C-472A-BECB-097E99727B01}</UniqueIdentifier>
+      <UniqueIdentifier>{3804A56A-333B-4FBD-960A-C9B80B538087}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\AICharacter.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
@@ -141,6 +141,9 @@
     <ClCompile Include="..\..\Source\The_Elementalists\Private\GasMask.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\The_Elementalists\Private\GasMaskBox.cpp">
+      <Filter>Source\The_Elementalists\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\GasProjectile.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
@@ -223,7 +226,7 @@
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
     <Filter Include="Source\The_Elementalists\Public">
-      <UniqueIdentifier>{D6388498-26BC-4E17-9837-D7A6E559F3E9}</UniqueIdentifier>
+      <UniqueIdentifier>{36C01898-4657-42CA-BA08-CE2BACF40A2A}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\AICharacter.h">
       <Filter>Source\The_Elementalists\Public</Filter>
@@ -313,6 +316,9 @@
       <Filter>Source\The_Elementalists\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\GasMask.h">
+      <Filter>Source\The_Elementalists\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\The_Elementalists\Public\GasMaskBox.h">
       <Filter>Source\The_Elementalists\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\GasProjectile.h">
