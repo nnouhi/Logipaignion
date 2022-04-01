@@ -68,7 +68,7 @@ FString AFlash_Back2::GetObjectiveMessage()
 {
 	if (bMaskObtained)
 	{
-		return TEXT("Try escaping the house!");
+		return TEXT("Escape the house and reach your family!");
 	}
 
 	return TEXT("Avoid the poisonous gas and find the gas mask!");
