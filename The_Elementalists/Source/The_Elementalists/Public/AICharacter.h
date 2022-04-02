@@ -42,10 +42,17 @@ public:
 	UPROPERTY(EditAnywhere)
 	float WalkSpeed = 200.f;
 
+	void EquipMask();
+
 private:
 
 	// NN SkeletalMesh to add to every npc 
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh, meta = (AllowPrivateAccess = "true"))
 	class USkeletalMeshComponent* Mesh1P;
+
+	UPROPERTY(EditAnywhere)
+	UStaticMeshComponent* GasMask;
+
+
 
 };

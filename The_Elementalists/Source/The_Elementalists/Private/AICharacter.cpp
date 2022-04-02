@@ -23,6 +23,10 @@ AAICharacter::AAICharacter()
 	Mesh1P->CastShadow = false;
 	Mesh1P->SetRelativeRotation(FRotator(1.9f, -19.19f, 5.2f));
 	Mesh1P->SetRelativeLocation(FVector(-0.5f, -4.4f, -155.7f));
+
+    // NN Gas Mask
+    GasMask = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Gas Mask"));
+    GasMask->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("head"));
 }
 
 // Called when the game starts or when spawned
@@ -30,6 +34,8 @@ void AAICharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
+    // NN Make mask mesh invis at the star of level
+    GasMask->SetVisibility(false, true);
 
 }
 
@@ -93,5 +99,11 @@ void AAICharacter::SpeedUp()
     }
 
     GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
+}
+
+void AAICharacter::EquipMask()
+{
+    // NN 'Equip' mask
+    GasMask->SetVisibility(true, true);
 }
 

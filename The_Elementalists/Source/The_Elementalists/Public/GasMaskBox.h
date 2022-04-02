@@ -20,18 +20,20 @@ protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere)
-		USceneComponent* Root;
+	USceneComponent* Root;
 
 	UPROPERTY(EditAnywhere)
-		UStaticMeshComponent* MaskMesh;
+	UStaticMeshComponent* MaskMesh;
 
 	UPROPERTY(EditAnywhere)
-		UStaticMeshComponent* BoxMesh;
+	UStaticMeshComponent* BoxMesh;
 
 	class AChapterCharacter* CharRef;
 
 	UPROPERTY(EditAnywhere)
-		float ReachDistance = 400.f;
+	float ReachDistance = 400.f;
+
+	bool bMaskObtained = false;
 
 public:
 	// Called every frame

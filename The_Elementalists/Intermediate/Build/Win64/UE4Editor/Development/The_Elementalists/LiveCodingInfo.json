@@ -2,7 +2,6 @@
 	"RemapUnityFiles": 
 	{
 		"Module.The_Elementalists.cpp.obj": [
-			"AICharacter.cpp.obj",
 			"BaseGameMode.cpp.obj",
 			"Boat.cpp.obj",
 			"BoatAIController.cpp.obj",
@@ -30,6 +29,7 @@
 			"FlashbackCharacter.cpp.obj",
 			"FloatComponent.cpp.obj",
 			"FloorCollider.cpp.obj",
+			"GasMask.cpp.obj",
 			"GasProjectile.cpp.obj",
 			"HealthComponent.cpp.obj",
 			"IceCollider.cpp.obj",
@@ -59,12 +59,13 @@
 			"WindProjectile.cpp.obj",
 			"The_Elementalists.cpp.obj",
 			"The_ElementalistsGameModeBase.cpp.obj",
+			"AICharacter.cpp.obj",
+			"Chapter2_AIController.cpp.obj",
+			"Chapter2InsideHouse_AIController.cpp.obj",
 			"ChapterCharacter.cpp.obj",
-			"GasMask.cpp.obj",
 			"GasMaskBox.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
-			"AICharacter.gen.cpp.obj",
 			"BaseGameMode.gen.cpp.obj",
 			"Boat.gen.cpp.obj",
 			"BoatAIController.gen.cpp.obj",
@@ -93,6 +94,8 @@
 			"FlashbackCharacter.gen.cpp.obj",
 			"FloatComponent.gen.cpp.obj",
 			"FloorCollider.gen.cpp.obj",
+			"GasMask.gen.cpp.obj",
+			"GasMaskBox.gen.cpp.obj",
 			"GasProjectile.gen.cpp.obj",
 			"HealthComponent.gen.cpp.obj",
 			"IceCollider.gen.cpp.obj",
@@ -121,8 +124,9 @@
 			"ToxicGas.gen.cpp.obj",
 			"TriggerCollisionProfileName.gen.cpp.obj",
 			"WindProjectile.gen.cpp.obj",
-			"GasMask.gen.cpp.obj",
-			"GasMaskBox.gen.cpp.obj",
+			"AICharacter.gen.cpp.obj",
+			"Chapter2_AIController.gen.cpp.obj",
+			"Chapter2InsideHouse_AIController.gen.cpp.obj",
 			"The_Elementalists.init.gen.cpp.obj"
 		]
 	}

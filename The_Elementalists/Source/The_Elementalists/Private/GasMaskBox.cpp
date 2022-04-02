@@ -37,13 +37,18 @@ void AGasMaskBox::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (FVector::Dist(GetActorLocation(), UGameplayStatics::GetPlayerPawn(this, 0)->GetActorLocation()) < ReachDistance)
+	// NN If masks were not obtained perform line trace, other wise disable line trace for performance
+	if (!bMaskObtained)
 	{
-		if (CharRef)
+		if (FVector::Dist(GetActorLocation(), UGameplayStatics::GetPlayerPawn(this, 0)->GetActorLocation()) < ReachDistance)
 		{
-			CharRef->bPerformLineTrace = true;
+			if (CharRef)
+			{
+				CharRef->bPerformLineTrace = true;
+			}
 		}
 	}
+	
 }
 
 void AGasMaskBox::Interact()
@@ -54,4 +59,6 @@ void AGasMaskBox::Interact()
 		GameMode->ActorDied(this);
 	}
 	MaskMesh->SetVisibility(false, true);
+	// NN Disable lt
+	bMaskObtained = true;
 }

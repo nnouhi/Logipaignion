@@ -18,6 +18,9 @@
 #include "FloorCollider.h"
 #include "Particles/ParticleSystemComponent.h"
 #include "GasMaskBox.h"
+#include "AICharacter.h"
+#include "Chapter2_AIController.h"
+#include "Chapter2InsideHouse_AIController.h"
 //#include "DrawDebugHelpers.h"
 
 // Sets default values
@@ -58,6 +61,7 @@ AChapterCharacter::AChapterCharacter()
     CurrentDoor = NULL;
     CurrentItem = NULL;
     GasMaskBox = NULL;
+    AICharacter = NULL;
     
 }
 
@@ -193,6 +197,17 @@ void AChapterCharacter::PerformLineTrace()
                     PlayerControllerRef->DisplayInfoWidget();
                 }
             }
+            // NN Check if hit actor is AI (only check if player obtained the masks from factory)
+            else if (hit.GetActor()->GetClass()->IsChildOf(AAICharacter::StaticClass()) && bMaskObtained)
+            {
+                AICharacter = Cast<AAICharacter>(hit.GetActor());
+                if (AICharacter) {
+                    // NOTE: Not sure if needed to display ask chris
+                    PlayerControllerRef->DisplayInfoWidget();
+                   
+                }
+                
+            }
         }
     }
     else
@@ -219,6 +234,20 @@ void AChapterCharacter::OnAction()
     else if (GasMaskBox)
     {
         GasMaskBox->Interact();
+        bMaskObtained = true;
+    }
+    else if (AICharacter)
+    {
+        // NN Equip mask and disable line tracing for performance
+        if (Cast<AChapter2_AIController>(AICharacter->GetController()))
+        {
+            Cast<AChapter2_AIController>(AICharacter->GetController())->DisableLineTrace();
+        }
+        else
+        {
+            Cast<AChapter2InsideHouse_AIController>(AICharacter->GetController())->DisableLineTrace();
+        }
+        AICharacter->EquipMask();
     }
 }
 
