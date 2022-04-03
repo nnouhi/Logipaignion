@@ -48,6 +48,9 @@ public:
 	// NN When invoked removes map
 	void RemoveMap();
 
+	// NN When invoked displays sailor died widget
+	void DisplayYouLostWidget();
+
 protected:
 	virtual void BeginPlay() override;
 
@@ -105,7 +108,12 @@ private:
 	// NN Map widget displayed on screen
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<UUserWidget> MapHUDClass;
-
 	UPROPERTY()
 	class UUserWidget* MapWidget;
+
+	// NN You lost widget displayed on screen
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<UUserWidget> YouLostHUDClass;
+	UPROPERTY()
+	class UUserWidget* YouLostWidget;
 };

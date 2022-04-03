@@ -16,6 +16,7 @@ void AChapter_PlayerController::BeginPlay()
 	InfoWidget = CreateWidget(this, InfoHUDClass);
 	HUDWidget = CreateWidget(this, HUDClass);
 	MapWidget = CreateWidget(this, MapHUDClass);
+	YouLostWidget = CreateWidget(this, YouLostHUDClass);
 
 
 
@@ -136,5 +137,13 @@ void AChapter_PlayerController::RemoveMap()
 	if (MapWidget)
 	{
 		MapWidget->RemoveFromViewport();
+	}
+}
+
+void AChapter_PlayerController::DisplayYouLostWidget()
+{
+	if (YouLostWidget)
+	{
+		YouLostWidget->AddToViewport();
 	}
 }

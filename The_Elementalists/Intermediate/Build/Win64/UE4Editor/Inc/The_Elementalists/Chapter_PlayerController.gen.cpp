@@ -105,6 +105,14 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MapWidget_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MapWidget;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_YouLostHUDClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_YouLostHUDClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_YouLostWidget_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_YouLostWidget;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -265,6 +273,22 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_MapWidget = { "MapWidget", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapter_PlayerController, MapWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_MapWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_MapWidget_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_YouLostHUDClass_MetaData[] = {
+		{ "Category", "Chapter_PlayerController" },
+		{ "Comment", "// NN You lost widget displayed on screen\n" },
+		{ "ModuleRelativePath", "Public/Chapter_PlayerController.h" },
+		{ "ToolTip", "NN You lost widget displayed on screen" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_YouLostHUDClass = { "YouLostHUDClass", nullptr, (EPropertyFlags)0x0044000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapter_PlayerController, YouLostHUDClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_YouLostHUDClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_YouLostHUDClass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_YouLostWidget_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Chapter_PlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_YouLostWidget = { "YouLostWidget", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapter_PlayerController, YouLostWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_YouLostWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_YouLostWidget_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AChapter_PlayerController_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_GameOverDeathClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_GameOverDeathWidget,
@@ -284,6 +308,8 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_HUDWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_MapHUDClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_MapWidget,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_YouLostHUDClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter_PlayerController_Statics::NewProp_YouLostWidget,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AChapter_PlayerController_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AChapter_PlayerController>::IsAbstract,
@@ -312,7 +338,7 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AChapter_PlayerController, 830354963);
+	IMPLEMENT_CLASS(AChapter_PlayerController, 371545132);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AChapter_PlayerController>()
 	{
 		return AChapter_PlayerController::StaticClass();

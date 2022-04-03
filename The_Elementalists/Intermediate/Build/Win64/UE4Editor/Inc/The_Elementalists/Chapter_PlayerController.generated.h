@@ -78,7 +78,9 @@ public: \
 	FORCEINLINE static uint32 __PPO__HUDClass() { return STRUCT_OFFSET(AChapter_PlayerController, HUDClass); } \
 	FORCEINLINE static uint32 __PPO__HUDWidget() { return STRUCT_OFFSET(AChapter_PlayerController, HUDWidget); } \
 	FORCEINLINE static uint32 __PPO__MapHUDClass() { return STRUCT_OFFSET(AChapter_PlayerController, MapHUDClass); } \
-	FORCEINLINE static uint32 __PPO__MapWidget() { return STRUCT_OFFSET(AChapter_PlayerController, MapWidget); }
+	FORCEINLINE static uint32 __PPO__MapWidget() { return STRUCT_OFFSET(AChapter_PlayerController, MapWidget); } \
+	FORCEINLINE static uint32 __PPO__YouLostHUDClass() { return STRUCT_OFFSET(AChapter_PlayerController, YouLostHUDClass); } \
+	FORCEINLINE static uint32 __PPO__YouLostWidget() { return STRUCT_OFFSET(AChapter_PlayerController, YouLostWidget); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Chapter_PlayerController_h_12_PROLOG

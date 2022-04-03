@@ -195,10 +195,19 @@ void AChapter3Level3GameMode::ActorDied(AActor* DeadActor)
 			}
 			return;
 		}
+		// NN AI Died display you lost screen
+		else
+		{
+			if (ChapterCharacterController)
+			{
+				ChapterCharacterController->DisplayYouLostWidget();
+			}
+
+		}
 		// NN friendly ai died :(
 		// GameOver;
 		// DeadActor->Destroy();
-		AICount--;
+		/*AICount--;*/
 	}
 	else if (Cast<AOilSpillBlocked>(DeadActor))
 	{
