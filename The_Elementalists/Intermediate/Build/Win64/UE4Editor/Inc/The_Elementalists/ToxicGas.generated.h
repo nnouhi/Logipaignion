@@ -70,6 +70,7 @@ public: \
 	FORCEINLINE static uint32 __PPO__DamageDistance() { return STRUCT_OFFSET(AToxicGas, DamageDistance); } \
 	FORCEINLINE static uint32 __PPO__DamagePerSecond() { return STRUCT_OFFSET(AToxicGas, DamagePerSecond); } \
 	FORCEINLINE static uint32 __PPO__BaseScale() { return STRUCT_OFFSET(AToxicGas, BaseScale); } \
+	FORCEINLINE static uint32 __PPO__PointsAwarded() { return STRUCT_OFFSET(AToxicGas, PointsAwarded); } \
 	FORCEINLINE static uint32 __PPO__HealthComponent() { return STRUCT_OFFSET(AToxicGas, HealthComponent); }
 
 

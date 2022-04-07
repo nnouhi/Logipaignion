@@ -83,6 +83,10 @@ void EmptyLinkFunctionForGeneratedCodeToxicGas() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseScale;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PointsAwarded_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_PointsAwarded;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HealthComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HealthComponent;
@@ -186,6 +190,15 @@ void EmptyLinkFunctionForGeneratedCodeToxicGas() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AToxicGas_Statics::NewProp_BaseScale = { "BaseScale", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AToxicGas, BaseScale), METADATA_PARAMS(Z_Construct_UClass_AToxicGas_Statics::NewProp_BaseScale_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AToxicGas_Statics::NewProp_BaseScale_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AToxicGas_Statics::NewProp_PointsAwarded_MetaData[] = {
+		{ "Category", "ToxicGas" },
+		{ "Comment", "// CN Points awarded when putting out the gas\n" },
+		{ "ModuleRelativePath", "Public/ToxicGas.h" },
+		{ "ToolTip", "CN Points awarded when putting out the gas" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AToxicGas_Statics::NewProp_PointsAwarded = { "PointsAwarded", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AToxicGas, PointsAwarded), METADATA_PARAMS(Z_Construct_UClass_AToxicGas_Statics::NewProp_PointsAwarded_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AToxicGas_Statics::NewProp_PointsAwarded_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AToxicGas_Statics::NewProp_HealthComponent_MetaData[] = {
 		{ "Category", "ToxicGas" },
 		{ "Comment", "// CN The health of the fire\n" },
@@ -207,6 +220,7 @@ void EmptyLinkFunctionForGeneratedCodeToxicGas() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_DamageDistance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_DamagePerSecond,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_BaseScale,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_PointsAwarded,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_HealthComponent,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AToxicGas_Statics::StaticCppClassTypeInfo = {
@@ -236,7 +250,7 @@ void EmptyLinkFunctionForGeneratedCodeToxicGas() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AToxicGas, 576601405);
+	IMPLEMENT_CLASS(AToxicGas, 4252941033);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AToxicGas>()
 	{
 		return AToxicGas::StaticClass();

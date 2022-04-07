@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\The_Elementalists.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{7CA941FC-B2CB-427C-BFE7-0F70F7956F48}</UniqueIdentifier>
+      <UniqueIdentifier>{7F4BCC63-092C-4B4E-BC8A-01E71897A155}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists.Target.cs">
       <Filter>Source</Filter>
@@ -16,7 +16,7 @@
     <None Include="..\..\Scanned3DPeoplePack.png" />
     <None Include="..\..\The_Elementalists.code-workspace" />
     <Filter Include="Config">
-      <UniqueIdentifier>{F684FC72-FC1A-4948-B974-5087E01A7248}</UniqueIdentifier>
+      <UniqueIdentifier>{882268D1-9F5A-43FA-BC1A-C9FA4203B0B9}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -31,7 +31,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\The_Elementalists">
-      <UniqueIdentifier>{A8EC6441-0607-4701-954F-975F19B0FA84}</UniqueIdentifier>
+      <UniqueIdentifier>{50B83D23-55AE-49D3-887A-9A7D43464664}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists\The_Elementalists.Build.cs">
       <Filter>Source\The_Elementalists</Filter>
@@ -49,7 +49,7 @@
       <Filter>Source\The_Elementalists</Filter>
     </ClInclude>
     <Filter Include="Source\The_Elementalists\Private">
-      <UniqueIdentifier>{B77DA9DA-4994-4F9D-B998-C7009D7C735B}</UniqueIdentifier>
+      <UniqueIdentifier>{5C06E9D8-5DFE-448D-93D7-DA312C662FF0}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\AICharacter.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
@@ -82,6 +82,15 @@
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\Chapter2InsideHouse_AIController.cpp">
+      <Filter>Source\The_Elementalists\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\The_Elementalists\Private\Chapter2Level1GameMode.cpp">
+      <Filter>Source\The_Elementalists\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\The_Elementalists\Private\Chapter2Level2GameMode.cpp">
+      <Filter>Source\The_Elementalists\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\The_Elementalists\Private\Chapter2Level3GameMode.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\Chapter2_AIController.cpp">
@@ -232,7 +241,7 @@
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
     <Filter Include="Source\The_Elementalists\Public">
-      <UniqueIdentifier>{81E8C17D-4512-4F8F-BB11-002106CAA35C}</UniqueIdentifier>
+      <UniqueIdentifier>{FAF31984-8DEF-42FA-BE7A-2482E2D9F2F1}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\AICharacter.h">
       <Filter>Source\The_Elementalists\Public</Filter>
@@ -265,6 +274,15 @@
       <Filter>Source\The_Elementalists\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\Chapter2InsideHouse_AIController.h">
+      <Filter>Source\The_Elementalists\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\The_Elementalists\Public\Chapter2Level1GameMode.h">
+      <Filter>Source\The_Elementalists\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\The_Elementalists\Public\Chapter2Level2GameMode.h">
+      <Filter>Source\The_Elementalists\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\The_Elementalists\Public\Chapter2Level3GameMode.h">
       <Filter>Source\The_Elementalists\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\Chapter2_AIController.h">

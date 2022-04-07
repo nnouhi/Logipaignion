@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeGasMaskBox() {}
 	UPackage* Z_Construct_UPackage__Script_The_Elementalists();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UParticleSystemComponent_NoRegister();
 // End Cross Module References
 	void AGasMaskBox::StaticRegisterNativesAGasMaskBox()
 	{
@@ -41,6 +42,10 @@ void EmptyLinkFunctionForGeneratedCodeGasMaskBox() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaskMesh_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MaskMesh;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Particles_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Particles;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BoxMesh_MetaData[];
 #endif
@@ -80,6 +85,14 @@ void EmptyLinkFunctionForGeneratedCodeGasMaskBox() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGasMaskBox_Statics::NewProp_MaskMesh = { "MaskMesh", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGasMaskBox, MaskMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGasMaskBox_Statics::NewProp_MaskMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGasMaskBox_Statics::NewProp_MaskMesh_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGasMaskBox_Statics::NewProp_Particles_MetaData[] = {
+		{ "Category", "GasMaskBox" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/GasMaskBox.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGasMaskBox_Statics::NewProp_Particles = { "Particles", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGasMaskBox, Particles), Z_Construct_UClass_UParticleSystemComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGasMaskBox_Statics::NewProp_Particles_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGasMaskBox_Statics::NewProp_Particles_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGasMaskBox_Statics::NewProp_BoxMesh_MetaData[] = {
 		{ "Category", "GasMaskBox" },
 		{ "EditInline", "true" },
@@ -97,6 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeGasMaskBox() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AGasMaskBox_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGasMaskBox_Statics::NewProp_Root,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGasMaskBox_Statics::NewProp_MaskMesh,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGasMaskBox_Statics::NewProp_Particles,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGasMaskBox_Statics::NewProp_BoxMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGasMaskBox_Statics::NewProp_ReachDistance,
 	};
@@ -127,7 +141,7 @@ void EmptyLinkFunctionForGeneratedCodeGasMaskBox() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGasMaskBox, 3483841707);
+	IMPLEMENT_CLASS(AGasMaskBox, 3538389805);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AGasMaskBox>()
 	{
 		return AGasMaskBox::StaticClass();

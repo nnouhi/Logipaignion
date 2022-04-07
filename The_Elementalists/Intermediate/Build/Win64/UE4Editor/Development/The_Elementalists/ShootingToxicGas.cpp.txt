@@ -3,6 +3,10 @@ C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_El
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\ToxicGas.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\ToxicGas.generated.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\ShootingToxicGas.generated.h
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\GasProjectile.h
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Projectile.h
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Projectile.generated.h
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\GasProjectile.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
@@ -25,5 +29,3 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ProjectileMovementComponent.generated.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Projectile.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Projectile.generated.h

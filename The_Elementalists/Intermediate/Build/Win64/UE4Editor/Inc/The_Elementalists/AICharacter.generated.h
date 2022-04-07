@@ -59,6 +59,7 @@ public: \
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_AICharacter_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__PointsAwarded() { return STRUCT_OFFSET(AAICharacter, PointsAwarded); } \
 	FORCEINLINE static uint32 __PPO__Mesh1P() { return STRUCT_OFFSET(AAICharacter, Mesh1P); } \
 	FORCEINLINE static uint32 __PPO__GasMask() { return STRUCT_OFFSET(AAICharacter, GasMask); }
 

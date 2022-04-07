@@ -61,6 +61,7 @@ public: \
 #define The_Elementalists_Source_The_Elementalists_Public_GasMaskBox_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Root() { return STRUCT_OFFSET(AGasMaskBox, Root); } \
 	FORCEINLINE static uint32 __PPO__MaskMesh() { return STRUCT_OFFSET(AGasMaskBox, MaskMesh); } \
+	FORCEINLINE static uint32 __PPO__Particles() { return STRUCT_OFFSET(AGasMaskBox, Particles); } \
 	FORCEINLINE static uint32 __PPO__BoxMesh() { return STRUCT_OFFSET(AGasMaskBox, BoxMesh); } \
 	FORCEINLINE static uint32 __PPO__ReachDistance() { return STRUCT_OFFSET(AGasMaskBox, ReachDistance); }
 
