@@ -31,3 +31,5 @@ D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\OilSpillSho
 D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\OilSpill.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpill.generated.h
 D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpillShooting.generated.h
+D:\rt\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\FloorCollider.h
+D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\FloorCollider.generated.h

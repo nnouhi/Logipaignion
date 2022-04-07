@@ -9,6 +9,7 @@
 #include "IceCube.h"
 #include "Particles/ParticleSystemComponent.h"
 #include "OilSpillShooting.h"
+#include "FloorCollider.h"
 
 // Sets default values
 AIceProjectile::AIceProjectile()
@@ -50,23 +51,41 @@ void AIceProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPr
 			{
 				UGameplayStatics::SpawnEmitterAtLocation(this, HitParticles, GetActorLocation(), GetActorRotation());
 			}
-			if (HitSound)
-			{
-				UGameplayStatics::PlaySoundAtLocation(this, HitSound, GetActorLocation());
-			}
+			
 			if (OtherActor->GetComponentByClass(UIceCollider::StaticClass()))
 			{
 				if (IceCubeClass)
 				{
+					if (IceCubeSpawnedSound)
+					{
+						UGameplayStatics::PlaySoundAtLocation(this, IceCubeSpawnedSound, GetActorLocation());
+					}
 					FVector SpawnLocation = GetActorLocation();
 					SpawnLocation.Z = (OtherActor->GetActorLocation()).Z + 0.01f;
 					GetWorld()->SpawnActor<AIceCube>(IceCubeClass, SpawnLocation, FRotator(0.f, 0.f, 0.f));
+				}
+			}
+			// NN Projectile collides with floor collider
+			else if (OtherActor->GetComponentByClass(UFloorCollider::StaticClass()))
+			{
+				if (IceCubeFloorHitSound)
+				{
+					UGameplayStatics::PlaySoundAtLocation(this, IceCubeFloorHitSound, GetActorLocation());
+				}
+			}
+			// NN Projectile collides with anything else in the level
+			else
+			{
+				if (HitSound)
+				{
+					UGameplayStatics::PlaySoundAtLocation(this, HitSound, GetActorLocation());
 				}
 			}
 			if (Cast<AOilSpillShooting>(OtherActor))
 			{
 				Cast<AOilSpillShooting>(OtherActor)->Freeze();
 			}
+			
 		}
 
 	Destroy();

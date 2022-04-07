@@ -14,6 +14,13 @@ class THE_ELEMENTALISTS_API AIceProjectile : public AProjectile
 {
 	GENERATED_BODY()
 
+
+private:
+	UPROPERTY(EditAnywhere)
+	class USoundBase* IceCubeSpawnedSound;
+
+	UPROPERTY(EditAnywhere)
+	USoundBase* IceCubeFloorHitSound;
 public:
 	// Sets default values for this actor's properties
 	AIceProjectile();

@@ -112,7 +112,11 @@ void AAICharacter::EquipMask()
         // NN 'Equip' mask
         bMaskEquipped = true;
         GasMask->SetVisibility(true, true);
-        GameMode->ActorDied(this);
+        GameMode = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+        if (GameMode)
+        {
+            GameMode->ActorDied(this);
+        }
     }
 }
 
