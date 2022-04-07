@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeIceProjectile() {}
 	THE_ELEMENTALISTS_API UClass* Z_Construct_UClass_AIceProjectile();
 	THE_ELEMENTALISTS_API UClass* Z_Construct_UClass_AProjectile();
 	UPackage* Z_Construct_UPackage__Script_The_Elementalists();
+	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	THE_ELEMENTALISTS_API UClass* Z_Construct_UClass_AIceCube_NoRegister();
 // End Cross Module References
@@ -33,6 +34,14 @@ void EmptyLinkFunctionForGeneratedCodeIceProjectile() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IceCubeSpawnedSound_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_IceCubeSpawnedSound;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IceCubeFloorHitSound_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_IceCubeFloorHitSound;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IceCubeClass_MetaData[];
 #endif
@@ -53,6 +62,20 @@ void EmptyLinkFunctionForGeneratedCodeIceProjectile() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AIceProjectile_Statics::NewProp_IceCubeSpawnedSound_MetaData[] = {
+		{ "Category", "IceProjectile" },
+		{ "ModuleRelativePath", "Public/IceProjectile.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AIceProjectile_Statics::NewProp_IceCubeSpawnedSound = { "IceCubeSpawnedSound", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AIceProjectile, IceCubeSpawnedSound), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AIceProjectile_Statics::NewProp_IceCubeSpawnedSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AIceProjectile_Statics::NewProp_IceCubeSpawnedSound_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AIceProjectile_Statics::NewProp_IceCubeFloorHitSound_MetaData[] = {
+		{ "Category", "IceProjectile" },
+		{ "ModuleRelativePath", "Public/IceProjectile.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AIceProjectile_Statics::NewProp_IceCubeFloorHitSound = { "IceCubeFloorHitSound", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AIceProjectile, IceCubeFloorHitSound), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AIceProjectile_Statics::NewProp_IceCubeFloorHitSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AIceProjectile_Statics::NewProp_IceCubeFloorHitSound_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AIceProjectile_Statics::NewProp_IceCubeClass_MetaData[] = {
 		{ "Category", "IceProjectile" },
 		{ "Comment", "// CN The ice cube that spawns\n" },
@@ -62,6 +85,8 @@ void EmptyLinkFunctionForGeneratedCodeIceProjectile() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AIceProjectile_Statics::NewProp_IceCubeClass = { "IceCubeClass", nullptr, (EPropertyFlags)0x0024080000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AIceProjectile, IceCubeClass), Z_Construct_UClass_AIceCube_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AIceProjectile_Statics::NewProp_IceCubeClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AIceProjectile_Statics::NewProp_IceCubeClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AIceProjectile_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AIceProjectile_Statics::NewProp_IceCubeSpawnedSound,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AIceProjectile_Statics::NewProp_IceCubeFloorHitSound,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AIceProjectile_Statics::NewProp_IceCubeClass,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AIceProjectile_Statics::StaticCppClassTypeInfo = {
@@ -91,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeIceProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AIceProjectile, 2350716832);
+	IMPLEMENT_CLASS(AIceProjectile, 2722316089);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AIceProjectile>()
 	{
 		return AIceProjectile::StaticClass();

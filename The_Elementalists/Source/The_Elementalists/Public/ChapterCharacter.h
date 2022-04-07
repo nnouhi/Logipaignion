@@ -19,6 +19,12 @@ protected:
     // Called when the game starts or when spawned
     virtual void BeginPlay() override;
 
+    // CN Gas particles on head
+    UPROPERTY(EditAnywhere)
+    class UParticleSystemComponent* GasParticles;
+
+    bool bDied = false;
+
 public:
     // Called every frame
     virtual void Tick(float DeltaTime) override;
@@ -28,6 +34,10 @@ public:
 
     // CN Shoot
     void Shoot();
+
+    // CN For gas level
+    void AddGasParticles(float Time, float Damage);
+    void RemoveGasParticles();
 
 	// CN Heal
 	void Heal(float Amount);
@@ -46,6 +56,10 @@ public:
     UPROPERTY(EditAnywhere)
     class AInteractableItem* CurrentItem;
 
+    class AGasMaskBox* GasMaskBox;
+
+    class AAICharacter* AICharacter;
+
     bool bPerformLineTrace = false;
    
     UPROPERTY(EditAnywhere)
@@ -58,6 +72,8 @@ public:
 
     // Set speed back to normal
     void SpeedUp();
+
+    bool GetMaskState() const { return bMaskObtained; }
 
 private:
     // CN Move forwards/backwards
@@ -132,6 +148,13 @@ private:
     // NN Slow character timer handle
     FTimerHandle SlowedDownTimerHandle;
 
+    // CN Timer handle gas
+    FTimerHandle GasTimerHandle;
+
+    // CN For gas level
+    bool bTakeDPS = false;
+    float DamagePerSecond = 4.f;
+
     // NN Sets bFireButtonPressed to true and calls StartFireTimer()
     void FireButtonPressed();
 
@@ -155,7 +178,7 @@ private:
     // NN Kill actor when overlapped
     UFUNCTION()
     void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, 
-         int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+    int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
     // CN Enable/Disable sprinting
     FORCEINLINE void SetCanSprint(bool bNewValue) { bCanSprint = bNewValue; };
@@ -164,4 +187,8 @@ private:
     UMaterial* Oil;
 
     TArray<UMaterialInterface*> Materials;
+
+    // NN Determine if character obtained the gas masks (Chapter 2)
+    UPROPERTY(EditAnywhere)
+    bool bMaskObtained = false;
 };

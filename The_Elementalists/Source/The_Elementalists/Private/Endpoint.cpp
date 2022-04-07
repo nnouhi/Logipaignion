@@ -4,6 +4,7 @@
 #include "Endpoint.h"
 #include "Components/BoxComponent.h"
 #include "FlashbackCharacter.h"
+#include "Flashback2Character.h"
 #include "ChapterCharacter.h"
 #include "Flashback3_AIController.h"
 #include "Kismet/GameplayStatics.h"
@@ -62,7 +63,7 @@ void AEndpoint::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Othe
 			}
 		}
 	}
-	else if (OtherActor->IsA(AChapterCharacter::StaticClass()))
+	else if (OtherActor->IsA(AChapterCharacter::StaticClass()) || OtherActor->IsA(AFlashback2Character::StaticClass()))
 	{
 		if (FlashBackGameModeRef && !bLevelClear)
 		{

@@ -17,6 +17,9 @@ void AFlashback_PlayerController::BeginPlay()
 	GameOverWidget = CreateWidget(this, GameOverClass);
 	LevelClearWidget = CreateWidget(this, LevelClearClass);
 	
+	InfoWidget = CreateWidget(this, InfoHUDClass);
+	BlurWidget = CreateWidget(this, BlurClass);
+	GasMaskWidget = CreateWidget(this, GasMaskClass);
 }
 
 void AFlashback_PlayerController::DisplayMap()
@@ -73,21 +76,19 @@ void AFlashback_PlayerController::StartLevel()
 		StartTimerWidget->RemoveFromViewport();
 	}
 
-	if (HealthbarWidget)
+	DisplayMainHUD();
+
+	if (InfoWidget)
 	{
-		HealthbarWidget->AddToViewport();
+		InfoWidget->AddToViewport();
+		HideInfoWidget(); // At first hide the widget
 	}
 
-	if (ObjectiveWidget)
+	if (BlurWidget)
 	{
-		ObjectiveWidget->AddToViewport();
+		BlurWidget->AddToViewport();
+		UnBlur(); // At first hide the widget
 	}
-
-	if (MinimapWidget)
-	{
-		MinimapWidget->AddToViewport();
-	}
-
 }
 
 void AFlashback_PlayerController::SetPlayerEnabledState(bool bEnabled) {
@@ -96,5 +97,71 @@ void AFlashback_PlayerController::SetPlayerEnabledState(bool bEnabled) {
 	}
 	else {
 		GetPawn()->DisableInput(this);
+	}
+}
+
+
+void AFlashback_PlayerController::HideInfoWidget()
+{
+	if (InfoWidget)
+	{
+		InfoWidget->SetVisibility(ESlateVisibility::Hidden);
+	}
+}
+
+void AFlashback_PlayerController::DisplayInfoWidget()
+{
+	if (InfoWidget)
+	{
+		InfoWidget->SetVisibility(ESlateVisibility::Visible);
+	}
+}
+
+void AFlashback_PlayerController::WearMask()
+{
+	if (GasMaskWidget)
+	{
+		GasMaskWidget->AddToViewport();
+	}
+
+	DisplayMainHUD();
+}
+
+void AFlashback_PlayerController::Blur()
+{
+	if (BlurWidget)
+	{
+		BlurWidget->SetVisibility(ESlateVisibility::Visible);
+	}
+
+	DisplayMainHUD();
+}
+
+void AFlashback_PlayerController::UnBlur()
+{
+	if (BlurWidget)
+	{
+		BlurWidget->SetVisibility(ESlateVisibility::Hidden);
+	}
+}
+
+void AFlashback_PlayerController::DisplayMainHUD()
+{
+	if (HealthbarWidget)
+	{
+		HealthbarWidget->RemoveFromViewport();
+		HealthbarWidget->AddToViewport();
+	}
+
+	if (ObjectiveWidget)
+	{
+		ObjectiveWidget->RemoveFromViewport();
+		ObjectiveWidget->AddToViewport();
+	}
+
+	if (MinimapWidget)
+	{
+		MinimapWidget->RemoveFromViewport();
+		MinimapWidget->AddToViewport();
 	}
 }

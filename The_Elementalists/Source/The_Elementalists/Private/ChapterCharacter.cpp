@@ -16,6 +16,11 @@
 #include "InteractableItem.h"
 #include "Projectile.h"
 #include "FloorCollider.h"
+#include "Particles/ParticleSystemComponent.h"
+#include "GasMaskBox.h"
+#include "AICharacter.h"
+#include "Chapter2_AIController.h"
+#include "Chapter2InsideHouse_AIController.h"
 //#include "DrawDebugHelpers.h"
 
 // Sets default values
@@ -45,12 +50,18 @@ AChapterCharacter::AChapterCharacter()
     ProjectileSpawnPoint->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("Muzzle_01"));
     ProjectileSpawnPoint->SetRelativeLocation(FVector(50.f, 0.f, 0.f));
 
+    // CN Add gas particles on head
+    GasParticles = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("Particles"));
+    GasParticles->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("head"));
+
     // CN Create health component
     HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("Health Component"));
     AddOwnedComponent(HealthComponent);
 
     CurrentDoor = NULL;
     CurrentItem = NULL;
+    GasMaskBox = NULL;
+    AICharacter = NULL;
     
 }
 
@@ -63,6 +74,8 @@ void AChapterCharacter::BeginPlay()
 
     PlayerControllerRef = Cast<AChapter_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 
+    RemoveGasParticles();
+
 }
 
 // Called every frame
@@ -70,22 +83,36 @@ void AChapterCharacter::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
 
-   // UE_LOG(LogTemp, Warning, TEXT("%f"), GetHealthPercentage());
-
-    /*UE_LOG(LogTemp, Warning, TEXT("%d"), bPerformLineTrace);*/
-   /* UE_LOG(LogTemp, Warning, TEXT("Location X: %f, Y: %f, Z: %f"), GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z);*/
-
     if (bPerformLineTrace)
     {
         PerformLineTrace();
     }
     else
     {
-        PlayerControllerRef->HideInfoWidget();
+        if (PlayerControllerRef)
+        {
+            PlayerControllerRef->HideInfoWidget();
+        }
     }
 
 	// CN Heal gradually if medkit picked up
 	CheckAndHeal(DeltaTime);
+
+    // CN Apply DPS
+    if (bTakeDPS)
+    {
+        if (IsDead() && !bDied)
+        {
+            bDied = true;
+            ABaseGameMode* GameMode = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+            if (GameMode)
+            {
+                GameMode->ActorDied(this);
+            }
+        }
+            
+        HealthComponent->Health -= DeltaTime * DamagePerSecond;
+    }
 }
 
 // Called to bind functionality to input
@@ -149,7 +176,7 @@ void AChapterCharacter::PerformLineTrace()
 
     if (GetWorld()->LineTraceSingleByChannel(hit, Start, End, ECC_Visibility))
     {
-        if (hit.bBlockingHit)
+        if (hit.bBlockingHit && hit.GetActor())
         {
             /*UE_LOG(LogTemp, Warning, TEXT("%s"), *hit.GetActor()->GetName());*/
             /* NN If actor is a door ..
@@ -172,6 +199,25 @@ void AChapterCharacter::PerformLineTrace()
                     PlayerControllerRef->DisplayInfoWidget();
                 }
             }
+            // CN Check if actor is gas mask box
+            else if (hit.GetActor()->GetClass()->IsChildOf(AGasMaskBox::StaticClass()))
+            {
+                GasMaskBox = Cast<AGasMaskBox>(hit.GetActor());
+                if (GasMaskBox) {
+                    PlayerControllerRef->DisplayInfoWidget();
+                }
+            }
+            // NN Check if hit actor is AI (only check if player obtained the masks from factory)
+            else if (hit.GetActor()->GetClass()->IsChildOf(AAICharacter::StaticClass()) && bMaskObtained)
+            {
+                AICharacter = Cast<AAICharacter>(hit.GetActor());
+                if (AICharacter) {
+                    // NOTE: Not sure if needed to display ask chris
+                    PlayerControllerRef->DisplayInfoWidget();
+                   
+                }
+                
+            }
         }
     }
     else
@@ -179,6 +225,7 @@ void AChapterCharacter::PerformLineTrace()
         PlayerControllerRef->HideInfoWidget();
         CurrentDoor = NULL;
         CurrentItem = NULL;
+        GasMaskBox = NULL;
         bPerformLineTrace = false;
     }
 }
@@ -191,8 +238,26 @@ void AChapterCharacter::OnAction()
     }
     else if (CurrentItem)
     {
-        UE_LOG(LogTemp, Warning, TEXT("Interacted"));
+        // UE_LOG(LogTemp, Warning, TEXT("Interacted"));
         CurrentItem->Interact();
+    }
+    else if (GasMaskBox)
+    {
+        GasMaskBox->Interact();
+        bMaskObtained = true;
+    }
+    else if (AICharacter)
+    {
+        // NN Equip mask and disable line tracing for performance
+        if (Cast<AChapter2_AIController>(AICharacter->GetController()))
+        {
+            Cast<AChapter2_AIController>(AICharacter->GetController())->DisableLineTrace();
+        }
+        else if (Cast<AChapter2InsideHouse_AIController>(AICharacter->GetController()))
+        {
+            Cast<AChapter2InsideHouse_AIController>(AICharacter->GetController())->DisableLineTrace();
+        }
+        AICharacter->EquipMask();
     }
 }
 
@@ -377,4 +442,40 @@ void AChapterCharacter::SpeedUp()
 
     GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
     SetCanSprint(true);
+}
+
+void AChapterCharacter::AddGasParticles(float Time, float Damage)
+{
+    // CN Show particles
+    if (GasParticles)
+    {
+        GasParticles->SetVisibility(true, true);
+    }
+
+    bTakeDPS = true;
+    DamagePerSecond = Damage * 0.4f;
+
+    // CN Reset timer if hit again
+    if (GetWorldTimerManager().IsTimerActive(GasTimerHandle))
+    {
+        GetWorldTimerManager().ClearTimer(GasTimerHandle);
+    }
+
+    GetWorldTimerManager().SetTimer(
+        GasTimerHandle,
+        this,
+        &AChapterCharacter::RemoveGasParticles,
+        Time,
+        false
+    );
+}
+
+void AChapterCharacter::RemoveGasParticles()
+{
+    bTakeDPS = false;
+
+    if (GasParticles)
+    {
+        GasParticles->SetVisibility(false, true);
+    }
 }
