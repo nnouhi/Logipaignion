@@ -54,8 +54,6 @@ private:
 
 	TArray<AActor*> EscapeWaypoints;
 
-	class ABaseGameMode* GameMode;
-
 public:
 	void DisableLineTrace() { bPerformLineTrace = false; }
 	

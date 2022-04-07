@@ -150,3 +150,12 @@ void AToxicGas::SetHealth(float Health)
 		HealthComponent->Health = Health;
 	}
 }
+
+void AToxicGas::ScaleHealth(float Amount)
+{
+	if (HealthComponent)
+	{
+		HealthComponent->MaxHealth *= Amount;
+		HealthComponent->Health = HealthComponent->MaxHealth;
+	}
+}

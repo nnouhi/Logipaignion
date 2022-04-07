@@ -23,6 +23,8 @@ protected:
     UPROPERTY(EditAnywhere)
     class UParticleSystemComponent* GasParticles;
 
+    bool bDied = false;
+
 public:
     // Called every frame
     virtual void Tick(float DeltaTime) override;
@@ -34,7 +36,7 @@ public:
     void Shoot();
 
     // CN For gas level
-    void AddGasParticles(float Time);
+    void AddGasParticles(float Time, float Damage);
     void RemoveGasParticles();
 
 	// CN Heal
@@ -187,5 +189,6 @@ private:
     TArray<UMaterialInterface*> Materials;
 
     // NN Determine if character obtained the gas masks (Chapter 2)
+    UPROPERTY(EditAnywhere)
     bool bMaskObtained = false;
 };

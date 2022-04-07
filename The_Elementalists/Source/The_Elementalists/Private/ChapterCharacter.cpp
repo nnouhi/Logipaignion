@@ -101,6 +101,16 @@ void AChapterCharacter::Tick(float DeltaTime)
     // CN Apply DPS
     if (bTakeDPS)
     {
+        if (IsDead() && !bDied)
+        {
+            bDied = true;
+            ABaseGameMode* GameMode = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+            if (GameMode)
+            {
+                GameMode->ActorDied(this);
+            }
+        }
+            
         HealthComponent->Health -= DeltaTime * DamagePerSecond;
     }
 }
@@ -166,7 +176,7 @@ void AChapterCharacter::PerformLineTrace()
 
     if (GetWorld()->LineTraceSingleByChannel(hit, Start, End, ECC_Visibility))
     {
-        if (hit.bBlockingHit)
+        if (hit.bBlockingHit && hit.GetActor())
         {
             /*UE_LOG(LogTemp, Warning, TEXT("%s"), *hit.GetActor()->GetName());*/
             /* NN If actor is a door ..
@@ -243,7 +253,7 @@ void AChapterCharacter::OnAction()
         {
             Cast<AChapter2_AIController>(AICharacter->GetController())->DisableLineTrace();
         }
-        else
+        else if (Cast<AChapter2InsideHouse_AIController>(AICharacter->GetController()))
         {
             Cast<AChapter2InsideHouse_AIController>(AICharacter->GetController())->DisableLineTrace();
         }
@@ -434,7 +444,7 @@ void AChapterCharacter::SpeedUp()
     SetCanSprint(true);
 }
 
-void AChapterCharacter::AddGasParticles(float Time)
+void AChapterCharacter::AddGasParticles(float Time, float Damage)
 {
     // CN Show particles
     if (GasParticles)
@@ -443,6 +453,7 @@ void AChapterCharacter::AddGasParticles(float Time)
     }
 
     bTakeDPS = true;
+    DamagePerSecond = Damage * 0.4f;
 
     // CN Reset timer if hit again
     if (GetWorldTimerManager().IsTimerActive(GasTimerHandle))

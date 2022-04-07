@@ -6,6 +6,7 @@
 #include "BaseGameMode.h"
 #include "ChapterCharacter.h"
 #include "Kismet/GameplayStatics.h"
+#include "Particles/ParticleSystemComponent.h"
 
 // Sets default values
 AGasMaskBox::AGasMaskBox()
@@ -19,6 +20,9 @@ AGasMaskBox::AGasMaskBox()
 
 	MaskMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mask Mesh"));
 	MaskMesh->SetupAttachment(Root);
+
+	Particles = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("Particles"));
+	Particles->SetupAttachment(Root);
 
 	BoxMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Box Mesh"));
 	BoxMesh->SetupAttachment(Root);
@@ -59,6 +63,7 @@ void AGasMaskBox::Interact()
 		GameMode->ActorDied(this);
 	}
 	MaskMesh->SetVisibility(false, true);
+	Particles->SetVisibility(false, true);
 	// NN Disable lt
 	bMaskObtained = true;
 }

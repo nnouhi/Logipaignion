@@ -26,6 +26,9 @@ protected:
 	UStaticMeshComponent* MaskMesh;
 
 	UPROPERTY(EditAnywhere)
+	class UParticleSystemComponent* Particles;
+
+	UPROPERTY(EditAnywhere)
 	UStaticMeshComponent* BoxMesh;
 
 	class AChapterCharacter* CharRef;

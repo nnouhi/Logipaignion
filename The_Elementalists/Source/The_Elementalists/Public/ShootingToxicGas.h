@@ -20,7 +20,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	FORCEINLINE void SetProjectileDamage(float NewDamage) { ProjectileDamage = NewDamage; };
+	FORCEINLINE void ScaleProjectileDamage(float Amount) { ProjectileDamageScale *= Amount; };
 
 protected:
 
@@ -45,7 +45,7 @@ private:
 		float ShootingRange = 400.f;
 
 	// CN Used to change the projectile damage
-	float ProjectileDamage = 10.f;
+	float ProjectileDamageScale = 1.f;
 
 	FTimerHandle ShootingRateTimerHandle;
 

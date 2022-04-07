@@ -2,8 +2,11 @@
 
 
 #include "AICharacter.h"
+
+#include "BaseGameMode.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 
 // Sets default values
@@ -37,6 +40,7 @@ void AAICharacter::BeginPlay()
     // NN Make mask mesh invis at the star of level
     GasMask->SetVisibility(false, true);
 
+    GameMode = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
 }
 
 // Called every frame
@@ -103,7 +107,12 @@ void AAICharacter::SpeedUp()
 
 void AAICharacter::EquipMask()
 {
-    // NN 'Equip' mask
-    GasMask->SetVisibility(true, true);
+    if (!bMaskEquipped)
+    {
+        // NN 'Equip' mask
+        bMaskEquipped = true;
+        GasMask->SetVisibility(true, true);
+        GameMode->ActorDied(this);
+    }
 }
 

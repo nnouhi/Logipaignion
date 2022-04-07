@@ -19,6 +19,14 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	// CN Points awarded when saving the AI
+	UPROPERTY(EditAnywhere)
+		int32 PointsAwarded = 100;
+
+	class ABaseGameMode* GameMode;
+
+	bool bMaskEquipped = false;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -31,6 +39,8 @@ public:
 
 	// Set speed back to normal
 	void SpeedUp();
+
+	FORCEINLINE int32 GetPointsAwarded() { return PointsAwarded; };
 
 	UPROPERTY(EditAnywhere)
 	UMaterial* Oil;

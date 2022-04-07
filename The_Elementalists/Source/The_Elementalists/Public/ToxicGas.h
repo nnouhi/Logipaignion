@@ -55,7 +55,18 @@ protected:
 	UPROPERTY(EditAnywhere)
 		float BaseScale = 2.f;
 
+	// CN Points awarded when putting out the gas
+	UPROPERTY(EditAnywhere)
+		int32 PointsAwarded = 50;
+
 public:
+
+	FORCEINLINE void ScaleDamagePerSecond(float Amount) { DamagePerSecond *= Amount; };
+
+	FORCEINLINE int32 GetPointsAwarded() { return PointsAwarded; };
+
+	void ScaleHealth(float Amount);
+
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 

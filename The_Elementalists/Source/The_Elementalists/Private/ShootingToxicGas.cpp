@@ -3,6 +3,7 @@
 
 #include "ShootingToxicGas.h"
 
+#include "GasProjectile.h"
 #include "GameFramework/Character.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
@@ -21,11 +22,13 @@ void AShootingToxicGas::BeginPlay()
 {
 	Super::BeginPlay();
 
+	PointsAwarded = 150;
+
 	GetWorldTimerManager().SetTimer(
 		ShootingRateTimerHandle,
 		this,
 		&AShootingToxicGas::Shoot,
-		ShootingRate,
+		ShootingRate + FMath::RandRange(0.f, 0.5f),
 		true // loop
 	);
 }
@@ -60,8 +63,8 @@ void AShootingToxicGas::Shoot() {
 
 			const float V = (Sx / cos(Theta)) * FMath::Sqrt((Gravity * 1) / (2 * (Sx * tan(Theta) - Sz)));
 			FVector VelocityOutput = FVector(V * cos(Theta), 0, V * sin(Theta));
-			AProjectile* Proj = GetWorld()->SpawnActor<AProjectile>(ProjectileClass, ProjectilePosition, FRotator(0, newrot.Yaw, 0));
-			//Proj->SetSlowness();, set time
+			AGasProjectile* Proj = GetWorld()->SpawnActor<AGasProjectile>(ProjectileClass, ProjectilePosition, FRotator(0, newrot.Yaw, 0));
+			Proj->ScaleDamage(ProjectileDamageScale);
 			Proj->ProjectileMovementComponent->SetVelocityInLocalSpace(VelocityOutput);
 			Proj->SetOwner(this);
 		}

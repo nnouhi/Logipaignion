@@ -62,7 +62,7 @@ void AGasProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPr
 			{
 				GetWorld()->GetFirstPlayerController()->ClientStartCameraShake(NauseaCameraShakeClass);
 			}
-			Player->AddGasParticles(NauseaTime);
+			Player->AddGasParticles(NauseaTime, Damage);
 		}
 	}
 

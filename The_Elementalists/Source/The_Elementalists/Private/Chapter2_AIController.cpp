@@ -6,7 +6,6 @@
 #include "Kismet/Gameplaystatics.h"
 #include "NavigationSystem.h"
 #include "Engine/TargetPoint.h"
-#include "BaseGameMode.h"
 
 void AChapter2_AIController::BeginPlay()
 {
@@ -15,7 +14,6 @@ void AChapter2_AIController::BeginPlay()
 	// NN Obtained references
 	OwnerPawn = GetPawn();
 	PlayerCharacter = Cast<AChapterCharacter>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
-	GameMode = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
 	UGameplayStatics::GetAllActorsOfClassWithTag(GetWorld(), ATargetPoint::StaticClass(), TEXT("EscapeTag"), EscapeWaypoints);
 
 	StartBehaviour();
@@ -70,11 +68,7 @@ void AChapter2_AIController::OnMoveCompleted(FAIRequestID RequestID, const FPath
 	}
 	
 	// NN TODO: When implementing levels gamemode increase counter of saved AI 
-	/*GameMode->ActorDied(this);*/
 	OwnerPawn->Destroy();
-
-	
-
 }
 
 void AChapter2_AIController::StartBehaviour()
