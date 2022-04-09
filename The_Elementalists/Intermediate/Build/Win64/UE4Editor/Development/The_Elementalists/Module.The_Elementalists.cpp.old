@@ -39,7 +39,6 @@
 #include "D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/IceCollider.cpp"
 #include "D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/IceCube.cpp"
 #include "D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/IceCubePlaceHolder.cpp"
-#include "D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/IceProjectile.cpp"
 #include "D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/InForest_AIController.cpp"
 #include "D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/InteractableItem.cpp"
 #include "D:/rt/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/JournalistCharacter.cpp"

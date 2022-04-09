@@ -2,6 +2,7 @@
 	"RemapUnityFiles": 
 	{
 		"Module.The_Elementalists.cpp.obj": [
+			"AICharacter.cpp.obj",
 			"BaseGameMode.cpp.obj",
 			"Boat.cpp.obj",
 			"BoatAIController.cpp.obj",
@@ -42,6 +43,7 @@
 			"IceCollider.cpp.obj",
 			"IceCube.cpp.obj",
 			"IceCubePlaceHolder.cpp.obj",
+			"IceProjectile.cpp.obj",
 			"InForest_AIController.cpp.obj",
 			"InteractableItem.cpp.obj",
 			"JournalistCharacter.cpp.obj",
@@ -64,9 +66,7 @@
 			"TriggerCollisionProfileName.cpp.obj",
 			"WindProjectile.cpp.obj",
 			"The_Elementalists.cpp.obj",
-			"The_ElementalistsGameModeBase.cpp.obj",
-			"AICharacter.cpp.obj",
-			"IceProjectile.cpp.obj"
+			"The_ElementalistsGameModeBase.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",
@@ -110,6 +110,7 @@
 			"IceCollider.gen.cpp.obj",
 			"IceCube.gen.cpp.obj",
 			"IceCubePlaceHolder.gen.cpp.obj",
+			"IceProjectile.gen.cpp.obj",
 			"InForest_AIController.gen.cpp.obj",
 			"InteractableItem.gen.cpp.obj",
 			"JournalistCharacter.gen.cpp.obj",
@@ -132,7 +133,6 @@
 			"ToxicGas.gen.cpp.obj",
 			"TriggerCollisionProfileName.gen.cpp.obj",
 			"WindProjectile.gen.cpp.obj",
-			"IceProjectile.gen.cpp.obj",
 			"The_Elementalists.init.gen.cpp.obj"
 		]
 	}
