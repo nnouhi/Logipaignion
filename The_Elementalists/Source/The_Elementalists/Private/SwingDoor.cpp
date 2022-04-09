@@ -96,6 +96,10 @@ void ASwingDoor::OpenDoor()
 			MyTimeline->PlayFromStart();
 		}
 
+		if (WhenDoorOpensSound)
+		{
+			UGameplayStatics::PlaySoundAtLocation(GetWorld(), WhenDoorOpensSound, GetActorLocation());
+		}
 		bReadyState = false;
 	}
 }

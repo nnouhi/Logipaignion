@@ -1,14 +1,16 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\rt\Logipaignion).
+﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\rt\Logipaignio-New\Logipaignion).
   Building The_ElementalistsEditor...
   Using Visual Studio 2019 14.28.29336 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive unity build] Excluded from The_Elementalists unity file: AICharacter.cpp, IceProjectile.cpp
-  [Adaptive unity build] Excluded from The_Elementalists.gen unity file: IceProjectile.gen.cpp, The_Elementalists.init.gen.cpp
-  Building 4 actions with 8 processes...
-    [1/4] IceProjectile.cpp
-    [2/4] UE4Editor-The_Elementalists-0010.lib
-       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0010.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0010.exp
-    [3/4] UE4Editor-The_Elementalists-0010.dll
-       Creating library D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0010.suppressed.lib and object D:\rt\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0010.suppressed.exp
-    [4/4] The_ElementalistsEditor.target
-  Total time in Parallel executor: 7.72 seconds
-  Total execution time: 8.63 seconds
+  [Adaptive unity build] Excluded from The_Elementalists unity file: IceProjectile.cpp, OilProjectileSlow.cpp, WindProjectile.cpp
+  [Adaptive unity build] Excluded from The_Elementalists.gen unity file: IceProjectile.gen.cpp, OilProjectileSlow.gen.cpp, The_Elementalists.init.gen.cpp
+  Building 6 actions with 8 processes...
+    [1/6] WindProjectile.cpp
+    [2/6] Module.The_Elementalists.gen.cpp
+    [3/6] Module.The_Elementalists.cpp
+    [4/6] UE4Editor-The_Elementalists-0016.lib
+       Creating library D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0016.lib and object D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0016.exp
+    [5/6] UE4Editor-The_Elementalists-0016.dll
+       Creating library D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0016.suppressed.lib and object D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0016.suppressed.exp
+    [6/6] The_ElementalistsEditor.target
+  Total time in Parallel executor: 715.17 seconds
+  Total execution time: 716.09 seconds

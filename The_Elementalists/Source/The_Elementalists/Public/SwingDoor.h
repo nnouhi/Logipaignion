@@ -57,5 +57,8 @@ public:
 
 	class AChapterCharacter* CharRef;
 
+	UPROPERTY(EditAnywhere)
+	class USoundBase* WhenDoorOpensSound;
+
 
 };

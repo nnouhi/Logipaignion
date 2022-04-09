@@ -6,6 +6,8 @@
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "ChapterCharacter.h"
+#include "ToxicGas.h"
+#include "ShootingToxicGas.h"
 
 // Sets default values
 AWindProjectile::AWindProjectile()
@@ -55,13 +57,19 @@ void AWindProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UP
 	if (OtherActor && OtherActor != this && OtherActor != MyOwner)
 	{
 		UGameplayStatics::ApplyDamage(OtherActor, Damage, MyOwnerInstigator, this, DamageTypeClass);
+		
+		if (Cast<AToxicGas>(OtherActor) || Cast<AShootingToxicGas>(OtherActor))
+		{
+			if (HitSound)
+			{
+				UGameplayStatics::PlaySoundAtLocation(this, HitSound, GetActorLocation());
+			}
+		}
+		
+		
 		if (HitParticles)
 		{
 			UGameplayStatics::SpawnEmitterAtLocation(this, HitParticles, GetActorLocation(), GetActorRotation());
-		}
-		if (HitSound)
-		{
-			UGameplayStatics::PlaySoundAtLocation(this, HitSound, GetActorLocation());
 		}
 
 		ACharacter* Player = UGameplayStatics::GetPlayerCharacter(this, 0);

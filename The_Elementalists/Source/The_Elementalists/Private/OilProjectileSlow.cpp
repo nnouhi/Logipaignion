@@ -8,6 +8,7 @@
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Particles/ParticleSystemComponent.h"
+#include "FloorCollider.h"
 
 
 // Sets default values
@@ -51,7 +52,15 @@ void AOilProjectileSlow::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor,
         {
             UGameplayStatics::SpawnEmitterAtLocation(this, HitParticles, GetActorLocation(), GetActorRotation());
         }
-        if (HitSound)
+
+        if (OtherActor->GetComponentByClass(UFloorCollider::StaticClass()))
+        {
+            if (OilHitFloorSound)
+            {
+                UGameplayStatics::PlaySoundAtLocation(this, OilHitFloorSound, GetActorLocation());
+            }
+        }
+        else if(HitSound)
         {
             UGameplayStatics::PlaySoundAtLocation(this, HitSound, GetActorLocation());
         }
@@ -61,6 +70,12 @@ void AOilProjectileSlow::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor,
         {
             AChapterCharacter* Player = Cast<AChapterCharacter>(OtherActor);
             Player->SlowDown(Slowness, SlowTime);
+        }
+        else if (Cast<AAICharacter>(OtherActor))
+        {
+            AAICharacter* Player = Cast<AAICharacter>(OtherActor);
+            Player->SlowDown(Slowness, SlowTime);
+
         }
         else if (Cast<AAICharacter>(OtherActor))
         {

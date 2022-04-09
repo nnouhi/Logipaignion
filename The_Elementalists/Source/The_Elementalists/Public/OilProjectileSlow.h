@@ -37,4 +37,7 @@ private:
     // CN For how long slowness is applied
     float SlowTime = 5.f;
 
+    UPROPERTY(EditAnywhere)
+    class USoundBase* OilHitFloorSound;
+
 };

@@ -21,6 +21,9 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	USoundBase* IceCubeFloorHitSound;
+
+	UPROPERTY(EditAnywhere)
+	USoundBase* OilSpillFrozeSound;
 public:
 	// Sets default values for this actor's properties
 	AIceProjectile();

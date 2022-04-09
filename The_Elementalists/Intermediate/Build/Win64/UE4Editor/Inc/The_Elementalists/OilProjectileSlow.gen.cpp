@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeOilProjectileSlow() {}
 	THE_ELEMENTALISTS_API UClass* Z_Construct_UClass_AOilProjectileSlow();
 	THE_ELEMENTALISTS_API UClass* Z_Construct_UClass_AProjectile();
 	UPackage* Z_Construct_UPackage__Script_The_Elementalists();
+	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 // End Cross Module References
 	void AOilProjectileSlow::StaticRegisterNativesAOilProjectileSlow()
 	{
@@ -31,6 +32,11 @@ void EmptyLinkFunctionForGeneratedCodeOilProjectileSlow() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OilHitFloorSound_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OilHitFloorSound;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -45,6 +51,16 @@ void EmptyLinkFunctionForGeneratedCodeOilProjectileSlow() {}
 		{ "ModuleRelativePath", "Public/OilProjectileSlow.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AOilProjectileSlow_Statics::NewProp_OilHitFloorSound_MetaData[] = {
+		{ "Category", "OilProjectileSlow" },
+		{ "ModuleRelativePath", "Public/OilProjectileSlow.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AOilProjectileSlow_Statics::NewProp_OilHitFloorSound = { "OilHitFloorSound", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AOilProjectileSlow, OilHitFloorSound), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AOilProjectileSlow_Statics::NewProp_OilHitFloorSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AOilProjectileSlow_Statics::NewProp_OilHitFloorSound_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AOilProjectileSlow_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AOilProjectileSlow_Statics::NewProp_OilHitFloorSound,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AOilProjectileSlow_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AOilProjectileSlow>::IsAbstract,
 	};
@@ -54,11 +70,11 @@ void EmptyLinkFunctionForGeneratedCodeOilProjectileSlow() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AOilProjectileSlow_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AOilProjectileSlow_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AOilProjectileSlow_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AOilProjectileSlow_Statics::Class_MetaDataParams))
@@ -72,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeOilProjectileSlow() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AOilProjectileSlow, 2516172710);
+	IMPLEMENT_CLASS(AOilProjectileSlow, 313568692);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AOilProjectileSlow>()
 	{
 		return AOilProjectileSlow::StaticClass();

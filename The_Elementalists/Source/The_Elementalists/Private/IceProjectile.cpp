@@ -73,6 +73,16 @@ void AIceProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPr
 					UGameplayStatics::PlaySoundAtLocation(this, IceCubeFloorHitSound, GetActorLocation());
 				}
 			}
+			else if (Cast<AOilSpillShooting>(OtherActor))
+			{
+
+				if (OilSpillFrozeSound)
+				{
+					UGameplayStatics::PlaySoundAtLocation(this, OilSpillFrozeSound, GetActorLocation());
+				}
+
+				Cast<AOilSpillShooting>(OtherActor)->Freeze();
+			}
 			// NN Projectile collides with anything else in the level
 			else
 			{
@@ -81,10 +91,7 @@ void AIceProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPr
 					UGameplayStatics::PlaySoundAtLocation(this, HitSound, GetActorLocation());
 				}
 			}
-			if (Cast<AOilSpillShooting>(OtherActor))
-			{
-				Cast<AOilSpillShooting>(OtherActor)->Freeze();
-			}
+			
 			
 		}
 

@@ -43,7 +43,6 @@
 			"IceCollider.cpp.obj",
 			"IceCube.cpp.obj",
 			"IceCubePlaceHolder.cpp.obj",
-			"IceProjectile.cpp.obj",
 			"InForest_AIController.cpp.obj",
 			"InteractableItem.cpp.obj",
 			"JournalistCharacter.cpp.obj",
@@ -51,7 +50,6 @@
 			"Medkit.cpp.obj",
 			"Menu_PlayerController.cpp.obj",
 			"Minimap.cpp.obj",
-			"OilProjectileSlow.cpp.obj",
 			"OilSpill.cpp.obj",
 			"OilSpillBlocked.cpp.obj",
 			"OilSpillShooting.cpp.obj",
@@ -61,12 +59,14 @@
 			"ShootingFire.cpp.obj",
 			"ShootingToxicGas.cpp.obj",
 			"SpawnPlayer.cpp.obj",
-			"SwingDoor.cpp.obj",
 			"ToxicGas.cpp.obj",
 			"TriggerCollisionProfileName.cpp.obj",
-			"WindProjectile.cpp.obj",
 			"The_Elementalists.cpp.obj",
-			"The_ElementalistsGameModeBase.cpp.obj"
+			"The_ElementalistsGameModeBase.cpp.obj",
+			"IceProjectile.cpp.obj",
+			"OilProjectileSlow.cpp.obj",
+			"SwingDoor.cpp.obj",
+			"WindProjectile.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",
@@ -110,7 +110,6 @@
 			"IceCollider.gen.cpp.obj",
 			"IceCube.gen.cpp.obj",
 			"IceCubePlaceHolder.gen.cpp.obj",
-			"IceProjectile.gen.cpp.obj",
 			"InForest_AIController.gen.cpp.obj",
 			"InteractableItem.gen.cpp.obj",
 			"JournalistCharacter.gen.cpp.obj",
@@ -118,7 +117,6 @@
 			"Medkit.gen.cpp.obj",
 			"Menu_PlayerController.gen.cpp.obj",
 			"Minimap.gen.cpp.obj",
-			"OilProjectileSlow.gen.cpp.obj",
 			"OilSpill.gen.cpp.obj",
 			"OilSpillBlocked.gen.cpp.obj",
 			"OilSpillShooting.gen.cpp.obj",
@@ -133,6 +131,8 @@
 			"ToxicGas.gen.cpp.obj",
 			"TriggerCollisionProfileName.gen.cpp.obj",
 			"WindProjectile.gen.cpp.obj",
+			"IceProjectile.gen.cpp.obj",
+			"OilProjectileSlow.gen.cpp.obj",
 			"The_Elementalists.init.gen.cpp.obj"
 		]
 	}

@@ -25,13 +25,13 @@ protected:
 	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit) override;
 
 	UPROPERTY(EditAnywhere)
-		float DestroyTime = 5.f;
+	float DestroyTime = 5.f;
 
 	UPROPERTY(EditAnywhere)
-		float LaunchForce = 1.f;
+	float LaunchForce = 1.f;
 
 	UPROPERTY(EditAnywhere)
-		float ImpulseForce = 2.f;
+	float ImpulseForce = 2.f;
 
 private:
 	FTimerHandle DestroyTimerHandle;

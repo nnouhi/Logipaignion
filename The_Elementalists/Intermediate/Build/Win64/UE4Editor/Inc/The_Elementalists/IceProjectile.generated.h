@@ -61,6 +61,7 @@ public: \
 #define The_Elementalists_Source_The_Elementalists_Public_IceProjectile_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__IceCubeSpawnedSound() { return STRUCT_OFFSET(AIceProjectile, IceCubeSpawnedSound); } \
 	FORCEINLINE static uint32 __PPO__IceCubeFloorHitSound() { return STRUCT_OFFSET(AIceProjectile, IceCubeFloorHitSound); } \
+	FORCEINLINE static uint32 __PPO__OilSpillFrozeSound() { return STRUCT_OFFSET(AIceProjectile, OilSpillFrozeSound); } \
 	FORCEINLINE static uint32 __PPO__IceCubeClass() { return STRUCT_OFFSET(AIceProjectile, IceCubeClass); }
 
 
