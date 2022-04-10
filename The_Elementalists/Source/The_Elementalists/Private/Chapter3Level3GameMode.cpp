@@ -198,8 +198,9 @@ void AChapter3Level3GameMode::ActorDied(AActor* DeadActor)
 		// NN AI Died display you lost screen
 		else
 		{
-			if (ChapterCharacterController)
+			if (ChapterCharacterController && !bAIDied)
 			{
+				bAIDied = true;
 				ChapterCharacterController->DisplayYouLostWidget();
 			}
 
@@ -215,7 +216,7 @@ void AChapter3Level3GameMode::ActorDied(AActor* DeadActor)
 
 		bInvestigationMode = true;
 
-		// Show ship crack
+		GetWorldTimerManager().PauseTimer(LevelStartTimerHandle);
 	}
 }
 

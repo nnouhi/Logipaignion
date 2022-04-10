@@ -46,6 +46,8 @@ private:
 
 	bool bInvestigationMode = false;
 
+	bool bAIDied = false;
+
 	// CN Set the ice cube place holder arrays
 	void SetIceCubePlaceHolders();
 
