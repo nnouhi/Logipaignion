@@ -21,6 +21,7 @@
 			"Chapter3Level1GameMode.cpp.obj",
 			"Chapter3Level2GameMode.cpp.obj",
 			"Chapter3Level3_AIController.cpp.obj",
+			"Chapter3Level3GameMode.cpp.obj",
 			"ChapterCharacter.cpp.obj",
 			"Endpoint.cpp.obj",
 			"Fire.cpp.obj",
@@ -65,8 +66,7 @@
 			"TriggerCollisionProfileName.cpp.obj",
 			"WindProjectile.cpp.obj",
 			"The_Elementalists.cpp.obj",
-			"The_ElementalistsGameModeBase.cpp.obj",
-			"Chapter3Level3GameMode.cpp.obj"
+			"The_ElementalistsGameModeBase.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",

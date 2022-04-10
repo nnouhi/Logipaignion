@@ -32,6 +32,10 @@ public:
 	// NN Get level score
 	int32 GetScore() override;
 
+	// CN To check if in investigation mode
+	UPROPERTY(BlueprintReadOnly)
+	bool bInvestigationMode = false;
+
 protected:
 	virtual void BeginPlay() override;
 
@@ -43,8 +47,6 @@ private:
 	int32 RemainingOilSpills = 0;
 	int32 TotalOilSpillsShooting = 0;
 	int32 RemainingOilSpillsShooting = 0;
-
-	bool bInvestigationMode = false;
 
 	bool bAIDied = false;
 

@@ -33,6 +33,10 @@ public:
 	// CN Get level score
 	int32 GetScore() override;
 
+	// CN To check if in investigation mode
+	UPROPERTY(BlueprintReadOnly)
+	bool bInvestigationMode = false;
+
 protected:
 	virtual void BeginPlay() override;
 

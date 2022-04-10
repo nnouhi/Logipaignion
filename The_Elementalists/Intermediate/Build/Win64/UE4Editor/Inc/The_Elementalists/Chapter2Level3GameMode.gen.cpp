@@ -31,6 +31,12 @@ void EmptyLinkFunctionForGeneratedCodeChapter2Level3GameMode() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bInvestigationMode_MetaData[];
+#endif
+		static void NewProp_bInvestigationMode_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bInvestigationMode;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -47,6 +53,22 @@ void EmptyLinkFunctionForGeneratedCodeChapter2Level3GameMode() {}
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapter2Level3GameMode_Statics::NewProp_bInvestigationMode_MetaData[] = {
+		{ "Category", "Chapter2Level3GameMode" },
+		{ "Comment", "// CN To check if in investigation mode\n" },
+		{ "ModuleRelativePath", "Public/Chapter2Level3GameMode.h" },
+		{ "ToolTip", "CN To check if in investigation mode" },
+	};
+#endif
+	void Z_Construct_UClass_AChapter2Level3GameMode_Statics::NewProp_bInvestigationMode_SetBit(void* Obj)
+	{
+		((AChapter2Level3GameMode*)Obj)->bInvestigationMode = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AChapter2Level3GameMode_Statics::NewProp_bInvestigationMode = { "bInvestigationMode", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AChapter2Level3GameMode), &Z_Construct_UClass_AChapter2Level3GameMode_Statics::NewProp_bInvestigationMode_SetBit, METADATA_PARAMS(Z_Construct_UClass_AChapter2Level3GameMode_Statics::NewProp_bInvestigationMode_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapter2Level3GameMode_Statics::NewProp_bInvestigationMode_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AChapter2Level3GameMode_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter2Level3GameMode_Statics::NewProp_bInvestigationMode,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AChapter2Level3GameMode_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AChapter2Level3GameMode>::IsAbstract,
 	};
@@ -56,11 +78,11 @@ void EmptyLinkFunctionForGeneratedCodeChapter2Level3GameMode() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AChapter2Level3GameMode_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AChapter2Level3GameMode_Statics::PropPointers),
 		0,
 		0x009002ACu,
 		METADATA_PARAMS(Z_Construct_UClass_AChapter2Level3GameMode_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AChapter2Level3GameMode_Statics::Class_MetaDataParams))
@@ -74,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeChapter2Level3GameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AChapter2Level3GameMode, 2865490459);
+	IMPLEMENT_CLASS(AChapter2Level3GameMode, 3512032701);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AChapter2Level3GameMode>()
 	{
 		return AChapter2Level3GameMode::StaticClass();

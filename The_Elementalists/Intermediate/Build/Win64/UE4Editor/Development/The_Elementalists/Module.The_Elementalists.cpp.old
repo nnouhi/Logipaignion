@@ -18,7 +18,6 @@
 #include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter3Level1GameMode.cpp"
 #include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter3Level2GameMode.cpp"
 #include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter3Level3_AIController.cpp"
-#include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter3Level3GameMode.cpp"
 #include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/ChapterCharacter.cpp"
 #include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Endpoint.cpp"
 #include "C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Fire.cpp"
