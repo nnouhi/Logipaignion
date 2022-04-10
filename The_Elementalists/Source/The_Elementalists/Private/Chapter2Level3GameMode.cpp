@@ -27,6 +27,11 @@ void AChapter2Level3GameMode::BeginPlay()
 
 FString AChapter2Level3GameMode::GetObjectiveMessage()
 {
+	if (bInvestigationMode)
+	{
+		return TEXT("Investigate - Find the cause of the gas leak. \n Press 'F' to use your scanner.");
+	}
+
 	return TEXT("Clear the toxic gas. (")
 		+ FString::FromInt(TotalGas - RemainingGas)
 		+ TEXT("/") + FString::FromInt(TotalGas) + TEXT(")\n")
@@ -88,7 +93,9 @@ void AChapter2Level3GameMode::ActorDied(AActor* DeadActor)
 
 	if (RemainingGas + RemainingAI <= 0) // CN Level complete!
 	{
-		LevelComplete();
+		bInvestigationMode = true;
+
+		GetWorldTimerManager().PauseTimer(LevelStartTimerHandle);
 	}
 }
 
