@@ -27,10 +27,10 @@ void AChapter2Level2GameMode::BeginPlay()
 
 FString AChapter2Level2GameMode::GetObjectiveMessage()
 {
-	return TEXT("Clear the toxic gas. (")
+	return TEXT("Main Objectives:\n- Clear the toxic gas. (")
 		+ FString::FromInt(TotalGas - RemainingGas)
 		+ TEXT("/") + FString::FromInt(TotalGas) + TEXT(")\n")
-		+ TEXT("Provide the gas masks to the civilians. (")
+		+ TEXT("- Provide the gas masks to the civilians. (")
 		+ FString::FromInt(TotalAI - RemainingAI)
 		+ TEXT("/") + FString::FromInt(TotalAI) + TEXT(")");
 }

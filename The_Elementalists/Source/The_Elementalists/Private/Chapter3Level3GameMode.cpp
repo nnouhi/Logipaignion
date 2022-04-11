@@ -94,34 +94,34 @@ FString AChapter3Level3GameMode::GetObjectiveMessage()
 {
 	if (bInvestigationMode)
 	{
-		return TEXT("Investigate - Find the cause of the oil spill. \n Press 'F' to use your scanner.");
+		return TEXT("Main Objective:\n- Investigate - Find the cause of the oil spill. \n Press 'F' to use your scanner.");
 	}
 
 	if (!bIsPathSet)
 	{
-		return TEXT("Create a path to reach the sailors(")
+		return TEXT("Main Objective:\n- Create a path to reach the sailors(")
 			+ FString::FromInt(TotalIcePlaceholders - GetRemaningIceCubes())
 			+ TEXT("/") + FString::FromInt(TotalIcePlaceholders)
-			+ TEXT(")\nSide Objective: Freeze as many shooting oil spills as possible. (")
+			+ TEXT(")\nSide Objective:\n- Freeze as many shooting oil spills as possible. (")
 			+ FString::FromInt(TotalOilSpillsShooting - RemainingOilSpillsShooting)
 			+ TEXT("/") + FString::FromInt(TotalOilSpillsShooting) + TEXT(")");
 	}
 
 	if (!bAISafe)
 	{
-		return TEXT("Help the sailors to reach your boat safely. (")
+		return TEXT("Main Objective:\n- Help the sailors to reach your boat safely. (")
 			+ FString::FromInt(AICount - EscapedAI)
 			+ TEXT("/") + FString::FromInt(AICount)
-			+ TEXT(")\nSide Objective: Freeze as many shooting oil spills as possible. (")
+			+ TEXT(")\nSide Objective:\n- Freeze as many shooting oil spills as possible. (")
 			+ FString::FromInt(TotalOilSpillsShooting - RemainingOilSpillsShooting)
 			+ TEXT("/") + FString::FromInt(TotalOilSpillsShooting) + TEXT(")");
 	}
 
 	// else
-	return TEXT("Block the oil spill. (")
+	return TEXT("Main Objective:\n- Block the oil spill. (")
 		+ FString::FromInt(TotalOilSpills - RemainingOilSpills)
 		+ TEXT("/") + FString::FromInt(TotalOilSpills)
-		+ TEXT(")\nSide Objective: Freeze as many shooting oil spills as possible. (")
+		+ TEXT(")\nSide Objective:\n- Freeze as many shooting oil spills as possible. (")
 		+ FString::FromInt(TotalOilSpillsShooting - RemainingOilSpillsShooting)
 		+ TEXT("/") + FString::FromInt(TotalOilSpillsShooting) + TEXT(")");
 }
@@ -185,6 +185,7 @@ void AChapter3Level3GameMode::ActorDied(AActor* DeadActor)
 			// All AI reached boat
 			if (EscapedAI == 0)
 			{
+				SignalObjective();
 				bAISafe = true;
 				SetIceCubePlaceHolders();
 				// Show Oil spill placeholders
@@ -214,6 +215,7 @@ void AChapter3Level3GameMode::ActorDied(AActor* DeadActor)
 	{
 		RemainingOilSpills--;
 
+		SignalObjective();
 		bInvestigationMode = true;
 
 		GetWorldTimerManager().PauseTimer(LevelStartTimerHandle);
@@ -353,6 +355,7 @@ void AChapter3Level3GameMode::CheckPlaceHolders()
 	{
 		// CN set path so actions are not repeated
 		bIsPathSet = true;
+		SignalObjective();
 
 		for (int32 i = 0; i < PathCubeArr.Num(); i++)
 		{

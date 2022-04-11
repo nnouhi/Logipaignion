@@ -27,17 +27,17 @@ FString AChapter3Level2GameMode::GetObjectiveMessage()
 {
 	if (RemainingOilSpills > 0)
 	{
-		return TEXT("Block the oil spills. (")
+		return TEXT("Main Objective:\n- Block the oil spills. (")
 			+ FString::FromInt(TotalOilSpills - RemainingOilSpills)
 			+ TEXT("/") + FString::FromInt(TotalOilSpills) 
-			+ TEXT(")\nSide Objective: Freeze as many shooting oil spills as possible. (")
+			+ TEXT(")\nSide Objective:\n- Freeze as many shooting oil spills as possible. (")
 			+ FString::FromInt(TotalOilSpillsShooting - RemainingOilSpillsShooting)
 			+ TEXT("/") + FString::FromInt(TotalOilSpillsShooting) + TEXT(")");
 
 	}
 	else
 	{
-		return TEXT("Get back to the boat.");
+		return TEXT("Main Objective:\n- Get back to the boat.");
 	}
 }
 
@@ -83,6 +83,11 @@ void AChapter3Level2GameMode::ActorDied(AActor* DeadActor)
 	else if (Cast<AOilSpillBlocked>(DeadActor))
 	{
 		RemainingOilSpills--;
+	}
+	
+	if (RemainingOilSpills <= 0)
+	{
+		SignalObjective();
 	}
 }
 

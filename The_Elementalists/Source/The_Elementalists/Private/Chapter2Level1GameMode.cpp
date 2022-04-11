@@ -29,19 +29,19 @@ FString AChapter2Level1GameMode::GetObjectiveMessage()
 {
 	if (bMasksEquipped)
 	{
-		return TEXT("Clear the toxic gas. (")
+		return TEXT("Main Objectives:\n- Clear the toxic gas. (")
 			+ FString::FromInt(TotalGas - RemainingGas)
 			+ TEXT("/") + FString::FromInt(TotalGas) + TEXT(")\n")
-			+ TEXT("Provide the gas masks to the police officers. (")
+			+ TEXT("- Provide the gas masks to the police officers. (")
 			+ FString::FromInt(TotalAI - RemainingAI)
 			+ TEXT("/") + FString::FromInt(TotalAI) + TEXT(")");
 	}
 	else
 	{
-		return TEXT("Clear the toxic gas. (")
+		return TEXT("Main Objectives:\n- Clear the toxic gas. (")
 			+ FString::FromInt(TotalGas - RemainingGas)
 			+ TEXT("/") + FString::FromInt(TotalGas) + TEXT(")\n")
-			+ TEXT("Equip the gas masks.");
+			+ TEXT("- Equip the gas masks.");
 	}
 }
 
@@ -98,6 +98,7 @@ void AChapter2Level1GameMode::ActorDied(AActor* DeadActor)
 	else if (Cast<AGasMaskBox>(DeadActor))
 	{
 		bMasksEquipped = true;
+		SignalObjective();
 	}
 
 	if (RemainingGas + RemainingAI <= 0) // CN Level complete!

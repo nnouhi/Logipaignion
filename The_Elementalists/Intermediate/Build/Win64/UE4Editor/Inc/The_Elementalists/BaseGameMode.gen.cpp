@@ -380,6 +380,11 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bSignalObjective_MetaData[];
+#endif
+		static void NewProp_bSignalObjective_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bSignalObjective;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_StartDelay_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_StartDelay;
@@ -416,6 +421,19 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseGameMode_Statics::NewProp_bSignalObjective_MetaData[] = {
+		{ "Category", "BaseGameMode" },
+		{ "Comment", "// CN To show ! for objective\n" },
+		{ "ModuleRelativePath", "Public/BaseGameMode.h" },
+		{ "ToolTip", "CN To show ! for objective" },
+	};
+#endif
+	void Z_Construct_UClass_ABaseGameMode_Statics::NewProp_bSignalObjective_SetBit(void* Obj)
+	{
+		((ABaseGameMode*)Obj)->bSignalObjective = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABaseGameMode_Statics::NewProp_bSignalObjective = { "bSignalObjective", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ABaseGameMode), &Z_Construct_UClass_ABaseGameMode_Statics::NewProp_bSignalObjective_SetBit, METADATA_PARAMS(Z_Construct_UClass_ABaseGameMode_Statics::NewProp_bSignalObjective_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABaseGameMode_Statics::NewProp_bSignalObjective_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseGameMode_Statics::NewProp_StartDelay_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "BaseGameMode" },
@@ -436,6 +454,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseGameMode_Statics::NewProp_LevelTime = { "LevelTime", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseGameMode, LevelTime), METADATA_PARAMS(Z_Construct_UClass_ABaseGameMode_Statics::NewProp_LevelTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABaseGameMode_Statics::NewProp_LevelTime_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseGameMode_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseGameMode_Statics::NewProp_bSignalObjective,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseGameMode_Statics::NewProp_StartDelay,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseGameMode_Statics::NewProp_LevelTime,
 	};
@@ -466,7 +485,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseGameMode, 756252159);
+	IMPLEMENT_CLASS(ABaseGameMode, 456052428);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<ABaseGameMode>()
 	{
 		return ABaseGameMode::StaticClass();

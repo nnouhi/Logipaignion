@@ -21,7 +21,7 @@ void AChapter3Level1GameMode::BeginPlay()
 
 FString AChapter3Level1GameMode::GetObjectiveMessage()
 {
-	return TEXT("Create platforms to reach your boat!\nHint: Use the environment to your advantage.")
+	return TEXT("Main Objective:\n- Create platforms to reach your boat!\nHint:\nUse the environment to your advantage!")
 		/*+ FString::FromInt(TotalFires - RemainingFires)
 		+ TEXT("/") + FString::FromInt(TotalFires) + TEXT(")")*/;
 }

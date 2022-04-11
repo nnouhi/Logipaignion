@@ -134,6 +134,15 @@ void AChapterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
     PlayerInputComponent->BindAction("Sprint", IE_Released, this, &AChapterCharacter::EndSprint);
     PlayerInputComponent->BindAction("DisplayMap", IE_Pressed, this, &AChapterCharacter::CallDisplayMap);
     PlayerInputComponent->BindAction("DisplayMap", IE_Released, this, &AChapterCharacter::CallRemoveMap);
+    PlayerInputComponent->BindAction(TEXT("Pause"), EInputEvent::IE_Pressed, this, &AChapterCharacter::Pause);
+}
+
+void AChapterCharacter::Pause()
+{
+    if (PlayerControllerRef)
+    {
+        PlayerControllerRef->Pause(); // CN Pause in controller handles pausing/unpausing
+    }
 }
 
 void AChapterCharacter::MoveForward(float AxisValue)
@@ -299,7 +308,13 @@ void AChapterCharacter::AutoFireReset()
 
 void AChapterCharacter::CallDisplayMap()
 {
-  
+    // CN Clear the new objective message
+    ABaseGameMode* GameMode = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+    if (GameMode)
+    {
+        GameMode->ClearSignalObjective();
+    }
+
     if (PlayerControllerRef)
     {
         PlayerControllerRef->DisplayMap();

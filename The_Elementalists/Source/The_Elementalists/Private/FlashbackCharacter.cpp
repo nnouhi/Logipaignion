@@ -2,6 +2,8 @@
 
 
 #include "FlashbackCharacter.h"
+
+#include "BaseGameMode.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Components/SceneCaptureComponent2D.h"
@@ -133,6 +135,12 @@ float AFlashbackCharacter::GetHealthPercentage() const
 
 void AFlashbackCharacter::CallDisplayMap()
 {
+	ABaseGameMode* GameMode = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+	if (GameMode)
+	{
+		GameMode->ClearSignalObjective();
+	}
+
 	AFlashback_PlayerController* PlayerControllerRef = Cast<AFlashback_PlayerController>(UGameplayStatics::GetPlayerController(GetWorld(), 0));
 
 	if (PlayerControllerRef)

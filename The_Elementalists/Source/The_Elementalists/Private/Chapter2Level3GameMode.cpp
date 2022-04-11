@@ -29,13 +29,13 @@ FString AChapter2Level3GameMode::GetObjectiveMessage()
 {
 	if (bInvestigationMode)
 	{
-		return TEXT("Investigate - Find the cause of the gas leak. \n Press 'F' to use your scanner.");
+		return TEXT("Main Objective:\n- Investigate - Find the cause of the gas leak. \n Press 'F' to use your scanner.");
 	}
 
-	return TEXT("Clear the toxic gas. (")
+	return TEXT("Main Objectives:\n- Clear the toxic gas. (")
 		+ FString::FromInt(TotalGas - RemainingGas)
 		+ TEXT("/") + FString::FromInt(TotalGas) + TEXT(")\n")
-		+ TEXT("Provide the gas masks to the factory workers. (")
+		+ TEXT("- Provide the gas masks to the factory workers. (")
 		+ FString::FromInt(TotalAI - RemainingAI)
 		+ TEXT("/") + FString::FromInt(TotalAI) + TEXT(")");
 }
@@ -93,6 +93,7 @@ void AChapter2Level3GameMode::ActorDied(AActor* DeadActor)
 
 	if (RemainingGas + RemainingAI <= 0) // CN Level complete!
 	{
+		SignalObjective();
 		bInvestigationMode = true;
 
 		GetWorldTimerManager().PauseTimer(LevelStartTimerHandle);

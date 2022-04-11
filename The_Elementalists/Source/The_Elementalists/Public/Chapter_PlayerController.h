@@ -51,11 +51,20 @@ public:
 	// NN When invoked displays sailor died widget
 	void DisplayYouLostWidget();
 
+	// CN Pause the game
+	void Pause();
+
 protected:
 	virtual void BeginPlay() override;
 
 private:
+	//bool bIsPaused = false;
 
+	// CN Pause screen
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class UUserWidget> PauseClass;
+	UPROPERTY()
+	UUserWidget* PauseWidget;
 
 	// CN Game Over death menu screen
 	UPROPERTY(EditAnywhere)

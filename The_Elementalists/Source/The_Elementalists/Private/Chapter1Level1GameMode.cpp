@@ -25,7 +25,7 @@ void AChapter1Level1GameMode::BeginPlay()
 
 FString AChapter1Level1GameMode::GetObjectiveMessage()
 {
-	return TEXT("Put down all the fires (") 
+	return TEXT("Main Objective:\n- Put down all the fires (") 
 		+ FString::FromInt(TotalFires - RemainingFires)
 		+ TEXT("/") + FString::FromInt(TotalFires) + TEXT(")");
 }

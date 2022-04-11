@@ -190,8 +190,8 @@ void AChapter1Level3GameMode::ActorDied(AActor* DeadActor)
 
 	if (RemainingFires <= 0 && RemainingVillagers <= 0) // CN Ready for Investigation Mode
 	{
+		SignalObjective();
 		bInvestigationMode = true;
-		// Play sound
 		GetWorldTimerManager().PauseTimer(LevelStartTimerHandle);
 		ShowCigarette(true);
 	}
@@ -201,13 +201,13 @@ FString AChapter1Level3GameMode::GetObjectiveMessage()
 {
 	if (bInvestigationMode)
 	{
-		return TEXT("Investigate - Find the cause of the fire. \n Press 'F' to use your scanner.") ;
+		return TEXT("Main Objective:\n- Investigate - Find the cause of the fire. \n Press 'F' to use your scanner.") ;
 	}
 	// else
-	return TEXT("Put down all the fires (")
+	return TEXT("Main Objectives:\n- Put down all the fires (")
 		+ FString::FromInt(TotalFires - RemainingFires)
 		+ TEXT("/") + FString::FromInt(TotalFires) + TEXT(") \n")
-		+ TEXT("Free all the trapped villagers (")
+		+ TEXT("- Free all the trapped villagers (")
 		+ FString::FromInt(TotalVillagers - RemainingVillagers)
 		+ TEXT("/") + FString::FromInt(TotalVillagers) + TEXT(")");
 }

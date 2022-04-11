@@ -157,10 +157,10 @@ void AChapter1Level2GameMode::ActorDied(AActor* DeadActor)
 
 FString AChapter1Level2GameMode::GetObjectiveMessage()
 {
-	return TEXT("Put down all the fires (")
+	return TEXT("Main Objective:\n- Put down all the fires (")
 		+ FString::FromInt(TotalFires - RemainingFires)
 		+ TEXT("/") + FString::FromInt(TotalFires) + TEXT(") \n")
-		+ TEXT("Hint: Not all fires behave the same way");
+		+ TEXT("Hint:\nNot all fires behave the same way");
 }
 
 FString AChapter1Level2GameMode::GetChapterName()

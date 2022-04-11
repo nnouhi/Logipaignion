@@ -76,6 +76,10 @@ public:
     bool GetMaskState() const { return bMaskObtained; }
 
 private:
+
+    // CN Pause/Resume the game
+    void Pause();
+
     // CN Move forwards/backwards
     void MoveForward(float AxisValue);
     

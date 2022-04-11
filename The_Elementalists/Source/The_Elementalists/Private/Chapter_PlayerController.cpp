@@ -17,7 +17,7 @@ void AChapter_PlayerController::BeginPlay()
 	HUDWidget = CreateWidget(this, HUDClass);
 	MapWidget = CreateWidget(this, MapHUDClass);
 	YouLostWidget = CreateWidget(this, YouLostHUDClass);
-
+	PauseWidget = CreateWidget(this, PauseClass);
 
 
 	// NOTE: Add to viewport the widget here for testing
@@ -145,5 +145,17 @@ void AChapter_PlayerController::DisplayYouLostWidget()
 	if (YouLostWidget)
 	{
 		YouLostWidget->AddToViewport();
+	}
+}
+
+void AChapter_PlayerController::Pause()
+{
+	//SetPlayerEnabledState(false);
+	SetShowMouseCursor(true);
+	SetPause(true);
+
+	if (PauseWidget)
+	{
+		PauseWidget->AddToViewport();
 	}
 }

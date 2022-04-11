@@ -61,6 +61,8 @@ public: \
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Chapter_PlayerController_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__PauseClass() { return STRUCT_OFFSET(AChapter_PlayerController, PauseClass); } \
+	FORCEINLINE static uint32 __PPO__PauseWidget() { return STRUCT_OFFSET(AChapter_PlayerController, PauseWidget); } \
 	FORCEINLINE static uint32 __PPO__GameOverDeathClass() { return STRUCT_OFFSET(AChapter_PlayerController, GameOverDeathClass); } \
 	FORCEINLINE static uint32 __PPO__GameOverDeathWidget() { return STRUCT_OFFSET(AChapter_PlayerController, GameOverDeathWidget); } \
 	FORCEINLINE static uint32 __PPO__GameOverTimeClass() { return STRUCT_OFFSET(AChapter_PlayerController, GameOverTimeClass); } \

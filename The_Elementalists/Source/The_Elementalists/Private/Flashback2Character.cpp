@@ -136,6 +136,11 @@ float AFlashback2Character::GetHealthPercentage() const
 
 void AFlashback2Character::CallDisplayMap()
 {
+	if (GameMode)
+	{
+		GameMode->ClearSignalObjective();
+	}
+
 	if (PlayerControllerRef)
 	{
 		PlayerControllerRef->DisplayMap();
