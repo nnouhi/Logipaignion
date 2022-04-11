@@ -54,11 +54,16 @@ public:
 	// CN Pause the game
 	void Pause();
 
+	// CN Resume the game
+	UFUNCTION(BlueprintCallable)
+	void Resume();
+
 protected:
 	virtual void BeginPlay() override;
 
 private:
-	//bool bIsPaused = false;
+	void ShowHUD();
+	void HideHUD();
 
 	// CN Pause screen
 	UPROPERTY(EditAnywhere)

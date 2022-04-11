@@ -208,6 +208,15 @@ void AFlashback2Character::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 	PlayerInputComponent->BindAction("DisplayMap", IE_Pressed, this, &AFlashback2Character::CallDisplayMap);
 	PlayerInputComponent->BindAction("DisplayMap", IE_Released, this, &AFlashback2Character::CallRemoveMap);
 	PlayerInputComponent->BindAction("Action", IE_Pressed, this, &AFlashback2Character::OnAction);
+	PlayerInputComponent->BindAction(TEXT("Pause"), EInputEvent::IE_Pressed, this, &AFlashback2Character::Pause);
+}
+
+void AFlashback2Character::Pause()
+{
+	if (PlayerControllerRef)
+	{
+		PlayerControllerRef->Pause();
+	}
 }
 
 void AFlashback2Character::PerformLineTrace()

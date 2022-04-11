@@ -6,7 +6,6 @@
 			"BaseGameMode.cpp.obj",
 			"Boat.cpp.obj",
 			"BoatAIController.cpp.obj",
-			"Chapter_PlayerController.cpp.obj",
 			"Chapter1_AIController.cpp.obj",
 			"Chapter1Flashback_AIController.cpp.obj",
 			"Chapter1GameMode.cpp.obj",
@@ -22,7 +21,6 @@
 			"Chapter3Level2GameMode.cpp.obj",
 			"Chapter3Level3_AIController.cpp.obj",
 			"Chapter3Level3GameMode.cpp.obj",
-			"ChapterCharacter.cpp.obj",
 			"Endpoint.cpp.obj",
 			"Fire.cpp.obj",
 			"FireProjectile.cpp.obj",
@@ -30,10 +28,7 @@
 			"Flash_Back.cpp.obj",
 			"Flash_Back2.cpp.obj",
 			"Flash_Back3.cpp.obj",
-			"Flashback_PlayerController.cpp.obj",
-			"Flashback2Character.cpp.obj",
 			"Flashback3_AIController.cpp.obj",
-			"FlashbackCharacter.cpp.obj",
 			"FloatComponent.cpp.obj",
 			"FloorCollider.cpp.obj",
 			"GasMask.cpp.obj",
@@ -66,14 +61,18 @@
 			"TriggerCollisionProfileName.cpp.obj",
 			"WindProjectile.cpp.obj",
 			"The_Elementalists.cpp.obj",
-			"The_ElementalistsGameModeBase.cpp.obj"
+			"The_ElementalistsGameModeBase.cpp.obj",
+			"Chapter_PlayerController.cpp.obj",
+			"ChapterCharacter.cpp.obj",
+			"Flashback_PlayerController.cpp.obj",
+			"Flashback2Character.cpp.obj",
+			"FlashbackCharacter.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",
 			"BaseGameMode.gen.cpp.obj",
 			"Boat.gen.cpp.obj",
 			"BoatAIController.gen.cpp.obj",
-			"Chapter_PlayerController.gen.cpp.obj",
 			"Chapter1_AIController.gen.cpp.obj",
 			"Chapter1Flashback_AIController.gen.cpp.obj",
 			"Chapter1GameMode.gen.cpp.obj",
@@ -97,7 +96,6 @@
 			"Flash_Back.gen.cpp.obj",
 			"Flash_Back2.gen.cpp.obj",
 			"Flash_Back3.gen.cpp.obj",
-			"Flashback_PlayerController.gen.cpp.obj",
 			"Flashback2Character.gen.cpp.obj",
 			"Flashback3_AIController.gen.cpp.obj",
 			"FlashbackCharacter.gen.cpp.obj",
@@ -129,11 +127,13 @@
 			"ShootingToxicGas.gen.cpp.obj",
 			"SpawnPlayer.gen.cpp.obj",
 			"SwingDoor.gen.cpp.obj",
-			"The_Elementalists.init.gen.cpp.obj",
 			"The_ElementalistsGameModeBase.gen.cpp.obj",
 			"ToxicGas.gen.cpp.obj",
 			"TriggerCollisionProfileName.gen.cpp.obj",
-			"WindProjectile.gen.cpp.obj"
+			"WindProjectile.gen.cpp.obj",
+			"Chapter_PlayerController.gen.cpp.obj",
+			"Flashback_PlayerController.gen.cpp.obj",
+			"The_Elementalists.init.gen.cpp.obj"
 		]
 	}
 }

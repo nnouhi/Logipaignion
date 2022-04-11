@@ -10,6 +10,7 @@ void AFlashback_PlayerController::BeginPlay()
 {
 	Super::BeginPlay();
 
+	PauseWidget = CreateWidget(this, PauseClass);
 	ObjectiveWidget = CreateWidget(this, ObjectiveHUDClass);
 	MinimapWidget = CreateWidget(this, MinimapHUDClass);
 	HealthbarWidget = CreateWidget(this, HealthbarClass);
@@ -24,6 +25,7 @@ void AFlashback_PlayerController::BeginPlay()
 
 void AFlashback_PlayerController::DisplayMap()
 {
+	HideHUD();
 
 	if (MapWidget)
 	{
@@ -33,6 +35,8 @@ void AFlashback_PlayerController::DisplayMap()
 
 void AFlashback_PlayerController::RemoveMap()
 {
+	ShowHUD();
+
 	if (MapWidget)
 	{
 		MapWidget->RemoveFromViewport();
@@ -76,7 +80,7 @@ void AFlashback_PlayerController::StartLevel()
 		StartTimerWidget->RemoveFromViewport();
 	}
 
-	DisplayMainHUD();
+	ShowHUD();
 
 	if (InfoWidget)
 	{
@@ -124,7 +128,7 @@ void AFlashback_PlayerController::WearMask()
 		GasMaskWidget->AddToViewport();
 	}
 
-	DisplayMainHUD();
+	ShowHUD();
 }
 
 void AFlashback_PlayerController::Blur()
@@ -134,7 +138,7 @@ void AFlashback_PlayerController::Blur()
 		BlurWidget->SetVisibility(ESlateVisibility::Visible);
 	}
 
-	DisplayMainHUD();
+	ShowHUD();
 }
 
 void AFlashback_PlayerController::UnBlur()
@@ -143,25 +147,70 @@ void AFlashback_PlayerController::UnBlur()
 	{
 		BlurWidget->SetVisibility(ESlateVisibility::Hidden);
 	}
+
+	HideHUD();
 }
 
-void AFlashback_PlayerController::DisplayMainHUD()
+void AFlashback_PlayerController::Pause()
+{
+	//SetPlayerEnabledState(false);
+	SetShowMouseCursor(true);
+	SetPause(true);
+
+	if (PauseWidget)
+	{
+		PauseWidget->AddToViewport();
+	}
+
+	HideHUD();
+}
+
+void AFlashback_PlayerController::Resume()
+{
+	//SetPlayerEnabledState(false);
+	SetShowMouseCursor(false);
+	SetPause(false);
+
+	if (PauseWidget)
+	{
+		PauseWidget->RemoveFromViewport();
+	}
+
+	ShowHUD();
+}
+
+void AFlashback_PlayerController::HideHUD()
 {
 	if (HealthbarWidget)
 	{
 		HealthbarWidget->RemoveFromViewport();
-		HealthbarWidget->AddToViewport();
 	}
 
 	if (ObjectiveWidget)
 	{
 		ObjectiveWidget->RemoveFromViewport();
-		ObjectiveWidget->AddToViewport();
 	}
 
 	if (MinimapWidget)
 	{
 		MinimapWidget->RemoveFromViewport();
+	}
+}
+
+void AFlashback_PlayerController::ShowHUD()
+{
+	if (HealthbarWidget)
+	{
+		HealthbarWidget->AddToViewport();
+	}
+
+	if (ObjectiveWidget)
+	{
+		ObjectiveWidget->AddToViewport();
+	}
+
+	if (MinimapWidget)
+	{
 		MinimapWidget->AddToViewport();
 	}
 }

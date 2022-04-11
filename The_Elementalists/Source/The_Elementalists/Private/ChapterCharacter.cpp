@@ -141,7 +141,7 @@ void AChapterCharacter::Pause()
 {
     if (PlayerControllerRef)
     {
-        PlayerControllerRef->Pause(); // CN Pause in controller handles pausing/unpausing
+        PlayerControllerRef->Pause();
     }
 }
 

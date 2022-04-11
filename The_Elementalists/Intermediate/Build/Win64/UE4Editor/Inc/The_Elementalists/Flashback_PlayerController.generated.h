@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define THE_ELEMENTALISTS_Flashback_PlayerController_generated_h
 
 #define The_Elementalists_Source_The_Elementalists_Public_Flashback_PlayerController_h_15_SPARSE_DATA
-#define The_Elementalists_Source_The_Elementalists_Public_Flashback_PlayerController_h_15_RPC_WRAPPERS
-#define The_Elementalists_Source_The_Elementalists_Public_Flashback_PlayerController_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define The_Elementalists_Source_The_Elementalists_Public_Flashback_PlayerController_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execResume);
+
+
+#define The_Elementalists_Source_The_Elementalists_Public_Flashback_PlayerController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execResume);
+
+
 #define The_Elementalists_Source_The_Elementalists_Public_Flashback_PlayerController_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFlashback_PlayerController(); \
@@ -80,7 +88,9 @@ public: \
 	FORCEINLINE static uint32 __PPO__GasMaskClass() { return STRUCT_OFFSET(AFlashback_PlayerController, GasMaskClass); } \
 	FORCEINLINE static uint32 __PPO__GasMaskWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, GasMaskWidget); } \
 	FORCEINLINE static uint32 __PPO__BlurClass() { return STRUCT_OFFSET(AFlashback_PlayerController, BlurClass); } \
-	FORCEINLINE static uint32 __PPO__BlurWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, BlurWidget); }
+	FORCEINLINE static uint32 __PPO__BlurWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, BlurWidget); } \
+	FORCEINLINE static uint32 __PPO__PauseClass() { return STRUCT_OFFSET(AFlashback_PlayerController, PauseClass); } \
+	FORCEINLINE static uint32 __PPO__PauseWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, PauseWidget); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Flashback_PlayerController_h_12_PROLOG

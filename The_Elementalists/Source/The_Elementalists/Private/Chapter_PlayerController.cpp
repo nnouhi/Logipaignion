@@ -2,6 +2,7 @@
 
 
 #include "Chapter_PlayerController.h"
+
 #include "Blueprint/UserWidget.h"
 
 void AChapter_PlayerController::BeginPlay()
@@ -44,12 +45,12 @@ void AChapter_PlayerController::GameOverTime()
 {
 	// Show Times Up widget
 	UE_LOG(LogTemp, Warning, TEXT("Time's up!"));
-	
+
 	if (GameOverTimeWidget)
 	{
 		GameOverTimeWidget->AddToViewport();
 	}
-	
+
 	/*GameOver();*/
 }
 
@@ -57,12 +58,12 @@ void AChapter_PlayerController::GameOverDeath()
 {
 	// Show You Died widget
 	UE_LOG(LogTemp, Warning, TEXT("You Died!"));
-	
+
 	if (GameOverDeathWidget)
 	{
 		GameOverDeathWidget->AddToViewport();
 	}
-	
+
 	/*GameOver();*/
 }
 
@@ -73,7 +74,7 @@ void AChapter_PlayerController::LevelClear()
 		LevelClearWidget->AddToViewport();
 	}
 }
-	
+
 void AChapter_PlayerController::StartTimer()
 {
 	// Declared here because in begin play its created too late
@@ -92,16 +93,8 @@ void AChapter_PlayerController::StartLevel()
 	{
 		StartTimerWidget->RemoveFromViewport();
 	}
-	
-	if (LevelTimerWidget)
-	{
-		LevelTimerWidget->AddToViewport();
-	}
 
-	if (HUDWidget)
-	{
-		HUDWidget->AddToViewport();
-	}
+	ShowHUD();
 }
 
 void AChapter_PlayerController::SetPlayerEnabledState(bool bEnabled) {
@@ -130,6 +123,8 @@ void AChapter_PlayerController::DisplayMap()
 	{
 		MapWidget->AddToViewport();
 	}
+
+	HideHUD();
 }
 
 void AChapter_PlayerController::RemoveMap()
@@ -138,6 +133,8 @@ void AChapter_PlayerController::RemoveMap()
 	{
 		MapWidget->RemoveFromViewport();
 	}
+
+	ShowHUD();
 }
 
 void AChapter_PlayerController::DisplayYouLostWidget()
@@ -157,5 +154,47 @@ void AChapter_PlayerController::Pause()
 	if (PauseWidget)
 	{
 		PauseWidget->AddToViewport();
+	}
+
+	HideHUD();
+}
+
+void AChapter_PlayerController::Resume()
+{
+	//SetPlayerEnabledState(false);
+	SetShowMouseCursor(false);
+	SetPause(false);
+
+	if (PauseWidget)
+	{
+		PauseWidget->RemoveFromViewport();
+	}
+
+	ShowHUD();
+}
+
+void AChapter_PlayerController::HideHUD()
+{
+	if (LevelTimerWidget)
+	{
+		LevelTimerWidget->RemoveFromViewport();
+	}
+
+	if (HUDWidget)
+	{
+		HUDWidget->RemoveFromViewport();
+	}
+}
+
+void AChapter_PlayerController::ShowHUD()
+{
+	if (LevelTimerWidget)
+	{
+		LevelTimerWidget->AddToViewport();
+	}
+
+	if (HUDWidget)
+	{
+		HUDWidget->AddToViewport();
 	}
 }

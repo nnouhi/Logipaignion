@@ -23,6 +23,9 @@ public:
 
 	FORCEINLINE class UCameraComponent* GetCameraComponent() const { return FirstPersonCameraComponent; };
 
+	// CN Pause/Resume the game
+	void Pause();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

@@ -69,6 +69,9 @@ public:
 	UFUNCTION(BlueprintPure)
 	float GetHealthPercentage() const;
 
+	// CN Pause/Resume the game
+	void Pause();
+
 private:
 
 	//// NN SpringArm Component

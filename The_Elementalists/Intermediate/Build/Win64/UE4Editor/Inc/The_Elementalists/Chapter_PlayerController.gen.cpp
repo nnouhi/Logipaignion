@@ -20,8 +20,44 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AChapter_PlayerController::execResume)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Resume();
+		P_NATIVE_END;
+	}
 	void AChapter_PlayerController::StaticRegisterNativesAChapter_PlayerController()
 	{
+		UClass* Class = AChapter_PlayerController::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "Resume", &AChapter_PlayerController::execResume },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AChapter_PlayerController_Resume_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AChapter_PlayerController_Resume_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// CN Resume the game\n" },
+		{ "ModuleRelativePath", "Public/Chapter_PlayerController.h" },
+		{ "ToolTip", "CN Resume the game" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AChapter_PlayerController_Resume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AChapter_PlayerController, nullptr, "Resume", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AChapter_PlayerController_Resume_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AChapter_PlayerController_Resume_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AChapter_PlayerController_Resume()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AChapter_PlayerController_Resume_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_AChapter_PlayerController_NoRegister()
 	{
@@ -30,6 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 	struct Z_Construct_UClass_AChapter_PlayerController_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -128,6 +165,9 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 	UObject* (*const Z_Construct_UClass_AChapter_PlayerController_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_APlayerController,
 		(UObject* (*)())Z_Construct_UPackage__Script_The_Elementalists,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_AChapter_PlayerController_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AChapter_PlayerController_Resume, "Resume" }, // 3308197317
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapter_PlayerController_Statics::Class_MetaDataParams[] = {
@@ -345,11 +385,11 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_AChapter_PlayerController_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_AChapter_PlayerController_Statics::PropPointers),
 		0,
 		0x009002A4u,
@@ -364,7 +404,7 @@ void EmptyLinkFunctionForGeneratedCodeChapter_PlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AChapter_PlayerController, 2246379703);
+	IMPLEMENT_CLASS(AChapter_PlayerController, 3639187171);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AChapter_PlayerController>()
 	{
 		return AChapter_PlayerController::StaticClass();

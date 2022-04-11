@@ -20,8 +20,44 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AFlashback_PlayerController::execResume)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Resume();
+		P_NATIVE_END;
+	}
 	void AFlashback_PlayerController::StaticRegisterNativesAFlashback_PlayerController()
 	{
+		UClass* Class = AFlashback_PlayerController::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "Resume", &AFlashback_PlayerController::execResume },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AFlashback_PlayerController_Resume_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFlashback_PlayerController_Resume_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// CN Resume the game\n" },
+		{ "ModuleRelativePath", "Public/Flashback_PlayerController.h" },
+		{ "ToolTip", "CN Resume the game" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFlashback_PlayerController_Resume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFlashback_PlayerController, nullptr, "Resume", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFlashback_PlayerController_Resume_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AFlashback_PlayerController_Resume_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFlashback_PlayerController_Resume()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFlashback_PlayerController_Resume_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_AFlashback_PlayerController_NoRegister()
 	{
@@ -30,6 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 	struct Z_Construct_UClass_AFlashback_PlayerController_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -113,6 +150,14 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BlurWidget_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_BlurWidget;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PauseClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_PauseClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PauseWidget_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PauseWidget;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -120,6 +165,9 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 	UObject* (*const Z_Construct_UClass_AFlashback_PlayerController_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_APlayerController,
 		(UObject* (*)())Z_Construct_UPackage__Script_The_Elementalists,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_AFlashback_PlayerController_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AFlashback_PlayerController_Resume, "Resume" }, // 3034499027
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlashback_PlayerController_Statics::Class_MetaDataParams[] = {
@@ -300,6 +348,22 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_BlurWidget = { "BlurWidget", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFlashback_PlayerController, BlurWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_BlurWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_BlurWidget_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_PauseClass_MetaData[] = {
+		{ "Category", "Flashback_PlayerController" },
+		{ "Comment", "// CN Pause screen\n" },
+		{ "ModuleRelativePath", "Public/Flashback_PlayerController.h" },
+		{ "ToolTip", "CN Pause screen" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_PauseClass = { "PauseClass", nullptr, (EPropertyFlags)0x0044000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFlashback_PlayerController, PauseClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_PauseClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_PauseClass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_PauseWidget_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Flashback_PlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_PauseWidget = { "PauseWidget", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFlashback_PlayerController, PauseWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_PauseWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_PauseWidget_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFlashback_PlayerController_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_ObjectiveHUDClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_ObjectiveWidget,
@@ -321,6 +385,8 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_GasMaskWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_BlurClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_BlurWidget,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_PauseClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_PauseWidget,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFlashback_PlayerController_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFlashback_PlayerController>::IsAbstract,
@@ -330,11 +396,11 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_AFlashback_PlayerController_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_AFlashback_PlayerController_Statics::PropPointers),
 		0,
 		0x009002A4u,
@@ -349,7 +415,7 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFlashback_PlayerController, 1321248575);
+	IMPLEMENT_CLASS(AFlashback_PlayerController, 4074710544);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AFlashback_PlayerController>()
 	{
 		return AFlashback_PlayerController::StaticClass();

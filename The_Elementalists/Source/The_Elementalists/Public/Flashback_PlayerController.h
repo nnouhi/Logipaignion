@@ -19,7 +19,8 @@ protected:
 
 private:
 	
-	void DisplayMainHUD();
+	void ShowHUD();
+	void HideHUD();
 
 	// NN Objective widget displayed on screen
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
@@ -83,7 +84,20 @@ private:
 	UPROPERTY()
 		UUserWidget* BlurWidget;
 
+	// CN Pause screen
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class UUserWidget> PauseClass;
+	UPROPERTY()
+		UUserWidget* PauseWidget;
+
 public:
+
+	// CN Pause the game
+	void Pause();
+
+	// CN Resume the game
+	UFUNCTION(BlueprintCallable)
+		void Resume();
 
 	// NN when invoke displays map on viewport
 	void DisplayMap();

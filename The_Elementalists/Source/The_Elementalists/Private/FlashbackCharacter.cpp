@@ -187,5 +187,16 @@ void AFlashbackCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 	PlayerInputComponent->BindAction("Crouch", IE_Released, this, &AFlashbackCharacter::EndCrouch);
 	PlayerInputComponent->BindAction("DisplayMap", IE_Pressed, this, &AFlashbackCharacter::CallDisplayMap);
 	PlayerInputComponent->BindAction("DisplayMap", IE_Released, this, &AFlashbackCharacter::CallRemoveMap);
+	PlayerInputComponent->BindAction(TEXT("Pause"), EInputEvent::IE_Pressed, this, &AFlashbackCharacter::Pause);
+}
+
+void AFlashbackCharacter::Pause()
+{
+	AFlashback_PlayerController* PlayerControllerRef = Cast<AFlashback_PlayerController>(UGameplayStatics::GetPlayerController(GetWorld(), 0));
+
+	if (PlayerControllerRef)
+	{
+		PlayerControllerRef->Pause();
+	}
 }
 
