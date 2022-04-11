@@ -34,11 +34,6 @@ void EmptyLinkFunctionForGeneratedCodeChapter3Level3GameMode() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bInvestigationMode_MetaData[];
-#endif
-		static void NewProp_bInvestigationMode_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bInvestigationMode;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CheckPlaceHoldersInRate_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_CheckPlaceHoldersInRate;
@@ -72,19 +67,6 @@ void EmptyLinkFunctionForGeneratedCodeChapter3Level3GameMode() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapter3Level3GameMode_Statics::NewProp_bInvestigationMode_MetaData[] = {
-		{ "Category", "Chapter3Level3GameMode" },
-		{ "Comment", "// CN To check if in investigation mode\n" },
-		{ "ModuleRelativePath", "Public/Chapter3Level3GameMode.h" },
-		{ "ToolTip", "CN To check if in investigation mode" },
-	};
-#endif
-	void Z_Construct_UClass_AChapter3Level3GameMode_Statics::NewProp_bInvestigationMode_SetBit(void* Obj)
-	{
-		((AChapter3Level3GameMode*)Obj)->bInvestigationMode = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AChapter3Level3GameMode_Statics::NewProp_bInvestigationMode = { "bInvestigationMode", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AChapter3Level3GameMode), &Z_Construct_UClass_AChapter3Level3GameMode_Statics::NewProp_bInvestigationMode_SetBit, METADATA_PARAMS(Z_Construct_UClass_AChapter3Level3GameMode_Statics::NewProp_bInvestigationMode_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapter3Level3GameMode_Statics::NewProp_bInvestigationMode_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapter3Level3GameMode_Statics::NewProp_CheckPlaceHoldersInRate_MetaData[] = {
 		{ "Category", "Chapter3Level3GameMode" },
 		{ "Comment", "// NN How frequent to check for placeholers number\n" },
@@ -115,7 +97,6 @@ void EmptyLinkFunctionForGeneratedCodeChapter3Level3GameMode() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AChapter3Level3GameMode_Statics::NewProp_OilSplillClass = { "OilSplillClass", nullptr, (EPropertyFlags)0x0044000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapter3Level3GameMode, OilSplillClass), Z_Construct_UClass_AOilSpillShooting_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AChapter3Level3GameMode_Statics::NewProp_OilSplillClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapter3Level3GameMode_Statics::NewProp_OilSplillClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AChapter3Level3GameMode_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter3Level3GameMode_Statics::NewProp_bInvestigationMode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter3Level3GameMode_Statics::NewProp_CheckPlaceHoldersInRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter3Level3GameMode_Statics::NewProp_GoDelay,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapter3Level3GameMode_Statics::NewProp_SpawnDelay,
@@ -148,7 +129,7 @@ void EmptyLinkFunctionForGeneratedCodeChapter3Level3GameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AChapter3Level3GameMode, 3961694232);
+	IMPLEMENT_CLASS(AChapter3Level3GameMode, 1492144305);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AChapter3Level3GameMode>()
 	{
 		return AChapter3Level3GameMode::StaticClass();

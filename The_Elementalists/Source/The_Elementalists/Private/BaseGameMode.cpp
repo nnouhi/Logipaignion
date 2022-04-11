@@ -56,3 +56,20 @@ void ABaseGameMode::AddToTotalScore(int32 Score)
 {
 	TotalScore += Score;
 }
+
+FString ABaseGameMode::GetTimeRemaining()
+{
+	// NN Get remaining time to convert to minutes/seconds
+	float TimeRemaining = GetWorldTimerManager().GetTimerRemaining(LevelStartTimerHandle);
+
+	int32 Seconds = (FMath::FloorToInt(TimeRemaining) % 60);
+	int32 Minutes = (FMath::FloorToInt(TimeRemaining) % 3600) / 60;
+	if (Seconds < 10)
+	{
+		return FString::FromInt(Minutes) + TEXT(":0") + FString::FromInt(Seconds);
+	}
+	else
+	{
+		return FString::FromInt(Minutes) + TEXT(":") + FString::FromInt(Seconds);
+	}
+}

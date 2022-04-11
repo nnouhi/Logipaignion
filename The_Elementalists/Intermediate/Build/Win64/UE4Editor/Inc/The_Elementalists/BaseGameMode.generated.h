@@ -17,6 +17,7 @@ class AActor;
 #define The_Elementalists_Source_The_Elementalists_Public_BaseGameMode_h_15_SPARSE_DATA
 #define The_Elementalists_Source_The_Elementalists_Public_BaseGameMode_h_15_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetTimeRemaining); \
 	DECLARE_FUNCTION(execGetTotalScore); \
 	DECLARE_FUNCTION(execGetScore); \
 	DECLARE_FUNCTION(execGetDifficulty); \
@@ -30,6 +31,7 @@ class AActor;
 
 #define The_Elementalists_Source_The_Elementalists_Public_BaseGameMode_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetTimeRemaining); \
 	DECLARE_FUNCTION(execGetTotalScore); \
 	DECLARE_FUNCTION(execGetScore); \
 	DECLARE_FUNCTION(execGetDifficulty); \
@@ -87,7 +89,8 @@ public: \
 
 #define The_Elementalists_Source_The_Elementalists_Public_BaseGameMode_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__StartDelay() { return STRUCT_OFFSET(ABaseGameMode, StartDelay); } \
-	FORCEINLINE static uint32 __PPO__LevelTime() { return STRUCT_OFFSET(ABaseGameMode, LevelTime); }
+	FORCEINLINE static uint32 __PPO__LevelTime() { return STRUCT_OFFSET(ABaseGameMode, LevelTime); } \
+	FORCEINLINE static uint32 __PPO__bInvestigationMode() { return STRUCT_OFFSET(ABaseGameMode, bInvestigationMode); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_BaseGameMode_h_12_PROLOG

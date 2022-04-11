@@ -19,6 +19,13 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 	UPackage* Z_Construct_UPackage__Script_The_Elementalists();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ABaseGameMode::execGetTimeRemaining)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=P_THIS->GetTimeRemaining();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ABaseGameMode::execGetTotalScore)
 	{
 		P_FINISH;
@@ -93,6 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 			{ "GetDifficulty", &ABaseGameMode::execGetDifficulty },
 			{ "GetObjectiveMessage", &ABaseGameMode::execGetObjectiveMessage },
 			{ "GetScore", &ABaseGameMode::execGetScore },
+			{ "GetTimeRemaining", &ABaseGameMode::execGetTimeRemaining },
 			{ "GetTotalScore", &ABaseGameMode::execGetTotalScore },
 			{ "LevelComplete", &ABaseGameMode::execLevelComplete },
 			{ "ProgressNextChapter", &ABaseGameMode::execProgressNextChapter },
@@ -260,6 +268,38 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ABaseGameMode_GetTimeRemaining_Statics
+	{
+		struct BaseGameMode_eventGetTimeRemaining_Parms
+		{
+			FString ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_ABaseGameMode_GetTimeRemaining_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(BaseGameMode_eventGetTimeRemaining_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseGameMode_GetTimeRemaining_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseGameMode_GetTimeRemaining_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseGameMode_GetTimeRemaining_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/BaseGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseGameMode_GetTimeRemaining_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseGameMode, nullptr, "GetTimeRemaining", nullptr, nullptr, sizeof(BaseGameMode_eventGetTimeRemaining_Parms), Z_Construct_UFunction_ABaseGameMode_GetTimeRemaining_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseGameMode_GetTimeRemaining_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseGameMode_GetTimeRemaining_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseGameMode_GetTimeRemaining_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseGameMode_GetTimeRemaining()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseGameMode_GetTimeRemaining_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ABaseGameMode_GetTotalScore_Statics
 	{
 		struct BaseGameMode_eventGetTotalScore_Parms
@@ -392,6 +432,11 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LevelTime_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_LevelTime;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bInvestigationMode_MetaData[];
+#endif
+		static void NewProp_bInvestigationMode_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bInvestigationMode;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -406,6 +451,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		{ &Z_Construct_UFunction_ABaseGameMode_GetDifficulty, "GetDifficulty" }, // 3301473594
 		{ &Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage, "GetObjectiveMessage" }, // 1833381145
 		{ &Z_Construct_UFunction_ABaseGameMode_GetScore, "GetScore" }, // 3161157956
+		{ &Z_Construct_UFunction_ABaseGameMode_GetTimeRemaining, "GetTimeRemaining" }, // 1500763737
 		{ &Z_Construct_UFunction_ABaseGameMode_GetTotalScore, "GetTotalScore" }, // 2241828639
 		{ &Z_Construct_UFunction_ABaseGameMode_LevelComplete, "LevelComplete" }, // 2531483530
 		{ &Z_Construct_UFunction_ABaseGameMode_ProgressNextChapter, "ProgressNextChapter" }, // 2962940943
@@ -453,10 +499,24 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseGameMode_Statics::NewProp_LevelTime = { "LevelTime", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseGameMode, LevelTime), METADATA_PARAMS(Z_Construct_UClass_ABaseGameMode_Statics::NewProp_LevelTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABaseGameMode_Statics::NewProp_LevelTime_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseGameMode_Statics::NewProp_bInvestigationMode_MetaData[] = {
+		{ "Category", "BaseGameMode" },
+		{ "Comment", "// CN Investigation mode on\n" },
+		{ "ModuleRelativePath", "Public/BaseGameMode.h" },
+		{ "ToolTip", "CN Investigation mode on" },
+	};
+#endif
+	void Z_Construct_UClass_ABaseGameMode_Statics::NewProp_bInvestigationMode_SetBit(void* Obj)
+	{
+		((ABaseGameMode*)Obj)->bInvestigationMode = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABaseGameMode_Statics::NewProp_bInvestigationMode = { "bInvestigationMode", nullptr, (EPropertyFlags)0x0020080000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ABaseGameMode), &Z_Construct_UClass_ABaseGameMode_Statics::NewProp_bInvestigationMode_SetBit, METADATA_PARAMS(Z_Construct_UClass_ABaseGameMode_Statics::NewProp_bInvestigationMode_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABaseGameMode_Statics::NewProp_bInvestigationMode_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseGameMode_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseGameMode_Statics::NewProp_bSignalObjective,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseGameMode_Statics::NewProp_StartDelay,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseGameMode_Statics::NewProp_LevelTime,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseGameMode_Statics::NewProp_bInvestigationMode,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABaseGameMode_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABaseGameMode>::IsAbstract,
@@ -485,7 +545,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseGameMode, 456052428);
+	IMPLEMENT_CLASS(ABaseGameMode, 2404318175);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<ABaseGameMode>()
 	{
 		return ABaseGameMode::StaticClass();

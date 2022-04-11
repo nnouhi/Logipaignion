@@ -32,10 +32,6 @@ public:
 	// NN Get level score
 	int32 GetScore() override;
 
-	// CN To check if in investigation mode
-	UPROPERTY(BlueprintReadOnly)
-	bool bInvestigationMode = false;
-
 protected:
 	virtual void BeginPlay() override;
 
@@ -64,9 +60,6 @@ private:
 
 	// NN Keeps track of player score
 	int32 Score = 0;
-
-	// NN Timer handle for level time
-	FTimerHandle LevelStartTimerHandle;
 
 	// NN Calculates the final score based on remaining time
 	void CalculateFinalScore();

@@ -35,10 +35,6 @@ public:
 	// CN Get level score
 	int32 GetScore() override;
 
-	// CN To check if in investigation mode
-	UPROPERTY(BlueprintReadOnly)
-	bool bInvestigationMode = false;
-
 protected:
 	virtual void BeginPlay() override;
 
@@ -71,9 +67,6 @@ private:
 
 	// CN Shows cigarette
 	void ShowCigarette(bool bShow);
-
-	// CN Timer handle for level time
-	FTimerHandle LevelStartTimerHandle;
 
 	// CN Calculates the final score based on remaining time
 	void CalculateFinalScore();

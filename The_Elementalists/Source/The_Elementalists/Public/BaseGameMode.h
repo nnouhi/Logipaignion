@@ -41,6 +41,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 	int32 GetTotalScore();
 
+	UFUNCTION(BlueprintCallable)
+	FString GetTimeRemaining();
+
 	void AddToTotalScore(int32 Score);
 
 	virtual void MaskObtained() { return; }
@@ -69,4 +72,10 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	float LevelTime = 120.f;
 
+	// CN Timer handle for level time
+	FTimerHandle LevelStartTimerHandle;
+
+	// CN Investigation mode on
+	UPROPERTY(BlueprintReadOnly)
+	bool bInvestigationMode = false;
 };

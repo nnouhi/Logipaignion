@@ -56,9 +56,6 @@ private:
 	// NN Keeps track of player score
 	int32 Score = 0;
 
-	// NN Timer handle for level time
-	FTimerHandle LevelStartTimerHandle;
-
 	// NN Calculates the final score based on remaining time
 	void CalculateFinalScore();
 
