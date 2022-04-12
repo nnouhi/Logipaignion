@@ -160,7 +160,7 @@ void AFlashback_PlayerController::UnBlur()
 	HideHUD();
 }
 
-void AFlashback_PlayerController::Pause()
+void AFlashback_PlayerController::PauseMenu()
 {
 	//SetPlayerEnabledState(false);
 	SetShowMouseCursor(true);

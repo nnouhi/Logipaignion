@@ -27,13 +27,45 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 		P_THIS->Resume();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(AFlashback_PlayerController::execPauseMenu)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->PauseMenu();
+		P_NATIVE_END;
+	}
 	void AFlashback_PlayerController::StaticRegisterNativesAFlashback_PlayerController()
 	{
 		UClass* Class = AFlashback_PlayerController::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "PauseMenu", &AFlashback_PlayerController::execPauseMenu },
 			{ "Resume", &AFlashback_PlayerController::execResume },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AFlashback_PlayerController_PauseMenu_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFlashback_PlayerController_PauseMenu_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// CN Pause the game\n" },
+		{ "ModuleRelativePath", "Public/Flashback_PlayerController.h" },
+		{ "ToolTip", "CN Pause the game" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFlashback_PlayerController_PauseMenu_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFlashback_PlayerController, nullptr, "PauseMenu", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFlashback_PlayerController_PauseMenu_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AFlashback_PlayerController_PauseMenu_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFlashback_PlayerController_PauseMenu()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFlashback_PlayerController_PauseMenu_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AFlashback_PlayerController_Resume_Statics
 	{
@@ -175,6 +207,7 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_The_Elementalists,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFlashback_PlayerController_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AFlashback_PlayerController_PauseMenu, "PauseMenu" }, // 1778735522
 		{ &Z_Construct_UFunction_AFlashback_PlayerController_Resume, "Resume" }, // 3034499027
 	};
 #if WITH_METADATA
@@ -444,7 +477,7 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFlashback_PlayerController, 3088360982);
+	IMPLEMENT_CLASS(AFlashback_PlayerController, 415552118);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AFlashback_PlayerController>()
 	{
 		return AFlashback_PlayerController::StaticClass();

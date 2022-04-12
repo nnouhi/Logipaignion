@@ -100,7 +100,8 @@ private:
 public:
 
 	// CN Pause the game
-	void Pause();
+	UFUNCTION(BlueprintCallable)
+	void PauseMenu();
 
 	// CN Resume the game
 	UFUNCTION(BlueprintCallable)

@@ -207,4 +207,8 @@ private:
     void LookUpAtRate(float Rate);
 
     void TurnAtRate(float Rate);
+
+    UFUNCTION(BlueprintCallable)
+    void ChangeSensitivity();
+
 };

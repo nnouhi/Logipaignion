@@ -26,20 +26,7 @@ AToxicGas::AToxicGas()
 	GasParticles1->SetRelativeLocation(FVector(-40.f, 40.f, 100.f));
 	GasParticles1->SetRelativeScale3D(FVector(BaseScale, BaseScale, BaseScale));
 
-	GasParticles2 = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("GasParticles2"));
-	GasParticles2->SetupAttachment(Root);
-	GasParticles2->SetRelativeLocation(FVector(-40.f, -40.f, 100.f));
-	GasParticles2->SetRelativeScale3D(FVector(BaseScale, BaseScale, BaseScale));
-
-	GasParticles3 = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("GasParticles3"));
-	GasParticles3->SetupAttachment(Root);
-	GasParticles3->SetRelativeLocation(FVector(40.f, -40.f, 100.f));
-	GasParticles3->SetRelativeScale3D(FVector(BaseScale, BaseScale, BaseScale));
-
-	GasParticles4 = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("GasParticles4"));
-	GasParticles4->SetupAttachment(Root);
-	GasParticles4->SetRelativeLocation(FVector(40.f, 40.f, 100.f));
-	GasParticles4->SetRelativeScale3D(FVector(BaseScale, BaseScale, BaseScale));
+	
 
 	CollisionMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Collision Mesh"));
 	CollisionMesh->SetupAttachment(Root);
@@ -59,9 +46,7 @@ void AToxicGas::BeginPlay()
 	PlayerCharacter = Cast<ACharacter>(UGameplayStatics::GetPlayerPawn(this, 0));
 
 	GasParticles1->SetRelativeScale3D(FVector(BaseScale, BaseScale, BaseScale));
-	GasParticles2->SetRelativeScale3D(FVector(BaseScale, BaseScale, BaseScale));
-	GasParticles3->SetRelativeScale3D(FVector(BaseScale, BaseScale, BaseScale));
-	GasParticles4->SetRelativeScale3D(FVector(BaseScale, BaseScale, BaseScale));
+	
 }
 
 // Called every frame

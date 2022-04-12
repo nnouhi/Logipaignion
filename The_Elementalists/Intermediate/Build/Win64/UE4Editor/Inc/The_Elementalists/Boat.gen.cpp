@@ -187,7 +187,7 @@ void EmptyLinkFunctionForGeneratedCodeBoat() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABoat, 2085558711);
+	IMPLEMENT_CLASS(ABoat, 1619060401);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<ABoat>()
 	{
 		return ABoat::StaticClass();

@@ -145,7 +145,7 @@ void AChapter_PlayerController::DisplayYouLostWidget()
 	}
 }
 
-void AChapter_PlayerController::Pause()
+void AChapter_PlayerController::PauseMenu()
 {
 	//SetPlayerEnabledState(false);
 	SetShowMouseCursor(true);

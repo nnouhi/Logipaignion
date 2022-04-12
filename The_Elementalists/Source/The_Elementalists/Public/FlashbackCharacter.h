@@ -106,4 +106,6 @@ private:
 	// NN invokes player controller RemoveMap method
 	void CallRemoveMap();
 
+	UFUNCTION(BlueprintCallable)
+	void ChangeSensitivity();
 };

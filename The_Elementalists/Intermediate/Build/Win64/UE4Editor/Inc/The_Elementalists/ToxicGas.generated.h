@@ -63,9 +63,6 @@ public: \
 	FORCEINLINE static uint32 __PPO__Root() { return STRUCT_OFFSET(AToxicGas, Root); } \
 	FORCEINLINE static uint32 __PPO__CollisionMesh() { return STRUCT_OFFSET(AToxicGas, CollisionMesh); } \
 	FORCEINLINE static uint32 __PPO__GasParticles1() { return STRUCT_OFFSET(AToxicGas, GasParticles1); } \
-	FORCEINLINE static uint32 __PPO__GasParticles2() { return STRUCT_OFFSET(AToxicGas, GasParticles2); } \
-	FORCEINLINE static uint32 __PPO__GasParticles3() { return STRUCT_OFFSET(AToxicGas, GasParticles3); } \
-	FORCEINLINE static uint32 __PPO__GasParticles4() { return STRUCT_OFFSET(AToxicGas, GasParticles4); } \
 	FORCEINLINE static uint32 __PPO__DeathParticles() { return STRUCT_OFFSET(AToxicGas, DeathParticles); } \
 	FORCEINLINE static uint32 __PPO__DamageDistance() { return STRUCT_OFFSET(AToxicGas, DamageDistance); } \
 	FORCEINLINE static uint32 __PPO__DamagePerSecond() { return STRUCT_OFFSET(AToxicGas, DamagePerSecond); } \

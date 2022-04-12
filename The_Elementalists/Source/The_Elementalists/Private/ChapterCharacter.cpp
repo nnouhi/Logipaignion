@@ -77,13 +77,7 @@ void AChapterCharacter::BeginPlay()
 
     RemoveGasParticles();
 
-    ABaseGameMode* GameModeReference = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
-
-    if (GameModeReference)
-    {
-        TurnSensitivity = GameModeReference->GetBaseTurnRate();
-        LookUpSensitivity = TurnSensitivity;
-    }
+    ChangeSensitivity();
 
     UE_LOG(LogTemp, Warning, TEXT("%f"), LookUpSensitivity);
 
@@ -152,7 +146,7 @@ void AChapterCharacter::Pause()
 {
     if (PlayerControllerRef)
     {
-        PlayerControllerRef->Pause();
+        PlayerControllerRef->PauseMenu();
     }
 }
 
@@ -516,4 +510,16 @@ void AChapterCharacter::TurnAtRate(float Rate)
 {
     // NN Adjust turning rate by sensitivity
     AddControllerYawInput(Rate * TurnSensitivity * GetWorld()->GetDeltaSeconds());
+}
+
+void AChapterCharacter::ChangeSensitivity()
+{
+    ABaseGameMode* GameModeReference = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+
+    UE_LOG(LogTemp, Warning, TEXT("TEST"));
+    if (GameModeReference)
+    {
+        TurnSensitivity = GameModeReference->GetBaseTurnRate();
+        LookUpSensitivity = TurnSensitivity;
+    }
 }

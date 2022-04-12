@@ -139,7 +139,7 @@ void EmptyLinkFunctionForGeneratedCodeShootingToxicGas() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AShootingToxicGas, 1377131439);
+	IMPLEMENT_CLASS(AShootingToxicGas, 3309994250);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AShootingToxicGas>()
 	{
 		return AShootingToxicGas::StaticClass();

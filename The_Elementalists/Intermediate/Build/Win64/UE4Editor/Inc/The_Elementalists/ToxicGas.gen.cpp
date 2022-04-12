@@ -55,18 +55,6 @@ void EmptyLinkFunctionForGeneratedCodeToxicGas() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_GasParticles1;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GasParticles2_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_GasParticles2;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GasParticles3_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_GasParticles3;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GasParticles4_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_GasParticles4;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DeathParticles_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DeathParticles;
@@ -138,30 +126,6 @@ void EmptyLinkFunctionForGeneratedCodeToxicGas() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles1 = { "GasParticles1", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AToxicGas, GasParticles1), Z_Construct_UClass_UParticleSystemComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles1_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles1_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles2_MetaData[] = {
-		{ "Category", "ToxicGas" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/ToxicGas.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles2 = { "GasParticles2", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AToxicGas, GasParticles2), Z_Construct_UClass_UParticleSystemComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles2_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles2_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles3_MetaData[] = {
-		{ "Category", "ToxicGas" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/ToxicGas.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles3 = { "GasParticles3", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AToxicGas, GasParticles3), Z_Construct_UClass_UParticleSystemComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles3_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles3_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles4_MetaData[] = {
-		{ "Category", "ToxicGas" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/ToxicGas.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles4 = { "GasParticles4", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AToxicGas, GasParticles4), Z_Construct_UClass_UParticleSystemComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles4_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles4_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AToxicGas_Statics::NewProp_DeathParticles_MetaData[] = {
 		{ "Category", "ToxicGas" },
 		{ "ModuleRelativePath", "Public/ToxicGas.h" },
@@ -213,9 +177,6 @@ void EmptyLinkFunctionForGeneratedCodeToxicGas() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_Root,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_CollisionMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles1,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles2,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles3,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_GasParticles4,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_DeathParticles,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_DamageDistance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AToxicGas_Statics::NewProp_DamagePerSecond,
@@ -250,7 +211,7 @@ void EmptyLinkFunctionForGeneratedCodeToxicGas() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AToxicGas, 4252941033);
+	IMPLEMENT_CLASS(AToxicGas, 728486199);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AToxicGas>()
 	{
 		return AToxicGas::StaticClass();

@@ -5,7 +5,7 @@
 
 int32 ABaseGameMode::Difficulty = 1;
 int32 ABaseGameMode::TotalScore = 0;
-float ABaseGameMode::BaseTurnRate = 45.f;
+float ABaseGameMode::BaseTurnRate = 20.f;
 
 FString ABaseGameMode::GetObjectiveMessage()
 {

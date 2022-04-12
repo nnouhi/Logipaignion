@@ -19,6 +19,13 @@ void EmptyLinkFunctionForGeneratedCodeFlashbackCharacter() {}
 	UPackage* Z_Construct_UPackage__Script_The_Elementalists();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AFlashbackCharacter::execChangeSensitivity)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ChangeSensitivity();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AFlashbackCharacter::execGetHealthPercentage)
 	{
 		P_FINISH;
@@ -30,9 +37,32 @@ void EmptyLinkFunctionForGeneratedCodeFlashbackCharacter() {}
 	{
 		UClass* Class = AFlashbackCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "ChangeSensitivity", &AFlashbackCharacter::execChangeSensitivity },
 			{ "GetHealthPercentage", &AFlashbackCharacter::execGetHealthPercentage },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AFlashbackCharacter_ChangeSensitivity_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFlashbackCharacter_ChangeSensitivity_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FlashbackCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFlashbackCharacter_ChangeSensitivity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFlashbackCharacter, nullptr, "ChangeSensitivity", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFlashbackCharacter_ChangeSensitivity_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AFlashbackCharacter_ChangeSensitivity_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFlashbackCharacter_ChangeSensitivity()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFlashbackCharacter_ChangeSensitivity_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AFlashbackCharacter_GetHealthPercentage_Statics
 	{
@@ -106,6 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeFlashbackCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_The_Elementalists,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFlashbackCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AFlashbackCharacter_ChangeSensitivity, "ChangeSensitivity" }, // 3493182631
 		{ &Z_Construct_UFunction_AFlashbackCharacter_GetHealthPercentage, "GetHealthPercentage" }, // 1413284770
 	};
 #if WITH_METADATA
@@ -192,7 +223,7 @@ void EmptyLinkFunctionForGeneratedCodeFlashbackCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFlashbackCharacter, 1871816746);
+	IMPLEMENT_CLASS(AFlashbackCharacter, 2769996114);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AFlashbackCharacter>()
 	{
 		return AFlashbackCharacter::StaticClass();

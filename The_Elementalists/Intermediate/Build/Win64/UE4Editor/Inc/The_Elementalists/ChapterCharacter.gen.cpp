@@ -31,6 +31,13 @@ void EmptyLinkFunctionForGeneratedCodeChapterCharacter() {}
 	THE_ELEMENTALISTS_API UClass* Z_Construct_UClass_AProjectile_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UMaterial_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AChapterCharacter::execChangeSensitivity)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ChangeSensitivity();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AChapterCharacter::execOnOverlapBegin)
 	{
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComp);
@@ -62,11 +69,34 @@ void EmptyLinkFunctionForGeneratedCodeChapterCharacter() {}
 	{
 		UClass* Class = AChapterCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "ChangeSensitivity", &AChapterCharacter::execChangeSensitivity },
 			{ "GetHealthPercentage", &AChapterCharacter::execGetHealthPercentage },
 			{ "IsDead", &AChapterCharacter::execIsDead },
 			{ "OnOverlapBegin", &AChapterCharacter::execOnOverlapBegin },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AChapterCharacter_ChangeSensitivity_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AChapterCharacter_ChangeSensitivity_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/ChapterCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AChapterCharacter_ChangeSensitivity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AChapterCharacter, nullptr, "ChangeSensitivity", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AChapterCharacter_ChangeSensitivity_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AChapterCharacter_ChangeSensitivity_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AChapterCharacter_ChangeSensitivity()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AChapterCharacter_ChangeSensitivity_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AChapterCharacter_GetHealthPercentage_Statics
 	{
@@ -305,6 +335,7 @@ void EmptyLinkFunctionForGeneratedCodeChapterCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_The_Elementalists,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AChapterCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AChapterCharacter_ChangeSensitivity, "ChangeSensitivity" }, // 533370650
 		{ &Z_Construct_UFunction_AChapterCharacter_GetHealthPercentage, "GetHealthPercentage" }, // 3270852804
 		{ &Z_Construct_UFunction_AChapterCharacter_IsDead, "IsDead" }, // 516175501
 		{ &Z_Construct_UFunction_AChapterCharacter_OnOverlapBegin, "OnOverlapBegin" }, // 2533547323
@@ -495,7 +526,7 @@ void EmptyLinkFunctionForGeneratedCodeChapterCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AChapterCharacter, 4178378290);
+	IMPLEMENT_CLASS(AChapterCharacter, 3894876093);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AChapterCharacter>()
 	{
 		return AChapterCharacter::StaticClass();

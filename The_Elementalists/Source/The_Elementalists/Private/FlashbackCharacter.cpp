@@ -61,13 +61,8 @@ void AFlashbackCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	ABaseGameMode* GameModeReference = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+	ChangeSensitivity();
 
-	if (GameModeReference)
-	{
-		TurnSensitivity = GameModeReference->GetBaseTurnRate();
-		LookUpSensitivity = TurnSensitivity;
-	}
 	UE_LOG(LogTemp, Warning, TEXT("%f"), LookUpSensitivity);
 
 	
@@ -166,6 +161,17 @@ void AFlashbackCharacter::CallRemoveMap()
 	}
 }
 
+void AFlashbackCharacter::ChangeSensitivity()
+{
+	ABaseGameMode* GameModeReference = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+
+	if (GameModeReference)
+	{
+		TurnSensitivity = GameModeReference->GetBaseTurnRate();
+		LookUpSensitivity = TurnSensitivity;
+	}
+}
+
 // Called every frame
 void AFlashbackCharacter::Tick(float DeltaTime)
 {
@@ -203,7 +209,7 @@ void AFlashbackCharacter::Pause()
 
 	if (PlayerControllerRef)
 	{
-		PlayerControllerRef->Pause();
+		PlayerControllerRef->PauseMenu();
 	}
 }
 

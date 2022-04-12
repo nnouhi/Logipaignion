@@ -16,12 +16,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define The_Elementalists_Source_The_Elementalists_Public_Chapter_PlayerController_h_15_SPARSE_DATA
 #define The_Elementalists_Source_The_Elementalists_Public_Chapter_PlayerController_h_15_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execResume);
+	DECLARE_FUNCTION(execResume); \
+	DECLARE_FUNCTION(execPauseMenu);
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Chapter_PlayerController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execResume);
+	DECLARE_FUNCTION(execResume); \
+	DECLARE_FUNCTION(execPauseMenu);
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Chapter_PlayerController_h_15_INCLASS_NO_PURE_DECLS \

@@ -36,12 +36,6 @@ protected:
 
 	UPROPERTY(EditAnywhere)
 		class UParticleSystemComponent* GasParticles1;
-	UPROPERTY(EditAnywhere)
-		class UParticleSystemComponent* GasParticles2;
-	UPROPERTY(EditAnywhere)
-		class UParticleSystemComponent* GasParticles3;
-	UPROPERTY(EditAnywhere)
-		class UParticleSystemComponent* GasParticles4;
 
 	UPROPERTY(EditAnywhere)
 		UParticleSystem* DeathParticles;
