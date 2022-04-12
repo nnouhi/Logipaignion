@@ -106,7 +106,7 @@ void AToxicGas::Tick(float DeltaTime)
 					{
 						FlashbackCharacter->Cough();
 					}
-					FlashbackCharacter->Blur();
+					//FlashbackCharacter->Blur();
 				}
 			}
 			else
@@ -122,6 +122,7 @@ void AToxicGas::Tick(float DeltaTime)
 				}
 			}
 		}
+		/*
 		else
 		{
 			AFlashback2Character* FlashbackCharacter = Cast<AFlashback2Character>(PlayerCharacter);
@@ -129,7 +130,7 @@ void AToxicGas::Tick(float DeltaTime)
 			{
 				FlashbackCharacter->UnBlur();
 			}
-		}
+		}*/
 	}
 }
 

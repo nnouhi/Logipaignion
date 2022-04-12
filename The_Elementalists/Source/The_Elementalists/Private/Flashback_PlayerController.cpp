@@ -11,6 +11,8 @@ void AFlashback_PlayerController::BeginPlay()
 	Super::BeginPlay();
 
 	PauseWidget = CreateWidget(this, PauseClass);
+	MemoryEffectWidget = CreateWidget(this, MemoryEffectClass);
+
 	ObjectiveWidget = CreateWidget(this, ObjectiveHUDClass);
 	MinimapWidget = CreateWidget(this, MinimapHUDClass);
 	HealthbarWidget = CreateWidget(this, HealthbarClass);
@@ -21,6 +23,11 @@ void AFlashback_PlayerController::BeginPlay()
 	InfoWidget = CreateWidget(this, InfoHUDClass);
 	BlurWidget = CreateWidget(this, BlurClass);
 	GasMaskWidget = CreateWidget(this, GasMaskClass);
+
+	if (MemoryEffectWidget)
+	{
+		MemoryEffectWidget->AddToViewport();
+	}
 }
 
 void AFlashback_PlayerController::DisplayMap()
@@ -80,8 +87,6 @@ void AFlashback_PlayerController::StartLevel()
 		StartTimerWidget->RemoveFromViewport();
 	}
 
-	ShowHUD();
-
 	if (InfoWidget)
 	{
 		InfoWidget->AddToViewport();
@@ -93,6 +98,9 @@ void AFlashback_PlayerController::StartLevel()
 		BlurWidget->AddToViewport();
 		UnBlur(); // At first hide the widget
 	}
+
+	// HideHUD();
+	ShowHUD();
 }
 
 void AFlashback_PlayerController::SetPlayerEnabledState(bool bEnabled) {
@@ -128,6 +136,7 @@ void AFlashback_PlayerController::WearMask()
 		GasMaskWidget->AddToViewport();
 	}
 
+	HideHUD();
 	ShowHUD();
 }
 

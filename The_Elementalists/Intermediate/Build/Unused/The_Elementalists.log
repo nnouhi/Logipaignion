@@ -1,14 +1,14 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\rt\Logipaignio-New\Logipaignion).
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion).
   Building The_ElementalistsEditor...
-  Using Visual Studio 2019 14.28.29336 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive unity build] Excluded from The_Elementalists unity file: BaseGameMode.cpp, ChapterCharacter.cpp, FlashbackCharacter.cpp, JournalistCharacter.cpp
-  [Adaptive unity build] Excluded from The_Elementalists.gen unity file: BaseGameMode.gen.cpp, Boat.gen.cpp, Chapter1GameMode.gen.cpp, Chapter1Level1GameMode.gen.cpp, Chapter1Level2GameMode.gen.cpp, Chapter1Level3GameMode.gen.cpp, Chapter2Level1GameMode.gen.cpp, Chapter2Level2GameMode.gen.cpp, Chapter2Level3GameMode.gen.cpp, Chapter3Level1GameMode.gen.cpp, Chapter3Level2GameMode.gen.cpp, Chapter3Level3GameMode.gen.cpp, ChapterCharacter.gen.cpp, Flash_Back.gen.cpp, Flash_Back2.gen.cpp, Flash_Back3.gen.cpp, FlashbackCharacter.gen.cpp, JournalistCharacter.gen.cpp, MainMenuGameMode.gen.cpp, The_Elementalists.init.gen.cpp
-  Building 4 actions with 8 processes...
-    [1/4] ChapterCharacter.cpp
-    [2/4] UE4Editor-The_Elementalists-0024.lib
-       Creating library D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0024.lib and object D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0024.exp
-    [3/4] UE4Editor-The_Elementalists-0024.dll
-       Creating library D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0024.suppressed.lib and object D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0024.suppressed.exp
+  Using Visual Studio 2022 14.31.31105 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  [Adaptive unity build] Excluded from The_Elementalists unity file: Flashback_PlayerController.cpp, ToxicGas.cpp
+  [Adaptive unity build] Excluded from The_Elementalists.gen unity file: Flashback_PlayerController.gen.cpp, The_Elementalists.init.gen.cpp
+  Building 4 actions with 16 processes...
+    [1/4] Flashback_PlayerController.cpp
+    [2/4] UE4Editor-The_Elementalists-0025.lib
+       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0025.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0025.exp
+    [3/4] UE4Editor-The_Elementalists-0025.dll
+       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0025.suppressed.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0025.suppressed.exp
     [4/4] The_ElementalistsEditor.target
-  Total time in Parallel executor: 257.63 seconds
-  Total execution time: 259.81 seconds
+  Total time in Parallel executor: 3.05 seconds
+  Total execution time: 3.80 seconds

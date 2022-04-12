@@ -22,6 +22,13 @@ private:
 	void ShowHUD();
 	void HideHUD();
 
+	// CN Memory effect
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
+	TSubclassOf<UUserWidget> MemoryEffectClass;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
+	class UUserWidget* MemoryEffectWidget;
+
 	// NN Objective widget displayed on screen
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Widgets, meta = (AllowPrivateAccess = "true"))
 	TSubclassOf<UUserWidget> ObjectiveHUDClass;

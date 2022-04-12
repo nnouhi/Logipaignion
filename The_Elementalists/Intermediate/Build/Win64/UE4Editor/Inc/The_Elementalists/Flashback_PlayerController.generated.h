@@ -69,6 +69,8 @@ public: \
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Flashback_PlayerController_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__MemoryEffectClass() { return STRUCT_OFFSET(AFlashback_PlayerController, MemoryEffectClass); } \
+	FORCEINLINE static uint32 __PPO__MemoryEffectWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, MemoryEffectWidget); } \
 	FORCEINLINE static uint32 __PPO__ObjectiveHUDClass() { return STRUCT_OFFSET(AFlashback_PlayerController, ObjectiveHUDClass); } \
 	FORCEINLINE static uint32 __PPO__ObjectiveWidget() { return STRUCT_OFFSET(AFlashback_PlayerController, ObjectiveWidget); } \
 	FORCEINLINE static uint32 __PPO__MinimapHUDClass() { return STRUCT_OFFSET(AFlashback_PlayerController, MinimapHUDClass); } \

@@ -71,6 +71,14 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MemoryEffectClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_MemoryEffectClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MemoryEffectWidget_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MemoryEffectWidget;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ObjectiveHUDClass_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ObjectiveHUDClass;
@@ -177,6 +185,25 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 		{ "ModuleRelativePath", "Public/Flashback_PlayerController.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_MemoryEffectClass_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Widgets" },
+		{ "Comment", "// CN Memory effect\n" },
+		{ "ModuleRelativePath", "Public/Flashback_PlayerController.h" },
+		{ "ToolTip", "CN Memory effect" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_MemoryEffectClass = { "MemoryEffectClass", nullptr, (EPropertyFlags)0x0044000000000015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFlashback_PlayerController, MemoryEffectClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_MemoryEffectClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_MemoryEffectClass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_MemoryEffectWidget_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Widgets" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Flashback_PlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_MemoryEffectWidget = { "MemoryEffectWidget", nullptr, (EPropertyFlags)0x004000000008001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFlashback_PlayerController, MemoryEffectWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_MemoryEffectWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_MemoryEffectWidget_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_ObjectiveHUDClass_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -365,6 +392,8 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_PauseWidget = { "PauseWidget", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFlashback_PlayerController, PauseWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_PauseWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_PauseWidget_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFlashback_PlayerController_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_MemoryEffectClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_MemoryEffectWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_ObjectiveHUDClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_ObjectiveWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback_PlayerController_Statics::NewProp_MinimapHUDClass,
@@ -415,7 +444,7 @@ void EmptyLinkFunctionForGeneratedCodeFlashback_PlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFlashback_PlayerController, 4074710544);
+	IMPLEMENT_CLASS(AFlashback_PlayerController, 3088360982);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AFlashback_PlayerController>()
 	{
 		return AFlashback_PlayerController::StaticClass();
