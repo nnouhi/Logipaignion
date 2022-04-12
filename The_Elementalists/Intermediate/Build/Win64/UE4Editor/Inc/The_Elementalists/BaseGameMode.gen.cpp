@@ -19,6 +19,21 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 	UPackage* Z_Construct_UPackage__Script_The_Elementalists();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ABaseGameMode::execSetBaseTurnRate)
+	{
+		P_GET_PROPERTY(FFloatProperty,Z_Param_SetTurnRate);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetBaseTurnRate(Z_Param_SetTurnRate);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ABaseGameMode::execGetBaseTurnRate)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(float*)Z_Param__Result=P_THIS->GetBaseTurnRate();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ABaseGameMode::execGetTimeRemaining)
 	{
 		P_FINISH;
@@ -96,6 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		UClass* Class = ABaseGameMode::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "ActorDied", &ABaseGameMode::execActorDied },
+			{ "GetBaseTurnRate", &ABaseGameMode::execGetBaseTurnRate },
 			{ "GetChapterName", &ABaseGameMode::execGetChapterName },
 			{ "GetDifficulty", &ABaseGameMode::execGetDifficulty },
 			{ "GetObjectiveMessage", &ABaseGameMode::execGetObjectiveMessage },
@@ -104,6 +120,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 			{ "GetTotalScore", &ABaseGameMode::execGetTotalScore },
 			{ "LevelComplete", &ABaseGameMode::execLevelComplete },
 			{ "ProgressNextChapter", &ABaseGameMode::execProgressNextChapter },
+			{ "SetBaseTurnRate", &ABaseGameMode::execSetBaseTurnRate },
 			{ "SetDifficulty", &ABaseGameMode::execSetDifficulty },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -137,6 +154,40 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseGameMode_ActorDied_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseGameMode_GetBaseTurnRate_Statics
+	{
+		struct BaseGameMode_eventGetBaseTurnRate_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABaseGameMode_GetBaseTurnRate_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(BaseGameMode_eventGetBaseTurnRate_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseGameMode_GetBaseTurnRate_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseGameMode_GetBaseTurnRate_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseGameMode_GetBaseTurnRate_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// NN Setter getter to handle sens\n" },
+		{ "ModuleRelativePath", "Public/BaseGameMode.h" },
+		{ "ToolTip", "NN Setter getter to handle sens" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseGameMode_GetBaseTurnRate_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseGameMode, nullptr, "GetBaseTurnRate", nullptr, nullptr, sizeof(BaseGameMode_eventGetBaseTurnRate_Parms), Z_Construct_UFunction_ABaseGameMode_GetBaseTurnRate_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseGameMode_GetBaseTurnRate_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseGameMode_GetBaseTurnRate_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseGameMode_GetBaseTurnRate_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseGameMode_GetBaseTurnRate()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseGameMode_GetBaseTurnRate_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -376,6 +427,38 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ABaseGameMode_SetBaseTurnRate_Statics
+	{
+		struct BaseGameMode_eventSetBaseTurnRate_Parms
+		{
+			float SetTurnRate;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SetTurnRate;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABaseGameMode_SetBaseTurnRate_Statics::NewProp_SetTurnRate = { "SetTurnRate", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(BaseGameMode_eventSetBaseTurnRate_Parms, SetTurnRate), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseGameMode_SetBaseTurnRate_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseGameMode_SetBaseTurnRate_Statics::NewProp_SetTurnRate,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseGameMode_SetBaseTurnRate_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/BaseGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseGameMode_SetBaseTurnRate_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseGameMode, nullptr, "SetBaseTurnRate", nullptr, nullptr, sizeof(BaseGameMode_eventSetBaseTurnRate_Parms), Z_Construct_UFunction_ABaseGameMode_SetBaseTurnRate_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseGameMode_SetBaseTurnRate_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseGameMode_SetBaseTurnRate_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseGameMode_SetBaseTurnRate_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseGameMode_SetBaseTurnRate()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseGameMode_SetBaseTurnRate_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ABaseGameMode_SetDifficulty_Statics
 	{
 		struct BaseGameMode_eventSetDifficulty_Parms
@@ -447,6 +530,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseGameMode_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ABaseGameMode_ActorDied, "ActorDied" }, // 393052865
+		{ &Z_Construct_UFunction_ABaseGameMode_GetBaseTurnRate, "GetBaseTurnRate" }, // 60200627
 		{ &Z_Construct_UFunction_ABaseGameMode_GetChapterName, "GetChapterName" }, // 3860960173
 		{ &Z_Construct_UFunction_ABaseGameMode_GetDifficulty, "GetDifficulty" }, // 3301473594
 		{ &Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage, "GetObjectiveMessage" }, // 1833381145
@@ -455,6 +539,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		{ &Z_Construct_UFunction_ABaseGameMode_GetTotalScore, "GetTotalScore" }, // 2241828639
 		{ &Z_Construct_UFunction_ABaseGameMode_LevelComplete, "LevelComplete" }, // 2531483530
 		{ &Z_Construct_UFunction_ABaseGameMode_ProgressNextChapter, "ProgressNextChapter" }, // 2962940943
+		{ &Z_Construct_UFunction_ABaseGameMode_SetBaseTurnRate, "SetBaseTurnRate" }, // 690250483
 		{ &Z_Construct_UFunction_ABaseGameMode_SetDifficulty, "SetDifficulty" }, // 3505769322
 	};
 #if WITH_METADATA
@@ -545,7 +630,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseGameMode, 2404318175);
+	IMPLEMENT_CLASS(ABaseGameMode, 1973183011);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<ABaseGameMode>()
 	{
 		return ABaseGameMode::StaticClass();

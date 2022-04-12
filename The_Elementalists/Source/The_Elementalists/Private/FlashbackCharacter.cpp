@@ -15,10 +15,7 @@
 
 
 // Sets default values
-AFlashbackCharacter::AFlashbackCharacter():
-	/*NN initialize base rates */
-	BaseTurnRate(45.f),
-	BaseLookUpRate(45.f)
+AFlashbackCharacter::AFlashbackCharacter()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -63,6 +60,16 @@ AFlashbackCharacter::AFlashbackCharacter():
 void AFlashbackCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+	ABaseGameMode* GameModeReference = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+
+	if (GameModeReference)
+	{
+		TurnSensitivity = GameModeReference->GetBaseTurnRate();
+		LookUpSensitivity = TurnSensitivity;
+	}
+	UE_LOG(LogTemp, Warning, TEXT("%f"), LookUpSensitivity);
+
 	
 }
 
@@ -95,13 +102,13 @@ void AFlashbackCharacter::MoveRight(float Value)
 void AFlashbackCharacter::TurnAtRate(float Rate)
 {
 	/*NN Calculate delta for this frame from the rate information */
-	AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds()); // deg/sec * sec/frame = deg/frame
+	AddControllerYawInput(Rate * TurnSensitivity * GetWorld()->GetDeltaSeconds()); // deg/sec * sec/frame = deg/frame
 }
 
 void AFlashbackCharacter::LookUpAtRate(float Rate)
 {
 	/*NN Calculate delta for this frame from the rate information */
-	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds()); // deg/sec * sec/frame = deg/frame
+	AddControllerPitchInput(Rate * LookUpSensitivity * GetWorld()->GetDeltaSeconds()); // deg/sec * sec/frame = deg/frame
 }
 
 void AFlashbackCharacter::BeginSprint()

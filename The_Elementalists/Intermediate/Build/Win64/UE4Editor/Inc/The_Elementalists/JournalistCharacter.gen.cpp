@@ -42,13 +42,13 @@ void EmptyLinkFunctionForGeneratedCodeJournalistCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Mesh1P;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseTurnRate_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LookUpSensitivity_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseTurnRate;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_LookUpSensitivity;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseLookUpRate_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TurnSensitivity_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseLookUpRate;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_TurnSensitivity;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -87,30 +87,28 @@ void EmptyLinkFunctionForGeneratedCodeJournalistCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_Mesh1P = { "Mesh1P", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AJournalistCharacter, Mesh1P), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_Mesh1P_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_Mesh1P_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_BaseTurnRate_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
-		{ "Category", "Camera" },
-		{ "Comment", "/*NN Base turn rate, in deg/sec. Other scaling may affect final turn rate. */" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_LookUpSensitivity_MetaData[] = {
+		{ "Category", "JournalistCharacter" },
+		{ "Comment", "// NN Sensitivity for mouse Y, can be adjusted from editor\n" },
 		{ "ModuleRelativePath", "Public/JournalistCharacter.h" },
-		{ "ToolTip", "NN Base turn rate, in deg/sec. Other scaling may affect final turn rate." },
+		{ "ToolTip", "NN Sensitivity for mouse Y, can be adjusted from editor" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_BaseTurnRate = { "BaseTurnRate", nullptr, (EPropertyFlags)0x0040000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AJournalistCharacter, BaseTurnRate), METADATA_PARAMS(Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_BaseTurnRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_BaseTurnRate_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_LookUpSensitivity = { "LookUpSensitivity", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AJournalistCharacter, LookUpSensitivity), METADATA_PARAMS(Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_LookUpSensitivity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_LookUpSensitivity_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_BaseLookUpRate_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
-		{ "Category", "Camera" },
-		{ "Comment", "/*NN Base look up/down rate, in deg/sec. Other scaling may affect final rate. */" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_TurnSensitivity_MetaData[] = {
+		{ "Category", "JournalistCharacter" },
+		{ "Comment", "// NN Sensitivity for mouse X, can be adjusted from editor\n" },
 		{ "ModuleRelativePath", "Public/JournalistCharacter.h" },
-		{ "ToolTip", "NN Base look up/down rate, in deg/sec. Other scaling may affect final rate." },
+		{ "ToolTip", "NN Sensitivity for mouse X, can be adjusted from editor" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_BaseLookUpRate = { "BaseLookUpRate", nullptr, (EPropertyFlags)0x0040000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AJournalistCharacter, BaseLookUpRate), METADATA_PARAMS(Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_BaseLookUpRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_BaseLookUpRate_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_TurnSensitivity = { "TurnSensitivity", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AJournalistCharacter, TurnSensitivity), METADATA_PARAMS(Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_TurnSensitivity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_TurnSensitivity_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AJournalistCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_FirstPersonCameraComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_Mesh1P,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_BaseTurnRate,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_BaseLookUpRate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_LookUpSensitivity,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AJournalistCharacter_Statics::NewProp_TurnSensitivity,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AJournalistCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AJournalistCharacter>::IsAbstract,
@@ -139,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeJournalistCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AJournalistCharacter, 2312478242);
+	IMPLEMENT_CLASS(AJournalistCharacter, 3974656659);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AJournalistCharacter>()
 	{
 		return AJournalistCharacter::StaticClass();

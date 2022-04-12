@@ -77,6 +77,14 @@ public:
 
 private:
 
+    // NN Sensitivity for mouse Y, can be adjusted from editor
+    UPROPERTY(EditAnywhere)
+    float LookUpSensitivity;
+
+    // NN Sensitivity for mouse X, can be adjusted from editor
+    UPROPERTY(EditAnywhere)
+    float TurnSensitivity;
+
     // CN Pause/Resume the game
     void Pause();
 
@@ -195,4 +203,8 @@ private:
     // NN Determine if character obtained the gas masks (Chapter 2)
     UPROPERTY(EditAnywhere)
     bool bMaskObtained = false;
+
+    void LookUpAtRate(float Rate);
+
+    void TurnAtRate(float Rate);
 };

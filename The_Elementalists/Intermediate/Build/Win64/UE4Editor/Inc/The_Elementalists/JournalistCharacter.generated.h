@@ -61,8 +61,8 @@ public: \
 #define The_Elementalists_Source_The_Elementalists_Public_JournalistCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__FirstPersonCameraComponent() { return STRUCT_OFFSET(AJournalistCharacter, FirstPersonCameraComponent); } \
 	FORCEINLINE static uint32 __PPO__Mesh1P() { return STRUCT_OFFSET(AJournalistCharacter, Mesh1P); } \
-	FORCEINLINE static uint32 __PPO__BaseTurnRate() { return STRUCT_OFFSET(AJournalistCharacter, BaseTurnRate); } \
-	FORCEINLINE static uint32 __PPO__BaseLookUpRate() { return STRUCT_OFFSET(AJournalistCharacter, BaseLookUpRate); }
+	FORCEINLINE static uint32 __PPO__LookUpSensitivity() { return STRUCT_OFFSET(AJournalistCharacter, LookUpSensitivity); } \
+	FORCEINLINE static uint32 __PPO__TurnSensitivity() { return STRUCT_OFFSET(AJournalistCharacter, TurnSensitivity); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_JournalistCharacter_h_9_PROLOG

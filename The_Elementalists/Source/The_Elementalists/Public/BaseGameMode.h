@@ -55,6 +55,14 @@ public:
 	FORCEINLINE void ClearSignalObjective() { bSignalObjective = false;  }
 
 	FORCEINLINE void SignalObjective() { bSignalObjective = true; }
+
+
+	// NN Setter getter to handle sens
+	UFUNCTION(BlueprintCallable)
+	virtual float GetBaseTurnRate() { return BaseTurnRate; }
+
+	UFUNCTION(BlueprintCallable)
+	virtual void SetBaseTurnRate(float SetTurnRate) { BaseTurnRate = SetTurnRate; };
 	
 private:
 	// CN Difficulty {1: Easy, 2: Normal, 3:Hard}
@@ -62,6 +70,8 @@ private:
 
 	// CN Total playthrough score
 	static int32 TotalScore;
+
+	static float BaseTurnRate;
 
 protected:
 	// CN Start timer

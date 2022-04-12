@@ -252,6 +252,14 @@ void EmptyLinkFunctionForGeneratedCodeChapterCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_InfoWidget;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LookUpSensitivity_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_LookUpSensitivity;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TurnSensitivity_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_TurnSensitivity;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SpringArmComp_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SpringArmComp;
@@ -340,6 +348,24 @@ void EmptyLinkFunctionForGeneratedCodeChapterCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChapterCharacter_Statics::NewProp_InfoWidget = { "InfoWidget", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapterCharacter, InfoWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AChapterCharacter_Statics::NewProp_InfoWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapterCharacter_Statics::NewProp_InfoWidget_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapterCharacter_Statics::NewProp_LookUpSensitivity_MetaData[] = {
+		{ "Category", "ChapterCharacter" },
+		{ "Comment", "// NN Sensitivity for mouse Y, can be adjusted from editor\n" },
+		{ "ModuleRelativePath", "Public/ChapterCharacter.h" },
+		{ "ToolTip", "NN Sensitivity for mouse Y, can be adjusted from editor" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AChapterCharacter_Statics::NewProp_LookUpSensitivity = { "LookUpSensitivity", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapterCharacter, LookUpSensitivity), METADATA_PARAMS(Z_Construct_UClass_AChapterCharacter_Statics::NewProp_LookUpSensitivity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapterCharacter_Statics::NewProp_LookUpSensitivity_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapterCharacter_Statics::NewProp_TurnSensitivity_MetaData[] = {
+		{ "Category", "ChapterCharacter" },
+		{ "Comment", "// NN Sensitivity for mouse X, can be adjusted from editor\n" },
+		{ "ModuleRelativePath", "Public/ChapterCharacter.h" },
+		{ "ToolTip", "NN Sensitivity for mouse X, can be adjusted from editor" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AChapterCharacter_Statics::NewProp_TurnSensitivity = { "TurnSensitivity", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChapterCharacter, TurnSensitivity), METADATA_PARAMS(Z_Construct_UClass_AChapterCharacter_Statics::NewProp_TurnSensitivity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChapterCharacter_Statics::NewProp_TurnSensitivity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapterCharacter_Statics::NewProp_SpringArmComp_MetaData[] = {
 		{ "Category", "ChapterCharacter" },
@@ -430,6 +456,8 @@ void EmptyLinkFunctionForGeneratedCodeChapterCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_CurrentDoor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_CurrentItem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_InfoWidget,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_LookUpSensitivity,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_TurnSensitivity,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_SpringArmComp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_ThirdPersonCamera,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChapterCharacter_Statics::NewProp_HealingPerSecond,
@@ -467,7 +495,7 @@ void EmptyLinkFunctionForGeneratedCodeChapterCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AChapterCharacter, 1670548477);
+	IMPLEMENT_CLASS(AChapterCharacter, 4178378290);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AChapterCharacter>()
 	{
 		return AChapterCharacter::StaticClass();

@@ -7,12 +7,11 @@
 #include "Components/SceneCaptureComponent2D.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "BaseGameMode.h"
+#include "Kismet/Gameplaystatics.h"
 
 // Sets default values
-AJournalistCharacter::AJournalistCharacter() :
-	/*NN initialize base rates */
-	BaseTurnRate(45.f),
-	BaseLookUpRate(45.f)
+AJournalistCharacter::AJournalistCharacter() 
 {
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -43,6 +42,10 @@ AJournalistCharacter::AJournalistCharacter() :
 	GetCharacterMovement()->GetNavAgentPropertiesRef().bCanCrouch = true; //set to true to enable crouching(false by default)
 	GetCharacterMovement()->MaxWalkSpeed = 300.f;
 
+
+	// NN CHANGE ONCE GAMEMODE IS ADDED
+	LookUpSensitivity = 45.0f;
+	TurnSensitivity = LookUpSensitivity;
 }
 
 // Called when the game starts or when spawned
@@ -50,6 +53,14 @@ void AJournalistCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
+
+	ABaseGameMode* GameModeReference = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+
+	if (GameModeReference)
+	{
+		TurnSensitivity = GameModeReference->GetBaseTurnRate();
+		LookUpSensitivity = TurnSensitivity;
+	}
 }
 
 void AJournalistCharacter::MoveForward(float Value)
@@ -81,13 +92,13 @@ void AJournalistCharacter::MoveRight(float Value)
 void AJournalistCharacter::TurnAtRate(float Rate)
 {
 	/*NN Calculate delta for this frame from the rate information */
-	AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds()); // deg/sec * sec/frame = deg/frame
+	AddControllerYawInput(Rate * TurnSensitivity * GetWorld()->GetDeltaSeconds()); // deg/sec * sec/frame = deg/frame
 }
 
 void AJournalistCharacter::LookUpAtRate(float Rate)
 {
 	/*NN Calculate delta for this frame from the rate information */
-	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds()); // deg/sec * sec/frame = deg/frame
+	AddControllerPitchInput(Rate * LookUpSensitivity * GetWorld()->GetDeltaSeconds()); // deg/sec * sec/frame = deg/frame
 }
 
 void AJournalistCharacter::BeginSprint()

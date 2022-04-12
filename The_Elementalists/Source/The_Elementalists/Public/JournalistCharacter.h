@@ -64,12 +64,12 @@ private:
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh, meta = (AllowPrivateAccess = "true"))
 		class USkeletalMeshComponent* Mesh1P;
 
-	/*NN Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-		float BaseTurnRate;
+	// NN Sensitivity for mouse Y, can be adjusted from editor
+	UPROPERTY(EditAnywhere)
+	float LookUpSensitivity;
 
-	/*NN Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-		float BaseLookUpRate;
+	// NN Sensitivity for mouse X, can be adjusted from editor
+	UPROPERTY(EditAnywhere)
+	float TurnSensitivity;
 
 };

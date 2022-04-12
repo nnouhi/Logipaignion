@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFlash_Back2() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFlash_Back2, 3900144702);
+	IMPLEMENT_CLASS(AFlash_Back2, 633887105);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AFlash_Back2>()
 	{
 		return AFlash_Back2::StaticClass();

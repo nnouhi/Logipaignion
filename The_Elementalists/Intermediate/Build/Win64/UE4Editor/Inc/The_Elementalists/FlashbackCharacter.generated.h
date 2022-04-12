@@ -70,8 +70,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__SprintSpeed() { return STRUCT_OFFSET(AFlashbackCharacter, SprintSpeed); } \
 	FORCEINLINE static uint32 __PPO__WalkSpeed() { return STRUCT_OFFSET(AFlashbackCharacter, WalkSpeed); } \
 	FORCEINLINE static uint32 __PPO__FirstPersonCameraComponent() { return STRUCT_OFFSET(AFlashbackCharacter, FirstPersonCameraComponent); } \
-	FORCEINLINE static uint32 __PPO__BaseTurnRate() { return STRUCT_OFFSET(AFlashbackCharacter, BaseTurnRate); } \
-	FORCEINLINE static uint32 __PPO__BaseLookUpRate() { return STRUCT_OFFSET(AFlashbackCharacter, BaseLookUpRate); }
+	FORCEINLINE static uint32 __PPO__LookUpSensitivity() { return STRUCT_OFFSET(AFlashbackCharacter, LookUpSensitivity); } \
+	FORCEINLINE static uint32 __PPO__TurnSensitivity() { return STRUCT_OFFSET(AFlashbackCharacter, TurnSensitivity); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_FlashbackCharacter_h_9_PROLOG

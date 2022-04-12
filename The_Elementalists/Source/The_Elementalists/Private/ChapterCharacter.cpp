@@ -74,7 +74,18 @@ void AChapterCharacter::BeginPlay()
 
     PlayerControllerRef = Cast<AChapter_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 
+
     RemoveGasParticles();
+
+    ABaseGameMode* GameModeReference = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+
+    if (GameModeReference)
+    {
+        TurnSensitivity = GameModeReference->GetBaseTurnRate();
+        LookUpSensitivity = TurnSensitivity;
+    }
+
+    UE_LOG(LogTemp, Warning, TEXT("%f"), LookUpSensitivity);
 
 }
 
@@ -121,9 +132,9 @@ void AChapterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
     Super::SetupPlayerInputComponent(PlayerInputComponent);
 
     PlayerInputComponent->BindAxis(TEXT("MoveForward"), this, &AChapterCharacter::MoveForward);
-    PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &APawn::AddControllerPitchInput);
+    PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &AChapterCharacter::LookUpAtRate);
     PlayerInputComponent->BindAxis(TEXT("MoveRight"), this, &AChapterCharacter::MoveRight);
-    PlayerInputComponent->BindAxis(TEXT("LookRight"), this, &APawn::AddControllerYawInput);
+    PlayerInputComponent->BindAxis(TEXT("LookRight"), this, &AChapterCharacter::TurnAtRate);
 
 
     PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
@@ -493,4 +504,16 @@ void AChapterCharacter::RemoveGasParticles()
     {
         GasParticles->SetVisibility(false, true);
     }
+}
+
+void AChapterCharacter::LookUpAtRate(float Rate)
+{
+    // NN Adjust looking up rate by sensitivity
+    AddControllerPitchInput(Rate * LookUpSensitivity * GetWorld()->GetDeltaSeconds());
+}
+
+void AChapterCharacter::TurnAtRate(float Rate)
+{
+    // NN Adjust turning rate by sensitivity
+    AddControllerYawInput(Rate * TurnSensitivity * GetWorld()->GetDeltaSeconds());
 }
