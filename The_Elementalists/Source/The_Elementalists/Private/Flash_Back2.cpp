@@ -16,13 +16,14 @@ void AFlash_Back2::BeginPlay()
 {
 	Super::BeginPlay();
 
+	FlashbackCharacterController = Cast<AFlashback_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
+
 	HandleGameStart();
 }
 
 void AFlash_Back2::HandleGameStart()
 {
 	// CN Start countdown until level starts
-	AFlashback_PlayerController* FlashbackCharacterController = Cast<AFlashback_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 	if (FlashbackCharacterController)
 	{
 		FTimerHandle PlayerWaitTimerHandle;
@@ -38,7 +39,6 @@ void AFlash_Back2::HandleGameStart()
 			false
 		);
 
-		FlashbackCharacterController->StartTimer();
 	}
 }
 
@@ -46,6 +46,11 @@ void AFlash_Back2::MaskObtained()
 {
 	bMaskObtained = true;
 	SignalObjective();
+}
+
+void AFlash_Back2::DisplayObjective()
+{
+	FlashbackCharacterController->StartTimer();
 }
 
 void AFlash_Back2::ProgressNextChapter()
@@ -57,7 +62,6 @@ void AFlash_Back2::ActorDied(AActor* DeadActor)
 {
 	if (Cast<AFlashback2Character>(DeadActor))
 	{
-		AFlashback_PlayerController* FlashbackCharacterController = Cast<AFlashback_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 		if (FlashbackCharacterController)
 		{
 			FlashbackCharacterController->GameOver();
@@ -90,7 +94,6 @@ void AFlash_Back2::LevelComplete()
 	
 	AddToTotalScore(GetScore());
 	
-	AFlashback_PlayerController* FlashbackCharacterController = Cast<AFlashback_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 	if (FlashbackCharacterController)
 	{
 		FlashbackCharacterController->LevelClear();

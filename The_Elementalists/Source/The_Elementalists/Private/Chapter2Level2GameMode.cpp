@@ -125,7 +125,6 @@ void AChapter2Level2GameMode::HandleGameStart()
 			false
 		);
 
-		ChapterCharacterController->StartTimer();
 	}
 }
 
@@ -191,6 +190,11 @@ void AChapter2Level2GameMode::SetupGas() {
 int32 AChapter2Level2GameMode::GetScore()
 {
 	return Score * GetDifficulty();
+}
+
+void AChapter2Level2GameMode::DisplayObjective()
+{
+	ChapterCharacterController->StartTimer();
 }
 
 void AChapter2Level2GameMode::CalculateFinalScore()

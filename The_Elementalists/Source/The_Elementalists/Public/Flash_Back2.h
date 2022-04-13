@@ -17,6 +17,8 @@ class THE_ELEMENTALISTS_API AFlash_Back2 : public ABaseGameMode
 private:
 	bool bMaskObtained = false;
 
+	class AFlashback_PlayerController* FlashbackCharacterController;
+
 public:
 	AFlash_Back2();
 
@@ -45,6 +47,9 @@ public:
 	void HandleGameStart();
 
 	void MaskObtained() override;
+
+	UFUNCTION(BlueprintCallable)
+	void DisplayObjective();
 
 protected:
 

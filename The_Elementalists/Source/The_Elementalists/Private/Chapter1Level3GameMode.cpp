@@ -17,6 +17,12 @@ AChapter1Level3GameMode::AChapter1Level3GameMode()
 
 }
 
+void AChapter1Level3GameMode::DisplayObjective()
+{
+	ChapterCharacterController->StartTimer();
+
+}
+
 void AChapter1Level3GameMode::BeginPlay()
 {
 	Super::BeginPlay();
@@ -111,7 +117,6 @@ void AChapter1Level3GameMode::HandleGameStart()
 			false
 		);
 
-		ChapterCharacterController->StartTimer();
 	}
 }
 

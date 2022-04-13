@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeChapter1GameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AChapter1GameMode, 3410363267);
+	IMPLEMENT_CLASS(AChapter1GameMode, 655462402);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AChapter1GameMode>()
 	{
 		return AChapter1GameMode::StaticClass();

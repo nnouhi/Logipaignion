@@ -41,7 +41,14 @@ public:
 	// CN Handles level start
 	void HandleGameStart();
 
+	UFUNCTION(BlueprintCallable)
+	void DisplayObjective();
+
 protected:
 
 	virtual void BeginPlay() override;
+
+private:
+
+	class AFlashback_PlayerController* FlashbackCharacterController;
 };

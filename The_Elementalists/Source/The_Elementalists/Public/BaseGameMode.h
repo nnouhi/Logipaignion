@@ -63,6 +63,9 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	virtual void SetBaseTurnRate(float SetTurnRate) { BaseTurnRate = SetTurnRate; };
+
+	UFUNCTION(BlueprintCallable)
+	virtual bool GetInvestigationState() { return false; }
 	
 private:
 	// CN Difficulty {1: Easy, 2: Normal, 3:Hard}

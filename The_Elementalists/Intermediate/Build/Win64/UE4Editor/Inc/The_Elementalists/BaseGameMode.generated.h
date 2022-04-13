@@ -17,6 +17,7 @@ class AActor;
 #define The_Elementalists_Source_The_Elementalists_Public_BaseGameMode_h_15_SPARSE_DATA
 #define The_Elementalists_Source_The_Elementalists_Public_BaseGameMode_h_15_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetInvestigationState); \
 	DECLARE_FUNCTION(execSetBaseTurnRate); \
 	DECLARE_FUNCTION(execGetBaseTurnRate); \
 	DECLARE_FUNCTION(execGetTimeRemaining); \
@@ -33,6 +34,7 @@ class AActor;
 
 #define The_Elementalists_Source_The_Elementalists_Public_BaseGameMode_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetInvestigationState); \
 	DECLARE_FUNCTION(execSetBaseTurnRate); \
 	DECLARE_FUNCTION(execGetBaseTurnRate); \
 	DECLARE_FUNCTION(execGetTimeRemaining); \

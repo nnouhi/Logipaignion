@@ -19,6 +19,13 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 	UPackage* Z_Construct_UPackage__Script_The_Elementalists();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ABaseGameMode::execGetInvestigationState)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->GetInvestigationState();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ABaseGameMode::execSetBaseTurnRate)
 	{
 		P_GET_PROPERTY(FFloatProperty,Z_Param_SetTurnRate);
@@ -114,6 +121,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 			{ "GetBaseTurnRate", &ABaseGameMode::execGetBaseTurnRate },
 			{ "GetChapterName", &ABaseGameMode::execGetChapterName },
 			{ "GetDifficulty", &ABaseGameMode::execGetDifficulty },
+			{ "GetInvestigationState", &ABaseGameMode::execGetInvestigationState },
 			{ "GetObjectiveMessage", &ABaseGameMode::execGetObjectiveMessage },
 			{ "GetScore", &ABaseGameMode::execGetScore },
 			{ "GetTimeRemaining", &ABaseGameMode::execGetTimeRemaining },
@@ -252,6 +260,43 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseGameMode_GetDifficulty_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseGameMode_GetInvestigationState_Statics
+	{
+		struct BaseGameMode_eventGetInvestigationState_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_ABaseGameMode_GetInvestigationState_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((BaseGameMode_eventGetInvestigationState_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ABaseGameMode_GetInvestigationState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(BaseGameMode_eventGetInvestigationState_Parms), &Z_Construct_UFunction_ABaseGameMode_GetInvestigationState_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseGameMode_GetInvestigationState_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseGameMode_GetInvestigationState_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseGameMode_GetInvestigationState_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/BaseGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseGameMode_GetInvestigationState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseGameMode, nullptr, "GetInvestigationState", nullptr, nullptr, sizeof(BaseGameMode_eventGetInvestigationState_Parms), Z_Construct_UFunction_ABaseGameMode_GetInvestigationState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseGameMode_GetInvestigationState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseGameMode_GetInvestigationState_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseGameMode_GetInvestigationState_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseGameMode_GetInvestigationState()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseGameMode_GetInvestigationState_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -533,6 +578,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		{ &Z_Construct_UFunction_ABaseGameMode_GetBaseTurnRate, "GetBaseTurnRate" }, // 60200627
 		{ &Z_Construct_UFunction_ABaseGameMode_GetChapterName, "GetChapterName" }, // 3860960173
 		{ &Z_Construct_UFunction_ABaseGameMode_GetDifficulty, "GetDifficulty" }, // 3301473594
+		{ &Z_Construct_UFunction_ABaseGameMode_GetInvestigationState, "GetInvestigationState" }, // 1921203250
 		{ &Z_Construct_UFunction_ABaseGameMode_GetObjectiveMessage, "GetObjectiveMessage" }, // 1833381145
 		{ &Z_Construct_UFunction_ABaseGameMode_GetScore, "GetScore" }, // 3161157956
 		{ &Z_Construct_UFunction_ABaseGameMode_GetTimeRemaining, "GetTimeRemaining" }, // 1500763737
@@ -630,7 +676,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseGameMode, 1973183011);
+	IMPLEMENT_CLASS(ABaseGameMode, 1464550681);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<ABaseGameMode>()
 	{
 		return ABaseGameMode::StaticClass();

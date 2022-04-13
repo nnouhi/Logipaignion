@@ -24,10 +24,7 @@ void AFlashback_PlayerController::BeginPlay()
 	BlurWidget = CreateWidget(this, BlurClass);
 	GasMaskWidget = CreateWidget(this, GasMaskClass);
 
-	if (MemoryEffectWidget)
-	{
-		MemoryEffectWidget->AddToViewport();
-	}
+	
 }
 
 void AFlashback_PlayerController::DisplayMap()
@@ -70,6 +67,11 @@ void AFlashback_PlayerController::LevelClear()
 
 void AFlashback_PlayerController::StartTimer()
 {
+	if (MemoryEffectWidget)
+	{
+		MemoryEffectWidget->AddToViewport();
+	}
+
 	// Declared here because in begin play its created too late
 	StartTimerWidget = CreateWidget(this, StartTimerClass);
 	if (StartTimerWidget)

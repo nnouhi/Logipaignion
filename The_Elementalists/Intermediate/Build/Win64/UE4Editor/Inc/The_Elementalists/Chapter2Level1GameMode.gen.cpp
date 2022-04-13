@@ -18,8 +18,42 @@ void EmptyLinkFunctionForGeneratedCodeChapter2Level1GameMode() {}
 	THE_ELEMENTALISTS_API UClass* Z_Construct_UClass_ABaseGameMode();
 	UPackage* Z_Construct_UPackage__Script_The_Elementalists();
 // End Cross Module References
+	DEFINE_FUNCTION(AChapter2Level1GameMode::execDisplayObjective)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->DisplayObjective();
+		P_NATIVE_END;
+	}
 	void AChapter2Level1GameMode::StaticRegisterNativesAChapter2Level1GameMode()
 	{
+		UClass* Class = AChapter2Level1GameMode::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "DisplayObjective", &AChapter2Level1GameMode::execDisplayObjective },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AChapter2Level1GameMode_DisplayObjective_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AChapter2Level1GameMode_DisplayObjective_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Chapter2Level1GameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AChapter2Level1GameMode_DisplayObjective_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AChapter2Level1GameMode, nullptr, "DisplayObjective", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AChapter2Level1GameMode_DisplayObjective_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AChapter2Level1GameMode_DisplayObjective_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AChapter2Level1GameMode_DisplayObjective()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AChapter2Level1GameMode_DisplayObjective_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_AChapter2Level1GameMode_NoRegister()
 	{
@@ -28,6 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeChapter2Level1GameMode() {}
 	struct Z_Construct_UClass_AChapter2Level1GameMode_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -37,6 +72,9 @@ void EmptyLinkFunctionForGeneratedCodeChapter2Level1GameMode() {}
 	UObject* (*const Z_Construct_UClass_AChapter2Level1GameMode_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_ABaseGameMode,
 		(UObject* (*)())Z_Construct_UPackage__Script_The_Elementalists,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_AChapter2Level1GameMode_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AChapter2Level1GameMode_DisplayObjective, "DisplayObjective" }, // 2026381607
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChapter2Level1GameMode_Statics::Class_MetaDataParams[] = {
@@ -55,11 +93,11 @@ void EmptyLinkFunctionForGeneratedCodeChapter2Level1GameMode() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		nullptr,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x009002ACu,
@@ -74,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeChapter2Level1GameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AChapter2Level1GameMode, 2914000456);
+	IMPLEMENT_CLASS(AChapter2Level1GameMode, 4192515143);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AChapter2Level1GameMode>()
 	{
 		return AChapter2Level1GameMode::StaticClass();

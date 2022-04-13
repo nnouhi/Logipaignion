@@ -82,7 +82,6 @@ void AChapter1Level2GameMode::HandleGameStart()
 			false
 		);
 
-		ChapterCharacterController->StartTimer();
 	}
 }
 
@@ -171,6 +170,11 @@ FString AChapter1Level2GameMode::GetChapterName()
 int32 AChapter1Level2GameMode::GetScore()
 {
 	return Score * GetDifficulty();
+}
+
+void AChapter1Level2GameMode::DisplayObjective()
+{
+	ChapterCharacterController->StartTimer();
 }
 
 void AChapter1Level2GameMode::CalculateFinalScore()

@@ -33,6 +33,9 @@ public:
 	// NN Get level score
 	int32 GetScore() override;
 
+	UFUNCTION(BlueprintCallable)
+	void DisplayObjective();
+
 protected:
 	virtual void BeginPlay() override;
 

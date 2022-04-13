@@ -16,6 +16,8 @@ void AFlash_Back::BeginPlay()
 {
     Super::BeginPlay();
 
+	FlashbackCharacterController = Cast<AFlashback_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
+
 	HandleGameStart();
 }
 
@@ -39,7 +41,7 @@ void AFlash_Back::ActorDied(AActor* DeadActor)
     // CN MUST CHANGE TO GENERAL CHARACTER
     if (Cast<AFlashbackCharacter>(DeadActor))
     {
-        AFlashback_PlayerController* FlashbackCharacterController = Cast<AFlashback_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
+        
         if (FlashbackCharacterController)
         {
             FlashbackCharacterController->GameOver();
@@ -53,7 +55,6 @@ void AFlash_Back::LevelComplete()
 	AddToTotalScore(GetScore());
 	UE_LOG(LogTemp, Warning, TEXT("%i"), GetTotalScore());
 
-    AFlashback_PlayerController* FlashbackCharacterController = Cast<AFlashback_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
     if (FlashbackCharacterController)
     {
         FlashbackCharacterController->LevelClear();
@@ -65,7 +66,7 @@ void AFlash_Back::HandleGameStart()
 	SetupFires();
 
 	// CN Start countdown until level starts
-	AFlashback_PlayerController* FlashbackCharacterController = Cast<AFlashback_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
+
 	if (FlashbackCharacterController)
 	{
 		FTimerHandle PlayerWaitTimerHandle;
@@ -81,8 +82,12 @@ void AFlash_Back::HandleGameStart()
 			false
 		);
 
-		FlashbackCharacterController->StartTimer();
 	}
+}
+
+void AFlash_Back::DisplayObjective()
+{
+	FlashbackCharacterController->StartTimer();
 }
 
 void AFlash_Back::SetupFires() {

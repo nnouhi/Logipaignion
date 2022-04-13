@@ -111,8 +111,9 @@ void AChapter1Level1GameMode::HandleGameStart()
 			StartDelay,
 			false
 		);
+
 		
-		ChapterCharacterController->StartTimer();
+		
 	}
 }
 
@@ -177,4 +178,10 @@ void AChapter1Level1GameMode::CalculateFinalScore()
 {
 	float TimeRemaining = GetWorldTimerManager().GetTimerRemaining(LevelStartTimerHandle);
 	Score += ((int32) TimeRemaining) * 10;
+}
+
+void AChapter1Level1GameMode::DisplayObjective()
+{
+	ChapterCharacterController->StartTimer();
+
 }

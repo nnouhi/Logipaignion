@@ -61,4 +61,7 @@ private:
 
 	// CN Reference to player controller
 	class AChapter_PlayerController* ChapterCharacterController;
+
+	UFUNCTION(BlueprintCallable)
+	void DisplayObjective();
 };
