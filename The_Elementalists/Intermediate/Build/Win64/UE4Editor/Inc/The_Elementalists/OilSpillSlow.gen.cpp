@@ -288,7 +288,7 @@ void EmptyLinkFunctionForGeneratedCodeOilSpillSlow() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AOilSpillSlow, 198088249);
+	IMPLEMENT_CLASS(AOilSpillSlow, 4202353271);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AOilSpillSlow>()
 	{
 		return AOilSpillSlow::StaticClass();

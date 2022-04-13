@@ -176,5 +176,5 @@ int32 AChapter1Level1GameMode::GetScore()
 void AChapter1Level1GameMode::CalculateFinalScore()
 {
 	float TimeRemaining = GetWorldTimerManager().GetTimerRemaining(LevelStartTimerHandle);
-	Score += ((int32) TimeRemaining) * 10 * GetDifficulty();
+	Score += ((int32) TimeRemaining) * 10;
 }

@@ -60,7 +60,8 @@ public: \
 
 #define The_Elementalists_Source_The_Elementalists_Public_OilSpill_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__OilSpillMesh() { return STRUCT_OFFSET(AOilSpill, OilSpillMesh); } \
-	FORCEINLINE static uint32 __PPO__Root() { return STRUCT_OFFSET(AOilSpill, Root); }
+	FORCEINLINE static uint32 __PPO__Root() { return STRUCT_OFFSET(AOilSpill, Root); } \
+	FORCEINLINE static uint32 __PPO__PointsAwarded() { return STRUCT_OFFSET(AOilSpill, PointsAwarded); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_OilSpill_h_9_PROLOG

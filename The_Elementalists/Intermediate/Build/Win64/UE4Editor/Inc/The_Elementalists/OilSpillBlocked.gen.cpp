@@ -212,7 +212,7 @@ void EmptyLinkFunctionForGeneratedCodeOilSpillBlocked() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AOilSpillBlocked, 752090681);
+	IMPLEMENT_CLASS(AOilSpillBlocked, 3789203765);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AOilSpillBlocked>()
 	{
 		return AOilSpillBlocked::StaticClass();

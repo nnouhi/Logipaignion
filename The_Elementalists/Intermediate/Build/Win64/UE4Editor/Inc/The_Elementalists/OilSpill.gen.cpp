@@ -41,6 +41,10 @@ void EmptyLinkFunctionForGeneratedCodeOilSpill() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Root_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Root;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PointsAwarded_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_PointsAwarded;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -73,9 +77,19 @@ void EmptyLinkFunctionForGeneratedCodeOilSpill() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AOilSpill_Statics::NewProp_Root = { "Root", nullptr, (EPropertyFlags)0x00200800000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AOilSpill, Root), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AOilSpill_Statics::NewProp_Root_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AOilSpill_Statics::NewProp_Root_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AOilSpill_Statics::NewProp_PointsAwarded_MetaData[] = {
+		{ "Category", "OilSpill" },
+		{ "Comment", "// CN Points awarded\n" },
+		{ "ModuleRelativePath", "Public/OilSpill.h" },
+		{ "ToolTip", "CN Points awarded" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AOilSpill_Statics::NewProp_PointsAwarded = { "PointsAwarded", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AOilSpill, PointsAwarded), METADATA_PARAMS(Z_Construct_UClass_AOilSpill_Statics::NewProp_PointsAwarded_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AOilSpill_Statics::NewProp_PointsAwarded_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AOilSpill_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AOilSpill_Statics::NewProp_OilSpillMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AOilSpill_Statics::NewProp_Root,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AOilSpill_Statics::NewProp_PointsAwarded,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AOilSpill_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AOilSpill>::IsAbstract,
@@ -104,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeOilSpill() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AOilSpill, 2710636469);
+	IMPLEMENT_CLASS(AOilSpill, 3237690078);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AOilSpill>()
 	{
 		return AOilSpill::StaticClass();

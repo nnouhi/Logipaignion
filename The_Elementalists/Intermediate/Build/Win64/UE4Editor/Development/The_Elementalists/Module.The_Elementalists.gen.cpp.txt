@@ -202,18 +202,6 @@ C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/OilProjectileSlow.gen.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists/Public/OilProjectileSlow.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilProjectileSlow.generated.h
-C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/OilSpill.gen.cpp
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists/Public/OilSpill.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpill.generated.h
-C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/OilSpillBlocked.gen.cpp
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists/Public/OilSpillBlocked.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpillBlocked.generated.h
-C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/OilSpillShooting.gen.cpp
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists/Public/OilSpillShooting.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpillShooting.generated.h
-C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/OilSpillSlow.gen.cpp
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists/Public/OilSpillSlow.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpillSlow.generated.h
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/Projectile.gen.cpp
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/RandomLocationAIController.gen.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists/Public/RandomLocationAIController.h
@@ -232,7 +220,6 @@ C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/SwingDoor.gen.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists/Public/SwingDoor.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\SwingDoor.generated.h
-C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/The_Elementalists.init.gen.cpp
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Intermediate/Build/Win64/UE4Editor/Inc/The_Elementalists/The_ElementalistsGameModeBase.gen.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists/The_ElementalistsGameModeBase.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\The_ElementalistsGameModeBase.generated.h

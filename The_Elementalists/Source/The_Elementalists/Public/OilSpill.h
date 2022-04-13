@@ -26,7 +26,13 @@ protected:
 	UPROPERTY(VisibleAnywhere)
 	USceneComponent* Root;
 
+	// CN Points awarded
+	UPROPERTY(EditAnywhere)
+		int32 PointsAwarded = 100;
+
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	FORCEINLINE int32 GetPointsAwarded() { return PointsAwarded; };
 };

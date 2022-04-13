@@ -2,14 +2,23 @@
   Invalidating makefile for The_ElementalistsEditor (working set of source files changed)
   Building The_ElementalistsEditor...
   Using Visual Studio 2022 14.31.31105 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive unity build] Excluded from The_Elementalists unity file: Flash_Back2.cpp
-  Building 5 actions with 16 processes...
-    [1/5] Flash_Back2.cpp
-    [2/5] Module.The_Elementalists.cpp
-    [3/5] UE4Editor-The_Elementalists-0008.lib
-       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0008.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0008.exp
-    [4/5] UE4Editor-The_Elementalists-0008.dll
-       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0008.suppressed.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0008.suppressed.exp
-    [5/5] The_ElementalistsEditor.target
-  Total time in Parallel executor: 14.28 seconds
-  Total execution time: 20.35 seconds
+  [Adaptive unity build] Excluded from The_Elementalists unity file: Chapter1Level1GameMode.cpp, Chapter1Level2GameMode.cpp, Chapter1Level3GameMode.cpp, Chapter2Level1GameMode.cpp, Chapter2Level2GameMode.cpp, Chapter2Level3GameMode.cpp, Chapter3Level1GameMode.cpp, Chapter3Level2GameMode.cpp, Chapter3Level3GameMode.cpp
+  [Adaptive unity build] Excluded from The_Elementalists.gen unity file: OilSpill.gen.cpp, OilSpillBlocked.gen.cpp, OilSpillShooting.gen.cpp, OilSpillSlow.gen.cpp, The_Elementalists.init.gen.cpp
+  Building 13 actions with 16 processes...
+    [1/13] Chapter3Level1GameMode.cpp
+    [2/13] Chapter3Level2GameMode.cpp
+    [3/13] Chapter2Level2GameMode.cpp
+    [4/13] Chapter1Level1GameMode.cpp
+    [5/13] Chapter2Level3GameMode.cpp
+    [6/13] Chapter1Level2GameMode.cpp
+    [7/13] Chapter2Level1GameMode.cpp
+    [8/13] Chapter1Level3GameMode.cpp
+    [9/13] Chapter3Level3GameMode.cpp
+    [10/13] Module.The_Elementalists.cpp
+    [11/13] UE4Editor-The_Elementalists-0012.lib
+       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0012.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0012.exp
+    [12/13] UE4Editor-The_Elementalists-0012.dll
+       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0012.suppressed.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0012.suppressed.exp
+    [13/13] The_ElementalistsEditor.target
+  Total time in Parallel executor: 12.62 seconds
+  Total execution time: 14.89 seconds

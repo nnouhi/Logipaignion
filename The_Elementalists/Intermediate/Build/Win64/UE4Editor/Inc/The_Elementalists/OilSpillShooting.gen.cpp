@@ -152,7 +152,7 @@ void EmptyLinkFunctionForGeneratedCodeOilSpillShooting() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AOilSpillShooting, 2376318383);
+	IMPLEMENT_CLASS(AOilSpillShooting, 1319959748);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AOilSpillShooting>()
 	{
 		return AOilSpillShooting::StaticClass();

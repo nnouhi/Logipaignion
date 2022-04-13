@@ -98,6 +98,7 @@ void AChapter2Level1GameMode::ActorDied(AActor* DeadActor)
 	else if (Cast<AGasMaskBox>(DeadActor))
 	{
 		bMasksEquipped = true;
+		Score += 150; // Hardcoded for now
 		SignalObjective();
 	}
 
@@ -213,5 +214,5 @@ int32 AChapter2Level1GameMode::GetScore()
 void AChapter2Level1GameMode::CalculateFinalScore()
 {
 	float TimeRemaining = GetWorldTimerManager().GetTimerRemaining(LevelStartTimerHandle);
-	Score += ((int32)TimeRemaining) * 10 * GetDifficulty();
+	Score += ((int32)TimeRemaining) * 10;
 }

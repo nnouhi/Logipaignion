@@ -164,6 +164,7 @@ void AChapter3Level3GameMode::ActorDied(AActor* DeadActor)
 	else if (Cast<AOilSpillShooting>(DeadActor))
 	{
 		RemainingOilSpillsShooting--;
+		Score += (Cast<AOilSpillShooting>(DeadActor))->GetPointsAwarded();
 	}
 	else if (Cast<AAICharacter>(DeadActor))
 	{
@@ -172,6 +173,7 @@ void AChapter3Level3GameMode::ActorDied(AActor* DeadActor)
 		if (Cast<UHealthComponent>(Components[0])->GetHealthPercentage() > 0.f)
 		{
 			EscapedAI--;
+			Score += (Cast<AAICharacter>(DeadActor))->GetPointsAwarded();
 
 			TArray<AActor*> BoatLocation;
 
@@ -214,6 +216,7 @@ void AChapter3Level3GameMode::ActorDied(AActor* DeadActor)
 	else if (Cast<AOilSpillBlocked>(DeadActor))
 	{
 		RemainingOilSpills--;
+		Score += (Cast<AOilSpillBlocked>(DeadActor))->GetPointsAwarded();
 
 		SignalObjective();
 		bInvestigationMode = true;
@@ -318,7 +321,7 @@ int32 AChapter3Level3GameMode::GetScore()
 void AChapter3Level3GameMode::CalculateFinalScore()
 {
 	float TimeRemaining = GetWorldTimerManager().GetTimerRemaining(LevelStartTimerHandle);
-	Score += ((int32)TimeRemaining) * 10 * GetDifficulty();
+	Score += ((int32)TimeRemaining) * 10;
 }
 
 void AChapter3Level3GameMode::Go()

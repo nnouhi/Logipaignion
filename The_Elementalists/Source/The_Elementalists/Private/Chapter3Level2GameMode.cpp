@@ -79,10 +79,12 @@ void AChapter3Level2GameMode::ActorDied(AActor* DeadActor)
 	else if (Cast<AOilSpillShooting>(DeadActor))
 	{
 		RemainingOilSpillsShooting--;
+		Score += (Cast<AOilSpillShooting>(DeadActor))->GetPointsAwarded();
 	}
 	else if (Cast<AOilSpillBlocked>(DeadActor))
 	{
 		RemainingOilSpills--;
+		Score += (Cast<AOilSpillBlocked>(DeadActor))->GetPointsAwarded();
 	}
 	
 	if (RemainingOilSpills <= 0)
@@ -184,5 +186,5 @@ int32 AChapter3Level2GameMode::GetScore()
 void AChapter3Level2GameMode::CalculateFinalScore()
 {
 	float TimeRemaining = GetWorldTimerManager().GetTimerRemaining(LevelStartTimerHandle);
-	Score += ((int32)TimeRemaining) * 10 * GetDifficulty();
+	Score += ((int32)TimeRemaining) * 10;
 }
