@@ -55,7 +55,7 @@ AActor* AInForest_AIController::ChooseWaypoint()
 {
 	for (AActor* Waypoint : InForestWaypoints)
 	{
-		if (TargetPoint + FString::FromInt(TargetPointIndex) == Waypoint->GetActorLabel())
+		if (TargetPoint + FString::FromInt(TargetPointIndex) == Waypoint->GetName())
 		{
 			TargetPointIndex++;
 			return Waypoint;

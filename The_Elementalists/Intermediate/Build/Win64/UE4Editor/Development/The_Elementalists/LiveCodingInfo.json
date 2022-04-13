@@ -44,7 +44,6 @@
 			"IceCube.cpp.obj",
 			"IceCubePlaceHolder.cpp.obj",
 			"IceProjectile.cpp.obj",
-			"InForest_AIController.cpp.obj",
 			"InteractableItem.cpp.obj",
 			"JournalistCharacter.cpp.obj",
 			"MainMenuGameMode.cpp.obj",
@@ -66,7 +65,8 @@
 			"TriggerCollisionProfileName.cpp.obj",
 			"WindProjectile.cpp.obj",
 			"The_Elementalists.cpp.obj",
-			"The_ElementalistsGameModeBase.cpp.obj"
+			"The_ElementalistsGameModeBase.cpp.obj",
+			"InForest_AIController.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",
