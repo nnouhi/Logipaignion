@@ -76,7 +76,7 @@ private:
 protected:
 	// CN Start timer
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	float StartDelay = 5.f;
+	float StartDelay = 8.f;
 
 	// CN Level timer
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))

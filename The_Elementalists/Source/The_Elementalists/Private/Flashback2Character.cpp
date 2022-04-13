@@ -215,7 +215,7 @@ void AFlashback2Character::Pause()
 {
 	if (PlayerControllerRef)
 	{
-		PlayerControllerRef->Pause();
+		PlayerControllerRef->PauseMenu();
 	}
 }
 
