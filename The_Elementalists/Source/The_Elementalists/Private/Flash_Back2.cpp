@@ -5,6 +5,7 @@
 #include "Kismet/Gameplaystatics.h"
 #include "Flashback_PlayerController.h"
 #include "Flashback2Character.h"
+#include "ToxicGas.h"
 
 
 AFlash_Back2::AFlash_Back2()
@@ -23,6 +24,8 @@ void AFlash_Back2::BeginPlay()
 
 void AFlash_Back2::HandleGameStart()
 {
+	SetupToxicGas();
+
 	// CN Start countdown until level starts
 	if (FlashbackCharacterController)
 	{
@@ -102,18 +105,26 @@ void AFlash_Back2::LevelComplete()
 
 void AFlash_Back2::SetupToxicGas()
 {
-	// TODO 
-	/*TArray<AActor*> Fires;
-	UGameplayStatics::GetAllActorsOfClass(this, AFire::StaticClass(), Fires);
+	TArray<AActor*> Gas;
+	UGameplayStatics::GetAllActorsOfClass(this, AToxicGas::StaticClass(), Gas);
 
-	for (AActor* Current : Fires)
+	for (AActor* Current : Gas)
 	{
-		AFire* CurrentFire = Cast<AFire>(Current);
-		if (CurrentFire)
+		AToxicGas* CurrentGas = Cast<AToxicGas>(Current);
+		if (CurrentGas)
 		{
-			CurrentFire->ScaleDamagePerSecond(GetDifficulty());
+			CurrentGas->ScaleHealth(GetDifficulty());
+			CurrentGas->ScaleDamagePerSecond(GetDifficulty());
+
+			/*
+			AShootingToxicGas* CurrentShootingToxicGas = Cast<AShootingToxicGas>(CurrentGas);
+			if (CurrentShootingToxicGas)
+			{
+				CurrentShootingFire->ScaleProjectileDamage(GetDifficulty());
+			}
+			*/
 		}
-	}*/
+	}
 }
 
 

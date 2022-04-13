@@ -8,7 +8,7 @@
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
-#include "Projectile.h"
+#include "OilProjectileSlow.h"
 #include "BaseGameMode.h"
 
 // Sets default values
@@ -99,8 +99,9 @@ void AOilSpillShooting::Shoot() {
             const float V = (Sx / cos(Theta)) * FMath::Sqrt((Gravity * 1) / (2 * (Sx * tan(Theta) - Sz)));
             FVector VelocityOutput = FVector(V * cos(Theta), 0, V * sin(Theta));
 
-            AProjectile* Proj = GetWorld()->SpawnActor<AProjectile>(ProjectileClass, ProjectilePosition, FRotator(0, newrot.Yaw, 0));
-            //Proj->SetSlowness();, set time
+            AOilProjectileSlow* Proj = GetWorld()->SpawnActor<AOilProjectileSlow>(ProjectileClass, ProjectilePosition, FRotator(0, newrot.Yaw, 0));
+            Proj->ScaleDamage(Difficulty);
+            Proj->ScaleSlowTime(Difficulty);
             Proj->ProjectileMovementComponent->SetVelocityInLocalSpace(VelocityOutput);
             Proj->SetOwner(this);
         }
@@ -125,4 +126,7 @@ bool AOilSpillShooting::InShootingRange()
     return (FVector::Dist(GetActorLocation(), PlayerCharacter->GetActorLocation())) < ShootingRange;
 }
 
-
+void AOilSpillShooting::ScaleByDifficulty(int32 NewDifficulty)
+{
+    Difficulty = NewDifficulty;
+}

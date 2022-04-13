@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\The_Elementalists.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{42172858-D02F-4025-B031-56EC77AA11E8}</UniqueIdentifier>
+      <UniqueIdentifier>{8BCA5EBC-97D5-4F2B-97E0-DACE5CDABC2D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists.Target.cs">
       <Filter>Source</Filter>
@@ -16,7 +16,7 @@
     <None Include="..\..\Scanned3DPeoplePack.png" />
     <None Include="..\..\The_Elementalists.code-workspace" />
     <Filter Include="Config">
-      <UniqueIdentifier>{78088FBF-EE4C-4522-AB93-BDA972343FF1}</UniqueIdentifier>
+      <UniqueIdentifier>{F3C439B1-BDF1-4E04-8EFF-012088172B5E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -31,7 +31,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\The_Elementalists">
-      <UniqueIdentifier>{5CE1D812-B2A3-4D41-8A56-E1E14175B0FD}</UniqueIdentifier>
+      <UniqueIdentifier>{5A06916B-29AA-4912-85C7-637C3B275F59}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists\The_Elementalists.Build.cs">
       <Filter>Source\The_Elementalists</Filter>
@@ -49,7 +49,7 @@
       <Filter>Source\The_Elementalists</Filter>
     </ClInclude>
     <Filter Include="Source\The_Elementalists\Private">
-      <UniqueIdentifier>{C703F7A5-520B-4E88-B44E-4E9281033327}</UniqueIdentifier>
+      <UniqueIdentifier>{CCBEA72F-E7A7-4106-B92B-CF292388F5E9}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\AICharacter.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
@@ -241,7 +241,7 @@
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
     <Filter Include="Source\The_Elementalists\Public">
-      <UniqueIdentifier>{8F81548F-9AEF-4BED-A1DC-641D5070881D}</UniqueIdentifier>
+      <UniqueIdentifier>{2FC4E366-4EDC-475E-982F-91BD3F407A70}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\AICharacter.h">
       <Filter>Source\The_Elementalists\Public</Filter>

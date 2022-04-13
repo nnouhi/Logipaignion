@@ -280,31 +280,14 @@ C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter2Level3GameMode.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter2Level3GameMode.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter2Level3GameMode.generated.h
-C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter3Level1GameMode.cpp
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter3Level1GameMode.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter3Level1GameMode.generated.h
-C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter3Level2GameMode.cpp
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter3Level2GameMode.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter3Level2GameMode.generated.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\OilSpillBlocked.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\OilSpill.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpill.generated.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpillBlocked.generated.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\OilSpillShooting.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpillShooting.generated.h
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter3Level3_AIController.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter3Level3_AIController.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter3Level3_AIController.generated.h
-C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Chapter3Level3GameMode.cpp
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Chapter3Level3GameMode.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Chapter3Level3GameMode.generated.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\HealthComponent.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\HealthComponent.generated.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\TriggerCollisionProfileName.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\TriggerCollisionProfileName.generated.h
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/ChapterCharacter.cpp
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/SkeletalMeshSocket.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SkeletalMeshSocket.generated.h
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\HealthComponent.h
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\HealthComponent.generated.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Projectile.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Projectile.generated.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\FloorCollider.h
@@ -337,9 +320,6 @@ C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Flash_Back.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Flash_Back.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Flash_Back.generated.h
-C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Flash_Back2.cpp
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Flash_Back2.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Flash_Back2.generated.h
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Flash_Back3.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Flash_Back3.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Flash_Back3.generated.h
@@ -366,9 +346,18 @@ C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_El
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\IceCube.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\IceCube.generated.h
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/IceCubePlaceHolder.cpp
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\OilSpillBlocked.h
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\OilSpill.h
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpill.generated.h
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpillBlocked.generated.h
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/IceProjectile.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\IceProjectile.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\IceProjectile.generated.h
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\OilSpillShooting.h
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpillShooting.generated.h
+C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/InForest_AIController.cpp
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\InForest_AIController.h
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\InForest_AIController.generated.h
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/InteractableItem.cpp
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/JournalistCharacter.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\JournalistCharacter.h
@@ -385,15 +374,8 @@ C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_El
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Minimap.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Minimap.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Minimap.generated.h
-C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/OilProjectileSlow.cpp
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\OilProjectileSlow.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilProjectileSlow.generated.h
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/OilSpill.cpp
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/OilSpillBlocked.cpp
-C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/OilSpillShooting.cpp
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetMathLibrary.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetMathLibrary.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\KismetMathLibrary.inl
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/OilSpillSlow.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\OilSpillSlow.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\OilSpillSlow.generated.h
@@ -404,6 +386,9 @@ C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_El
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\RandomLocationAIController.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\RandomLocationAIController.generated.h
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/ShootingFire.cpp
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetMathLibrary.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetMathLibrary.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\KismetMathLibrary.inl
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/ShootingToxicGas.cpp
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/SpawnPlayer.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\SpawnPlayer.h
@@ -413,6 +398,8 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Compone
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TimelineComponent.generated.h
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/ToxicGas.cpp
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/TriggerCollisionProfileName.cpp
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\TriggerCollisionProfileName.h
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\TriggerCollisionProfileName.generated.h
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/WindProjectile.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\WindProjectile.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\WindProjectile.generated.h

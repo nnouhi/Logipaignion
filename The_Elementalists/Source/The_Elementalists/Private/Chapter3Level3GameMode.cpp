@@ -270,22 +270,14 @@ void AChapter3Level3GameMode::SetUpOilSpills()
 	TotalOilSpillsShooting = OilSpillsShooting.Num();
 	RemainingOilSpillsShooting = TotalOilSpillsShooting;
 
-	/*
-	for (AActor* Current : Fires)
+	for (AActor* Current : OilSpillsShooting)
 	{
-		AFire* CurrentFire = Cast<AFire>(Current);
-		if (CurrentFire)
+		AOilSpillShooting* CurrentOilSpillShooting = Cast<AOilSpillShooting>(Current);
+		if (CurrentOilSpillShooting)
 		{
-			CurrentFire->ScaleHealth(GetDifficulty());
-			CurrentFire->ScaleDamagePerSecond(GetDifficulty());
-
-			AShootingFire* CurrentShootingFire = Cast<AShootingFire>(CurrentFire);
-			if (CurrentShootingFire)
-			{
-				CurrentShootingFire->ScaleProjectileDamage(GetDifficulty());
-			}
+			CurrentOilSpillShooting->ScaleByDifficulty(GetDifficulty());
 		}
-	}*/
+	}
 }
 
 void AChapter3Level3GameMode::StartLevel()

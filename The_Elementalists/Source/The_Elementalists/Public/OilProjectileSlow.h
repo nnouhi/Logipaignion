@@ -29,7 +29,9 @@ public:
 
     FORCEINLINE void SetSlowness(float NewSlowness) { Slowness = NewSlowness; };
 
-    FORCEINLINE void SetSlowTime(float NewSlowTime) { SlowTime = NewSlowTime; };
+    FORCEINLINE void ScaleSlowTime(int32 Scale) { SlowTime += (SlowTime/2.f) * (Scale - 1); };
+
+    FORCEINLINE void ScaleDamage(int32 Scale) { Damage *= Scale; };
 
 private:
     // CN How slow the player will be (percentage of max speed)

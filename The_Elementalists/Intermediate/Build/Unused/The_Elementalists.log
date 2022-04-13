@@ -1,22 +1,23 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion).
-  Creating makefile for The_ElementalistsEditor (build metadata has changed)
+  Invalidating makefile for The_ElementalistsEditor (working set of source files changed)
   Parsing headers for The_ElementalistsEditor
     Running UnrealHeaderTool "C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\The_Elementalists.uproject" "C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\The_ElementalistsEditor\Development\The_ElementalistsEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\wwwcn\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
   LogInit: Display: Loading text-based GConfig....
-  Reflection code generated for The_ElementalistsEditor in 12.0288037 seconds
+  Reflection code generated for The_ElementalistsEditor in 4.1567957 seconds
   Building The_ElementalistsEditor...
   Using Visual Studio 2022 14.31.31105 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive unity build] Excluded from The_Elementalists unity file: InForest_AIController.cpp
-  Building 7 actions with 16 processes...
-    [1/7] SharedPCH.Engine.ShadowErrors.cpp
-    Detected compiler newer than Visual Studio 2019, please update min version checking in WindowsPlatformCompilerSetup.h
-    [2/7] InForest_AIController.cpp
-    [3/7] Module.The_Elementalists.gen.cpp
-    [4/7] Module.The_Elementalists.cpp
-    [5/7] UE4Editor-The_Elementalists-0001.lib
-       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0001.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0001.exp
-    [6/7] UE4Editor-The_Elementalists-0001.dll
-       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0001.suppressed.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0001.suppressed.exp
-    [7/7] The_ElementalistsEditor.target
-  Total time in Parallel executor: 28.81 seconds
-  Total execution time: 44.05 seconds
+  [Adaptive unity build] Excluded from The_Elementalists unity file: Chapter3Level1GameMode.cpp, Chapter3Level2GameMode.cpp, Chapter3Level3GameMode.cpp, Flash_Back2.cpp, OilProjectileSlow.cpp, OilSpillShooting.cpp
+  Building 9 actions with 16 processes...
+    [1/9] Chapter3Level2GameMode.cpp
+    [2/9] OilProjectileSlow.cpp
+    [3/9] OilSpillShooting.cpp
+    [4/9] Chapter3Level3GameMode.cpp
+    [5/9] Module.The_Elementalists.gen.cpp
+    [6/9] Module.The_Elementalists.cpp
+    [7/9] UE4Editor-The_Elementalists-0006.lib
+       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0006.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0006.exp
+    [8/9] UE4Editor-The_Elementalists-0006.dll
+       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0006.suppressed.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0006.suppressed.exp
+    [9/9] The_ElementalistsEditor.target
+  Total time in Parallel executor: 6.61 seconds
+  Total execution time: 12.72 seconds

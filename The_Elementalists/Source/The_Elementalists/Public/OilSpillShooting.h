@@ -20,9 +20,9 @@ public:
     // Called every frame
     virtual void Tick(float DeltaTime) override;
 
-    FORCEINLINE void SetProjectileDamage(float NewDamage) { ProjectileDamage = NewDamage; };
-    
     void Freeze();
+
+    void ScaleByDifficulty(int32 Amount);
 
 protected:
 
@@ -51,6 +51,8 @@ private:
 
     // CN Used to change the projectile damage
     float ProjectileDamage = 10.f;
+
+    int32 Difficulty = 1;
 
     FTimerHandle ShootingRateTimerHandle;
 

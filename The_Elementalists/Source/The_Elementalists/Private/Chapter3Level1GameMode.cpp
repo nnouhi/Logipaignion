@@ -66,8 +66,8 @@ void AChapter3Level1GameMode::ActorDied(AActor* DeadActor)
 
 void AChapter3Level1GameMode::HandleGameStart()
 {
-	// CN Change level time based on difficulty
-	LevelTime += (GetDifficulty() - 1) * 60;
+	// CN Reduce level time based on difficulty
+	LevelTime -= (GetDifficulty() - 1) * 30;
 
 
 	ChapterCharacterController = Cast<AChapter_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));

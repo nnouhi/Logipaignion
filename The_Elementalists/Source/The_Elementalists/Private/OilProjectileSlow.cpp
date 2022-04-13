@@ -77,12 +77,6 @@ void AOilProjectileSlow::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor,
             Player->SlowDown(Slowness, SlowTime);
 
         }
-        else if (Cast<AAICharacter>(OtherActor))
-        {
-            AAICharacter* Player = Cast<AAICharacter>(OtherActor);
-            Player->SlowDown(Slowness, SlowTime);
-
-        }
     }
 
     Destroy();
