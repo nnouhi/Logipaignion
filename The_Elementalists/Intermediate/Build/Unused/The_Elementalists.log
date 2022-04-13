@@ -1,16 +1,15 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion).
-  Waiting for 'git status' command to complete
   Invalidating makefile for The_ElementalistsEditor (working set of source files changed)
   Building The_ElementalistsEditor...
   Using Visual Studio 2022 14.31.31105 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive unity build] Excluded from The_Elementalists unity file: Flashback2Character.cpp
+  [Adaptive unity build] Excluded from The_Elementalists unity file: Flash_Back2.cpp
   Building 5 actions with 16 processes...
-    [1/5] Flashback2Character.cpp
+    [1/5] Flash_Back2.cpp
     [2/5] Module.The_Elementalists.cpp
-    [3/5] UE4Editor-The_Elementalists-0006.lib
-       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0006.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0006.exp
-    [4/5] UE4Editor-The_Elementalists-0006.dll
-       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0006.suppressed.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0006.suppressed.exp
+    [3/5] UE4Editor-The_Elementalists-0008.lib
+       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0008.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0008.exp
+    [4/5] UE4Editor-The_Elementalists-0008.dll
+       Creating library C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0008.suppressed.lib and object C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0008.suppressed.exp
     [5/5] The_ElementalistsEditor.target
-  Total time in Parallel executor: 6.51 seconds
-  Total execution time: 8.98 seconds
+  Total time in Parallel executor: 14.28 seconds
+  Total execution time: 20.35 seconds

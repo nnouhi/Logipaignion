@@ -337,13 +337,13 @@ C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Flash_Back.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Flash_Back.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Flash_Back.generated.h
-C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Flash_Back2.cpp
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Flash_Back2.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Flash_Back2.generated.h
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Flash_Back3.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Flash_Back3.h
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Flash_Back3.generated.h
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Flashback_PlayerController.cpp
+C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Flashback2Character.cpp
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\GasMask.h
+C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\GasMask.generated.h
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/Flashback3_AIController.cpp
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/FlashbackCharacter.cpp
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/FloatComponent.cpp
@@ -351,8 +351,6 @@ C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_El
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\FloatComponent.generated.h
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/FloorCollider.cpp
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/GasMask.cpp
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\GasMask.h
-C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\GasMask.generated.h
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/GasMaskBox.cpp
 C:/Users/wwwcn/OneDrive/Desktop/GDC/Logipaignion/The_Elementalists/Source/The_Elementalists/Private/GasProjectile.cpp
 C:\Users\wwwcn\OneDrive\Desktop\GDC\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\GasProjectile.h

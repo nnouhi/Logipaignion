@@ -45,6 +45,7 @@ void AFlash_Back2::HandleGameStart()
 void AFlash_Back2::MaskObtained()
 {
 	bMaskObtained = true;
+	SignalObjective();
 }
 
 void AFlash_Back2::ProgressNextChapter()
