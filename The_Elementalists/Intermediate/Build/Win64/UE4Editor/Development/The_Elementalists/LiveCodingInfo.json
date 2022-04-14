@@ -2,7 +2,6 @@
 	"RemapUnityFiles": 
 	{
 		"Module.The_Elementalists.cpp.obj": [
-			"AICharacter.cpp.obj",
 			"BaseGameMode.cpp.obj",
 			"Boat.cpp.obj",
 			"BoatAIController.cpp.obj",
@@ -22,7 +21,6 @@
 			"Chapter3Level2GameMode.cpp.obj",
 			"Chapter3Level3_AIController.cpp.obj",
 			"Chapter3Level3GameMode.cpp.obj",
-			"ChapterCharacter.cpp.obj",
 			"Endpoint.cpp.obj",
 			"Fire.cpp.obj",
 			"FireProjectile.cpp.obj",
@@ -31,7 +29,6 @@
 			"Flash_Back2.cpp.obj",
 			"Flash_Back3.cpp.obj",
 			"Flashback_PlayerController.cpp.obj",
-			"Flashback2Character.cpp.obj",
 			"Flashback3_AIController.cpp.obj",
 			"FlashbackCharacter.cpp.obj",
 			"FloatComponent.cpp.obj",
@@ -46,7 +43,6 @@
 			"IceProjectile.cpp.obj",
 			"InForest_AIController.cpp.obj",
 			"InteractableItem.cpp.obj",
-			"JournalistCharacter.cpp.obj",
 			"MainMenuGameMode.cpp.obj",
 			"Medkit.cpp.obj",
 			"Menu_PlayerController.cpp.obj",
@@ -66,12 +62,17 @@
 			"TriggerCollisionProfileName.cpp.obj",
 			"WindProjectile.cpp.obj",
 			"The_Elementalists.cpp.obj",
-			"The_ElementalistsGameModeBase.cpp.obj"
+			"The_ElementalistsGameModeBase.cpp.obj",
+			"AICharacter.cpp.obj",
+			"ChapterCharacter.cpp.obj",
+			"Flashback_CinAIController.cpp.obj",
+			"Flashback2Character.cpp.obj",
+			"JournalistCharacter.cpp.obj",
+			"LobbyBaseGameMode.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",
 			"BaseGameMode.gen.cpp.obj",
-			"Boat.gen.cpp.obj",
 			"BoatAIController.gen.cpp.obj",
 			"Chapter_PlayerController.gen.cpp.obj",
 			"Chapter1_AIController.gen.cpp.obj",
@@ -89,7 +90,6 @@
 			"Chapter3Level2GameMode.gen.cpp.obj",
 			"Chapter3Level3_AIController.gen.cpp.obj",
 			"Chapter3Level3GameMode.gen.cpp.obj",
-			"ChapterCharacter.gen.cpp.obj",
 			"Endpoint.gen.cpp.obj",
 			"Fire.gen.cpp.obj",
 			"FireProjectile.gen.cpp.obj",
@@ -98,9 +98,7 @@
 			"Flash_Back2.gen.cpp.obj",
 			"Flash_Back3.gen.cpp.obj",
 			"Flashback_PlayerController.gen.cpp.obj",
-			"Flashback2Character.gen.cpp.obj",
 			"Flashback3_AIController.gen.cpp.obj",
-			"FlashbackCharacter.gen.cpp.obj",
 			"FloatComponent.gen.cpp.obj",
 			"FloorCollider.gen.cpp.obj",
 			"GasMask.gen.cpp.obj",
@@ -113,7 +111,6 @@
 			"IceProjectile.gen.cpp.obj",
 			"InForest_AIController.gen.cpp.obj",
 			"InteractableItem.gen.cpp.obj",
-			"JournalistCharacter.gen.cpp.obj",
 			"MainMenuGameMode.gen.cpp.obj",
 			"Medkit.gen.cpp.obj",
 			"Menu_PlayerController.gen.cpp.obj",
@@ -129,11 +126,18 @@
 			"ShootingToxicGas.gen.cpp.obj",
 			"SpawnPlayer.gen.cpp.obj",
 			"SwingDoor.gen.cpp.obj",
-			"The_Elementalists.init.gen.cpp.obj",
 			"The_ElementalistsGameModeBase.gen.cpp.obj",
 			"ToxicGas.gen.cpp.obj",
 			"TriggerCollisionProfileName.gen.cpp.obj",
-			"WindProjectile.gen.cpp.obj"
+			"WindProjectile.gen.cpp.obj",
+			"Boat.gen.cpp.obj",
+			"ChapterCharacter.gen.cpp.obj",
+			"Flashback_CinAIController.gen.cpp.obj",
+			"Flashback2Character.gen.cpp.obj",
+			"FlashbackCharacter.gen.cpp.obj",
+			"JournalistCharacter.gen.cpp.obj",
+			"LobbyBaseGameMode.gen.cpp.obj",
+			"The_Elementalists.init.gen.cpp.obj"
 		]
 	}
 }

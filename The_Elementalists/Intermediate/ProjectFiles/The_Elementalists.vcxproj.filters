@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\The_Elementalists.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{8BCA5EBC-97D5-4F2B-97E0-DACE5CDABC2D}</UniqueIdentifier>
+      <UniqueIdentifier>{5DFEC23C-4B6E-4768-8B0A-A6D9BD7D97EA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists.Target.cs">
       <Filter>Source</Filter>
@@ -16,7 +16,7 @@
     <None Include="..\..\Scanned3DPeoplePack.png" />
     <None Include="..\..\The_Elementalists.code-workspace" />
     <Filter Include="Config">
-      <UniqueIdentifier>{F3C439B1-BDF1-4E04-8EFF-012088172B5E}</UniqueIdentifier>
+      <UniqueIdentifier>{D0EBADFF-D1A2-457F-B1AF-DBBA1BB15F91}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -31,7 +31,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\The_Elementalists">
-      <UniqueIdentifier>{5A06916B-29AA-4912-85C7-637C3B275F59}</UniqueIdentifier>
+      <UniqueIdentifier>{04FBF2A8-F5A9-4D24-AC16-17662252948F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\The_Elementalists\The_Elementalists.Build.cs">
       <Filter>Source\The_Elementalists</Filter>
@@ -49,7 +49,7 @@
       <Filter>Source\The_Elementalists</Filter>
     </ClInclude>
     <Filter Include="Source\The_Elementalists\Private">
-      <UniqueIdentifier>{CCBEA72F-E7A7-4106-B92B-CF292388F5E9}</UniqueIdentifier>
+      <UniqueIdentifier>{42475E0F-091E-43C6-A43B-BC2B1DDE23FF}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\AICharacter.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
@@ -133,6 +133,9 @@
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\FlashbackCharacter.cpp">
+      <Filter>Source\The_Elementalists\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\The_Elementalists\Private\Flashback_CinAIController.cpp">
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\The_Elementalists\Private\Flashback_PlayerController.cpp">
@@ -241,7 +244,7 @@
       <Filter>Source\The_Elementalists\Private</Filter>
     </ClCompile>
     <Filter Include="Source\The_Elementalists\Public">
-      <UniqueIdentifier>{2FC4E366-4EDC-475E-982F-91BD3F407A70}</UniqueIdentifier>
+      <UniqueIdentifier>{4E2DD438-92B2-4BC2-9709-A4A57CE9C6C3}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\AICharacter.h">
       <Filter>Source\The_Elementalists\Public</Filter>
@@ -325,6 +328,9 @@
       <Filter>Source\The_Elementalists\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\FlashbackCharacter.h">
+      <Filter>Source\The_Elementalists\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\The_Elementalists\Public\Flashback_CinAIController.h">
       <Filter>Source\The_Elementalists\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\The_Elementalists\Public\Flashback_PlayerController.h">

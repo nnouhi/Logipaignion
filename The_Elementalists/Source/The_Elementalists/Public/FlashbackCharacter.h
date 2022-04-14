@@ -72,6 +72,9 @@ public:
 	// CN Pause/Resume the game
 	void Pause();
 
+	UFUNCTION(BlueprintCallable)
+	void ChangeSensitivity();
+
 private:
 
 	//// NN SpringArm Component
@@ -106,6 +109,5 @@ private:
 	// NN invokes player controller RemoveMap method
 	void CallRemoveMap();
 
-	UFUNCTION(BlueprintCallable)
-	void ChangeSensitivity();
+	
 };

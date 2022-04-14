@@ -16,11 +16,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define The_Elementalists_Source_The_Elementalists_Public_Flashback2Character_h_12_SPARSE_DATA
 #define The_Elementalists_Source_The_Elementalists_Public_Flashback2Character_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execChangeSensitivity); \
 	DECLARE_FUNCTION(execGetHealthPercentage);
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Flashback2Character_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execChangeSensitivity); \
 	DECLARE_FUNCTION(execGetHealthPercentage);
 
 
@@ -73,8 +75,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__CoughSound() { return STRUCT_OFFSET(AFlashback2Character, CoughSound); } \
 	FORCEINLINE static uint32 __PPO__CoughingTime() { return STRUCT_OFFSET(AFlashback2Character, CoughingTime); } \
 	FORCEINLINE static uint32 __PPO__FirstPersonCameraComponent() { return STRUCT_OFFSET(AFlashback2Character, FirstPersonCameraComponent); } \
-	FORCEINLINE static uint32 __PPO__BaseTurnRate() { return STRUCT_OFFSET(AFlashback2Character, BaseTurnRate); } \
-	FORCEINLINE static uint32 __PPO__BaseLookUpRate() { return STRUCT_OFFSET(AFlashback2Character, BaseLookUpRate); }
+	FORCEINLINE static uint32 __PPO__LookUpSensitivity() { return STRUCT_OFFSET(AFlashback2Character, LookUpSensitivity); } \
+	FORCEINLINE static uint32 __PPO__TurnSensitivity() { return STRUCT_OFFSET(AFlashback2Character, TurnSensitivity); }
 
 
 #define The_Elementalists_Source_The_Elementalists_Public_Flashback2Character_h_9_PROLOG

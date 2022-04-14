@@ -20,6 +20,13 @@ void EmptyLinkFunctionForGeneratedCodeFlashback2Character() {}
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AFlashback2Character::execChangeSensitivity)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ChangeSensitivity();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AFlashback2Character::execGetHealthPercentage)
 	{
 		P_FINISH;
@@ -31,9 +38,32 @@ void EmptyLinkFunctionForGeneratedCodeFlashback2Character() {}
 	{
 		UClass* Class = AFlashback2Character::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "ChangeSensitivity", &AFlashback2Character::execChangeSensitivity },
 			{ "GetHealthPercentage", &AFlashback2Character::execGetHealthPercentage },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AFlashback2Character_ChangeSensitivity_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFlashback2Character_ChangeSensitivity_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Flashback2Character.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFlashback2Character_ChangeSensitivity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFlashback2Character, nullptr, "ChangeSensitivity", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFlashback2Character_ChangeSensitivity_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AFlashback2Character_ChangeSensitivity_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFlashback2Character_ChangeSensitivity()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFlashback2Character_ChangeSensitivity_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AFlashback2Character_GetHealthPercentage_Statics
 	{
@@ -103,13 +133,13 @@ void EmptyLinkFunctionForGeneratedCodeFlashback2Character() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FirstPersonCameraComponent;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseTurnRate_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LookUpSensitivity_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseTurnRate;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_LookUpSensitivity;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseLookUpRate_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TurnSensitivity_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseLookUpRate;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_TurnSensitivity;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -119,6 +149,7 @@ void EmptyLinkFunctionForGeneratedCodeFlashback2Character() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_The_Elementalists,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFlashback2Character_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AFlashback2Character_ChangeSensitivity, "ChangeSensitivity" }, // 1586705861
 		{ &Z_Construct_UFunction_AFlashback2Character_GetHealthPercentage, "GetHealthPercentage" }, // 1302108009
 	};
 #if WITH_METADATA
@@ -177,25 +208,23 @@ void EmptyLinkFunctionForGeneratedCodeFlashback2Character() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFlashback2Character_Statics::NewProp_FirstPersonCameraComponent = { "FirstPersonCameraComponent", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFlashback2Character, FirstPersonCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFlashback2Character_Statics::NewProp_FirstPersonCameraComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFlashback2Character_Statics::NewProp_FirstPersonCameraComponent_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlashback2Character_Statics::NewProp_BaseTurnRate_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
-		{ "Category", "Camera" },
-		{ "Comment", "/*NN Base turn rate, in deg/sec. Other scaling may affect final turn rate. */" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlashback2Character_Statics::NewProp_LookUpSensitivity_MetaData[] = {
+		{ "Category", "Flashback2Character" },
+		{ "Comment", "// NN Sensitivity for mouse Y, can be adjusted from editor\n" },
 		{ "ModuleRelativePath", "Public/Flashback2Character.h" },
-		{ "ToolTip", "NN Base turn rate, in deg/sec. Other scaling may affect final turn rate." },
+		{ "ToolTip", "NN Sensitivity for mouse Y, can be adjusted from editor" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFlashback2Character_Statics::NewProp_BaseTurnRate = { "BaseTurnRate", nullptr, (EPropertyFlags)0x0040000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFlashback2Character, BaseTurnRate), METADATA_PARAMS(Z_Construct_UClass_AFlashback2Character_Statics::NewProp_BaseTurnRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFlashback2Character_Statics::NewProp_BaseTurnRate_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFlashback2Character_Statics::NewProp_LookUpSensitivity = { "LookUpSensitivity", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFlashback2Character, LookUpSensitivity), METADATA_PARAMS(Z_Construct_UClass_AFlashback2Character_Statics::NewProp_LookUpSensitivity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFlashback2Character_Statics::NewProp_LookUpSensitivity_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlashback2Character_Statics::NewProp_BaseLookUpRate_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
-		{ "Category", "Camera" },
-		{ "Comment", "/*NN Base look up/down rate, in deg/sec. Other scaling may affect final rate. */" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlashback2Character_Statics::NewProp_TurnSensitivity_MetaData[] = {
+		{ "Category", "Flashback2Character" },
+		{ "Comment", "// NN Sensitivity for mouse X, can be adjusted from editor\n" },
 		{ "ModuleRelativePath", "Public/Flashback2Character.h" },
-		{ "ToolTip", "NN Base look up/down rate, in deg/sec. Other scaling may affect final rate." },
+		{ "ToolTip", "NN Sensitivity for mouse X, can be adjusted from editor" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFlashback2Character_Statics::NewProp_BaseLookUpRate = { "BaseLookUpRate", nullptr, (EPropertyFlags)0x0040000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFlashback2Character, BaseLookUpRate), METADATA_PARAMS(Z_Construct_UClass_AFlashback2Character_Statics::NewProp_BaseLookUpRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFlashback2Character_Statics::NewProp_BaseLookUpRate_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFlashback2Character_Statics::NewProp_TurnSensitivity = { "TurnSensitivity", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFlashback2Character, TurnSensitivity), METADATA_PARAMS(Z_Construct_UClass_AFlashback2Character_Statics::NewProp_TurnSensitivity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFlashback2Character_Statics::NewProp_TurnSensitivity_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFlashback2Character_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback2Character_Statics::NewProp_SprintSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback2Character_Statics::NewProp_WalkSpeed,
@@ -203,8 +232,8 @@ void EmptyLinkFunctionForGeneratedCodeFlashback2Character() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback2Character_Statics::NewProp_CoughSound,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback2Character_Statics::NewProp_CoughingTime,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback2Character_Statics::NewProp_FirstPersonCameraComponent,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback2Character_Statics::NewProp_BaseTurnRate,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback2Character_Statics::NewProp_BaseLookUpRate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback2Character_Statics::NewProp_LookUpSensitivity,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashback2Character_Statics::NewProp_TurnSensitivity,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFlashback2Character_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFlashback2Character>::IsAbstract,
@@ -233,7 +262,7 @@ void EmptyLinkFunctionForGeneratedCodeFlashback2Character() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFlashback2Character, 3394809472);
+	IMPLEMENT_CLASS(AFlashback2Character, 2017258852);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AFlashback2Character>()
 	{
 		return AFlashback2Character::StaticClass();

@@ -15,10 +15,7 @@
 
 
 // Sets default values
-AFlashback2Character::AFlashback2Character() :
-	/*NN initialize base rates */
-	BaseTurnRate(45.f),
-	BaseLookUpRate(45.f)
+AFlashback2Character::AFlashback2Character()
 {
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -32,22 +29,6 @@ AFlashback2Character::AFlashback2Character() :
 	FirstPersonCameraComponent->SetRelativeLocation(FVector(-39.56f, 1.75f, 64.f));
 	FirstPersonCameraComponent->bUsePawnControlRotation = true;	/*NN rotate camera relative to controller rotation */
 
-	//// NN Create SpringArmComponent
-	//SpringArmComp = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArmComponent"));
-	//SpringArmComp->SetupAttachment(GetCapsuleComponent());
-
-	//// NN Create USceneCaptureComponent
-	//Minimap = CreateDefaultSubobject<USceneCaptureComponent2D>(TEXT("Minimap"));
-	//Minimap->SetupAttachment(SpringArmComp);
-
-	/*NN Create a mesh component that will be maybe used */
-	/*Mesh1P = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CharacterMesh1P"));
-	Mesh1P->SetOnlyOwnerSee(true);
-	Mesh1P->SetupAttachment(FirstPersonCameraComponent);
-	Mesh1P->bCastDynamicShadow = false;
-	Mesh1P->CastShadow = false;
-	Mesh1P->SetRelativeRotation(FRotator(1.9f, -19.19f, 5.2f));
-	Mesh1P->SetRelativeLocation(FVector(-0.5f, -4.4f, -155.7f));*/
 
 	/*NN Modify character's movement component */
 	GetCharacterMovement()->GetNavAgentPropertiesRef().bCanCrouch = true; //set to true to enable crouching(false by default)
@@ -65,6 +46,9 @@ void AFlashback2Character::BeginPlay()
 	Super::BeginPlay();
 	GameMode = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
 	PlayerControllerRef = Cast<AFlashback_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
+
+	ChangeSensitivity();
+
 }
 
 void AFlashback2Character::MoveForward(float Value)
@@ -96,13 +80,13 @@ void AFlashback2Character::MoveRight(float Value)
 void AFlashback2Character::TurnAtRate(float Rate)
 {
 	/*NN Calculate delta for this frame from the rate information */
-	AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds()); // deg/sec * sec/frame = deg/frame
+	AddControllerYawInput(Rate * TurnSensitivity * GetWorld()->GetDeltaSeconds()); // deg/sec * sec/frame = deg/frame
 }
 
 void AFlashback2Character::LookUpAtRate(float Rate)
 {
 	/*NN Calculate delta for this frame from the rate information */
-	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds()); // deg/sec * sec/frame = deg/frame
+	AddControllerPitchInput(Rate * LookUpSensitivity * GetWorld()->GetDeltaSeconds()); // deg/sec * sec/frame = deg/frame
 }
 
 void AFlashback2Character::BeginSprint()
@@ -273,6 +257,15 @@ void AFlashback2Character::StopCoughing()
 bool AFlashback2Character::IsCoughing()
 {
 	return bIsCoughing;
+}
+
+void AFlashback2Character::ChangeSensitivity()
+{
+	if (GameMode)
+	{
+		TurnSensitivity = GameMode->GetBaseTurnRate();
+		LookUpSensitivity = TurnSensitivity;
+	}
 }
 
 void AFlashback2Character::Blur()

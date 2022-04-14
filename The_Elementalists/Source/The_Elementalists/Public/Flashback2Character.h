@@ -81,7 +81,7 @@ public:
 	void PerformLineTrace();
 
 	UFUNCTION(BlueprintPure)
-		float GetHealthPercentage() const;
+	float GetHealthPercentage() const;
 
 	bool bPerformLineTrace = false;
 
@@ -97,6 +97,8 @@ public:
 
 	bool IsCoughing();
 
+	UFUNCTION(BlueprintCallable)
+	void ChangeSensitivity();
 private:
 
 	bool bIsCoughing = false;
@@ -115,29 +117,20 @@ private:
 
 	bool bIsWearingMask = false;
 
-	//// NN SpringArm Component
-	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-	//class USpringArmComponent* SpringArmComp;
-
-	///*NN USceneCaptureComponent to act like Minimap */
-	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-	//class USceneCaptureComponent2D* Minimap;
+	
 
 	/*NN First person camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-		class UCameraComponent* FirstPersonCameraComponent;
+	class UCameraComponent* FirstPersonCameraComponent;
 
-	///** Pawn mesh: 1st person view (arms; seen only by self) */
-	//UPROPERTY(VisibleDefaultsOnly, Category = Mesh, meta = (AllowPrivateAccess = "true"))
-	//class USkeletalMeshComponent* Mesh1P;
+	
+	// NN Sensitivity for mouse Y, can be adjusted from editor
+	UPROPERTY(EditAnywhere)
+	float LookUpSensitivity;
 
-	/*NN Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-		float BaseTurnRate;
-
-	/*NN Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-		float BaseLookUpRate;
+	// NN Sensitivity for mouse X, can be adjusted from editor
+	UPROPERTY(EditAnywhere)
+	float TurnSensitivity;
 
 	class UHealthComponent* HealthComponent;
 

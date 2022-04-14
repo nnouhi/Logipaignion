@@ -20,8 +20,42 @@ void EmptyLinkFunctionForGeneratedCodeJournalistCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AJournalistCharacter::execChangeSensitivity)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ChangeSensitivity();
+		P_NATIVE_END;
+	}
 	void AJournalistCharacter::StaticRegisterNativesAJournalistCharacter()
 	{
+		UClass* Class = AJournalistCharacter::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "ChangeSensitivity", &AJournalistCharacter::execChangeSensitivity },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AJournalistCharacter_ChangeSensitivity_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AJournalistCharacter_ChangeSensitivity_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/JournalistCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AJournalistCharacter_ChangeSensitivity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AJournalistCharacter, nullptr, "ChangeSensitivity", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AJournalistCharacter_ChangeSensitivity_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AJournalistCharacter_ChangeSensitivity_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AJournalistCharacter_ChangeSensitivity()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AJournalistCharacter_ChangeSensitivity_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_AJournalistCharacter_NoRegister()
 	{
@@ -30,6 +64,7 @@ void EmptyLinkFunctionForGeneratedCodeJournalistCharacter() {}
 	struct Z_Construct_UClass_AJournalistCharacter_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -56,6 +91,9 @@ void EmptyLinkFunctionForGeneratedCodeJournalistCharacter() {}
 	UObject* (*const Z_Construct_UClass_AJournalistCharacter_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_ACharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_The_Elementalists,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_AJournalistCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AJournalistCharacter_ChangeSensitivity, "ChangeSensitivity" }, // 799655310
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AJournalistCharacter_Statics::Class_MetaDataParams[] = {
@@ -118,11 +156,11 @@ void EmptyLinkFunctionForGeneratedCodeJournalistCharacter() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_AJournalistCharacter_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_AJournalistCharacter_Statics::PropPointers),
 		0,
 		0x009000A4u,
@@ -137,7 +175,7 @@ void EmptyLinkFunctionForGeneratedCodeJournalistCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AJournalistCharacter, 3974656659);
+	IMPLEMENT_CLASS(AJournalistCharacter, 2217330591);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AJournalistCharacter>()
 	{
 		return AJournalistCharacter::StaticClass();

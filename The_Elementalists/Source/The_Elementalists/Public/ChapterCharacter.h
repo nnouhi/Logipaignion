@@ -75,6 +75,9 @@ public:
 
     bool GetMaskState() const { return bMaskObtained; }
 
+    UFUNCTION(BlueprintCallable)
+    void ChangeSensitivity();
+
 private:
 
     // NN Sensitivity for mouse Y, can be adjusted from editor
@@ -207,8 +210,5 @@ private:
     void LookUpAtRate(float Rate);
 
     void TurnAtRate(float Rate);
-
-    UFUNCTION(BlueprintCallable)
-    void ChangeSensitivity();
 
 };

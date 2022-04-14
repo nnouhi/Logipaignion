@@ -54,7 +54,7 @@ void EmptyLinkFunctionForGeneratedCodeFlashbackCharacter() {}
 		{ "ModuleRelativePath", "Public/FlashbackCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFlashbackCharacter_ChangeSensitivity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFlashbackCharacter, nullptr, "ChangeSensitivity", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFlashbackCharacter_ChangeSensitivity_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AFlashbackCharacter_ChangeSensitivity_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFlashbackCharacter_ChangeSensitivity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFlashbackCharacter, nullptr, "ChangeSensitivity", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFlashbackCharacter_ChangeSensitivity_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AFlashbackCharacter_ChangeSensitivity_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFlashbackCharacter_ChangeSensitivity()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -136,7 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeFlashbackCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_The_Elementalists,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFlashbackCharacter_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFlashbackCharacter_ChangeSensitivity, "ChangeSensitivity" }, // 3493182631
+		{ &Z_Construct_UFunction_AFlashbackCharacter_ChangeSensitivity, "ChangeSensitivity" }, // 3604931152
 		{ &Z_Construct_UFunction_AFlashbackCharacter_GetHealthPercentage, "GetHealthPercentage" }, // 1413284770
 	};
 #if WITH_METADATA
@@ -223,7 +223,7 @@ void EmptyLinkFunctionForGeneratedCodeFlashbackCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFlashbackCharacter, 2769996114);
+	IMPLEMENT_CLASS(AFlashbackCharacter, 2655587761);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<AFlashbackCharacter>()
 	{
 		return AFlashbackCharacter::StaticClass();

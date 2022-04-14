@@ -43,9 +43,7 @@ AJournalistCharacter::AJournalistCharacter()
 	GetCharacterMovement()->MaxWalkSpeed = 300.f;
 
 
-	// NN CHANGE ONCE GAMEMODE IS ADDED
-	LookUpSensitivity = 45.0f;
-	TurnSensitivity = LookUpSensitivity;
+	ChangeSensitivity();
 }
 
 // Called when the game starts or when spawned
@@ -54,13 +52,9 @@ void AJournalistCharacter::BeginPlay()
 	Super::BeginPlay();
 
 
-	ABaseGameMode* GameModeReference = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+	GameModeReference = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
 
-	if (GameModeReference)
-	{
-		TurnSensitivity = GameModeReference->GetBaseTurnRate();
-		LookUpSensitivity = TurnSensitivity;
-	}
+	ChangeSensitivity();
 }
 
 void AJournalistCharacter::MoveForward(float Value)
@@ -133,4 +127,13 @@ void AJournalistCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 	/*NN Action mappings */
 	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &AJournalistCharacter::BeginSprint);
 	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &AJournalistCharacter::EndSprint);
+}
+
+void AJournalistCharacter::ChangeSensitivity()
+{
+	if (GameModeReference)
+	{
+		TurnSensitivity = GameModeReference->GetBaseTurnRate();
+		LookUpSensitivity = TurnSensitivity;
+	}
 }

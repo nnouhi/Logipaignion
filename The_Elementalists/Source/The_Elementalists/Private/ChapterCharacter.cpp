@@ -263,15 +263,33 @@ void AChapterCharacter::OnAction()
     else if (AICharacter)
     {
         // NN Equip mask and disable line tracing for performance
-        if (Cast<AChapter2_AIController>(AICharacter->GetController()))
+        if (AICharacter->GetController())
         {
-            Cast<AChapter2_AIController>(AICharacter->GetController())->DisableLineTrace();
+
+            if (Cast<AChapter2_AIController>(AICharacter->GetController()))
+            {
+                Cast<AChapter2_AIController>(AICharacter->GetController())->DisableLineTrace();
+            }
+
+            if (Cast<AChapter2InsideHouse_AIController>(AICharacter->GetController()))
+            {
+                Cast<AChapter2InsideHouse_AIController>(AICharacter->GetController())->DisableLineTrace();
+            }
         }
-        else if (Cast<AChapter2InsideHouse_AIController>(AICharacter->GetController()))
+        else
         {
-            Cast<AChapter2InsideHouse_AIController>(AICharacter->GetController())->DisableLineTrace();
+            UE_LOG(LogTemp, Warning, TEXT("ERROR AI CONTROLLER"));
         }
-        AICharacter->EquipMask();
+
+        if (AICharacter)
+        {
+            AICharacter->EquipMask();
+        }
+        else
+        {
+            UE_LOG(LogTemp, Warning, TEXT("ERROR AI EQUIP MASK"));
+        }
+        AICharacter = NULL;
     }
 }
 
