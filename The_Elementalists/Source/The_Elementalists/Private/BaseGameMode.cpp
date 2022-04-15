@@ -58,6 +58,13 @@ void ABaseGameMode::AddToTotalScore(int32 Score)
 	TotalScore += Score;
 }
 
+void ABaseGameMode::ClearGame()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Difficulty: %i , Score: %i"), Difficulty, TotalScore);
+	Difficulty = 1;
+	TotalScore = 0;
+}
+
 FString ABaseGameMode::GetTimeRemaining()
 {
 	// NN Get remaining time to convert to minutes/seconds

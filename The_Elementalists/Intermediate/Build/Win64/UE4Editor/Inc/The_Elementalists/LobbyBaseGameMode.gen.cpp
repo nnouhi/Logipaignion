@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeLobbyBaseGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ALobbyBaseGameMode, 2223287694);
+	IMPLEMENT_CLASS(ALobbyBaseGameMode, 13294770);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<ALobbyBaseGameMode>()
 	{
 		return ALobbyBaseGameMode::StaticClass();

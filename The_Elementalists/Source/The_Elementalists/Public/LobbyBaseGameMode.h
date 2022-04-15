@@ -14,7 +14,4 @@ class THE_ELEMENTALISTS_API ALobbyBaseGameMode : public ABaseGameMode
 {
 	GENERATED_BODY()
 	
-private:
-
-	int32 test = 1;
 };

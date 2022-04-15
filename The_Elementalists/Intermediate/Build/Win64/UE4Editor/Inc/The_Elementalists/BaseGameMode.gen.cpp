@@ -19,6 +19,13 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 	UPackage* Z_Construct_UPackage__Script_The_Elementalists();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ABaseGameMode::execClearGame)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ClearGame();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ABaseGameMode::execGetInvestigationState)
 	{
 		P_FINISH;
@@ -118,6 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		UClass* Class = ABaseGameMode::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "ActorDied", &ABaseGameMode::execActorDied },
+			{ "ClearGame", &ABaseGameMode::execClearGame },
 			{ "GetBaseTurnRate", &ABaseGameMode::execGetBaseTurnRate },
 			{ "GetChapterName", &ABaseGameMode::execGetChapterName },
 			{ "GetDifficulty", &ABaseGameMode::execGetDifficulty },
@@ -162,6 +170,30 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseGameMode_ActorDied_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseGameMode_ClearGame_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseGameMode_ClearGame_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// NN This method resets static attributes (reset difficulty, total score)\n" },
+		{ "ModuleRelativePath", "Public/BaseGameMode.h" },
+		{ "ToolTip", "NN This method resets static attributes (reset difficulty, total score)" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseGameMode_ClearGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseGameMode, nullptr, "ClearGame", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseGameMode_ClearGame_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseGameMode_ClearGame_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseGameMode_ClearGame()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseGameMode_ClearGame_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -575,6 +607,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseGameMode_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ABaseGameMode_ActorDied, "ActorDied" }, // 393052865
+		{ &Z_Construct_UFunction_ABaseGameMode_ClearGame, "ClearGame" }, // 2603024314
 		{ &Z_Construct_UFunction_ABaseGameMode_GetBaseTurnRate, "GetBaseTurnRate" }, // 60200627
 		{ &Z_Construct_UFunction_ABaseGameMode_GetChapterName, "GetChapterName" }, // 3860960173
 		{ &Z_Construct_UFunction_ABaseGameMode_GetDifficulty, "GetDifficulty" }, // 3301473594
@@ -676,7 +709,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseGameMode, 1464550681);
+	IMPLEMENT_CLASS(ABaseGameMode, 1576773821);
 	template<> THE_ELEMENTALISTS_API UClass* StaticClass<ABaseGameMode>()
 	{
 		return ABaseGameMode::StaticClass();
