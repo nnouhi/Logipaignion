@@ -37,6 +37,8 @@ public:
 
 	bool GetInvestigationState() override { return bInvestigationMode; }
 
+
+
 protected:
 	virtual void BeginPlay() override;
 
@@ -68,6 +70,8 @@ private:
 
 	// NN Calculates the final score based on remaining time
 	void CalculateFinalScore();
+
+	void SortAITags();
 
 	// NN Reference to player controller
 	class AChapter_PlayerController* ChapterCharacterController;

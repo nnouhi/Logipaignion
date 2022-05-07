@@ -4,6 +4,7 @@
 #include "Chapter3Level3_AIController.h"
 #include "Kismet/Gameplaystatics.h"
 #include "BaseGameMode.h"
+#include "AICharacter.h"
 
 
 void AChapter3Level3_AIController::BeginPlay()
@@ -14,7 +15,16 @@ void AChapter3Level3_AIController::BeginPlay()
 	// NN Get AIPawn ref
 	AIPawn = GetPawn();
 	GameMode = Cast<ABaseGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
-	
+
+	AICharacter = Cast<AAICharacter>(AIPawn);
+	GetWorldTimerManager().SetTimer(
+		SoundHandle,
+		this,
+		&AChapter3Level3_AIController::InvokePlaySound,
+		5.0f,// NN Add random delay to move the AI
+		false,
+		4.0f
+	);
 }
 
 void AChapter3Level3_AIController::Tick(float DeltaTime)
@@ -45,5 +55,15 @@ void AChapter3Level3_AIController::OnMoveCompleted(FAIRequestID RequestID, const
 	// IMPLMENT WITH ACTORDIED 
 	
 	GameMode->ActorDied(AIPawn);
+}
+
+void AChapter3Level3_AIController::InvokePlaySound()
+{
+	
+	if (AICharacter && bPlay)
+	{
+		AICharacter->PlaySound();
+		bPlay = false;
+	}
 }
 

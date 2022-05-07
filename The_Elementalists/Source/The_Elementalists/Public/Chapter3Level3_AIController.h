@@ -31,9 +31,14 @@ private:
     APawn* AIPawn;
     class ABaseGameMode* GameMode;
     
-
+    class AAICharacter* AICharacter;
     /*int32 EscapedAI = 0;*/
 
+    void InvokePlaySound();
+
+    FTimerHandle SoundHandle;
+
+    bool bPlay = true;
 
    
 };

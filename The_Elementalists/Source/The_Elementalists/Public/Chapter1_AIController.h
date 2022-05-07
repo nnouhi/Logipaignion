@@ -30,6 +30,8 @@ protected:
 	// NN AI reference
 	APawn* AIPawn;
 
+	class AAICharacter* AICharacter;
+
 	// NN A reference to the closest door of the AI
 	class ASwingDoor* ClosestDoor;
 
@@ -62,6 +64,13 @@ protected:
 
 	FTimerHandle MoveTimerHandle;
 
+	FTimerHandle PlaySoundHandle;
+
+	FTimerHandle CheckSoundAvailability;
+
+	void PlaySound();
+
+	void InvokedPlaySound();
 
 public:
 

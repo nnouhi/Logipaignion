@@ -70,6 +70,8 @@ public:
 	// NN This method resets static attributes (reset difficulty, total score)
 	UFUNCTION(BlueprintCallable)
 	void ClearGame();
+
+
 	
 private:
 	// CN Difficulty {1: Easy, 2: Normal, 3:Hard}

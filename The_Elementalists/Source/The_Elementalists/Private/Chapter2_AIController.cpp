@@ -6,6 +6,7 @@
 #include "Kismet/Gameplaystatics.h"
 #include "NavigationSystem.h"
 #include "Engine/TargetPoint.h"
+#include "AICharacter.h"
 
 void AChapter2_AIController::BeginPlay()
 {
@@ -15,8 +16,18 @@ void AChapter2_AIController::BeginPlay()
 	OwnerPawn = GetPawn();
 	PlayerCharacter = Cast<AChapterCharacter>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
 	UGameplayStatics::GetAllActorsOfClassWithTag(GetWorld(), ATargetPoint::StaticClass(), TEXT("EscapeTag"), EscapeWaypoints);
-
+	AICharacter = Cast<AAICharacter>(OwnerPawn);
 	StartBehaviour();
+
+
+	GetWorldTimerManager().SetTimer(
+		SoundHandle,
+		this,
+		&AChapter2_AIController::InvokePlaySound,
+		FMath::FRandRange(8.0f, 12.0f),// NN Add random delay to move the AI
+		true,
+		FMath::FRandRange(8.0f, 15)
+	);
 
 }
 
@@ -95,6 +106,16 @@ void AChapter2_AIController::StartBehaviour()
 	}
 	else if (FSMAIBehaviour == 3)
 	{
+		bPlaySound = false;
 		MoveTo(EscapeWaypoints[FMath::RandRange(0,EscapeWaypoints.Num()-1)]->GetActorLocation());
+	}
+}
+
+void AChapter2_AIController::InvokePlaySound()
+{
+
+	if (bPlaySound && AICharacter)
+	{
+		AICharacter->PlaySound();
 	}
 }

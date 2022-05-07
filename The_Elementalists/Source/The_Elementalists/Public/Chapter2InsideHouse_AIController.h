@@ -24,6 +24,8 @@ protected:
 
 	APawn* OwnerPawn;
 
+	class AAICharacter* AICharacter;
+
 	class AChapterCharacter* PlayerCharacter;
 
 	// NN Distance to activate line trace
@@ -36,6 +38,12 @@ protected:
 	bool bMoveToInvoked = false;
 
 	TArray<AActor*> EscapeWaypoints;
+
+	bool bPlaySound = true;
+
+	void InvokePlaySound();
+
+	FTimerHandle SoundHandle;
 
 public:
 	void DisableLineTrace() { bPerformLineTrace = false; }

@@ -8,6 +8,7 @@
 #include "Engine/TargetPoint.h"
 #include "SwingDoor.h"
 #include "Kismet/GameplayStatics.h"
+#include "AICharacter.h"
 
 void AChapter1_AIController::BeginPlay()
 {
@@ -16,7 +17,7 @@ void AChapter1_AIController::BeginPlay()
 	AActor* TempDoor= nullptr;
 	PlayerPawn = UGameplayStatics::GetPlayerPawn(this, 0);
 	AIPawn = GetPawn();
-
+	AICharacter = Cast<AAICharacter>(AIPawn);
 
 	// NN Populate Waypoints & SwingDoors arrays 
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ATargetPoint::StaticClass(), Waypoints);
@@ -35,7 +36,14 @@ void AChapter1_AIController::BeginPlay()
 
 	ClosestDoor = Cast<ASwingDoor>(TempDoor);
 
-	
+	GetWorldTimerManager().SetTimer(
+		CheckSoundAvailability,
+		this,
+		&AChapter1_AIController::InvokedPlaySound,
+		FMath::RandRange(5.0f, 10.0f),
+		true, // loop
+		FMath::RandRange(8.f, 15.0f)
+	);
 
 }
 
@@ -64,8 +72,32 @@ void AChapter1_AIController::Tick(float DeltaTime)
 		/*FindClosestWaypoint();*/
 		bGetOut = !bGetOut;
 	}
+
 }
 
+
+void AChapter1_AIController::PlaySound()
+{
+	if (AICharacter)
+	{
+		AICharacter->PlaySound();
+	}
+}
+
+void AChapter1_AIController::InvokedPlaySound()
+{
+	if (bGetOut == false)
+	{
+		GetWorldTimerManager().SetTimer(
+			PlaySoundHandle,
+			this,
+			&AChapter1_AIController::PlaySound,
+			FMath::RandRange(1.f, 5.0f),// NN Add random delay to move the AI
+			false
+		);
+	}
+
+}
 
 void AChapter1_AIController::FindClosestWaypoint()
 {

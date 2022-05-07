@@ -13,6 +13,7 @@
 #include "TriggerCollisionProfileName.h"
 #include "IceCubePlaceHolder.h"
 #include "Engine/TargetPoint.h"
+#include "Kismet/KismetStringLibrary.h"
 
 
 AChapter3Level3GameMode::AChapter3Level3GameMode()
@@ -51,7 +52,7 @@ void AChapter3Level3GameMode::BeginPlay()
 		bIsSpawned.Add(false);
 	}
 
-
+	
 	// NN Check every ... of seconds how many placeholders remain
 	GetWorldTimerManager().SetTimer(
 		CheckPlaceHoldersHandle,
@@ -62,7 +63,7 @@ void AChapter3Level3GameMode::BeginPlay()
 
 
 	/*UE_LOG(LogTemp, Warning, TEXT("Difficulty: %i"), GetDifficulty());*/
-
+	SortAITags();
 	HandleGameStart();
 }
 
@@ -314,10 +315,43 @@ void AChapter3Level3GameMode::DisplayObjective()
 	ChapterCharacterController->StartTimer();
 }
 
+
+
 void AChapter3Level3GameMode::CalculateFinalScore()
 {
 	float TimeRemaining = GetWorldTimerManager().GetTimerRemaining(LevelStartTimerHandle);
 	Score += ((int32)TimeRemaining) * 10;
+}
+
+void AChapter3Level3GameMode::SortAITags()
+{
+
+	// CN Sort waypoints
+	if (AICharacters.Num() > 1)
+	{
+		bool bSwapped;
+		int N = AICharacters.Num();
+		do {
+			bSwapped = false;
+			N--;
+			for (int32 i = 0; i < N; i++)
+			{
+				if (UKismetStringLibrary::Conv_StringToInt(AICharacters[i]->Tags[0].ToString()) > UKismetStringLibrary::Conv_StringToInt(AICharacters[i + 1]->Tags[0].ToString())) // FIX CAST TO INT
+				{
+					AActor* Temp = AICharacters[i];
+					AICharacters[i] = AICharacters[i + 1];
+					AICharacters[i + 1] = Temp;
+					bSwapped = true;
+				}
+			}
+		} while (bSwapped);
+
+		// CN Debug check ok
+		for (int32 i = 0; i < AICharacters.Num(); i++)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("%s"), *(AICharacters[i]->Tags[0].ToString()));
+		}
+	}
 }
 
 void AChapter3Level3GameMode::Go()

@@ -31,6 +31,8 @@ private:
 	APawn* AIPawnReference;
 
 	void MoveToRandomLocation();
+
+	class AAICharacter* AICharacter;
 	
 
 };

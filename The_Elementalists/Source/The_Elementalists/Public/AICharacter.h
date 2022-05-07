@@ -54,6 +54,9 @@ public:
 
 	void EquipMask();
 
+
+	void PlaySound();
+
 private:
 
 	// NN SkeletalMesh to add to every npc 
@@ -63,6 +66,8 @@ private:
 	UPROPERTY(EditAnywhere)
 	UStaticMeshComponent* GasMask;
 
+	UPROPERTY(EditAnywhere)
+	class USoundBase* SoundToPlay;
 
 
 };

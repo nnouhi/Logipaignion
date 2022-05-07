@@ -122,3 +122,8 @@ void AAICharacter::EquipMask()
     }
 }
 
+void AAICharacter::PlaySound()
+{
+    UGameplayStatics::PlaySoundAtLocation(GetWorld(), SoundToPlay, GetActorLocation());
+}
+

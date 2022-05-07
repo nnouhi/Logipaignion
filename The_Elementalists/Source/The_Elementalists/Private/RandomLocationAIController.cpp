@@ -4,6 +4,7 @@
 #include "RandomLocationAIController.h"
 //#include "Kismet/Gameplaystatics.h"
 #include "NavigationSystem.h"
+#include "AICharacter.h"
 
 
 ARandomLocationAIController::ARandomLocationAIController()
@@ -16,6 +17,8 @@ void ARandomLocationAIController::BeginPlay()
 	Super::BeginPlay();
 
 	AIPawnReference = GetPawn();
+
+	AICharacter = Cast<AAICharacter>(AIPawnReference);
 
 	if (AIPawnReference)
 	{
@@ -30,6 +33,13 @@ void ARandomLocationAIController::Tick(float DeltaTime)
 
 void ARandomLocationAIController::OnMoveCompleted(FAIRequestID RequestID, const FPathFollowingResult& Result)
 {
+	if (AICharacter)
+	{
+		if (FMath::RandRange(0, 15) == 5)
+		{
+			AICharacter->PlaySound();
+		}
+	}
 	if (AIPawnReference)
 	{
 		MoveToRandomLocation();

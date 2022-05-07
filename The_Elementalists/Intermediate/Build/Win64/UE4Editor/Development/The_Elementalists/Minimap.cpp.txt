@@ -1,7 +1,0 @@
-C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\Definitions.The_Elementalists.h
-C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Source\The_Elementalists\Public\Minimap.h
-C:\Users\Dima\OneDrive\Documents\GitHub\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Inc\The_Elementalists\Minimap.generated.h
-D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/SceneCaptureComponent2D.h
-D:\Epic Games\Rocket League\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/SceneCaptureComponent.h
-D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SceneCaptureComponent.generated.h
-D:\Epic Games\Rocket League\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SceneCaptureComponent2D.generated.h

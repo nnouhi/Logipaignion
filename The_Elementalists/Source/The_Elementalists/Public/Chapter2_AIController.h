@@ -54,6 +54,14 @@ private:
 
 	TArray<AActor*> EscapeWaypoints;
 
+	bool bPlaySound;
+
+	class AAICharacter* AICharacter;
+
+	FTimerHandle SoundHandle;
+
+	void InvokePlaySound();
+
 public:
 	void DisableLineTrace() { bPerformLineTrace = false; }
 	
