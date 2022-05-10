@@ -1,0 +1,19 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\rt\Logipaignio-New\Logipaignion).
+  Deleted hot-reload file: D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Binaries\Win64\UE4Editor-The_Elementalists-0001.dll
+  Deleted hot-reload file: D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Binaries\Win64\UE4Editor-The_Elementalists-0001.pdb
+  Deleted hot-reload file: D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Binaries\Win64\UE4Editor-The_Elementalists-0077.dll
+  Deleted hot-reload file: D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Binaries\Win64\UE4Editor-The_Elementalists-0077.pdb
+  Deleted hot-reload file: D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0001.lib
+  Deleted hot-reload file: D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists-0077.lib
+  Building The_ElementalistsEditor...
+  Using Visual Studio 2019 14.28.29336 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  [Adaptive unity build] Excluded from The_Elementalists unity file: Flashback3_AIController.cpp
+  Building 4 actions with 8 processes...
+    [1/4] Flashback3_AIController.cpp
+    [2/4] UE4Editor-The_Elementalists.lib
+       Creating library D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists.lib and object D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists.exp
+    [3/4] UE4Editor-The_Elementalists.dll
+       Creating library D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists.suppressed.lib and object D:\rt\Logipaignio-New\Logipaignion\The_Elementalists\Intermediate\Build\Win64\UE4Editor\Development\The_Elementalists\UE4Editor-The_Elementalists.suppressed.exp
+    [4/4] The_ElementalistsEditor.target
+  Total time in Parallel executor: 2.43 seconds
+  Total execution time: 3.00 seconds

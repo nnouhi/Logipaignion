@@ -40,6 +40,7 @@ private:
 	// NN Will store all level waypoints
 	TArray<AActor*> Waypoints;
 	TArray<AActor*> ShoreWaypoints;
+	TArray<bool> WaypointsFlag;
 
 	// NN Stores the distance of the closest waypoint of the AI
 	float SmallestDistanceFromWaypoint = 100000.f; //temp value

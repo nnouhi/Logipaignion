@@ -34,18 +34,27 @@ void AFlashback3_AIController::BeginPlay()
 	
 	if (Waypoints.Num() != 0 && AIBoat)
 	{
-		int32 Index = 0;
+		
 		// NN Remove waypoints that are behind boat (Don't need to be navigated)
-		for (AActor* Waypoint : Waypoints)
+		for (int32 i=0; i<Waypoints.Num(); i++)
 		{
+			
+			WaypointsFlag.Add(true);
 			// NN Waypoint is behind boat
-			if (AIBoat->GetActorLocation().Y <= Waypoint->GetActorLocation().Y)
+			if (AIBoat->GetActorLocation().Y <= Waypoints[i]->GetActorLocation().Y)
 			{
-				Waypoints.Remove(Waypoint);
-				Waypoints.Shrink();
+				WaypointsFlag[i] = false;
 			}
 		}
-		SmallestDistanceFromWaypoint = FVector::Dist(Waypoints[0]->GetActorLocation(), AIBoat->GetActorLocation());
+
+		for (int32 i = 0; i < Waypoints.Num(); i++)
+		{
+			if (WaypointsFlag[i] == true)
+			{
+				SmallestDistanceFromWaypoint = FVector::Dist(Waypoints[i]->GetActorLocation(), AIBoat->GetActorLocation());
+				break;
+			}	
+		}
 		// NN Find closest waypoint to AI
 		FindClosestWaypoint();
 	}
@@ -67,10 +76,19 @@ void AFlashback3_AIController::OnMoveCompleted(FAIRequestID RequestID, const FPa
 	{
 		if (Waypoints.Num() != 0)
 		{
-			Waypoints.RemoveAt(SmallestDistanceIndex);
-			Waypoints.Shrink();
+			WaypointsFlag[SmallestDistanceIndex] = false;
+
+			for (int32 i = 0; i < Waypoints.Num(); i++)
+			{
+				if (WaypointsFlag[i] == true)
+				{
+					SmallestDistanceFromWaypoint = FVector::Dist(Waypoints[i]->GetActorLocation(), AIBoat->GetActorLocation());
+					break;
+				}
+			}
 			WaypointClosestToAI = NULL;
-			SmallestDistanceFromWaypoint = FVector::Dist(Waypoints[0]->GetActorLocation(), AIBoat->GetActorLocation());
+
+			
 			// NN Find closest waypoint to boat again
 			FindClosestWaypoint();
 		}
@@ -82,19 +100,19 @@ void AFlashback3_AIController::OnMoveCompleted(FAIRequestID RequestID, const FPa
 
 void AFlashback3_AIController::FindClosestWaypoint()
 {
-	int32 WaypointIndex = 0;
 
-	for (AActor* Waypoint : Waypoints)
+	for (int32 i = 0; i < Waypoints.Num(); i++)
 	{
-		// NN Waypoint is the closest to the AI out of all the waypoints
-		if (FVector::Dist(Waypoint->GetActorLocation(),AIBoat->GetActorLocation()) <= SmallestDistanceFromWaypoint)
+		if (WaypointsFlag[i])
 		{
-			SmallestDistanceFromWaypoint = FVector::Dist(Waypoint->GetActorLocation(), AIBoat->GetActorLocation()); //set smallest distance
-			WaypointClosestToAI = Waypoint; // new closest waypoint
-			SmallestDistanceIndex = WaypointIndex; // get its index to remove later
-			/*UE_LOG(LogTemp, Warning, TEXT("%f"), FVector::Dist(Waypoint->GetActorLocation(), AIBoat->GetActorLocation()));*/
+			// NN Waypoint is the closest to the AI out of all the waypoints
+			if (FVector::Dist(Waypoints[i]->GetActorLocation(), AIBoat->GetActorLocation()) <= SmallestDistanceFromWaypoint)
+			{
+				SmallestDistanceFromWaypoint = FVector::Dist(Waypoints[i]->GetActorLocation(), AIBoat->GetActorLocation()); //set smallest distance
+				WaypointClosestToAI = Waypoints[i]; // new closest waypoint
+				SmallestDistanceIndex = i; // get its index to remove later
+			}
 		}
-		WaypointIndex++;
 	}
 
 	if (WaypointClosestToAI) //set
