@@ -33,6 +33,7 @@
 			"Flashback_CinAIController.cpp.obj",
 			"Flashback_PlayerController.cpp.obj",
 			"Flashback2Character.cpp.obj",
+			"Flashback3_AIController.cpp.obj",
 			"FlashbackCharacter.cpp.obj",
 			"FloatComponent.cpp.obj",
 			"FloorCollider.cpp.obj",
@@ -67,8 +68,7 @@
 			"TriggerCollisionProfileName.cpp.obj",
 			"WindProjectile.cpp.obj",
 			"The_Elementalists.cpp.obj",
-			"The_ElementalistsGameModeBase.cpp.obj",
-			"Flashback3_AIController.cpp.obj"
+			"The_ElementalistsGameModeBase.cpp.obj"
 		],
 		"Module.The_Elementalists.gen.cpp.obj": [
 			"AICharacter.gen.cpp.obj",
